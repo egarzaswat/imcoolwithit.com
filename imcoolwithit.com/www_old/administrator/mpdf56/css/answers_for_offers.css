@@ -1,0 +1,83 @@
+.header{
+    width: 100%;
+    height: 110px;
+    display: block;
+    background: #37a9e4;
+}
+.header .logo{
+    width: 340px;
+    height: 105px;
+    display: inline-block;
+    float: left;
+    background: url("../../../images/logo.png") no-repeat;
+}
+.header .image{
+    display: block;
+    position: absolute;
+    padding: 5px;
+    text-align: right;
+}
+.content{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 15px;
+}
+.content h1{
+    text-align: center;
+    font-size: 22px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    display: block;
+    clear: both;
+    background: #37a9e4;
+    margin: 25px 0 0;
+    text-align: right;
+    line-height: 3.5;
+    color: #ffffff;
+    padding: 5px;
+}
+.line_separator{
+    width: 100%;
+    height: 3px;
+    margin: 25px 0 35px 0;
+    display: block;
+    background: #37a9e4;
+}
+.row{
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+.col_number{
+    padding: 0 10px 0 0;
+    height: auto;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.col{
+    height: auto;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.col15{
+    width: 15%;
+}
+.col20{
+    width: 20%;
+}
+.col30{
+    width: 30%;
+}
+.col35px{
+    width: 35px;
+}
+.border{
+    border-bottom: 1px solid #cccccc;
+    padding: 5px 0;
+}

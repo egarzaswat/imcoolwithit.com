@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /imcoolwithit.com/www/administrator/.htpasswd
+Require valid-user

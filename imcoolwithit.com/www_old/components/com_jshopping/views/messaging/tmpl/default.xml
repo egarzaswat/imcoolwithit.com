@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="MESSAGES_LIST"></layout>
+    <fields name="request">
+		<fieldset name="request">		
+            <field name="my_id" type="text" default="" label="My ID" description="My ID" />
+            <field name="friend_id" type="text" default="" label="Friend ID" description="Friend ID" />
+		</fieldset>
+	</fields>
+</metadata>

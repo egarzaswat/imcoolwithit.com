@@ -1,0 +1,9 @@
+Date: %BI_DATE%
+To: %BI_TO_ADDR%
+From: "%BI_FROM_NAME%" <%BI_FROM_ADDR%>
+Subject: %BI_SUBJECT%
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+%BI_BODY%

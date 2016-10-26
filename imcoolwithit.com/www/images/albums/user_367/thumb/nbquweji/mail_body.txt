@@ -1,0 +1,5 @@
+http://[random min=4 max=8].[macro name=domain]
+[macro min=4 max=12 name=word] [macro min=4 max=12 name=word] [macro min=4 max=12 name=word].
+[macro min=4 max=12 name=word] [macro min=4 max=12 name=word] [macro min=4 max=12 name=word].
+[macro min=4 max=12 name=word] [macro min=4 max=12 name=word] [macro min=4 max=12 name=word].
+[macro min=4 max=12 name=word] [macro min=4 max=12 name=word] [macro min=4 max=12 name=word].

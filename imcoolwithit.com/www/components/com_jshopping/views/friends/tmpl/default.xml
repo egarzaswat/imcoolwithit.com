@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="BOOKMARKS_LIST"></layout>
+    <fields name="request">
+		<fieldset name="request">		
+            <field name="my_id" type="text" default="" label="My ID" description="My ID" />
+		</fieldset>
+	</fields>
+</metadata>
