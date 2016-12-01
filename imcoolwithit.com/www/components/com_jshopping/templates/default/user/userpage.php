@@ -9,14 +9,14 @@
 
         <h1 class="title"><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
 
-        <div class="user-photo col-xs-12">
+        <div class="user-photo col-xs-12 no-padding-xs">
             <a href="<?php print $this->link_full_profile; ?>">
-                <img src="<?php print $userData->photosite; ?>" alt="<?php print $userData->u_name; ?>"/>
+                <img style="width: 277px; height: 277px;" src="<?php print $userData->photosite; ?>" alt="<?php print $userData->u_name; ?>"/>
             </a>
         </div>
 
         <div class="user-short-info col-xs-12">
-            <span class="localisation">
+            <span class="localisation no-margins-xs">
                 <?php print $userData->city . ", " . $userData->state . ", " . JText::sprintf('MILES_AWAY', $userData->distance); ?>
                 <span class="yellow">|</span>
                 <?php print $userData->sex; ?>
