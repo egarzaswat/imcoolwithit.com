@@ -43,7 +43,7 @@ defined('_JEXEC') or die('Restricted access');
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
-            <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">Edit Photos</a>
+            <a class="btn btn-primary" href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">Edit Photos</a>
             <span class="localisation">
                 <?php print $this->user->city . ", " . $this->user->state; ?>
                 <span class="yellow">|</span>
@@ -181,7 +181,7 @@ defined('_JEXEC') or die('Restricted access');
 
     jQuery('.my-stats #edit-stats').click(function(){
         jQuery(this.removeClass('edit'));
-        jQuery('.profile-content-left').append('<span class="save">Save</span>');
+        jQuery('.profile-content-left').append('<span class="save btn btn-primary">Save</span>');
 
         var height_value = (jQuery('.profile-content-left .height').html() === '<?php print JText::_('UNKNOWN'); ?>') ? "" : jQuery('.profile-content-left .height').html();
 
@@ -346,7 +346,7 @@ defined('_JEXEC') or die('Restricted access');
         edit_field_html = edit_field_html + '</textarea>';
         edit_field.html(edit_field_html);
         jQuery(this).hide();
-        jQuery(this).parent().append('<span class="save">Save</span>');
+        jQuery(this).parent().append('<span class="save btn-inline btn-primary">Save</span>');
     });
 
     jQuery('.profile .profile-content-right .save').live('click', function(){

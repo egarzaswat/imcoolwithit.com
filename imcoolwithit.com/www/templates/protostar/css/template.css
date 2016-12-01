@@ -1,4 +1,4 @@
-﻿body{
+body{
     color: rgb(0, 0, 0);
     font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif!important;
     font-size: 14px;
@@ -481,6 +481,9 @@ a:focus, input:focus{
     outline: none!important;
     text-decoration: none !important;
 }
+.btn-inline{
+    line-height : .9;
+}
 .padding-null{
     padding-right: 0!important;
     padding-left: 0!important;
@@ -819,6 +822,9 @@ a:focus, input:focus{
     .user-link img {
         height: 100%;
     }
+    .no-margins-xs{
+        margin:0 0 0 0;
+    }
 }
 @media (max-width: 767px){
     .users-list-link {
@@ -1151,7 +1157,7 @@ a:focus, input:focus{
     width: 100%;
 }
 .header-logo{
-    height: 75px;
+    /*height: 75px;*/
     margin: 0 auto;
     text-align: left;
 }
@@ -1160,7 +1166,7 @@ a:focus, input:focus{
     margin-top: 10px;
 }
 .header-logo div{
-    height: 75px;
+    /*height: 75px;*/
 }
 .header-logo img{
     max-height: 65px;
