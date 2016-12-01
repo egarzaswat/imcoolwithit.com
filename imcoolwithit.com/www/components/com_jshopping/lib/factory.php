@@ -997,7 +997,7 @@ class JSFactory{
                 $quick_search_link = JText::_('LINK_USER_PAGE') . '?user=' .$first_user_from_list[0]->user_id;
             }
 
-            $html = '<div class="header-links col-lg-7 col-sm-7 col-xs-12 visible-xs" style="background: rgb(65, 168, 220)">';
+            $html = '<div class="header-links col-lg-7 col-sm-7 col-xs-12 no-padding-xs visible-xs" style="background: rgb(65, 168, 220)">';
             $html .= '<ul class="nav menu_home">';
             $html .= '<li><a href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a><li>';
             $html .= '<li><a href="' . JText::_('LINK_USERS_LIST') . '" class="search">Search</a></li>';
