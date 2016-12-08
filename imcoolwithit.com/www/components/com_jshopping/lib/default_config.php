@@ -105,8 +105,8 @@ $config->user_sex = array(
 $config->user_looking_for = array(
 //    0=>_JSHOP_REG_SELECT,
     1=>_JSHOP_MS,
-    2=>_JSHOP_MR,
-    3=>_JSHOP_EITHER
+    2=>_JSHOP_MR
+//    3=>_JSHOP_EITHER
 );
 
 $config->user_distance = array(
