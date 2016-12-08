@@ -156,9 +156,9 @@ if(isset($_GET['referrer'])){
                         <div class="col-sm-10 col-sm-offset-1 col-xs-12 padding-null-xs">
                             <div class="sign-up-box">
                                 <div class="sign-up-text">
-                                    <h1><b>Cool With It™</b> is the free dating site that takes you out.</h1>
-                                    <span>Be yourself, earn credits and use them for great experiences and local deals.</span>
-                                    <span class="sign-up-below"><strong>Sign up below</strong> to meet people, go out and have fun! (<strong>Currently in Private Beta</strong>)</span>
+                                    <h1><b>Cool With It™</b> is the 100% free dating site that takes you out.</h1>
+                                    <span>Be yourself, earn credits and use them on great experiences and local deals.</span>
+                                    <span class="sign-up-below"><strong>Sign up below</strong> to meet people, go out and have fun!</span>
                                 </div>
                                 <div class="sign-up-border">
                                     <div class="sign-up-fb">
