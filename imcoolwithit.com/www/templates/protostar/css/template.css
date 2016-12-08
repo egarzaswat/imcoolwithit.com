@@ -823,12 +823,7 @@ a:focus, input:focus{
         height: 100%;
     }
     .no-margins-xs{
-        margin-left:0;
-        margin-right:0;
-    }
-    .no-padding-xs{
-        padding-left:0;
-        padding-right:0;
+        margin:0 0 0 0;
     }
 }
 @media (max-width: 767px){
@@ -2022,7 +2017,7 @@ a:focus, input:focus{
     margin: 10px auto;
 }
 .user-page .user-photo img{
-    /*border: 1px solid rgb(57, 167, 223);*/
+    border: 1px solid rgb(57, 167, 223);
     max-width: 100%;
 }
 .user-page .user-short-info .localisation{
@@ -2060,7 +2055,7 @@ a:focus, input:focus{
     display: inline-block;
     font-size: 13px;
     float: left;
-    /*height: 80px;*/
+    height: 100px;
     padding: 10px 10px 10px 15px;
     text-align: left;
     width: 30%;
@@ -2074,7 +2069,7 @@ a:focus, input:focus{
     display: inline-block;
     font-size: 13px;
     float: left;
-    min-height: 80px;
+    min-height: 100px;
     padding: 10px 15px 10px 10px;
     text-align: left;
     width: 70%;
