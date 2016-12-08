@@ -201,14 +201,14 @@
 <?php } else { ?>
     <form class="form-inline update_password" action="" method="post" >
         <div class="form-input-container">
-            <div class="form-group col-xs-12">
+            <div class="form-group">
                 <label class="form-signup-label" for="password1">New Password</label>
-                <input name="password1" type="password" class="form-signup-input no-margins-xs" id="password1" style="width: 214px;">
-                <span class="form-error password-error no-margins-xs"></span>
+                <input name="password1" type="password" class="form-signup-input" id="password1" style="width: 214px;">
+                <span class="form-error password-error"></span>
             </div>
-            <div class="form-group col-xs-12">
-                <label class="form-signup-label no-margins-xs" for="password2">Confirm Password</label>
-                <input name="password2" type="password" class="form-signup-input no-margins-xs" id="password2" style="width: 214px;">
+            <div class="form-group">
+                <label class="form-signup-label" for="password2">Confirm Password</label>
+                <input name="password2" type="password" class="form-signup-input" id="password2" style="width: 214px;">
                 <span class="form-error confirmation-error"></span>
             </div>
         </div>

@@ -997,9 +997,8 @@ class JSFactory{
                 $quick_search_link = JText::_('LINK_USER_PAGE') . '?user=' .$first_user_from_list[0]->user_id;
             }
 
-            $html = '<div class="header-links col-lg-7 col-sm-7 col-xs-12 visible-xs" style="background: rgb(65, 168, 220)">';
+            $html = '<div class="header-links col-lg-8 col-sm-7 col-xs-12 visible-xs" style="background: rgb(65, 168, 220)">';
             $html .= '<ul class="nav menu_home">';
-            $html .= '<li><a href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a><li>';
             $html .= '<li><a href="' . JText::_('LINK_USERS_LIST') . '" class="search">Search</a></li>';
             $html .= '<li><a href="' . $quick_search_link . '">Quick Connect</a></li>';
             $html .= '<li><a href="/sponsors">Linc Up</a></li>';
@@ -1069,7 +1068,6 @@ class JSFactory{
             $html .= '</div>';
 
             $html .= '<div class="menu-top-center">';
-            $html .= '<li><a href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a><li>';
             $html .= '<a href="' . JText::_('LINK_USERS_LIST') . '">' . JText::_('COOL_TOP_SEARCH') . '</a>';
             $html .= '<a href="' . $quick_search_link . '">' . JText::_('COOL_TOP_QUICK_CONNECT') . '</a>';
             $html .= '<a href="' . JText::_('LINK_MY_BOOKMARKS') . '">' . JText::_('COOL_TOP_SAVED_PROFILES') . '</a>';

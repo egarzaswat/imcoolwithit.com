@@ -120,7 +120,7 @@ if(isset($_GET['referrer'])){
 <?php if(!$isoffline){?>
 <div class="header-full">
     <div class="container">
-        <div class="header-logo col-lg-4 col-sm-5 col-xs-10 col-xs-offset-1">
+        <div class="header-logo col-lg-4 col-sm-5 col-xs-12">
             <jdoc:include type="modules" name="logo" style="none" />
         </div>
 
