@@ -128,7 +128,7 @@
 
     <div class="actions">
         <span class="texts-form-eighteen">
-            <span class="form-eighteen-older">Already member? <a href="/login">Sign in here.</a></span><br>
+            <span class="form-eighteen-older">Already a member? <a href="/login">Sign in here.</a></span><br>
             <span class="form-eighteen-older">*Must be 18 years or older to join</span>
         </span>
         <button type="submit" class="submit-button">Sign Up</button>

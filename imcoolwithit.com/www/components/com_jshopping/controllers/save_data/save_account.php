@@ -342,7 +342,7 @@ if (is_numeric($_POST['zip']) && (strlen($_POST['zip']) == 5)) {
     exit;
 }
 
-if (is_numeric($_POST['looking_for']) && in_array($_POST['looking_for'], array(1, 2))){
+if (is_numeric($_POST['looking_for']) && in_array($_POST['looking_for'], array(1, 2, 3))){
     $looking_for = (int)$_POST['looking_for'];
 } else {
     echo 'error looking for';
