@@ -1053,6 +1053,8 @@ class JSFactory{
             $html .= '<a href="' . JText::_('LINK_EDIT_ACCOUNT') . '" class="menu-settings" title="Settings">Settings</a>';
             $html .= '<span class="hey-user">' . JText::_('COOL_TOP_HEY');
             $html .= ' <a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile">' . JSFactory::getUser()->u_name . '</a>!';
+            $html .= '<br>';
+            $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
             $html .= '</span>';
             $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '"><span class="cool-count">'. $count_new_messages . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
             $html .= '</div>';
@@ -1064,6 +1066,8 @@ class JSFactory{
             $html .= '<a href="' . JText::_('LINK_EDIT_ACCOUNT') . '" class="menu-settings" title="Settings">Settings</a>';
             $html .= '<span class="hey-user">' . JText::_('COOL_TOP_HEY');
             $html .= ' <a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile">' . JSFactory::getUser()->u_name . '</a>!';
+            $html .= '<br>';
+            $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
             $html .= '</span>';
             $html .= '</div>';
 

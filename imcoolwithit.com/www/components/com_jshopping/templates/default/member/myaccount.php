@@ -43,7 +43,7 @@ defined('_JEXEC') or die('Restricted access');
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
-            <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">Edit Photos</a>
+            <a class="link-button" href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">Edit Photos</a>
             <span class="localisation">
                 <?php print $this->user->city . ", " . $this->user->state; ?>
                 <span class="yellow">|</span>
@@ -54,6 +54,7 @@ defined('_JEXEC') or die('Restricted access');
             <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $this->user->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $this->user->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $this->user->status; ?></span></span>
+            <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $this->user->looking_for; ?></span></span>
            <!-- <span class="inf"><?php /*print JText::_('ETHNICITY'); */?> <span class="ethnicity"><?php /*print $this->user->ethnicity; */?></span></span>
             <span class="inf"><?php /*print JText::_('BODY'); */?> <span class="body"><?php /*print $this->user->body; */?></span></span>
             <span class="inf"><?php /*print JText::_('PROFESSION'); */?> <span class="profession"><?php /*print $this->user->profession; */?></span></span>
@@ -212,6 +213,19 @@ defined('_JEXEC') or die('Restricted access');
         '</select>';
         status_value.html(status_field);
 
+//        Todo 1 ------------------------------------------------
+
+        var looking_value = jQuery('.profile-content-left .look');
+        var looking_field ='<select name="look">' +
+            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
+            '<option' + ( (looking_value.html() === '<?php print JText::_('MALE'); ?>')? ' selected ' : '' ) + ' value="2" ><?php print JText::_('MALE'); ?></option>' +
+            '<option' + ( (looking_value.html() === '<?php print JText::_('FEMALE'); ?>')? ' selected ' : '' ) + ' value="1" ><?php print JText::_('FEMALE'); ?></option>' +
+            '<option' + ( (looking_value.html() === '<?php print JText::_('EITHER'); ?>')? ' selected ' : '' ) + ' value="3" ><?php print JText::_('EITHER'); ?></option>' +
+        '</select>';
+        looking_value.html(looking_field);
+
+//        ------------------------------------------------
+
 /*        var ethnicity_value = jQuery('.profile-content-left .ethnicity');
         var ethnicity_field = '<select name="ethnicity">' +
             '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
@@ -279,10 +293,10 @@ defined('_JEXEC') or die('Restricted access');
 
 
         var height = jQuery('.height_m').val() + "'" + jQuery('.height_c').val();
-
         var msg = {
             'height' : height,
             'status' : jQuery('.profile-content-left .status select').val(),
+            'looking_for' : jQuery('.profile-content-left .look select').val(),
             'ethnicity' : jQuery('.profile-content-left .ethnicity select').val(),
             'body' : jQuery('.profile-content-left .body select').val(),
             'profession' : jQuery('.profile-content-left .profession input').val(),
@@ -300,6 +314,26 @@ defined('_JEXEC') or die('Restricted access');
                 if(data=='success'){
                     jQuery('.profile-content-left .height').text( (height === '') ? '<?php print JText::_('UNKNOWN'); ?>' : height);
                     jQuery('.profile-content-left .status').text( (jQuery('.profile-content-left .status select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .status select').val() );
+                    var _look = '';
+                    var f_look = jQuery('.profile-content-left .look select');
+                    if(f_look.val() === null){
+                        _look = '<?php print JText::_('UNKNOWN'); ?>';
+                    }
+                    if(f_look.val() == 1){
+                        _look = '<?php print JText::_('FEMALE'); ?>';
+                    }
+                    if(f_look.val() == 2){
+                        _look = '<?php print JText::_('MALE'); ?>';
+                    }
+                    if(f_look.val() == 3){
+                        _look = '<?php print JText::_('EITHER'); ?>';
+                    }
+                    jQuery('.profile-content-left .look').text(_look);
+
+//                    jQuery('.profile-content-left .look').text( (jQuery('.profile-content-left .look select').val() === null) ? '<?php //print JText::_('UNKNOWN'); ?>//' : jQuery('.profile-content-left .status select').val() );
+
+
+
                     /*jQuery('.profile-content-left .ethnicity').text( (jQuery('.profile-content-left .ethnicity select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .ethnicity select').val() );
                     jQuery('.profile-content-left .body').text( (jQuery('.profile-content-left .body select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .body select').val() );
                     jQuery('.profile-content-left .profession').text( (jQuery('.profile-content-left .profession input').val() === '')? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .profession input').val() );

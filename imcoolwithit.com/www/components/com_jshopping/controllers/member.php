@@ -1005,6 +1005,20 @@ class JshoppingControllerMember extends JControllerLegacy{
                 $adv_user->status = JText::_('UNKNOWN');
             }
 
+            if(is_null($adv_user->looking_for) || $adv_user->looking_for == 0){
+                $adv_user->looking_for = JText::_('UNKNOWN');
+            } else {
+                if($adv_user->looking_for == 2){
+                    $adv_user->looking_for = JText::_('MALE');
+                }
+                if($adv_user->looking_for == 1){
+                    $adv_user->looking_for = JText::_('FEMALE');
+                }
+                if($adv_user->looking_for == 3){
+                    $adv_user->looking_for = JText::_('EITHER');
+                }
+            }
+
             if(is_null($adv_user->ethnicity) || $adv_user->ethnicity == ""){
                 $adv_user->ethnicity = JText::_('UNKNOWN');
             }
