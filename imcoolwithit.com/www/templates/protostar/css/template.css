@@ -817,8 +817,10 @@ a:focus, input:focus{
     padding: 5px 15px;
     border-radius: 8px;
     background: #3e94de;
-    color: #fff;
-    text-decoration: none;
+    color: #fff!important;
+    text-decoration: none!important;
+    outline: none;
+    line-height: 1.2;
 }
 .link-button:hover,
 .link-button:active{
@@ -1592,10 +1594,10 @@ a:focus, input:focus{
     cursor: pointer;
     display: block;
     margin: 15px auto 5px;
-    max-height: 245px;
+    max-height: 300px;
     max-width: 100%;
     position: relative;
-    width: 245px;
+    width: 300px;
 }
 .profile-content-left .photo img{
     width: 100%;
@@ -2034,7 +2036,6 @@ a:focus, input:focus{
     margin: 10px auto;
 }
 .user-page .user-photo img{
-    border: 1px solid rgb(57, 167, 223);
     max-width: 100%;
 }
 .user-page .user-short-info .localisation{
@@ -2255,12 +2256,10 @@ a:focus, input:focus{
     display: block;
     margin: 10px auto;
 }
-.user-page .user-actions .full-profile-link a{
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-}
-.user-page .user-actions .full-profile-link a:hover{
-    text-decoration: none;
+.user-page .user-actions .full-profile-link a,
+.user-page .user-actions .full-profile-link input,
+.user-page .user-actions .full-profile-link button{
+    margin: 0 5px;
 }
 
 .full-user-page .page-content .title{

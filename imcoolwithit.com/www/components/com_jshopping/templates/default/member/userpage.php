@@ -43,6 +43,10 @@
                         <span class="info-title"><?php print JText::_('STATUS'); ?></span>
                         <span class="info-value"><?php print $userData->status; ?></span>
                     </div>
+                    <div>
+                        <span class="info-title"><?php print JText::_('LOOKING_FOR'); ?></span>
+                        <span class="info-value"><?php print $userData->look; ?></span>
+                    </div>
                 </div>
                 <div class="right-info-block">
                     <span class="info-title"><?php print JText::sprintf('USER_ABOUT', $userData->u_name); ?></span>
@@ -84,15 +88,15 @@
                 </div>
             <?php } ?>
             <span class="full-profile-link">
-                <a href="<?php print $this->link_full_profile; ?>"><?php print JText::_('FULL_PROFILE_LINK'); ?></a>
+                <a class="link-button" href="<?php print $this->link_full_profile; ?>"><?php print JText::_('FULL_PROFILE_LINK'); ?></a>
+                <?php if (!$userData->add_to_bookmarks) { ?>
+                    <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button delete-bookmark"
+                           value="<?php print JText::_('DELETE_BOOKMARK'); ?>">
+                <?php } else { ?>
+                    <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button add-bookmark"
+                           value="<?php print JText::_('SAVE_BOOKMARK'); ?>">
+                <?php } ?>
             </span>
-            <?php if (!$userData->add_to_bookmarks) { ?>
-                <input type="submit" data-user="<?php print $userData->user_id; ?>" class="delete-bookmark btn btn-primary"
-                       value="<?php print JText::_('DELETE_BOOKMARK'); ?>">
-            <?php } else { ?>
-                <input type="submit" data-user="<?php print $userData->user_id; ?>" class="add-bookmark btn btn-primary"
-                       value="<?php print JText::_('SAVE_BOOKMARK'); ?>">
-            <?php } ?>
         </div>
 
     </div>
