@@ -29,9 +29,9 @@
                                     <img src="<?php print $value_s->image; ?>">
                                 </a>
                             <?php } ?>
-                            <div class="more-offers" id="<?php print $value->category_id; ?>">
-                                <span><?php print JText::_('SPONSORS_MORE_OFFERS'); ?></span>
-                            </div>
+<!--                            <div class="more-offers" id="--><?php //print $value->category_id; ?><!--">-->
+<!--                                <span>--><?php //print JText::_('SPONSORS_MORE_OFFERS'); ?><!--</span>-->
+<!--                            </div>-->
                         <?php } else { ?>
                             <div class="no-offers">
                                 <span><?php print JText::_('SPONSORS_NO_OFFERS'); ?></span>
@@ -46,7 +46,7 @@
 
 </div>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
     jQuery('body').addClass('grayBackground');
 
     jQuery('.lincup-offers-category').click(function () {
@@ -60,7 +60,7 @@
 
         var data_post = {
             'category_id': this.id,
-            'user_id': <?php print $this->user;?>
+            'user_id': <?php /*print $this->user;*/?>
         };
 
         jQuery.ajax({
@@ -76,4 +76,4 @@
         });
     });
 
-</script>
+</script>-->

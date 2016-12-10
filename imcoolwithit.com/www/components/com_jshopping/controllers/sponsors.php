@@ -67,7 +67,6 @@ class JshoppingControllerSponsors extends JControllerLegacy{
             $display_data[$key]->category_sponsors = array();
 
             foreach($sponsors_with_category as $key_s => $values_s){
-
                 $display_data[$key]->category_sponsors[$key_s] = $values_s;
                 $display_data[$key]->category_sponsors[$key_s]->image = JSFactory::existImage($jshopConfig->image_product_path_site_small, $display_data[$key]->category_sponsors[$key_s]->image);
 

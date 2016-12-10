@@ -40,7 +40,8 @@ class jshopSponsors{
         $where .= "3958.0*acos( sin(`latitude_" . JSFactory::getLang()->lang . "`/57.29577951)*sin(" . ($searchParams['latitude']/57.29577951) . ") + cos(`latitude_" . JSFactory::getLang()->lang . "`/57.29577951 )*cos(" . ($searchParams['latitude']/57.29577951 ) . ")*cos(`longitude_" . JSFactory::getLang()->lang . "`/57.29577951 - " . $searchParams['longitude']/57.29577951 . ") ) <= 50 ";
 
         $where .= " AND P.product_publish = 1 ";
-        $where .= "ORDER BY radius ASC limit 3";
+        $where .= "ORDER BY radius ASC";
+//        $where .= "ORDER BY radius ASC limit 3";
 
 //        $where = "WHERE PTC.category_id = " . $id_category . " ORDER BY radius ASC limit 3";
 
