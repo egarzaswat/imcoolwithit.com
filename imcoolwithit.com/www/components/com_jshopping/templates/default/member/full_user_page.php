@@ -54,6 +54,7 @@
             <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $userData->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $userData->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $userData->status; ?></span></span>
+            <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $userData->looking_for; ?></span></span>
             <!--<span class="inf"><?php /*print JText::_('ETHNICITY'); */?> <span class="ethnicity"><?php /*print $userData->ethnicity; */?></span></span>
             <span class="inf"><?php /*print JText::_('BODY'); */?> <span class="body"><?php /*print $userData->body; */?></span></span>
             <span class="inf"><?php /*print JText::_('PROFESSION'); */?> <span class="profession"><?php /*print $userData->profession; */?></span></span>

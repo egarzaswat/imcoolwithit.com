@@ -14,7 +14,7 @@ JFactory::getApplication('site')->initialise();
 $db = JFactory::getDBO();
 
 if(isset($_POST['looking_for']) && $_POST['looking_for'] !== null){
-    $query = "UPDATE `#__jshopping_users` SET `looking_for` = " . $_POST['looking_for'] ."";
+    $query = "UPDATE `#__jshopping_users` SET `looking_for` = " . $_POST['looking_for'] ." WHERE `user_id` = " . JSFactory::getUser()->user_id;
     $db->setQuery($query);
     $db->query();
     unset($_POST['looking_for']);

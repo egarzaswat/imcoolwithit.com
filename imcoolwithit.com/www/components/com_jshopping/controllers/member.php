@@ -1348,7 +1348,7 @@ class JshoppingControllerMember extends JControllerLegacy{
             exit;
         }
 
-        $data_user = $modelUser->getDataUser($user_id, array('user_id', 'u_name', 'birthday', 'city', 'state', 'photosite', 'block', 'user_reviews', 'longitude', 'latitude', 'sex', 'last_visit'), true);
+        $data_user = $modelUser->getDataUser($user_id, array('user_id', 'u_name', 'birthday', 'city', 'state', 'looking_for', 'photosite', 'block', 'user_reviews', 'longitude', 'latitude', 'sex', 'last_visit'), true);
         if ($data_user->block != 0) {
             header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
@@ -1442,6 +1442,20 @@ class JshoppingControllerMember extends JControllerLegacy{
         }
         if(is_null($data_user->status) || $data_user->status == ""){
             $data_user->status = JText::_('UNKNOWN');
+        }
+        $data_user->looking_for = (int)$data_user->looking_for;
+        if(is_null($data_user->looking_for) || $data_user->looking_for == 0){
+            $data_user->looking_for = JText::_('UNKNOWN');
+        } else {
+            if($data_user->looking_for == 2){
+                $data_user->looking_for = JText::_('MALE');
+            }
+            if($data_user->looking_for == 1){
+                $data_user->looking_for = JText::_('FEMALE');
+            }
+            if($data_user->looking_for == 3){
+                $data_user->looking_for = JText::_('EITHER');
+            }
         }
         if(is_null($data_user->ethnicity) || $data_user->ethnicity == ""){
             $data_user->ethnicity = JText::_('UNKNOWN');

@@ -213,8 +213,6 @@ defined('_JEXEC') or die('Restricted access');
         '</select>';
         status_value.html(status_field);
 
-//        Todo 1 ------------------------------------------------
-
         var looking_value = jQuery('.profile-content-left .look');
         var looking_field ='<select name="look">' +
             '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
@@ -223,8 +221,6 @@ defined('_JEXEC') or die('Restricted access');
             '<option' + ( (looking_value.html() === '<?php print JText::_('EITHER'); ?>')? ' selected ' : '' ) + ' value="3" ><?php print JText::_('EITHER'); ?></option>' +
         '</select>';
         looking_value.html(looking_field);
-
-//        ------------------------------------------------
 
 /*        var ethnicity_value = jQuery('.profile-content-left .ethnicity');
         var ethnicity_field = '<select name="ethnicity">' +
