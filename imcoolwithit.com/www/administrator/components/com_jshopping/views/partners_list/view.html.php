@@ -13,12 +13,9 @@ class JshoppingViewPartners_list extends JViewLegacy
 {
     function display($tpl=null){
 
-        $cat_id = $_GET["category_id"];
+        $cat_id = 6;
 
-        if($cat_id == 1) JToolBarHelper::title( 'Offers', 'generic.png' );
-        if($cat_id == 3) JToolBarHelper::title( 'Coffee or Milk Shake', 'generic.png' );
-        if($cat_id == 4) JToolBarHelper::title( 'Restaurants', 'generic.png' );
-        if($cat_id == 5) JToolBarHelper::title( 'Movies & Events', 'generic.png' );
+        if($cat_id == 6) JToolBarHelper::title( 'Partners', 'generic.png' );
 
 
         JToolBarHelper::addNew();

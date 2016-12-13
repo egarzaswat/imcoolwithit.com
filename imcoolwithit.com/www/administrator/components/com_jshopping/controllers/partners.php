@@ -16,12 +16,13 @@ class JshoppingControllerPartners extends JControllerLegacy{
         parent::__construct($config);
         $this->registerTask('add', 'edit' );
         $this->registerTask('apply', 'save');
-        checkAccessController("products");
+        checkAccessController("partners");
 
         $post = JRequest::get('post');
         $cat_id = $post["category_id"][0];
 
         $category_id = ($cat_id) ? $cat_id : $_GET['category_id'];
+        $category_id = $cat_id = $post['category_id'] = 6;
 
 
         if($category_id == 1) addSubmenu("offers");
@@ -54,7 +55,8 @@ class JshoppingControllerPartners extends JControllerLegacy{
             $mainframe->setUserState($context.'text_search', '');
         }
 
-        $category_id = $mainframe->getUserStateFromRequest($context.'category_id', 'category_id', 0, 'int');
+//        $category_id = $mainframe->getUserStateFromRequest($context.'category_id', 'category_id', 0, 'int');
+        $category_id = 6;
         $manufacturer_id = $mainframe->getUserStateFromRequest($context.'manufacturer_id', 'manufacturer_id', 0, 'int');
 		$vendor_id = $mainframe->getUserStateFromRequest($context.'vendor_id', 'vendor_id', -1, 'int');
         $label_id = $mainframe->getUserStateFromRequest($context.'label_id', 'label_id', 0, 'int');
@@ -157,7 +159,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $view->assign('config', $jshopConfig);
         $view->assign('show_vendor', $show_vendor);        
         $view->assign('is_partner', true);
-        $dispatcher->trigger('onBeforeDisplayListProductsView', array(&$view));
+        $dispatcher->trigger('onBeforeDisplayListPartnersView', array(&$view));
         $view->display();        
     }
     
@@ -708,7 +710,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $cat_id = $post["category_id"][0];
 
         $this->_publishProduct(1);
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$cat_id);
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$cat_id);
     }
     
     function unpublish(){
@@ -716,7 +718,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $cat_id = $post["category_id"][0];
 
         $this->_publishProduct(0);
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$cat_id);
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$cat_id);
     }    
     
     function _publishProduct($flag) {
@@ -738,7 +740,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
     function editlist(){
         $cid = JRequest::getVar('cid');
         if (count($cid)==1){
-            $this->setRedirect("index.php?option=com_jshopping&controller=products&task=edit&product_id=".$cid[0]);
+            $this->setRedirect("index.php?option=com_jshopping&controller=partners&task=edit&product_id=".$cid[0]);
             return 0;
         }
         $id_vendor_cuser = getIdVendorForCUser();
@@ -986,7 +988,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         }
 
         $dispatcher->trigger('onAfterSaveListProductEnd', array($cid, $post) );
-        $this->setRedirect("index.php?option=com_jshopping&controller=products", _JSHOP_PRODUCT_SAVED);
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners", _JSHOP_PRODUCT_SAVED);
     }
 
     function copy(){
@@ -1064,7 +1066,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         
         $dispatcher->trigger('onAfterCopyProduct', array(&$cid));
         
-        $this->setRedirect("index.php?option=com_jshopping&controller=products", implode("</li><li>",$text));
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners", implode("</li><li>",$text));
     }
     
     function order(){
@@ -1103,7 +1105,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $db->query();
         $db->setQuery($query2);
         $db->query();
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$category_id); 
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$category_id);
     }
     
     function saveorder(){
@@ -1119,7 +1121,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
             $db->setQuery($query);
             $db->query();        
         }
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$category_id); 
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$category_id);
     }
     
     function remove(){
@@ -1226,14 +1228,14 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $dispatcher->trigger( 'onAfterRemoveProduct', array(&$cid) );
 
         $cat_id = JRequest::getVar('category_id');
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$cat_id, implode("</li><li>",$text));
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$cat_id, implode("</li><li>",$text));
     }
     
     function cancel(){
         $post = JRequest::get('post');
         $cat_id = $post["category_id"][0];
 
-        $this->setRedirect("index.php?option=com_jshopping&controller=products&category_id=".$cat_id);
+        $this->setRedirect("index.php?option=com_jshopping&controller=partners&category_id=".$cat_id);
     }
     
     function delete_foto(){

@@ -2978,6 +2978,7 @@ a:focus, input:focus{
 .lincup-offers .lincup-offers-list{
     margin: 0;
     background: #F3F3F3;
+    padding: 10px;
 }
 .lincup-offers .lincup-offers-list .first-column{
     border-left-width: 0!important;
@@ -5228,4 +5229,37 @@ img.jcrop-preview {
     align-items: center;
     justify-content: center;
     display: none;
+}
+
+.partners-page{
+    padding: 15px 30px;
+    border: 1px solid #cccccc;
+}
+
+.partners-page .page-content{
+    margin: 5px;
+}
+
+.partners-page .page-content .href{
+    background: #ffffff;
+}
+
+.partners-page .page-content .href a{
+    float: right;
+    margin-right: 50px;
+    border-radius: 7px;
+    border: 1px solid #cccccc;
+    padding: 1px 7px;
+}
+
+.partners-page h1.title{
+    border-radius: 0;
+}
+
+.partners-page .lincup-offers-list{
+    background: #ffffff;
+}
+
+.partners-page .lincup-offers-list .lincup-offers-items a{
+    border-radius: 0;
 }

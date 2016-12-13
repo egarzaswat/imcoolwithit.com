@@ -20,7 +20,7 @@ $saveOrder=$this->filter_order_Dir=="asc" && $this->filter_order=="ordering";
 JHtml::_('formbehavior.chosen', 'select');
 ?>
 
-<form action="index.php?option=com_jshopping&controller=products" method="post" name="adminForm" id="adminForm">
+<form action="index.php?option=com_jshopping&controller=partners" method="post" name="adminForm" id="adminForm">
 <?php print $this->tmp_html_start?>
 
 <div class="js-stools clearfix jshop_block_filter">

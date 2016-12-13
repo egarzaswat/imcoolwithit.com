@@ -254,6 +254,12 @@ if ($components)
 //
 //    $menu->addSeparator();
 
+	$menu->addChild(
+		new JMenuNode(
+			JText::_('Partners'), 'index.php?option=com_jshopping&controller=partners&category_id=6',
+			'class:newarticle')
+	);
+	$menu->addSeparator();
     $menu->addChild(
         new JMenuNode(
             JText::_('_JSHOP_MENU_OFFERS'), 'index.php?option=com_jshopping&controller=products&category_id=1',

@@ -100,7 +100,7 @@ defined('_JEXEC') or die('Restricted access');
 <!--     </tr>-->
 <!--     --><?php //}?>
 
-     <tr>
+     <tr style="display: none;">
        <td class="key">
          <?php echo _JSHOP_CATEGORIES;?>*
        </td>

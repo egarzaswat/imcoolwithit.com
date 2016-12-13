@@ -15,7 +15,7 @@ foreach($this->rows as $row){ ?>
     <div class="block_related_inner">
         <div class="name"><?php echo $row->name;?> (ID:&nbsp;<?php print $row->product_id?>)</div>
         <div class="image">
-            <a href="index.php?option=com_jshopping&controller=products&task=edit&product_id=<?php print $row->product_id?>">
+            <a href="index.php?option=com_jshopping&controller=partners&task=edit&product_id=<?php print $row->product_id?>">
             <?php if ( strlen($row->image) > 0 ) { ?>
                 <img src="<?php print getPatchProductImage($row->image, '', 3)?>" width="90" border="0" />
             <?php } else { ?>
