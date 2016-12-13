@@ -1181,6 +1181,11 @@ a:focus, input:focus{
     max-height: 65px;
     max-width: 100%;
 }
+@media (max-width: 767px){
+    .header-logo img{
+        max-height: 40px;
+    }
+}
 .header-links{
     display: block;
     min-height: 30px;
