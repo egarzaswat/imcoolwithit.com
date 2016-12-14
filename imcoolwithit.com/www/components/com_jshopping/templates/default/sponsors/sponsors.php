@@ -46,7 +46,7 @@
 
 </div>
 
-<!--<script type="text/javascript">
+<script type="text/javascript">
     jQuery('body').addClass('grayBackground');
 
     jQuery('.lincup-offers-category').click(function () {
@@ -56,11 +56,11 @@
         }
     });
 
-    jQuery('.more-offers').click(function () {
+/*    jQuery('.more-offers').click(function () {
 
         var data_post = {
             'category_id': this.id,
-            'user_id': <?php /*print $this->user;*/?>
+            'user_id': <?php print $this->user;?>
         };
 
         jQuery.ajax({
@@ -74,6 +74,6 @@
 
             }
         });
-    });
+    });*/
 
-</script>-->
+</script>
