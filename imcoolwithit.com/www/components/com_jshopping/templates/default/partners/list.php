@@ -18,7 +18,7 @@
         <div class="lincup-offers-list row">
             <?php foreach ($this->partners as $key => $value) { ?>
 
-                <div class="lincup-offers-items padding-null col-sm-4 col-xs-12">
+                <div class="lincup-offers-items padding-null col-sm-4 col-xs-12" style="display: block;">
                     <a <?php print 'href="' . $value->link . '"'; ?> title="<?php print $value->name; ?>">
                         <img src="<?php print $value->image; ?>">
                     </a>
