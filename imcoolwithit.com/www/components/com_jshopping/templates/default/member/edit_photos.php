@@ -358,7 +358,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                         });
                     }
                 } else {
-                    alert(data_);
+                    alert('Please upload lower photo rezolution');
                     jQuery('.loading-block').css('display', 'none');
                 }
             },

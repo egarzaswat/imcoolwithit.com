@@ -813,18 +813,29 @@ a:focus, input:focus{
 }
 
 .link-button{
-    border: 1px solid #337ab7;
     padding: 5px 15px;
-    border-radius: 8px;
-    background: #3e94de;
-    color: #fff!important;
     text-decoration: none!important;
     outline: none;
     line-height: 1.2;
+    background: rgb(48, 155, 209);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    width: 130px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .link-button:hover,
 .link-button:active{
     text-decoration: none;
+    background: rgb(52, 117, 209);
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 400px){
@@ -1222,6 +1233,7 @@ a:focus, input:focus{
     }
     .header-links{
         margin: 0 auto;
+        margin-top: -15px;
     }
     .header-links ul{
         text-align: center;
@@ -1268,7 +1280,8 @@ a:focus, input:focus{
     color: rgb(242, 178, 63);
     display: inline-block;
     font-size: 20px;
-    text-align: right;
+    /*text-align: right;*/
+    text-align: left;
     /*margin-bottom: 10px;*/
     width: 125px;
     line-height: 1.2;
@@ -1277,6 +1290,7 @@ a:focus, input:focus{
 .menu-top-left .hey-user .home-link{
     font-size: 14px;
     font-weight: normal;
+    margin-left: 25px;
 }
 
 @media (min-width: 991px){
@@ -2258,8 +2272,9 @@ a:focus, input:focus{
     margin: 0 30px;
 }
 .user-page .user-actions .full-profile-link{
-    display: block;
+    display: flex;
     margin: 10px auto;
+    justify-content: center;
 }
 .user-page .user-actions .full-profile-link a,
 .user-page .user-actions .full-profile-link input,
