@@ -147,9 +147,9 @@ if(isset($_GET['referrer'])){
                             </div>
                         </div>
                     </div>
-                    <span class="home-header-text">
-                        No Credit Cards ever requested or taken.
-                    </span>
+<!--                    <span class="home-header-text">-->
+<!--                        No Credit Cards ever requested or taken.-->
+<!--                    </span>-->
                 </div>
                 <div class="home-sign-up">
                     <div class="container">

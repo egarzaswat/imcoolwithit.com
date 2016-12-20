@@ -130,16 +130,38 @@
 .home-header .home-sign-in ul li{
     display: inline-block;
 }
-.home-header .home-sign-in ul li a{
-    margin: 0 15px;
-    padding: 0;
+.home-header .home-sign-in ul li a,
+.menu_home a{
     color: rgb(255, 255, 255);
+    background: #f3b13e;
+    padding: 10px 20px 8px!important;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1;
+}
+.menu_home a{
+
+}
+.home-header .home-sign-in ul{
+    margin: 15px 0 0;
+}
+.menu_home{
+    margin: 25px 0 0;
+}
+.menu_home li{
+    float: right;
 }
 .home-header .home-sign-in ul li a:hover,
 .home-header .home-sign-in ul li a:active,
-.home-header .home-sign-in ul li a:focus{
-    background: none;
-    text-decoration: underline;
+.home-header .home-sign-in ul li a:focus,
+.menu_home a:hover,
+.menu_home a:active,
+.menu_home a:focus{
+    text-decoration: none;
+    background: none!important;
+    background-color: #ffc052!important;
+    color: #ffffff!important;
 }
 .home-header .home-logo{
     color: rgb(255, 255, 255);
@@ -813,28 +835,27 @@ a:focus, input:focus{
 }
 
 .link-button{
-    padding: 5px 15px;
+    padding: 6px 10px;
     text-decoration: none!important;
     outline: none;
     line-height: 1.2;
-    background: rgb(48, 155, 209);
+    background: #40aadd;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     color: rgb(255, 255, 255);
-    font-size: 16px;
-    height: 50px;
+    font-size: 14px;
     outline: none;
-    width: 130px;
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-width: 120px;
 }
 .link-button:hover,
 .link-button:active{
     text-decoration: none;
-    background: rgb(52, 117, 209);
+    background: #1aacf3;
     color: rgb(255, 255, 255);
 }
 
@@ -1197,48 +1218,48 @@ a:focus, input:focus{
         max-height: 40px;
     }
 }
-.header-links{
-    display: block;
-    min-height: 30px;
-    margin-top: 45px;
-    text-align: right;
-}
-.header-links ul li{
-    display: inline-block;
-}
-.header-links ul li a{
-    margin: 0 15px;
-    padding: 0;
-    color: rgb(255, 255, 255);
-}
-.header-links ul li .search{
-    padding: 0 0 0 22px;
-    background: url("../images/system/search.png") no-repeat scroll;
-}
-.header-links ul li a:hover,
-.header-links ul li a:active,
-.header-links ul li a:focus{
-    background: none;
-    color: rgb(242, 178, 63);
-    text-decoration: none;
-}
-.header-links ul li .search:hover{
-    background: url("../images/system/search.png") no-repeat scroll!important;
-}
+/*.header-links{*/
+    /*display: block;*/
+    /*min-height: 30px;*/
+    /*margin-top: 45px;*/
+    /*text-align: right;*/
+/*}*/
+/*.header-links ul li{*/
+    /*display: inline-block;*/
+/*}*/
+/*.header-links ul li a{*/
+    /*margin: 0 15px;*/
+    /*padding: 0;*/
+    /*color: rgb(255, 255, 255);*/
+/*}*/
+/*.header-links ul li .search{*/
+    /*padding: 0 0 0 22px;*/
+    /*background: url("../images/system/search.png") no-repeat scroll;*/
+/*}*/
+/*.header-links ul li a:hover,*/
+/*.header-links ul li a:active,*/
+/*.header-links ul li a:focus{*/
+    /*background: none;*/
+    /*color: rgb(242, 178, 63);*/
+    /*text-decoration: none;*/
+/*}*/
+/*.header-links ul li .search:hover{*/
+    /*background: url("../images/system/search.png") no-repeat scroll!important;*/
+/*}*/
 
-@media (max-width: 767px){
-    .header-logo{
-        padding-left: 30px!important;
-        text-align: center;
-    }
-    .header-links{
-        margin: 0 auto;
-        margin-top: -15px;
-    }
-    .header-links ul{
-        text-align: center;
-    }
-}
+/*@media (max-width: 767px){*/
+    /*.header-logo{*/
+        /*padding-left: 30px!important;*/
+        /*text-align: center;*/
+    /*}*/
+    /*.header-links{*/
+        /*margin: 0 auto;*/
+        /*margin-top: -15px;*/
+    /*}*/
+    /*.header-links ul{*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
 
 /*
 * ----------------------------- Top Menu --------------------------------
@@ -4117,6 +4138,7 @@ a:focus, input:focus{
 .homepage .header img{
     max-width: 100%;
 }
+
 .homepage .header_links .menu_home li p,
 .homepage .header_links .menu_home li a{
     padding: 0;

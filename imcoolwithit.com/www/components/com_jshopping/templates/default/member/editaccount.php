@@ -83,8 +83,8 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
             <input type="hidden" name="state" id="state" value="<?php print $this->user->state ?>" class="input" style="display: none;"/>
             <input type="hidden" name="longitude" id="longitude" value="<?php echo $this->user->longitude; ?>" />
             <input type="hidden" name="latitude" id="latitude" value="<?php echo $this->user->latitude; ?>" />
-            <div class="col-xs-12" style="text-align: center;">
-                <input type="submit" class="submit-button" value="<?php print JText::_('SETTINGS_PAGE_BUTTON'); ?>">
+            <div class="col-xs-12" style="text-align: center; margin-bottom: 15px">
+                <input type="submit" class="link-button" value="<?php print JText::_('SETTINGS_PAGE_BUTTON'); ?>">
                 <span class="submit-message"></span>
             </div>
         </form>

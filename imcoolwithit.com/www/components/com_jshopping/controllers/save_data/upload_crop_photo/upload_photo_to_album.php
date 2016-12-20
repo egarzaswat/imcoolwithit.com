@@ -88,6 +88,8 @@ function img_resize($src, $dest, $width, $height, $rgb=0xFFFFFF, $quality=100)
 }
 
 $conf = new JConfig();
+ini_set ('memory_limit', '-1');
+
 
 $file_src = $_FILES['file']['tmp_name'];
 $img_src_info = getimagesize($file_src);

@@ -3,9 +3,10 @@ define( '_JEXEC', 1 );
 define( 'JPATH_BASE', realpath(dirname(__FILE__).'/../../../../../' ));
 require_once ( JPATH_BASE .'/includes/defines.php' );
 require_once ( JPATH_BASE .'/includes/framework.php' );
-
+ini_set ('memory_limit', '-1');
 $file_src = $_FILES['file']['tmp_name'];
 $img_src_info = getimagesize($file_src);
+
 
 $config = new JConfig();
 if( ($img_src_info['mime'] == 'image/jpeg') || ($img_src_info['mime'] == 'image/png') || ($img_src_info['mime'] == 'image/gif') ){

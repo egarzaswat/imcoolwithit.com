@@ -276,6 +276,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
         initJcrop();
         jQuery('.hidden_block').hide();
         jQuery('.loading-block').css('display', 'none');
+        location.reload();
     });
 
     jQuery('.form_content .upload_image').on('change', function () {
@@ -321,7 +322,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
         data.append('path', '<?php print $this->images_album['path_to_load']; ?>');
         data.append('private', '0');
 
-        var countTotalPhoto = <?php print count($this->images_album['images']) + count($this->images_album['private_images']); ?>
+        var countTotalPhoto = <?php print count($this->images_album['images']) + count($this->images_album['private_images']); ?>;
 
         jQuery.ajax({
             url: '/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php',
