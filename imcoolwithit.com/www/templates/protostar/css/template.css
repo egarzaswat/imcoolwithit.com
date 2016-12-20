@@ -140,6 +140,15 @@
     font-family: arial, helvetica, sans-serif;
     line-height: 1;
 }
+
+@media (max-width: 767px){
+    .menu_home a{
+        background: none;
+        padding: 10px 15px!important;
+        border-radius: 0;
+        font-size: 14px;
+    }
+}
 .menu_home a{
 
 }
@@ -1208,14 +1217,17 @@ a:focus, input:focus{
 }
 .header-logo div{
     height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-logo img{
-    max-height: 65px;
+    /*max-height: 65px;*/
     max-width: 100%;
 }
 @media (max-width: 767px){
     .header-logo img{
-        max-height: 40px;
+        /*max-height: 40px;*/
     }
 }
 /*.header-links{*/
