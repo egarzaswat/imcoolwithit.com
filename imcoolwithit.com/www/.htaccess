@@ -8,6 +8,11 @@ Options +FollowSymLinks
 
 ## Mod_rewrite in use.
 
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+php_value max_execution_time 200
+php_value max_input_time 200
+
 RewriteEngine On
 
 ## Begin - Rewrite rules to block out some common exploits.

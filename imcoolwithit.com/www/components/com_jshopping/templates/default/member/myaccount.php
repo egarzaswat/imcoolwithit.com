@@ -204,7 +204,7 @@ defined('_JEXEC') or die('Restricted access');
 
         var status_value = jQuery('.profile-content-left .status');
         var status_field ='<select name="status">' +
-            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
+            '<option selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
             '<option' + ( (status_value.html() === 'Single')? ' selected ' : '' ) + ' value="Single" >Single</option>' +
             '<option' + ( (status_value.html() === 'Divorced')? ' selected ' : '' ) + ' value="Divorced" >Divorced</option>' +
             '<option' + ( (status_value.html() === 'Widowed')? ' selected ' : '' ) + ' value="Widowed" >Widowed</option>' +

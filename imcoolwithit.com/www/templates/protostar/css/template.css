@@ -203,13 +203,14 @@
 }
 
 .home-header-text{
-    margin-top: 15px;
-    display: block;
     color: #ffffff;
-    font-size: 14px;
     position: absolute;
-    right: 5%;
-    top: 30px;
+    text-align: right;
+}
+
+.home-header-text h1{
+    font-size: 32px;
+    text-shadow: -2px 2px 2px rgb(0, 0, 0);
 }
 
 .form_login .actions,
@@ -231,10 +232,10 @@
         font: 22px/26px sans-serif!important;
     }
     .home-sign-up .sign-up-box .sign-up-text h1 b {
-        font: bold 21px/30px sans-serif!important;
+        font: bold 19px/30px sans-serif!important;
     }
     .home-sign-up .sign-up-box .sign-up-text span{
-        font: 18px/20px sans-serif!important;
+        font: 13px/17px sans-serif!important;
     }
 }
 @media (max-width: 560px){
@@ -243,11 +244,14 @@
         color: #ffffff;
         font-size: 14px;
         position: absolute;
-        right: 0!important;
+        right: 10px!important;
         bottom: -20px!important;
         margin: 0!important;
         width: 100%;
-        top: auto;
+        top: 125px;
+    }
+    .home-header-text h1{
+        font-size: 20px;
     }
 }
 
@@ -1501,7 +1505,7 @@ a:focus, input:focus{
 }
 .dropdown-menu .cool-menu-icons{
     display: inline-block;
-    height: 45px;
+    height: 50px;
     position: relative;
     width: 85px;
 }
@@ -1974,6 +1978,8 @@ a:focus, input:focus{
 .edit-photos-right .album ul li{
     max-width: 150px;
     max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
     display: inline-block;
     margin: 1%;
     position: relative;
@@ -5287,7 +5293,7 @@ img.jcrop-preview {
 
 .partners-page{
     padding: 15px 30px;
-    border: 1px solid #cccccc;
+    /*border: 1px solid #cccccc;*/
 }
 
 .partners-page .page-content{

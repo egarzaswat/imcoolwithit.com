@@ -39,13 +39,13 @@ else
 JHtml::_('bootstrap.framework');
 $doc->addScript('templates/' . $this->template . '/js/js.cookie.js');
 $doc->addScript('templates/' . $this->template . '/js/template.js');
-$doc->addScript('templates/' . $this->template . '/js/addtohomescreen.js');
+//$doc->addScript('templates/' . $this->template . '/js/addtohomescreen.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/flaticon.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/addtohomescreen.css');
+//$doc->addStyleSheet('templates/' . $this->template . '/css/addtohomescreen.css');
 
 // Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
@@ -93,7 +93,7 @@ if(isset($_GET['referrer'])){
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 	<jdoc:include type="head" />
-	<script>addToHomescreen();</script>
+<!--	<script>addToHomescreen();</script>-->
 
 	<!--[if lt IE 9]>
 		<script src="<?php echo $this->baseurl; ?>/media/jui/js/html5.js"></script>
@@ -147,18 +147,17 @@ if(isset($_GET['referrer'])){
                             </div>
                         </div>
                     </div>
-<!--                    <span class="home-header-text">-->
-<!--                        No Credit Cards ever requested or taken.-->
-<!--                    </span>-->
+                    <span class="home-header-text">
+                        <h1><b>Cool With It™</b> is the 100% free<br>dating site that takes you out.</h1>
+                    </span>
                 </div>
                 <div class="home-sign-up">
                     <div class="container">
                         <div class="col-sm-10 col-sm-offset-1 col-xs-12 padding-null-xs">
                             <div class="sign-up-box">
                                 <div class="sign-up-text">
-                                    <h1><b>Cool With It™</b> is the free dating site that takes you out.</h1>
-                                    <span>Be yourself, earn credits and use them for great experiences and local deals.</span>
-                                    <span class="sign-up-below"><strong>Sign up below</strong> to meet people, go out and have fun! (<strong>Currently in Private Beta</strong>)</span>
+                                    <span>Be yourself, earn credits and use them on great experiences and local deals.</span>
+                                    <span class="sign-up-below"><strong>Sign up below</strong> to meet people, go out and have fun!</span>
                                 </div>
                                 <div class="sign-up-border">
                                     <div class="sign-up-fb">
@@ -216,10 +215,10 @@ if(isset($_GET['referrer'])){
         <?php } ?>
     </div>
     <div class="container">
-        <div class="footer-links col-sm-7 col-xs-12">
+        <div class="footer-links col-sm-8 col-xs-12">
             <jdoc:include type="modules" name="footer" style="none" />
         </div>
-        <div class="footer-text padding-null col-sm-5 col-xs-12">
+        <div class="footer-text padding-null col-sm-4 col-xs-12">
             <jdoc:include type="modules" name="copyright" style="none" />
         </div>
     </div>

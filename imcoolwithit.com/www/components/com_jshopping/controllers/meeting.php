@@ -251,6 +251,8 @@ class JshoppingControllerMeeting extends JControllerLegacy{
             $isset_tokens_accept = true;
         }
 
+//        var_dump(JSFactory::getUser()->u_name);
+
 //        $menu = JSFactory::getContentMenu();
 
         $view_name = "meeting";
@@ -261,6 +263,7 @@ class JshoppingControllerMeeting extends JControllerLegacy{
         $view->assign('accept', $meet_data->confirmation);
         $view->assign('meet', $meet);
         $view->assign('user', JSFactory::getUser()->user_id);
+        $view->assign('u_name', JSFactory::getUser()->u_name);
         $view->assign('friend', $friend_id);
         $view->assign('sponsor', $meet_data->sponsor);
         $view->assign('isset_tokens_accept', $isset_tokens_accept);

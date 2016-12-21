@@ -21,7 +21,7 @@
                 </span>
             </div>
             <div class="lincup-invite-buttons padding-null col-sm-7 col-xs-12">
-                <span class="lincup-invite-info"><?php print JText::sprintf('LINCUP_INVITE_INFO', $this->data->user_data->u_name); ?></span>
+                <span class="lincup-invite-info"><?php print 'Hey ' . ucfirst(strtolower($this->u_name)) . JText::sprintf('LINCUP_INVITE_INFO', ucfirst(strtolower($this->data->user_data->u_name))); ?></span>
                 <span class="lincup-invite-in"><?php print JText::_('LINCUP_INVITE_IN'); ?></span>
                 <span class="confirmation">
                     <?php if($this->isset_tokens_accept){ ?>

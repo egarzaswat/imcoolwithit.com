@@ -1019,13 +1019,27 @@ class JSFactory{
             $html .= '</a>';
             $html .= '</li>';
             $html .= '<li><a href="' . JText::_('LINK_VISITORS') . '">';
-            $html .= '<span class="cool-menu-icons cool-visitors"><span class="cool-count" style="left: 0;">'. $count_new_visitors . '</span></span>';
+            $html .= '<span class="cool-menu-icons cool-visitors">';
+            if($count_new_visitors > 0) {
+                $html .= '<span class="cool-count" style="left: 0;">'. $count_new_visitors . '</span>';
+            }
+            $html .= '</span>';
+
             $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span>';
             $html .= '</a>';
             $html .= '</li>';
             $html .= '<li>';
             $html .= '<a href="' . JText::_('LINK_FRIENDS') . '">';
-            $html .= '<span class="cool-menu-icons cool-connections"><span class="cool-count">'. $count_friends . '</span></span>';
+//            $html .= '<span class="cool-menu-icons cool-connections"><span class="cool-count">'. $count_friends . '</span></span>';
+
+
+            $html .= '<span class="cool-menu-icons cool-connections">';
+            if($count_friends > 0) {
+                $html .= '<span class="cool-count" style="left: 0;">'. $count_friends . '</span>';
+            }
+            $html .= '</span>';
+
+
             $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';
             $html .= '</a>';
             $html .= '</li>';
@@ -1056,7 +1070,13 @@ class JSFactory{
             $html .= '<br>';
             $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
             $html .= '</span>';
-            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '"><span class="cool-count">'. $count_new_messages . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
+//            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '"><span class="cool-count">'. $count_new_messages . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
+            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '">';
+            if($count_new_messages > 0) {
+                $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+            }
+            $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
+
             $html .= '</div>';
             $html .= '</div>';
 
@@ -1078,10 +1098,30 @@ class JSFactory{
             $html .= '</div>';
 
             $html .= '<div class="menu-top-right hidden-xs">';
-            $html .= '<a class="cool-connections" href="' . JText::_('LINK_FRIENDS') . '" title="View Friends"><span class="cool-count">'. $count_friends . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span></a>';
-            $html .= '<a class="cool-visitors" href="' . JText::_('LINK_VISITORS') . '" title="View your visitors"><span class="cool-count">'. $count_new_visitors . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span></a>';
-            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages"><span class="cool-count">'. $count_new_messages . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
-            $html .= '<a class="cool-tokens" href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits"><span class="cool-count">'. $count_tokens . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span></a>';
+//            $html .= '<a class="cool-connections" href="' . JText::_('LINK_FRIENDS') . '" title="View Friends"><span class="cool-count">'. $count_friends . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span></a>';
+            $html .= '<a class="cool-connections" href="' . JText::_('LINK_FRIENDS') . '" title="View Friends">';
+            if($count_friends > 0) {
+                $html .= '<span class="cool-count">'. $count_friends . '</span>';
+            }
+            $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span></a>';
+//            $html .= '<a class="cool-visitors" href="' . JText::_('LINK_VISITORS') . '" title="View your visitors"><span class="cool-count">'. $count_new_visitors . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span></a>';
+            $html .= '<a class="cool-visitors" href="' . JText::_('LINK_VISITORS') . '" title="View your visitors">';
+            if($count_new_visitors > 0) {
+                $html .= '<span class="cool-count">'. $count_new_visitors . '</span>';
+            }
+            $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span></a>';
+//            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages"><span class="cool-count">'. $count_new_messages . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
+            $html .= '<a class="cool-messages" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+            if($count_new_messages > 0) {
+                $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+            }
+            $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span></a>';
+//            $html .= '<a class="cool-tokens" href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits"><span class="cool-count">'. $count_tokens . '</span><span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span></a>';
+            $html .= '<a class="cool-tokens" href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
+            if($count_tokens > 0) {
+                $html .= '<span class="cool-count">'. $count_tokens . '</span>';
+            }
+            $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span></a>';
             $html .= '</div>';
 
             $html .= '</div>';
