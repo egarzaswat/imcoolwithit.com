@@ -372,6 +372,11 @@ if (is_numeric($_POST['distance']) && in_array($_POST['distance'], $available_di
     exit;
 }
 
+if(isset($_POST['relationship_type']) && $_POST['relationship_type'] != ""){
+    $modelUser = JSFactory::getModel('user', 'jshop');
+    $modelUser->setMembershipType($current_user, $_POST['relationship_type']);
+}
+
 $success = setSettings($username, $sex, $birthday, $postal_code, $looking_for, $age_look_from, $age_look_to, $distance, $city, $state, $longitude, $latitude, $current_user);
 
 answer();

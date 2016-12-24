@@ -24,7 +24,7 @@ class jshopUser{
 
         if($get_info){
             if(count($fields) > 0){
-                $query .= ", I.`height`, I.`status`, I.`ethnicity`, I.`body`, I.`profession`, I.`religion`, I.`kids`, I.`user_about`, I.`look_qualites`, I.`recommend`, I.`few_places`";
+                $query .= ", I.`height`, I.`status`, I.`ethnicity`, I.`body`, I.`profession`, I.`religion`, I.`kids`, I.`user_about`, I.`look_qualites`, I.`recommend`, I.`few_places`, I.`relationship_type`";
             }
             $query .= " from `#__jshopping_users` AS U LEFT JOIN `#__user_info` AS I ON U.user_id = I.user_id where U.user_id = " . $id;
         } else {
@@ -164,5 +164,18 @@ class jshopUser{
         }
     }
 
+    function getMembershipType($user_id){
+        $db = JFactory::getDBO();
+        $query = "select `relationship_type` from `#__user_info` where `user_id` = " . $user_id;
+        $db->setQuery($query);
+        return $db->loadResult();
+    }
+
+    function setMembershipType($user_id, $type){
+        $db = JFactory::getDBO();
+        $query = "UPDATE `#__user_info` SET `relationship_type` = '" . $type . "' WHERE `user_id` = " . $user_id;
+        $db->setQuery($query);
+        $db->query();
+    }
 }
 ?>

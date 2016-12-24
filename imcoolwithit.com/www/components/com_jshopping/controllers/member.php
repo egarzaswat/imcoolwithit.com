@@ -621,6 +621,9 @@ class JshoppingControllerMember extends JControllerLegacy{
         $user_shop->load($adv_user->user_id);
         $registered = $user_shop->register_activate ? true : false;
 
+        $modelUser = JSFactory::getModel('user', 'jshop');
+        $adv_user->relationship_type = $modelUser->getMembershipType($adv_user->user_id);
+
         $view_name = "member";
         $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);
         $view = $this->getView($view_name, getDocumentType(), '', $view_config);
@@ -1523,6 +1526,9 @@ class JshoppingControllerMember extends JControllerLegacy{
         $email_verification =$modelUser->isVerification($user_id);
 
 //        $menu = JSFactory::getContentMenu();
+
+
+        $data_user->relationship_type = $modelUser->getMembershipType($data_user->user_id);
 
         $view_name = "member";
         $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);

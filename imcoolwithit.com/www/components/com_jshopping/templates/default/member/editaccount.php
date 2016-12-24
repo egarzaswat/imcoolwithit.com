@@ -61,6 +61,15 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                     <span><?php print JText::_('SETTINGS_PAGE_LOOKING_FOR'); ?></span>
                     <?php echo $this->looking_for_options; ?>
                 </div>
+                <div class="field-block">
+                    <span><?php print JText::_('SETTINGS_RELATIONSHIP_TYPE'); ?></span>
+                    <select name="relationship_type" required="required">
+                        <option <?php if($this->user->relationship_type == 'Friends') { print 'selected';} ?> value="Friends" >Friends</option>
+                        <option <?php if($this->user->relationship_type == 'Short Term') { print 'selected';} ?> value="Short Term" >Short Term</option>
+                        <option <?php if($this->user->relationship_type == 'Long Term') { print 'selected';} ?> value="Long Term" >Long Term</option>
+                    </select>
+                    <?php echo $this->relationship_type_options; ?>
+                </div>
             </div>
             <div class="col-sm-6 col-xs-12">
                 <div class="field-block">
@@ -105,6 +114,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
             'birthday' : jQuery('.form-content input[name="birthday"]').val(),
             'zip' : jQuery('.form-content input[name="zip"]').val(),
             'looking_for' : jQuery('.form-content select[name="looking_for_options"]').val(),
+            'relationship_type' : jQuery('.form-content select[name="relationship_type"]').val(),
             'age_look_from' : jQuery('.form-content input[name="age_from"]').val(),
             'age_look_to' : jQuery('.form-content input[name="age_to"]').val(),
             'distance' : jQuery('.form-content select[name="distance_for_options"]').val(),

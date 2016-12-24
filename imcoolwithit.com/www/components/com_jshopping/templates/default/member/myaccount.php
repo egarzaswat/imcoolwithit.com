@@ -55,6 +55,7 @@ defined('_JEXEC') or die('Restricted access');
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $this->user->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $this->user->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $this->user->looking_for; ?></span></span>
+            <span class="inf"><?php print JText::_('RELATIONSHIP_TYPE'); ?> <span class="type"><?php print $this->user->relationship_type; ?></span></span>
            <!-- <span class="inf"><?php /*print JText::_('ETHNICITY'); */?> <span class="ethnicity"><?php /*print $this->user->ethnicity; */?></span></span>
             <span class="inf"><?php /*print JText::_('BODY'); */?> <span class="body"><?php /*print $this->user->body; */?></span></span>
             <span class="inf"><?php /*print JText::_('PROFESSION'); */?> <span class="profession"><?php /*print $this->user->profession; */?></span></span>
@@ -222,6 +223,15 @@ defined('_JEXEC') or die('Restricted access');
         '</select>';
         looking_value.html(looking_field);
 
+        var relationship_type_value = jQuery('.profile-content-left .type');
+        var relationship_type_field ='<select name="relationship_type">' +
+            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Friends')? ' selected ' : '' ) + ' value="Friends" >Friends</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Short Term')? ' selected ' : '' ) + ' value="Short Term" >Short Term</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Long Term')? ' selected ' : '' ) + ' value="Long Term" >Long Term</option>' +
+        '</select>';
+        relationship_type_value.html(relationship_type_field);
+
 /*        var ethnicity_value = jQuery('.profile-content-left .ethnicity');
         var ethnicity_field = '<select name="ethnicity">' +
             '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
@@ -293,6 +303,7 @@ defined('_JEXEC') or die('Restricted access');
         var msg = {
             'height' : height,
             'status' : jQuery('.profile-content-left .status select').val(),
+            'relationship_type' : jQuery('.profile-content-left .type select').val(),
             'looking_for' : jQuery('.profile-content-left .look select').val(),
             'ethnicity' : jQuery('.profile-content-left .ethnicity select').val(),
             'body' : jQuery('.profile-content-left .body select').val(),
@@ -311,6 +322,7 @@ defined('_JEXEC') or die('Restricted access');
                 if(data=='success'){
                     jQuery('.profile-content-left .height').text( (height === '') ? '<?php print JText::_('UNKNOWN'); ?>' : height);
                     jQuery('.profile-content-left .status').text( (jQuery('.profile-content-left .status select').val() === null) ? '<?php print JText::_(''); ?>' : jQuery('.profile-content-left .status select').val() );
+                    jQuery('.profile-content-left .type').text( (jQuery('.profile-content-left .type select').val() === null) ? '<?php print JText::_(''); ?>' : jQuery('.profile-content-left .type select').val() );
                     var _look = '';
                     var f_look = jQuery('.profile-content-left .look select');
                     if(f_look.val() === null){
