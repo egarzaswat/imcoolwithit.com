@@ -41,17 +41,20 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
             <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                 <div class="sign-up-box">
                     <div class="sign-up-border">
-                        <div class="sign-up-fb">
-                            <?php
-                            jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
-                            $module = JModuleHelper::getModules('social');          // получаем в массив все модули из заданной позиции
-                            $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
-                            echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
-                            ?>
-                        </div>
-                        <div class="sign-up-separator">
-                            <span class="sign-up-or">OR</span>
-                        </div>
+<!--                        --><?php //if($_SERVER['REQUEST_URI'] != '/join'){ ?>
+                            <div class="sign-up-fb">
+                                <?php
+                                jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
+                                $module = JModuleHelper::getModules('social');          // получаем в массив все модули из заданной позиции
+                                $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
+                                echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
+                                ?>
+                            </div>
+
+                            <div class="sign-up-separator">
+                                <span class="sign-up-or">OR</span>
+                            </div>
+<!--                        --><?php //} ?>
                         <div class="sign-up-site">
                             <?php
                             jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом

@@ -124,6 +124,12 @@
         <?php if(isset($_GET['verify_email']) && $_GET['verify_email'] == 0){ ?>
             <span class="verify_error">Please verify facebook email!</span>
         <?php } ?>
-        <a id="fb_login" href="<?php print $loginUrl ?>"><i class="icon-fb"></i><span>Log in with Facebook</span></a>
+        <a id="fb_login" href="<?php print $loginUrl ?>"><i class="icon-fb"></i>
+            <?php if($_SERVER['REQUEST_URI'] != '/join'){ ?>
+                <span>Log in with Facebook</span>
+            <?php } else { ?>
+                <span>Join with Facebook</span>
+            <?php }?>
+        </a>
     <?php
     }

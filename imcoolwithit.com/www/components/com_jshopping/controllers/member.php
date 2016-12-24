@@ -546,7 +546,13 @@ class JshoppingControllerMember extends JControllerLegacy{
         $jshopConfig = JSFactory::getConfig();
 
         $adv_user = JSFactory::getUserShop();
+//        var_dump($adv_user->birthday);
         $adv_user->birthday = JSFactory::getAge($adv_user->birthday);
+        if($adv_user->birthday > 99 || $adv_user->birthday < 18){
+            $adv_user->birthday = 0;
+        }
+//        var_dump($adv_user->birthday);
+//        die;
 
         appendPathWay(_JSHOP_EDIT_DATA);
 
@@ -1002,7 +1008,7 @@ class JshoppingControllerMember extends JControllerLegacy{
             }
 
             if(is_null($adv_user->status) || $adv_user->status == ""){
-                $adv_user->status = JText::_('UNKNOWN');
+                $adv_user->status = JText::_('');
             }
 
             if(is_null($adv_user->looking_for) || $adv_user->looking_for == 0){

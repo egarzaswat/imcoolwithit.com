@@ -51,15 +51,15 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                            placeholder="Zip Code" pattern="[0-9]*" autocomplete="off" required="required">
                     <span class="zip-error error"></span>
                 </div>
+                <div  class="field-block">
+                    <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="link-button" style="margin-left: 55px;">Upload Photos</a>
+                </div>
             </div>
             <div class="col-xs-12 settings-separator"></div>
             <div class="col-sm-6 col-xs-12">
                 <div class="field-block">
                     <span><?php print JText::_('SETTINGS_PAGE_LOOKING_FOR'); ?></span>
                     <?php echo $this->looking_for_options; ?>
-                </div>
-                <div  class="field-block">
-                    <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="link-button" style="margin-left: 55px;">Upload Photos</a>
                 </div>
             </div>
             <div class="col-sm-6 col-xs-12">

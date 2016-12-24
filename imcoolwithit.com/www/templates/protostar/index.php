@@ -122,9 +122,10 @@ if(isset($_GET['referrer'])){
     <div class="container">
         <div class="header-logo col-lg-4 col-sm-5 col-xs-12">
             <jdoc:include type="modules" name="logo" style="none" />
+            <!--<div style="text-align: center; position: relative;"><a class="hidden-xs" style="float: left;" title="Home" href="http://coolwithit.com/"><img src="images/home/home_logo.png" alt="CoolWithIt" /></a><a class="hidden-sm hidden-md hidden-lg" style="float: left;" title="Home" href="http://coolwithit.com/"><img src="images/home/home_logo_xs.png" alt="CoolWithIt" /></a></div>-->
         </div>
 
-        <div class="header-links col-lg-8 col-sm-7 col-xs-12 hidden-xs">
+        <div class="header-links-cool col-lg-8 col-sm-7 col-xs-12 hidden-xs">
             <jdoc:include type="modules" name="mainmenu" style="none" />
         </div>
     </div>

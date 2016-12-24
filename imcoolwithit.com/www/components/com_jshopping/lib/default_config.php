@@ -111,12 +111,16 @@ $config->user_looking_for = array(
 
 $config->user_distance = array(
 //    0=>_JSHOP_REG_SELECT,
-    5=>'5 miles',
-    10=>'10 miles',
-    20=>'20 miles',
-    50=>'50 miles',
-    100=>'100 miles',
-    150=>'150 miles'
+//    5=>'5 miles',
+//    10=>'10 miles',
+//    20=>'20 miles',
+//    50=>'50 miles',
+//    100=>'100 miles',
+//    150=>'150 miles'
+    30=>'30 miles',
+    60=>'60 miles',
+    90=>'90 miles',
+    120=>'120 miles'
 );
 
 $config->age_look_from = array(

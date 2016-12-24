@@ -16,6 +16,8 @@ $params->def('greeting', 1);
 
 if(stristr($_SERVER['REQUEST_URI'], '/login')){
     $layout = 'login';
+} else if(stristr($_SERVER['REQUEST_URI'], '/join')){
+    $layout = 'join_now';
 } else {
     $document = JFactory::getDocument();
     $pathToJS = JURI::root().'components/com_jshopping/js/';

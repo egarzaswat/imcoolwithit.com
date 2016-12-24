@@ -204,7 +204,7 @@ defined('_JEXEC') or die('Restricted access');
 
         var status_value = jQuery('.profile-content-left .status');
         var status_field ='<select name="status">' +
-            '<option selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
+            '<option selected value="">' + '<?php print JText::_('--'); ?>' + '</option>' +
             '<option' + ( (status_value.html() === 'Single')? ' selected ' : '' ) + ' value="Single" >Single</option>' +
             '<option' + ( (status_value.html() === 'Divorced')? ' selected ' : '' ) + ' value="Divorced" >Divorced</option>' +
             '<option' + ( (status_value.html() === 'Widowed')? ' selected ' : '' ) + ' value="Widowed" >Widowed</option>' +
@@ -289,6 +289,7 @@ defined('_JEXEC') or die('Restricted access');
 
 
         var height = jQuery('.height_m').val() + "'" + jQuery('.height_c').val();
+        console.debug(jQuery('.profile-content-left .status select').val());
         var msg = {
             'height' : height,
             'status' : jQuery('.profile-content-left .status select').val(),
@@ -309,7 +310,7 @@ defined('_JEXEC') or die('Restricted access');
             success: function(data) {
                 if(data=='success'){
                     jQuery('.profile-content-left .height').text( (height === '') ? '<?php print JText::_('UNKNOWN'); ?>' : height);
-                    jQuery('.profile-content-left .status').text( (jQuery('.profile-content-left .status select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .status select').val() );
+                    jQuery('.profile-content-left .status').text( (jQuery('.profile-content-left .status select').val() === null) ? '<?php print JText::_(''); ?>' : jQuery('.profile-content-left .status select').val() );
                     var _look = '';
                     var f_look = jQuery('.profile-content-left .look select');
                     if(f_look.val() === null){
