@@ -19,6 +19,20 @@ class JshoppingControllerSearch extends JControllerLegacy{
     }
     
     function display($cachable = false, $urlparams = false){
+        if(isset($_GET['mobile']) && $_GET['mobile'] == true){
+            $modelUsersList = JSFactory::getModel('usersList', 'jshop');
+            $searchParams = $modelUsersList->searchParamsCurrentUser(JSFactory::getUser());
+            $first_user_from_list = $modelUsersList->usersList($searchParams, 0, 1, array('user_id'), array(), true);
+
+            if(count($first_user_from_list) == 0){
+                $quick_search_link = JText::_('LINK_USERS_LIST');
+            } else {
+                $quick_search_link = JText::_('LINK_USER_PAGE') . '?user=' .$first_user_from_list[0]->user_id;
+            }
+            header("Location: " . 'http://' . $_SERVER['SERVER_NAME'] . '/' . $quick_search_link);
+            die;
+        }
+
         checkUserLogin();
         $mainframe = JFactory::getApplication();
         $params = $mainframe->getParams();

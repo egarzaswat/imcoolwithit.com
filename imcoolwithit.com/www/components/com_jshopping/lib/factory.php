@@ -1013,6 +1013,7 @@ class JSFactory{
             $html .= '<div class="btn-group">';
             $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle"><i class="icon-menu"></i></button>';
             $html .= '<ul class="dropdown-menu">';
+            $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">x</button>';
             $html .= '<li><a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
             $html .= '<span class="cool-menu-icons cool-tokens"><span class="cool-count" style="left: 5px;">'. $count_tokens . '</span></span>';
             $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';

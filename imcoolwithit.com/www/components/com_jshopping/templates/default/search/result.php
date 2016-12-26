@@ -5,6 +5,12 @@ $usersList = $this->usersList;
 
 
 <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+<!--    --><?php //if($this->user_visible != 1) { ?>
+<!--        <span class="user-invisible isInvisible"></span>-->
+<!--    --><?php //} else { ?>
+<!--        <span class="user-invisible set-invisible"></span>-->
+<!--    --><?php //} ?>
+
     <div class="user-invisible <?php if($this->user_visible != 1) {print 'isInvisible';} ?>" <?php print ($this->user_visible == 1) ? ('') : ('style="line-height: 50px;"'); ?>>
         <?php print ($this->user_visible == 1) ? JText::_('SET_INVISIBLE') : JText::_('YOU_INVISIBLE'); ?>
     </div>
@@ -52,6 +58,7 @@ $usersList = $this->usersList;
                 url: '/components/com_jshopping/controllers/save_data/set_invisible.php',
                 success: function (data) {
                     if (data === 'success') {
+//                        jQuery('.user-invisible').addClass('isInvisible').removeClass('set-invisible');
                         jQuery('.user-invisible').html('<?php print JText::_('YOU_INVISIBLE'); ?>').css('line-height', '50px').addClass('isInvisible');
                     }
                 },

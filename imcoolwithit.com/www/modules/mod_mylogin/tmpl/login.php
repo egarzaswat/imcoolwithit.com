@@ -132,7 +132,13 @@
                 data: data,
                 success: function(html){
                     if(html == 'success'){
-                        jQuery(location).attr('href', '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>');
+                        if (jQuery(window).width() <= '767'){
+                            jQuery(location).attr('href', '/search?mobile=true');
+                        } else {
+                            jQuery(location).attr('href', '/search');
+                        }
+//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
+//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
                     } else if (html == 'user does not exist') {
                         jQuery('.login-error').removeClass('form-success').addClass('form-error').html('Incorrect username or password');
                     } else {
