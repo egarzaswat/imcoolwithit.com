@@ -22,33 +22,289 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="en-GB.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="783" column="14" selection-start-line="783" selection-start-column="0" selection-end-line="783" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5517242">
-              <caret line="234" column="21" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
+            <state vertical-scroll-proportion="-8.206897">
+              <caret line="2062" column="17" selection-start-line="2062" selection-start-column="17" selection-end-line="2062" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/myaccount.php">
+      <file leaf-file-name="member.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/member.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2545455">
-              <caret line="206" column="20" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/protostar/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36431226">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.4">
+              <caret line="998" column="325" selection-start-line="998" selection-start-column="325" selection-end-line="998" selection-end-column="325" />
               <folding>
-                <element signature="e#6#248#0#PHP" expanded="true" />
+                <element signature="n#__construct#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="n#display#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="n#login#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#1031#1384#0#PHP" expanded="false" />
+                <element signature="e#1394#1548#0#PHP" expanded="false" />
+                <element signature="e#1486#1548#0#PHP" expanded="false" />
+                <element signature="e#1726#2099#0#PHP" expanded="false" />
+                <element signature="e#1810#1897#0#PHP" expanded="false" />
+                <element signature="e#1991#2099#0#PHP" expanded="false" />
+                <element signature="e#2508#2676#0#PHP" expanded="false" />
+                <element signature="e#2845#3007#0#PHP" expanded="false" />
+                <element signature="e#3409#3543#0#PHP" expanded="false" />
+                <element signature="e#3552#3700#0#PHP" expanded="false" />
+                <element signature="e#4978#5122#0#PHP" expanded="false" />
+                <element signature="n#loginsave#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#5466#5679#0#PHP" expanded="false" />
+                <element signature="e#5592#5669#0#PHP" expanded="false" />
+                <element signature="e#6222#6766#0#PHP" expanded="false" />
+                <element signature="e#6289#6361#0#PHP" expanded="false" />
+                <element signature="e#6499#6766#0#PHP" expanded="false" />
+                <element signature="n#check_user_exist_ajax#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#7124#7420#0#PHP" expanded="false" />
+                <element signature="e#7309#7410#0#PHP" expanded="false" />
+                <element signature="e#7429#7720#0#PHP" expanded="false" />
+                <element signature="e#7606#7710#0#PHP" expanded="false" />
+                <element signature="e#7830#7936#0#PHP" expanded="false" />
+                <element signature="e#7883#7936#0#PHP" expanded="false" />
+                <element signature="n#register#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#8209#8370#0#PHP" expanded="false" />
+                <element signature="e#8315#8370#0#PHP" expanded="false" />
+                <element signature="e#8479#8866#0#PHP" expanded="false" />
+                <element signature="e#8570#8664#0#PHP" expanded="false" />
+                <element signature="e#8758#8866#0#PHP" expanded="false" />
+                <element signature="e#8943#9099#0#PHP" expanded="false" />
+                <element signature="e#9626#9792#0#PHP" expanded="false" />
+                <element signature="e#9978#10140#0#PHP" expanded="false" />
+                <element signature="e#10627#10723#0#PHP" expanded="false" />
+                <element signature="n#registersave#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#12117#12261#0#PHP" expanded="false" />
+                <element signature="e#13104#13530#0#PHP" expanded="false" />
+                <element signature="e#13539#13664#0#PHP" expanded="false" />
+                <element signature="e#13673#13774#0#PHP" expanded="false" />
+                <element signature="e#14255#14485#0#PHP" expanded="false" />
+                <element signature="e#14523#14842#0#PHP" expanded="false" />
+                <element signature="e#14999#15377#0#PHP" expanded="false" />
+                <element signature="e#15631#19325#0#PHP" expanded="false" />
+                <element signature="e#15961#16106#0#PHP" expanded="false" />
+                <element signature="e#16121#17068#0#PHP" expanded="false" />
+                <element signature="e#16171#16606#0#PHP" expanded="false" />
+                <element signature="e#16622#17068#0#PHP" expanded="false" />
+                <element signature="e#16658#17053#0#PHP" expanded="false" />
+                <element signature="e#17083#19325#0#PHP" expanded="false" />
+                <element signature="e#17413#17558#0#PHP" expanded="false" />
+                <element signature="e#17573#18508#0#PHP" expanded="false" />
+                <element signature="e#17623#18052#0#PHP" expanded="false" />
+                <element signature="e#18068#18508#0#PHP" expanded="false" />
+                <element signature="e#18104#18493#0#PHP" expanded="false" />
+                <element signature="e#18519#19325#0#PHP" expanded="false" />
+                <element signature="e#18554#18699#0#PHP" expanded="false" />
+                <element signature="e#18714#19315#0#PHP" expanded="false" />
+                <element signature="e#18763#19046#0#PHP" expanded="false" />
+                <element signature="e#19061#19315#0#PHP" expanded="false" />
+                <element signature="e#19096#19300#0#PHP" expanded="false" />
+                <element signature="e#19885#20931#0#PHP" expanded="false" />
+                <element signature="e#19996#20141#0#PHP" expanded="false" />
+                <element signature="e#20174#20375#0#PHP" expanded="false" />
+                <element signature="e#20583#20921#0#PHP" expanded="false" />
+                <element signature="e#21039#21363#0#PHP" expanded="false" />
+                <element signature="e#21154#21274#0#PHP" expanded="false" />
+                <element signature="e#21275#21363#0#PHP" expanded="false" />
+                <element signature="n#activate#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#21839#21942#0#PHP" expanded="false" />
+                <element signature="e#21952#22168#0#PHP" expanded="false" />
+                <element signature="e#22308#22456#0#PHP" expanded="false" />
+                <element signature="e#22615#22836#0#PHP" expanded="false" />
+                <element signature="e#22906#23901#0#PHP" expanded="false" />
+                <element signature="e#23152#23406#0#PHP" expanded="false" />
+                <element signature="e#23406#23667#0#PHP" expanded="false" />
+                <element signature="e#23667#23901#0#PHP" expanded="false" />
+                <element signature="e#24286#24390#0#PHP" expanded="false" />
+                <element signature="e#25079#25326#0#PHP" expanded="false" />
+                <element signature="e#25218#25326#0#PHP" expanded="false" />
+                <element signature="e#25544#25815#0#PHP" expanded="false" />
+                <element signature="e#25699#25815#0#PHP" expanded="false" />
+                <element signature="e#26036#26298#0#PHP" expanded="false" />
+                <element signature="e#26185#26298#0#PHP" expanded="false" />
+                <element signature="e#26360#26962#0#PHP" expanded="false" />
+                <element signature="e#27263#27402#0#PHP" expanded="false" />
+                <element signature="n#edit_photos#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#29326#29609#0#PHP" expanded="false" />
+                <element signature="e#29793#29893#0#PHP" expanded="false" />
+                <element signature="e#29973#30184#0#PHP" expanded="false" />
+                <element signature="e#30012#30174#0#PHP" expanded="false" />
+                <element signature="e#30102#30174#0#PHP" expanded="false" />
+                <element signature="e#30210#30641#0#PHP" expanded="false" />
+                <element signature="e#32542#32716#0#PHP" expanded="false" />
+                <element signature="e#32770#33153#0#PHP" expanded="false" />
+                <element signature="e#33238#33615#0#PHP" expanded="false" />
+                <element signature="e#33663#33962#0#PHP" expanded="false" />
+                <element signature="e#33719#33806#0#PHP" expanded="false" />
+                <element signature="e#33819#33952#0#PHP" expanded="false" />
+                <element signature="e#33971#34130#0#PHP" expanded="false" />
+                <element signature="n#orders#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#35016#35099#0#PHP" expanded="false" />
+                <element signature="e#35264#35543#0#PHP" expanded="false" />
+                <element signature="n#order#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#36706#36789#0#PHP" expanded="false" />
+                <element signature="e#37164#37303#0#PHP" expanded="false" />
+                <element signature="e#37510#37802#0#PHP" expanded="false" />
+                <element signature="e#37756#37802#0#PHP" expanded="false" />
+                <element signature="e#37812#37939#0#PHP" expanded="false" />
+                <element signature="e#39396#39730#0#PHP" expanded="false" />
+                <element signature="e#39602#39720#0#PHP" expanded="false" />
+                <element signature="e#39739#39896#0#PHP" expanded="false" />
+                <element signature="e#40408#40590#0#PHP" expanded="false" />
+                <element signature="e#40804#41235#0#PHP" expanded="false" />
+                <element signature="e#40935#41225#0#PHP" expanded="false" />
+                <element signature="e#42727#42829#0#PHP" expanded="false" />
+                <element signature="e#42905#43208#0#PHP" expanded="false" />
+                <element signature="e#44099#44403#0#PHP" expanded="false" />
+                <element signature="e#44154#44396#0#PHP" expanded="false" />
+                <element signature="e#44414#44572#0#PHP" expanded="false" />
+                <element signature="e#44582#50131#0#PHP" expanded="false" />
+                <element signature="e#44804#44933#0#PHP" expanded="false" />
+                <element signature="e#44947#45069#0#PHP" expanded="false" />
+                <element signature="e#45083#45641#0#PHP" expanded="false" />
+                <element signature="e#45227#45641#0#PHP" expanded="false" />
+                <element signature="e#45250#45363#0#PHP" expanded="false" />
+                <element signature="e#45380#45495#0#PHP" expanded="false" />
+                <element signature="e#45512#45627#0#PHP" expanded="false" />
+                <element signature="e#45655#45793#0#PHP" expanded="false" />
+                <element signature="e#45807#45930#0#PHP" expanded="false" />
+                <element signature="e#45944#46085#0#PHP" expanded="false" />
+                <element signature="e#46099#46234#0#PHP" expanded="false" />
+                <element signature="e#46248#46371#0#PHP" expanded="false" />
+                <element signature="e#46385#46534#0#PHP" expanded="false" />
+                <element signature="e#46548#46711#0#PHP" expanded="false" />
+                <element signature="e#46725#46876#0#PHP" expanded="false" />
+                <element signature="e#46890#47045#0#PHP" expanded="false" />
+                <element signature="e#47249#47338#0#PHP" expanded="false" />
+                <element signature="e#47351#47442#0#PHP" expanded="false" />
+                <element signature="e#47923#48234#0#PHP" expanded="false" />
+                <element signature="e#49679#50131#0#PHP" expanded="false" />
+                <element signature="n#groupsinfo#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="n#logout#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#51257#51843#0#PHP" expanded="false" />
+                <element signature="e#51300#51533#0#PHP" expanded="false" />
+                <element signature="e#51434#51519#0#PHP" expanded="false" />
+                <element signature="e#51646#51833#0#PHP" expanded="false" />
+                <element signature="e#51762#51833#0#PHP" expanded="false" />
+                <element signature="n#profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#52142#52323#0#PHP" expanded="false" />
+                <element signature="e#52392#52567#0#PHP" expanded="false" />
+                <element signature="e#52959#53220#0#PHP" expanded="false" />
+                <element signature="e#52992#53213#0#PHP" expanded="false" />
+                <element signature="e#53231#53322#0#PHP" expanded="false" />
+                <element signature="e#53551#53672#0#PHP" expanded="false" />
+                <element signature="e#53681#53802#0#PHP" expanded="false" />
+                <element signature="e#53875#54357#0#PHP" expanded="false" />
+                <element signature="e#54004#54357#0#PHP" expanded="false" />
+                <element signature="e#54023#54121#0#PHP" expanded="false" />
+                <element signature="e#54134#54234#0#PHP" expanded="false" />
+                <element signature="e#54247#54347#0#PHP" expanded="false" />
+                <element signature="e#54367#54488#0#PHP" expanded="false" />
+                <element signature="e#54499#54614#0#PHP" expanded="false" />
+                <element signature="e#55149#60381#0#PHP" expanded="false" />
+                <element signature="e#55407#55600#0#PHP" expanded="false" />
+                <element signature="e#55469#55586#0#PHP" expanded="false" />
+                <element signature="e#55684#56023#0#PHP" expanded="false" />
+                <element signature="e#55961#56023#0#PHP" expanded="false" />
+                <element signature="e#56037#56213#0#PHP" expanded="false" />
+                <element signature="e#56150#56213#0#PHP" expanded="false" />
+                <element signature="e#56227#56394#0#PHP" expanded="false" />
+                <element signature="e#56333#56394#0#PHP" expanded="false" />
+                <element signature="e#56408#56651#0#PHP" expanded="false" />
+                <element signature="e#56523#56637#0#PHP" expanded="false" />
+                <element signature="e#56838#57032#0#PHP" expanded="false" />
+                <element signature="e#56959#57032#0#PHP" expanded="false" />
+                <element signature="e#57347#57546#0#PHP" expanded="false" />
+                <element signature="e#57404#57532#0#PHP" expanded="false" />
+                <element signature="e#57560#58160#0#PHP" expanded="false" />
+                <element signature="e#57772#58160#0#PHP" expanded="false" />
+                <element signature="e#57795#58146#0#PHP" expanded="false" />
+                <element signature="e#58015#58146#0#PHP" expanded="false" />
+                <element signature="e#58931#59037#0#PHP" expanded="false" />
+                <element signature="e#59835#60381#0#PHP" expanded="false" />
+                <element signature="n#full_profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#60709#60879#0#PHP" expanded="false" />
+                <element signature="e#60889#61071#0#PHP" expanded="false" />
+                <element signature="e#61299#61485#0#PHP" expanded="false" />
+                <element signature="e#61612#62118#0#PHP" expanded="false" />
+                <element signature="e#61760#62108#0#PHP" expanded="false" />
+                <element signature="e#62340#62490#0#PHP" expanded="false" />
+                <element signature="e#62435#62490#0#PHP" expanded="false" />
+                <element signature="e#62499#62640#0#PHP" expanded="false" />
+                <element signature="e#62587#62640#0#PHP" expanded="false" />
+                <element signature="e#62649#62856#0#PHP" expanded="false" />
+                <element signature="e#62740#62846#0#PHP" expanded="false" />
+                <element signature="e#63063#63220#0#PHP" expanded="false" />
+                <element signature="e#63121#63210#0#PHP" expanded="false" />
+                <element signature="e#63395#63573#0#PHP" expanded="false" />
+                <element signature="e#63508#63573#0#PHP" expanded="false" />
+                <element signature="e#63582#63761#0#PHP" expanded="false" />
+                <element signature="e#64846#65781#0#PHP" expanded="false" />
+                <element signature="e#65819#66084#0#PHP" expanded="false" />
+                <element signature="e#66094#66218#0#PHP" expanded="false" />
+                <element signature="e#66227#66351#0#PHP" expanded="false" />
+                <element signature="e#66424#66943#0#PHP" expanded="false" />
+                <element signature="e#66563#66943#0#PHP" expanded="false" />
+                <element signature="e#66582#66689#0#PHP" expanded="false" />
+                <element signature="e#66702#66811#0#PHP" expanded="false" />
+                <element signature="e#66824#66933#0#PHP" expanded="false" />
+                <element signature="e#66952#67085#0#PHP" expanded="false" />
+                <element signature="e#67094#67212#0#PHP" expanded="false" />
+                <element signature="e#67221#67357#0#PHP" expanded="false" />
+                <element signature="e#67366#67496#0#PHP" expanded="false" />
+                <element signature="e#67505#67623#0#PHP" expanded="false" />
+                <element signature="e#67632#67778#0#PHP" expanded="false" />
+                <element signature="e#67787#67947#0#PHP" expanded="false" />
+                <element signature="e#67956#68104#0#PHP" expanded="false" />
+                <element signature="e#68113#68265#0#PHP" expanded="false" />
+                <element signature="e#68343#68469#0#PHP" expanded="false" />
+                <element signature="e#68417#68469#0#PHP" expanded="false" />
+                <element signature="e#69056#69154#0#PHP" expanded="false" />
+                <element signature="n#show_private_pictures#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#70053#70215#0#PHP" expanded="false" />
+                <element signature="e#70284#70452#0#PHP" expanded="false" />
+                <element signature="e#70527#70769#0#PHP" expanded="false" />
+                <element signature="e#71020#71172#0#PHP" expanded="false" />
+                <element signature="e#71124#71172#0#PHP" expanded="false" />
+                <element signature="n#private_pictures#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#72512#72680#0#PHP" expanded="false" />
+                <element signature="e#72755#73044#0#PHP" expanded="false" />
+                <element signature="e#73148#73391#0#PHP" expanded="false" />
+                <element signature="n#honesty_reviews#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#75067#75235#0#PHP" expanded="false" />
+                <element signature="n#accept#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#76368#76547#0#PHP" expanded="false" />
+                <element signature="e#76622#76821#0#PHP" expanded="false" />
+                <element signature="e#76891#77060#0#PHP" expanded="false" />
+                <element signature="n#add_to_friends#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="n#uploadPhotoWhitFB#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="n#bookmarks#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#80434#80715#0#PHP" expanded="false" />
+                <element signature="e#80588#80700#0#PHP" expanded="false" />
+                <element signature="n#questions#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#81503#81697#0#PHP" expanded="false" />
+                <element signature="e#81699#82018#0#PHP" expanded="false" />
+                <element signature="e#82297#82545#0#PHP" expanded="false" />
+                <element signature="e#82416#82545#0#PHP" expanded="false" />
+                <element signature="e#82795#83413#0#PHP" expanded="false" />
+                <element signature="e#83093#83403#0#PHP" expanded="false" />
+                <element signature="e#83286#83403#0#PHP" expanded="false" />
+                <element signature="e#84019#86355#0#PHP" expanded="false" />
+                <marker date="1482738710555" expanded="false" signature="7162:7233" placeholder="SELECT id FR..." />
+                <marker date="1482738710555" expanded="false" signature="7464:7530" placeholder="SELECT id FR..." />
+                <marker date="1482738710555" expanded="false" signature="20400:20461" placeholder="SELECT name,..#__users..." />
               </folding>
             </state>
           </provider>
@@ -57,79 +313,105 @@
       <file leaf-file-name="jshopping.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/jshopping.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meeting.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/meeting.php">
+      <file leaf-file-name="editaccount.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.269231">
-              <caret line="265" column="29" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="-25.0">
+              <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+              <folding>
+                <element signature="e#6773#7840#0#HTML" expanded="false" />
+                <element signature="e#8035#10298#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_invite.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="23" column="195" selection-start-line="23" selection-start-column="195" selection-end-line="23" selection-end-column="195" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en-GB.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3793104">
-              <caret line="682" column="40" selection-start-line="682" selection-start-column="40" selection-end-line="682" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="honest_questions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/earncredits/honest_questions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.576923">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="honest_review.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/earncredits/honest_review.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.153847">
-              <caret line="40" column="78" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="factory.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/factory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6181817">
-              <caret line="1123" column="97" selection-start-line="1123" selection-start-column="97" selection-end-line="1123" selection-end-column="97" />
+            <state vertical-scroll-proportion="0.40528128">
+              <caret line="1144" column="27" selection-start-line="1144" selection-start-column="27" selection-end-line="1144" selection-end-column="27" />
               <folding>
-                <marker date="1482324903760" expanded="true" signature="20667:20729" placeholder="select id, s..#__jshopping_vendors..." />
-                <marker date="1482324903760" expanded="true" signature="21833:21881" placeholder="select id, d..#__jshopping_delivery_times..." />
-                <marker date="1482324903760" expanded="true" signature="39017:39046" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="40025:40035" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="40367:40559" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="40471:40479" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="41121:41129" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="41405:41418" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="41588:41601" placeholder="..." />
-                <marker date="1482324903760" expanded="true" signature="41671:41684" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="20667:20729" placeholder="select id, s..#__jshopping_vendors..." />
+                <marker date="1482738075313" expanded="true" signature="21833:21881" placeholder="select id, d..#__jshopping_delivery_times..." />
+                <marker date="1482738075313" expanded="true" signature="39017:39046" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="40141:40151" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="40587:40595" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="41237:41245" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="41521:41534" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="41704:41717" placeholder="..." />
+                <marker date="1482738075313" expanded="true" signature="41787:41800" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activate_account.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/activate_account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.346153">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="n#answer#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.961538">
+              <caret line="180" column="26" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="26" />
+              <folding>
+                <element signature="e#243#562#0#PHP" expanded="false" />
+                <element signature="e#279#508#0#PHP" expanded="false" />
+                <element signature="e#331#494#0#PHP" expanded="false" />
+                <element signature="e#416#494#0#PHP" expanded="false" />
+                <element signature="e#519#562#0#PHP" expanded="false" />
+                <element signature="e#572#1092#0#PHP" expanded="false" />
+                <element signature="e#599#844#0#PHP" expanded="false" />
+                <element signature="e#992#1092#0#PHP" expanded="false" />
+                <element signature="n#existUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#1425#1526#0#PHP" expanded="false" />
+                <element signature="e#1484#1526#0#PHP" expanded="false" />
+                <element signature="n#isBlockUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#1786#1887#0#PHP" expanded="false" />
+                <element signature="e#1845#1887#0#PHP" expanded="false" />
+                <element signature="n#isVerification#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#2149#2245#0#PHP" expanded="false" />
+                <element signature="e#2203#2245#0#PHP" expanded="false" />
+                <element signature="n#isVerifyUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="n#verifyEmail#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#2906#3328#0#PHP" expanded="false" />
+                <element signature="n#getCountUserTokens#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#3577#3787#0#PHP" expanded="false" />
+                <element signature="n#getUserAlbum#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="n#getImagesCount#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="n#getUserAlbumProfile#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="n#getUserAlbumPrivate#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="n#getUserBlock#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <element signature="e#5211#5305#0#PHP" expanded="false" />
+                <element signature="e#5264#5305#0#PHP" expanded="false" />
+                <element signature="n#getMembershipType#0;n#jshopUser#0;n#!!top" expanded="false" />
+                <marker date="1482738698622" expanded="true" signature="1278:1338" placeholder="select `u_na..." />
+                <marker date="1482738698622" expanded="true" signature="1618:1705" placeholder="select `u_na..." />
+                <marker date="1482738698622" expanded="true" signature="1982:2070" placeholder="SELECT COUNT..." />
+                <marker date="1482738698622" expanded="true" signature="2344:2441" placeholder="SELECT `acti..." />
+                <marker date="1482738698622" expanded="true" signature="3431:3486" placeholder="SELECT `coun..." />
+                <marker date="1482738698622" expanded="true" signature="3909:3976" placeholder="select `phot..." />
+                <marker date="1482738698622" expanded="true" signature="4181:4239" placeholder="select COUNT..." />
+                <marker date="1482738698622" expanded="true" signature="4449:4583" placeholder="select `phot..." />
+                <marker date="1482738698622" expanded="true" signature="4781:4871" placeholder="select `phot..." />
+                <marker date="1482738698622" expanded="true" signature="5063:5122" placeholder="select `bloc..." />
+                <marker date="1482738698622" expanded="true" signature="5407:5472" placeholder="select `rela..." />
               </folding>
             </state>
           </provider>
@@ -142,17 +424,32 @@
       <list>
         <option value="$PROJECT_DIR$/templates/protostar/js/addtohomescreen.js" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/lib/factory.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/meeting.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php" />
-        <option value="$PROJECT_DIR$/language/en-GB/en-GB.ini" />
-        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/myaccount.php" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/modules/mod_mylogin/mod_mylogin.php" />
+        <option value="$PROJECT_DIR$/components/com_content/views/info/tmpl/already_cool.php" />
+        <option value="$PROJECT_DIR$/modules/mod_mylogin/ajax/join_now.php" />
+        <option value="$PROJECT_DIR$/modules/mod_mylogin/tmpl/join_now.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/lib/default_config.php" />
+        <option value="$PROJECT_DIR$/modules/mod_ulogin/mod_ulogin.php" />
         <option value="$PROJECT_DIR$/templates/protostar/index.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/myaccount.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/save_account.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/full_user_page.php" />
+        <option value="$PROJECT_DIR$/language/en-GB/en-GB.ini" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/search.php" />
+        <option value="$PROJECT_DIR$/modules/mod_mylogin/tmpl/login.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/lib/factory.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/member.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/models/user.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/activate_account.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php" />
+        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
       </list>
     </option>
   </component>
@@ -196,8 +493,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +524,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protostar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_mylogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_mylogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,14 +687,137 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_jshopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_jshopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_jshopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="save_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../sdating.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../moych.local" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\www\cool.local\imcoolwithit.com\www\components\com_jshopping\controllers\save_data" />
+      <recent name="C:\xampp\htdocs\www\cool.local\imcoolwithit.com\www\modules\mod_mylogin\tmpl" />
+      <recent name="C:\xampp\htdocs\www\cool.local\imcoolwithit.com\www\modules\mod_mylogin\ajax" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="C:\Program Files\Git\bin\bash.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -341,7 +833,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -349,7 +841,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864866" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -381,307 +873,757 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/ajax/forgot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1221" column="28" selection-start-line="1221" selection-start-column="28" selection-end-line="1221" selection-end-column="28" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/login_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1482246870128" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="354" column="30" selection-start-line="354" selection-start-column="30" selection-end-line="354" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1221" column="28" selection-start-line="1221" selection-start-column="28" selection-end-line="1221" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.031598512">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <marker date="1482246870128" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/js/signup_email.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64437014">
+          <caret line="34" column="7" selection-start-line="2" selection-start-column="4" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/js/email.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18952063">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_content/views/info/tmpl/already_cool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30111524">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/sign_up.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/ajax/sign_up.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.119929455">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/ajax/join_now.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.963636">
+          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/join_now.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79012346">
+          <caret line="192" column="7" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/default_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3432836">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="145" selection-start-line="61" selection-start-column="145" selection-end-line="61" selection-end-column="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="309" column="13" selection-start-line="309" selection-start-column="13" selection-end-line="309" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.3432836">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="588" column="0" selection-start-line="588" selection-start-column="0" selection-end-line="588" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding>
-            <marker date="1482246870128" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="145" selection-start-line="61" selection-start-column="145" selection-end-line="61" selection-end-column="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="588" column="0" selection-start-line="588" selection-start-column="0" selection-end-line="588" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding>
-            <marker date="1482246870128" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2566474">
-          <caret line="541" column="24" selection-start-line="541" selection-start-column="24" selection-end-line="541" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/partners/list.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/mod_ulogin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/partners/partner.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/src/facebook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6597938">
-          <caret line="34" column="82" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="24" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cron/index.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/src/base_facebook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8541906">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1388" column="63" selection-start-line="1388" selection-start-column="62" selection-end-line="1388" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_from_album.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/src/fb_ca_chain_bundle.crt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.576923">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/resize_photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8541906">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="85" column="82" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/userpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7195767">
-          <caret line="96" column="69" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14991182">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3726813">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/src/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="354" column="30" selection-start-line="354" selection-start-column="30" selection-end-line="354" selection-end-column="30" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/upload_crop_photo/upload_photo_to_album.php">
+    <entry file="file://$PROJECT_DIR$/modules/mod_ulogin/mod_ulogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <marker date="1482246870128" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6181817">
-          <caret line="1123" column="97" selection-start-line="1123" selection-start-column="97" selection-end-line="1123" selection-end-column="97" />
-          <folding>
-            <marker date="1482324903760" expanded="true" signature="20667:20729" placeholder="select id, s..#__jshopping_vendors..." />
-            <marker date="1482324903760" expanded="true" signature="21833:21881" placeholder="select id, d..#__jshopping_delivery_times..." />
-            <marker date="1482324903760" expanded="true" signature="39017:39046" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="40025:40035" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="40367:40559" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="40471:40479" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="41121:41129" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="41405:41418" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="41588:41601" placeholder="..." />
-            <marker date="1482324903760" expanded="true" signature="41671:41684" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/protostar/js/addtohomescreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091">
-          <caret line="52" column="105" selection-start-line="52" selection-start-column="105" selection-end-line="52" selection-end-column="105" />
+          <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/jshopping.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/user/myaccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/meeting.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/myprofile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.269231">
-          <caret line="265" column="29" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="-1.2186949">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/sponsors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="23" column="195" selection-start-line="23" selection-start-column="195" selection-end-line="23" selection-end-column="195" />
-          <folding />
+        <state vertical-scroll-proportion="0.119929455">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/earncredits/honest_questions.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/add_visited.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.576923">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/earncredits/honest_review.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/notifications.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847">
-          <caret line="40" column="78" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="78" />
-          <folding />
+        <state vertical-scroll-proportion="-9.223986">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/accept_rejected.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3793104">
-          <caret line="682" column="40" selection-start-line="682" selection-start-column="40" selection-end-line="682" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.29982364">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/save_profile_info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5517242">
-          <caret line="234" column="21" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/myaccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2545455">
-          <caret line="206" column="20" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
+        <state vertical-scroll-proportion="-6.0363636">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/full_user_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47971782">
+          <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/browsing.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41975307">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/set_invisible.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/joomla/content/icons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53968257">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/send_update_messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="33" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="33" />
+          <folding>
+            <marker date="1481354624327" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1481354624327" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/friends/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/messaging/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="168" column="81" selection-start-line="168" selection-start-column="77" selection-end-line="168" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/ajax/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4879449">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/protostar/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36431226">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.0688863">
+          <caret line="127" column="37" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="783" column="14" selection-start-line="783" selection-start-column="0" selection-end-line="783" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33180252">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <element signature="e#6#248#0#PHP" expanded="true" />
+            <marker date="1481354624758" expanded="true" signature="-1:-1" placeholder="SELECT `send..." />
+            <marker date="1481354624758" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1481354624758" expanded="true" signature="-1:-1" placeholder="SELECT MEET...." />
+            <marker date="1481354624758" expanded="true" signature="-1:-1" placeholder="SELECT MEET...." />
+            <marker date="1481354624758" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43398392">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15614237">
+          <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#1913#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/mod_mylogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23421355">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7272725">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/save_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42479908">
+          <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="252" selection-end-column="23" />
+          <folding>
+            <element signature="n#answer#0;n#!!top" expanded="false" />
+            <element signature="e#781#859#0#PHP" expanded="false" />
+            <element signature="e#825#859#0#PHP" expanded="false" />
+            <element signature="n#img_thumb_resize#0;n#!!top" expanded="false" />
+            <element signature="e#1397#1594#0#PHP" expanded="false" />
+            <element signature="e#1501#1594#0#PHP" expanded="false" />
+            <element signature="n#img_resize#0;n#!!top" expanded="false" />
+            <element signature="e#2293#2798#0#PHP" expanded="false" />
+            <element signature="e#2352#2472#0#PHP" expanded="false" />
+            <element signature="e#2423#2472#0#PHP" expanded="false" />
+            <element signature="e#2482#2716#0#PHP" expanded="false" />
+            <element signature="e#2608#2716#0#PHP" expanded="false" />
+            <element signature="e#2723#2798#0#PHP" expanded="false" />
+            <element signature="e#3133#3677#0#PHP" expanded="false" />
+            <element signature="n#uploadPhotoWhitFB#0;n#!!top" expanded="false" />
+            <element signature="e#4041#4159#0#PHP" expanded="false" />
+            <element signature="e#4063#4152#1#PHP" expanded="false" />
+            <element signature="e#4440#4768#0#PHP" expanded="false" />
+            <element signature="e#4646#4768#0#PHP" expanded="false" />
+            <element signature="e#5404#5544#0#PHP" expanded="false" />
+            <element signature="e#5550#5708#0#PHP" expanded="false" />
+            <element signature="e#5855#5973#0#PHP" expanded="false" />
+            <element signature="e#5877#5966#1#PHP" expanded="false" />
+            <element signature="e#6722#7480#0#PHP" expanded="false" />
+            <element signature="e#8060#8223#0#PHP" expanded="false" />
+            <element signature="e#8228#8391#0#PHP" expanded="false" />
+            <element signature="e#8532#8696#0#PHP" expanded="false" />
+            <element signature="e#9001#9293#0#PHP" expanded="false" />
+            <element signature="e#9428#10461#0#PHP" expanded="false" />
+            <element signature="e#9903#10461#0#PHP" expanded="false" />
+            <element signature="e#10495#10576#0#PHP" expanded="false" />
+            <element signature="e#10542#10576#0#PHP" expanded="false" />
+            <element signature="n#checkUserName#0;n#!!top" expanded="false" />
+            <element signature="e#11009#11305#0#PHP" expanded="false" />
+            <element signature="e#11113#11257#0#PHP" expanded="false" />
+            <element signature="e#11200#11257#0#PHP" expanded="false" />
+            <element signature="e#11260#11305#0#PHP" expanded="false" />
+            <element signature="e#11587#12322#0#PHP" expanded="false" />
+            <element signature="e#11819#12279#0#PHP" expanded="false" />
+            <element signature="e#12227#12279#0#PHP" expanded="false" />
+            <element signature="e#12282#12322#0#PHP" expanded="false" />
+            <element signature="e#12324#12512#0#PHP" expanded="false" />
+            <element signature="e#12464#12512#0#PHP" expanded="false" />
+            <element signature="e#12514#12722#0#PHP" expanded="false" />
+            <element signature="e#12677#12722#0#PHP" expanded="false" />
+            <element signature="e#12724#12921#0#PHP" expanded="false" />
+            <element signature="e#12878#12921#0#PHP" expanded="false" />
+            <element signature="e#13053#13231#0#PHP" expanded="false" />
+            <element signature="e#13186#13231#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.206897">
+          <caret line="2062" column="17" selection-start-line="2062" selection-start-column="17" selection-end-line="2062" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.961538">
+          <caret line="180" column="26" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="26" />
+          <folding>
+            <element signature="e#243#562#0#PHP" expanded="false" />
+            <element signature="e#279#508#0#PHP" expanded="false" />
+            <element signature="e#331#494#0#PHP" expanded="false" />
+            <element signature="e#416#494#0#PHP" expanded="false" />
+            <element signature="e#519#562#0#PHP" expanded="false" />
+            <element signature="e#572#1092#0#PHP" expanded="false" />
+            <element signature="e#599#844#0#PHP" expanded="false" />
+            <element signature="e#992#1092#0#PHP" expanded="false" />
+            <element signature="n#existUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#1425#1526#0#PHP" expanded="false" />
+            <element signature="e#1484#1526#0#PHP" expanded="false" />
+            <element signature="n#isBlockUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#1786#1887#0#PHP" expanded="false" />
+            <element signature="e#1845#1887#0#PHP" expanded="false" />
+            <element signature="n#isVerification#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#2149#2245#0#PHP" expanded="false" />
+            <element signature="e#2203#2245#0#PHP" expanded="false" />
+            <element signature="n#isVerifyUser#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="n#verifyEmail#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#2906#3328#0#PHP" expanded="false" />
+            <element signature="n#getCountUserTokens#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#3577#3787#0#PHP" expanded="false" />
+            <element signature="n#getUserAlbum#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="n#getImagesCount#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="n#getUserAlbumProfile#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="n#getUserAlbumPrivate#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="n#getUserBlock#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <element signature="e#5211#5305#0#PHP" expanded="false" />
+            <element signature="e#5264#5305#0#PHP" expanded="false" />
+            <element signature="n#getMembershipType#0;n#jshopUser#0;n#!!top" expanded="false" />
+            <marker date="1482738698622" expanded="true" signature="1278:1338" placeholder="select `u_na..." />
+            <marker date="1482738698622" expanded="true" signature="1618:1705" placeholder="select `u_na..." />
+            <marker date="1482738698622" expanded="true" signature="1982:2070" placeholder="SELECT COUNT..." />
+            <marker date="1482738698622" expanded="true" signature="2344:2441" placeholder="SELECT `acti..." />
+            <marker date="1482738698622" expanded="true" signature="3431:3486" placeholder="SELECT `coun..." />
+            <marker date="1482738698622" expanded="true" signature="3909:3976" placeholder="select `phot..." />
+            <marker date="1482738698622" expanded="true" signature="4181:4239" placeholder="select COUNT..." />
+            <marker date="1482738698622" expanded="true" signature="4449:4583" placeholder="select `phot..." />
+            <marker date="1482738698622" expanded="true" signature="4781:4871" placeholder="select `phot..." />
+            <marker date="1482738698622" expanded="true" signature="5063:5122" placeholder="select `bloc..." />
+            <marker date="1482738698622" expanded="true" signature="5407:5472" placeholder="select `rela..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+          <folding>
+            <element signature="e#6773#7840#0#HTML" expanded="false" />
+            <element signature="e#8035#10298#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/activate_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="n#answer#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4">
+          <caret line="998" column="325" selection-start-line="998" selection-start-column="325" selection-end-line="998" selection-end-column="325" />
+          <folding>
+            <element signature="n#__construct#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="n#display#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="n#login#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#1031#1384#0#PHP" expanded="false" />
+            <element signature="e#1394#1548#0#PHP" expanded="false" />
+            <element signature="e#1486#1548#0#PHP" expanded="false" />
+            <element signature="e#1726#2099#0#PHP" expanded="false" />
+            <element signature="e#1810#1897#0#PHP" expanded="false" />
+            <element signature="e#1991#2099#0#PHP" expanded="false" />
+            <element signature="e#2508#2676#0#PHP" expanded="false" />
+            <element signature="e#2845#3007#0#PHP" expanded="false" />
+            <element signature="e#3409#3543#0#PHP" expanded="false" />
+            <element signature="e#3552#3700#0#PHP" expanded="false" />
+            <element signature="e#4978#5122#0#PHP" expanded="false" />
+            <element signature="n#loginsave#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#5466#5679#0#PHP" expanded="false" />
+            <element signature="e#5592#5669#0#PHP" expanded="false" />
+            <element signature="e#6222#6766#0#PHP" expanded="false" />
+            <element signature="e#6289#6361#0#PHP" expanded="false" />
+            <element signature="e#6499#6766#0#PHP" expanded="false" />
+            <element signature="n#check_user_exist_ajax#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#7124#7420#0#PHP" expanded="false" />
+            <element signature="e#7309#7410#0#PHP" expanded="false" />
+            <element signature="e#7429#7720#0#PHP" expanded="false" />
+            <element signature="e#7606#7710#0#PHP" expanded="false" />
+            <element signature="e#7830#7936#0#PHP" expanded="false" />
+            <element signature="e#7883#7936#0#PHP" expanded="false" />
+            <element signature="n#register#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#8209#8370#0#PHP" expanded="false" />
+            <element signature="e#8315#8370#0#PHP" expanded="false" />
+            <element signature="e#8479#8866#0#PHP" expanded="false" />
+            <element signature="e#8570#8664#0#PHP" expanded="false" />
+            <element signature="e#8758#8866#0#PHP" expanded="false" />
+            <element signature="e#8943#9099#0#PHP" expanded="false" />
+            <element signature="e#9626#9792#0#PHP" expanded="false" />
+            <element signature="e#9978#10140#0#PHP" expanded="false" />
+            <element signature="e#10627#10723#0#PHP" expanded="false" />
+            <element signature="n#registersave#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#12117#12261#0#PHP" expanded="false" />
+            <element signature="e#13104#13530#0#PHP" expanded="false" />
+            <element signature="e#13539#13664#0#PHP" expanded="false" />
+            <element signature="e#13673#13774#0#PHP" expanded="false" />
+            <element signature="e#14255#14485#0#PHP" expanded="false" />
+            <element signature="e#14523#14842#0#PHP" expanded="false" />
+            <element signature="e#14999#15377#0#PHP" expanded="false" />
+            <element signature="e#15631#19325#0#PHP" expanded="false" />
+            <element signature="e#15961#16106#0#PHP" expanded="false" />
+            <element signature="e#16121#17068#0#PHP" expanded="false" />
+            <element signature="e#16171#16606#0#PHP" expanded="false" />
+            <element signature="e#16622#17068#0#PHP" expanded="false" />
+            <element signature="e#16658#17053#0#PHP" expanded="false" />
+            <element signature="e#17083#19325#0#PHP" expanded="false" />
+            <element signature="e#17413#17558#0#PHP" expanded="false" />
+            <element signature="e#17573#18508#0#PHP" expanded="false" />
+            <element signature="e#17623#18052#0#PHP" expanded="false" />
+            <element signature="e#18068#18508#0#PHP" expanded="false" />
+            <element signature="e#18104#18493#0#PHP" expanded="false" />
+            <element signature="e#18519#19325#0#PHP" expanded="false" />
+            <element signature="e#18554#18699#0#PHP" expanded="false" />
+            <element signature="e#18714#19315#0#PHP" expanded="false" />
+            <element signature="e#18763#19046#0#PHP" expanded="false" />
+            <element signature="e#19061#19315#0#PHP" expanded="false" />
+            <element signature="e#19096#19300#0#PHP" expanded="false" />
+            <element signature="e#19885#20931#0#PHP" expanded="false" />
+            <element signature="e#19996#20141#0#PHP" expanded="false" />
+            <element signature="e#20174#20375#0#PHP" expanded="false" />
+            <element signature="e#20583#20921#0#PHP" expanded="false" />
+            <element signature="e#21039#21363#0#PHP" expanded="false" />
+            <element signature="e#21154#21274#0#PHP" expanded="false" />
+            <element signature="e#21275#21363#0#PHP" expanded="false" />
+            <element signature="n#activate#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#21839#21942#0#PHP" expanded="false" />
+            <element signature="e#21952#22168#0#PHP" expanded="false" />
+            <element signature="e#22308#22456#0#PHP" expanded="false" />
+            <element signature="e#22615#22836#0#PHP" expanded="false" />
+            <element signature="e#22906#23901#0#PHP" expanded="false" />
+            <element signature="e#23152#23406#0#PHP" expanded="false" />
+            <element signature="e#23406#23667#0#PHP" expanded="false" />
+            <element signature="e#23667#23901#0#PHP" expanded="false" />
+            <element signature="e#24286#24390#0#PHP" expanded="false" />
+            <element signature="e#25079#25326#0#PHP" expanded="false" />
+            <element signature="e#25218#25326#0#PHP" expanded="false" />
+            <element signature="e#25544#25815#0#PHP" expanded="false" />
+            <element signature="e#25699#25815#0#PHP" expanded="false" />
+            <element signature="e#26036#26298#0#PHP" expanded="false" />
+            <element signature="e#26185#26298#0#PHP" expanded="false" />
+            <element signature="e#26360#26962#0#PHP" expanded="false" />
+            <element signature="e#27263#27402#0#PHP" expanded="false" />
+            <element signature="n#edit_photos#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#29326#29609#0#PHP" expanded="false" />
+            <element signature="e#29793#29893#0#PHP" expanded="false" />
+            <element signature="e#29973#30184#0#PHP" expanded="false" />
+            <element signature="e#30012#30174#0#PHP" expanded="false" />
+            <element signature="e#30102#30174#0#PHP" expanded="false" />
+            <element signature="e#30210#30641#0#PHP" expanded="false" />
+            <element signature="e#32542#32716#0#PHP" expanded="false" />
+            <element signature="e#32770#33153#0#PHP" expanded="false" />
+            <element signature="e#33238#33615#0#PHP" expanded="false" />
+            <element signature="e#33663#33962#0#PHP" expanded="false" />
+            <element signature="e#33719#33806#0#PHP" expanded="false" />
+            <element signature="e#33819#33952#0#PHP" expanded="false" />
+            <element signature="e#33971#34130#0#PHP" expanded="false" />
+            <element signature="n#orders#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#35016#35099#0#PHP" expanded="false" />
+            <element signature="e#35264#35543#0#PHP" expanded="false" />
+            <element signature="n#order#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#36706#36789#0#PHP" expanded="false" />
+            <element signature="e#37164#37303#0#PHP" expanded="false" />
+            <element signature="e#37510#37802#0#PHP" expanded="false" />
+            <element signature="e#37756#37802#0#PHP" expanded="false" />
+            <element signature="e#37812#37939#0#PHP" expanded="false" />
+            <element signature="e#39396#39730#0#PHP" expanded="false" />
+            <element signature="e#39602#39720#0#PHP" expanded="false" />
+            <element signature="e#39739#39896#0#PHP" expanded="false" />
+            <element signature="e#40408#40590#0#PHP" expanded="false" />
+            <element signature="e#40804#41235#0#PHP" expanded="false" />
+            <element signature="e#40935#41225#0#PHP" expanded="false" />
+            <element signature="e#42727#42829#0#PHP" expanded="false" />
+            <element signature="e#42905#43208#0#PHP" expanded="false" />
+            <element signature="e#44099#44403#0#PHP" expanded="false" />
+            <element signature="e#44154#44396#0#PHP" expanded="false" />
+            <element signature="e#44414#44572#0#PHP" expanded="false" />
+            <element signature="e#44582#50131#0#PHP" expanded="false" />
+            <element signature="e#44804#44933#0#PHP" expanded="false" />
+            <element signature="e#44947#45069#0#PHP" expanded="false" />
+            <element signature="e#45083#45641#0#PHP" expanded="false" />
+            <element signature="e#45227#45641#0#PHP" expanded="false" />
+            <element signature="e#45250#45363#0#PHP" expanded="false" />
+            <element signature="e#45380#45495#0#PHP" expanded="false" />
+            <element signature="e#45512#45627#0#PHP" expanded="false" />
+            <element signature="e#45655#45793#0#PHP" expanded="false" />
+            <element signature="e#45807#45930#0#PHP" expanded="false" />
+            <element signature="e#45944#46085#0#PHP" expanded="false" />
+            <element signature="e#46099#46234#0#PHP" expanded="false" />
+            <element signature="e#46248#46371#0#PHP" expanded="false" />
+            <element signature="e#46385#46534#0#PHP" expanded="false" />
+            <element signature="e#46548#46711#0#PHP" expanded="false" />
+            <element signature="e#46725#46876#0#PHP" expanded="false" />
+            <element signature="e#46890#47045#0#PHP" expanded="false" />
+            <element signature="e#47249#47338#0#PHP" expanded="false" />
+            <element signature="e#47351#47442#0#PHP" expanded="false" />
+            <element signature="e#47923#48234#0#PHP" expanded="false" />
+            <element signature="e#49679#50131#0#PHP" expanded="false" />
+            <element signature="n#groupsinfo#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#51257#51843#0#PHP" expanded="false" />
+            <element signature="e#51300#51533#0#PHP" expanded="false" />
+            <element signature="e#51434#51519#0#PHP" expanded="false" />
+            <element signature="e#51646#51833#0#PHP" expanded="false" />
+            <element signature="e#51762#51833#0#PHP" expanded="false" />
+            <element signature="n#profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#52142#52323#0#PHP" expanded="false" />
+            <element signature="e#52392#52567#0#PHP" expanded="false" />
+            <element signature="e#52959#53220#0#PHP" expanded="false" />
+            <element signature="e#52992#53213#0#PHP" expanded="false" />
+            <element signature="e#53231#53322#0#PHP" expanded="false" />
+            <element signature="e#53551#53672#0#PHP" expanded="false" />
+            <element signature="e#53681#53802#0#PHP" expanded="false" />
+            <element signature="e#53875#54357#0#PHP" expanded="false" />
+            <element signature="e#54004#54357#0#PHP" expanded="false" />
+            <element signature="e#54023#54121#0#PHP" expanded="false" />
+            <element signature="e#54134#54234#0#PHP" expanded="false" />
+            <element signature="e#54247#54347#0#PHP" expanded="false" />
+            <element signature="e#54367#54488#0#PHP" expanded="false" />
+            <element signature="e#54499#54614#0#PHP" expanded="false" />
+            <element signature="e#55149#60381#0#PHP" expanded="false" />
+            <element signature="e#55407#55600#0#PHP" expanded="false" />
+            <element signature="e#55469#55586#0#PHP" expanded="false" />
+            <element signature="e#55684#56023#0#PHP" expanded="false" />
+            <element signature="e#55961#56023#0#PHP" expanded="false" />
+            <element signature="e#56037#56213#0#PHP" expanded="false" />
+            <element signature="e#56150#56213#0#PHP" expanded="false" />
+            <element signature="e#56227#56394#0#PHP" expanded="false" />
+            <element signature="e#56333#56394#0#PHP" expanded="false" />
+            <element signature="e#56408#56651#0#PHP" expanded="false" />
+            <element signature="e#56523#56637#0#PHP" expanded="false" />
+            <element signature="e#56838#57032#0#PHP" expanded="false" />
+            <element signature="e#56959#57032#0#PHP" expanded="false" />
+            <element signature="e#57347#57546#0#PHP" expanded="false" />
+            <element signature="e#57404#57532#0#PHP" expanded="false" />
+            <element signature="e#57560#58160#0#PHP" expanded="false" />
+            <element signature="e#57772#58160#0#PHP" expanded="false" />
+            <element signature="e#57795#58146#0#PHP" expanded="false" />
+            <element signature="e#58015#58146#0#PHP" expanded="false" />
+            <element signature="e#58931#59037#0#PHP" expanded="false" />
+            <element signature="e#59835#60381#0#PHP" expanded="false" />
+            <element signature="n#full_profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#60709#60879#0#PHP" expanded="false" />
+            <element signature="e#60889#61071#0#PHP" expanded="false" />
+            <element signature="e#61299#61485#0#PHP" expanded="false" />
+            <element signature="e#61612#62118#0#PHP" expanded="false" />
+            <element signature="e#61760#62108#0#PHP" expanded="false" />
+            <element signature="e#62340#62490#0#PHP" expanded="false" />
+            <element signature="e#62435#62490#0#PHP" expanded="false" />
+            <element signature="e#62499#62640#0#PHP" expanded="false" />
+            <element signature="e#62587#62640#0#PHP" expanded="false" />
+            <element signature="e#62649#62856#0#PHP" expanded="false" />
+            <element signature="e#62740#62846#0#PHP" expanded="false" />
+            <element signature="e#63063#63220#0#PHP" expanded="false" />
+            <element signature="e#63121#63210#0#PHP" expanded="false" />
+            <element signature="e#63395#63573#0#PHP" expanded="false" />
+            <element signature="e#63508#63573#0#PHP" expanded="false" />
+            <element signature="e#63582#63761#0#PHP" expanded="false" />
+            <element signature="e#64846#65781#0#PHP" expanded="false" />
+            <element signature="e#65819#66084#0#PHP" expanded="false" />
+            <element signature="e#66094#66218#0#PHP" expanded="false" />
+            <element signature="e#66227#66351#0#PHP" expanded="false" />
+            <element signature="e#66424#66943#0#PHP" expanded="false" />
+            <element signature="e#66563#66943#0#PHP" expanded="false" />
+            <element signature="e#66582#66689#0#PHP" expanded="false" />
+            <element signature="e#66702#66811#0#PHP" expanded="false" />
+            <element signature="e#66824#66933#0#PHP" expanded="false" />
+            <element signature="e#66952#67085#0#PHP" expanded="false" />
+            <element signature="e#67094#67212#0#PHP" expanded="false" />
+            <element signature="e#67221#67357#0#PHP" expanded="false" />
+            <element signature="e#67366#67496#0#PHP" expanded="false" />
+            <element signature="e#67505#67623#0#PHP" expanded="false" />
+            <element signature="e#67632#67778#0#PHP" expanded="false" />
+            <element signature="e#67787#67947#0#PHP" expanded="false" />
+            <element signature="e#67956#68104#0#PHP" expanded="false" />
+            <element signature="e#68113#68265#0#PHP" expanded="false" />
+            <element signature="e#68343#68469#0#PHP" expanded="false" />
+            <element signature="e#68417#68469#0#PHP" expanded="false" />
+            <element signature="e#69056#69154#0#PHP" expanded="false" />
+            <element signature="n#show_private_pictures#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#70053#70215#0#PHP" expanded="false" />
+            <element signature="e#70284#70452#0#PHP" expanded="false" />
+            <element signature="e#70527#70769#0#PHP" expanded="false" />
+            <element signature="e#71020#71172#0#PHP" expanded="false" />
+            <element signature="e#71124#71172#0#PHP" expanded="false" />
+            <element signature="n#private_pictures#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#72512#72680#0#PHP" expanded="false" />
+            <element signature="e#72755#73044#0#PHP" expanded="false" />
+            <element signature="e#73148#73391#0#PHP" expanded="false" />
+            <element signature="n#honesty_reviews#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#75067#75235#0#PHP" expanded="false" />
+            <element signature="n#accept#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#76368#76547#0#PHP" expanded="false" />
+            <element signature="e#76622#76821#0#PHP" expanded="false" />
+            <element signature="e#76891#77060#0#PHP" expanded="false" />
+            <element signature="n#add_to_friends#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="n#uploadPhotoWhitFB#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="n#bookmarks#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#80434#80715#0#PHP" expanded="false" />
+            <element signature="e#80588#80700#0#PHP" expanded="false" />
+            <element signature="n#questions#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#81503#81697#0#PHP" expanded="false" />
+            <element signature="e#81699#82018#0#PHP" expanded="false" />
+            <element signature="e#82297#82545#0#PHP" expanded="false" />
+            <element signature="e#82416#82545#0#PHP" expanded="false" />
+            <element signature="e#82795#83413#0#PHP" expanded="false" />
+            <element signature="e#83093#83403#0#PHP" expanded="false" />
+            <element signature="e#83286#83403#0#PHP" expanded="false" />
+            <element signature="e#84019#86355#0#PHP" expanded="false" />
+            <marker date="1482738710555" expanded="false" signature="7162:7233" placeholder="SELECT id FR..." />
+            <marker date="1482738710555" expanded="false" signature="7464:7530" placeholder="SELECT id FR..." />
+            <marker date="1482738710555" expanded="false" signature="20400:20461" placeholder="SELECT name,..#__users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/jshopping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40528128">
+          <caret line="1144" column="27" selection-start-line="1144" selection-start-column="27" selection-end-line="1144" selection-end-column="27" />
+          <folding>
+            <marker date="1482738075313" expanded="true" signature="20667:20729" placeholder="select id, s..#__jshopping_vendors..." />
+            <marker date="1482738075313" expanded="true" signature="21833:21881" placeholder="select id, d..#__jshopping_delivery_times..." />
+            <marker date="1482738075313" expanded="true" signature="39017:39046" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="40141:40151" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="40587:40595" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="41237:41245" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="41521:41534" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="41704:41717" placeholder="..." />
+            <marker date="1482738075313" expanded="true" signature="41787:41800" placeholder="..." />
           </folding>
         </state>
       </provider>

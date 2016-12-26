@@ -133,7 +133,8 @@
     float: right;
 }
 .home-header .home-sign-in ul li a,
-.header-links-cool ul li a{
+.header-links-cool ul li a,
+.header-links ul li:last-child a{
     color: rgb(255, 255, 255);
     background: #f3b13e;
     padding: 10px 20px 8px!important;
@@ -146,7 +147,10 @@
 
 .header-links-cool ul li a:hover,
 .header-links-cool ul li a:active,
-.header-links-cool ul li a:focus{
+.header-links-cool ul li a:focus,
+.header-links ul li:last-child a:hover,
+.header-links ul li:last-child a:active,
+.header-links ul li:last-child a:focus{
     text-decoration: none;
     background: none!important;
     background-color: #ffc662!important;
@@ -252,6 +256,13 @@
     /*background-color: #ffc052;*/
     /*color: #ffffff!important;*/
 /*}*/
+
+@media (min-width: 767px) {
+    .home-logo{
+        max-width: 100%!important;
+    }
+}
+
 .home-header .home-logo{
     color: rgb(255, 255, 255);
     line-height: 70px;
@@ -293,6 +304,16 @@
     text-shadow: -2px 2px 2px rgb(0, 0, 0);
 }
 
+@media (max-width: 767px){
+    .home-header-text h1{
+        text-align: center;
+    }
+    .home-sign-up{
+        bottom: auto;
+        top: 220px;
+    }
+}
+
 .form_login .actions,
 .form_sign_up .actions{
     max-width: 350px;
@@ -318,7 +339,7 @@
         font: 15px/17px sans-serif!important;
     }
 }
-@media (max-width: 560px){
+@media (max-width: 767px){
     .home-header-text{
         display: block;
         color: #ffffff;
@@ -858,8 +879,43 @@ a:focus, input:focus{
     text-align: left;
 
 }
-
-.user-invisible{
+.user-invisible {
+    width: 100%;
+    height: 138px;
+    display: block;
+    background: url('/images/browsing.png') no-repeat 0 0;
+}
+.isInvisible{
+    background-position: 0 -138px!important;
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .user-invisible {
+        height: 114px;
+        background: url('/images/browsing_sm.png') no-repeat 0 0;
+    }
+    .isInvisible{
+        background-position: 0 -117px!important;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .user-invisible {
+        height: 79px;
+        background: url('/images/browsing_xs.png') no-repeat 0 0;
+    }
+    .isInvisible{
+        background-position: 0 -79px!important;
+    }
+}
+@media (max-width: 450px){
+    .user-invisible {
+        height: 48px;
+        background: url(/images/browsing_xxs.png) no-repeat center 0;
+    }
+    .isInvisible{
+        background-position: center -49px!important;
+    }
+}
+/*.user-invisible{
     background: url("../images/system/invisible.png") no-repeat left;
     color: rgb(51, 51, 51);
     font-size: 17px;
@@ -881,7 +937,7 @@ a:focus, input:focus{
 }
 .set-invisible:hover{
     text-decoration: none;
-}
+}*/
 
 .info-content{
     text-align: left;
@@ -971,15 +1027,15 @@ a:focus, input:focus{
         display: block;
         margin: auto;
     }
-	.user-invisible{
-		background: url("../images/system/invisible.png") no-repeat bottom;
-		color: rgb(51, 51, 51);
-		font-size: 17px;
-		min-height: 50px;
-		line-height: 25px;
-		padding: 0 0 50px;
-		text-align: center;
-	}
+	/*.user-invisible{*/
+		/*background: url("../images/system/invisible.png") no-repeat bottom;*/
+		/*color: rgb(51, 51, 51);*/
+		/*font-size: 17px;*/
+		/*min-height: 50px;*/
+		/*line-height: 25px;*/
+		/*padding: 0 0 50px;*/
+		/*text-align: center;*/
+	/*}*/
     .padding-null-xs{
          padding-right: 0!important;
          padding-left: 0!important;
@@ -1541,6 +1597,17 @@ a:focus, input:focus{
     width: 92vw!important;
     margin-left: calc(4vw - 10px)!important;
 }
+.dropdown-menu .dropdown-toggle{
+    box-shadow: none!important;
+    background: rgb(242, 178, 63);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .open > .dropdown-menu {
     display: flex!important;
 }
@@ -1593,7 +1660,7 @@ a:focus, input:focus{
     background: url("../images/system/cool_connections.png") no-repeat 18px 5px;
 }
 .dropdown-menu .cool-visitors{
-    background: url("../images/system/cool_visitors.png") no-repeat 21px 5px;
+    background: url("../images/system/cool_visitors.png") no-repeat 14px 5px;
 }
 .dropdown-menu .cool-tokens{
     background: url("../images/system/cool_tokens.png") no-repeat 16px 5px;
@@ -1989,6 +2056,17 @@ a:focus, input:focus{
 }
 .settings .settings-saved-success span{
     display: block;
+}
+.settings .activate-account{
+    background: none;
+    border: none;
+    outline: none;
+    color: #505050;
+    position: absolute;
+    right: 25px;
+}
+.settings .activate-account:hover{
+    text-decoration: underline;
 }
 
 .edit-photos .page-content .title{
@@ -5403,3 +5481,4 @@ img.jcrop-preview {
 .partners-page .lincup-offers-list .lincup-offers-items a{
     border-radius: 0;
 }
+

@@ -95,6 +95,10 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
             <div class="col-xs-12" style="text-align: center; margin-bottom: 15px">
                 <input type="submit" class="link-button" value="<?php print JText::_('SETTINGS_PAGE_BUTTON'); ?>">
                 <span class="submit-message"></span>
+
+                <button class="activate-account" type="button" value="<?php print $this->user->block; ?>">
+                    <?php print ($this->user->block == 0) ? 'Deactivate account' : 'Reactivate account'; ?>
+                </button>
             </div>
         </form>
 
@@ -166,6 +170,28 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                 setTimeout(function () {
                     jQuery('.form-content').find('input[type="submit"]').attr('disabled', false);
                 }, 3000);*/
+            }
+        });
+    });
+
+
+    jQuery('.activate-account').click(function(){
+        var msg = {
+            'block': (jQuery(this).val() == 0) ? 1 : 0
+        };
+        jQuery.ajax({
+            type: 'POST',
+            url: '/components/com_jshopping/controllers/save_data/activate_account.php',
+            data: msg,
+            success: function(data) {
+                if(data=='success'){
+                    jQuery(location).attr('href','<?php print "http://" . $_SERVER["SERVER_NAME"] . "/" . JText::_("LINK_MY_ACCOUNT"); ?>');
+                } else {
+                    alert('System Error!');
+                }
+            },
+            error:  function(data){
+                alert('System Error!');
             }
         });
     });

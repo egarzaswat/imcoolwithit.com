@@ -1158,7 +1158,7 @@ class JSFactory{
                 exit;
             }
 
-            if(JSFactory::getUser()->block == 1 && ($_REQUEST['controller'] != 'member' || $_REQUEST['task'] != null)  && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'logout') ){
+            if(JSFactory::getUser()->block == 1 && ($_REQUEST['controller'] != 'member' || $_REQUEST['task'] != null)  && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'logout') && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'settings') ){
                 header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
                 exit;
             }

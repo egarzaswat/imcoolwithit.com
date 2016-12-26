@@ -177,5 +177,13 @@ class jshopUser{
         $db->setQuery($query);
         $db->query();
     }
+
+    function setUserActive($user_id, $active){
+        $db = JFactory::getDBO();
+        $query = "UPDATE `#__jshopping_users` SET `block` = '" . $active . "' WHERE `user_id` = " . $user_id;
+        $db->setQuery($query);
+        $db->query();
+        return true;
+    }
 }
 ?>
