@@ -134,7 +134,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
             data: msg,
             success: function(data) {
                 if(data=='success'){
-                    jQuery(location).attr('href','<?php print "http://" . $_SERVER["SERVER_NAME"] . "/" . JText::_("LINK_MY_ACCOUNT"); ?>');
+                    jQuery(location).attr('href','<?php print "http://" . $_SERVER["SERVER_NAME"] . "/" . JText::_("LINK_USERS_LIST"); ?>');
                 } else {
                     switch (data){
                         case 'error username': jQuery('.form-content input[name="username"]').css( "border-color", "red"); break;

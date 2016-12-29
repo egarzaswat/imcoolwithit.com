@@ -5,6 +5,28 @@
     include_once "src/config.php";
     include_once "src/facebook.php";
 
+    function isMobile(){
+        $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+        $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+        $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+        $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+        $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+        $mobile = strpos($_SERVER['HTTP_USER_AGENT'],"Mobile");
+        $symb = strpos($_SERVER['HTTP_USER_AGENT'],"Symbian");
+        $operam = strpos($_SERVER['HTTP_USER_AGENT'],"Opera M");
+        $htc = strpos($_SERVER['HTTP_USER_AGENT'],"HTC_");
+        $fennec = strpos($_SERVER['HTTP_USER_AGENT'],"Fennec/");
+        $winphone = strpos($_SERVER['HTTP_USER_AGENT'],"WindowsPhone");
+        $wp7 = strpos($_SERVER['HTTP_USER_AGENT'],"WP7");
+        $wp8 = strpos($_SERVER['HTTP_USER_AGENT'],"WP8");
+        if ($iphone || $android || $palmpre || $ipod || $berry || $mobile || $symb || $operam || $htc || $fennec || $winphone || $wp7 || $wp8 === true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
     $facebook = new Facebook(array(
         'appId' => $config['App_ID'],
         'secret' => $config['App_Secret'],
@@ -103,7 +125,12 @@
                     $session->set('user', $instance);
 
                     $instance->setLastVisit();
-                    header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+                    if(isMobile()){
+                        header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST') . '?mobile=true');
+                    } else {
+                        header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'));
+                    }
+
                 }
             } else {
                 $instance = JUser::getInstance($user_id);
@@ -112,7 +139,11 @@
                 $instance->aid = 1;
                 $session->set('user', $instance);
                 $instance->setLastVisit();
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+                if(isMobile()){
+                    header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST') . '?mobile=true');
+                } else {
+                    header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'));
+                }
             }
         }
     } else {

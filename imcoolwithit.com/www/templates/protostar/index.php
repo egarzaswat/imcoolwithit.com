@@ -37,14 +37,16 @@ else
 
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
-$doc->addScript('templates/' . $this->template . '/js/js.cookie.js');
-$doc->addScript('templates/' . $this->template . '/js/template.js');
+$doc->addScript('templates/' . $this->template . '/minify/cool.js');
+//$doc->addScript('templates/' . $this->template . '/js/js.cookie.js');
+//$doc->addScript('templates/' . $this->template . '/js/template.js');
 //$doc->addScript('templates/' . $this->template . '/js/addtohomescreen.js');
 
 // Add Stylesheets
-$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/flaticon.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.css');
+$doc->addStyleSheet('templates/' . $this->template . '/minify/cool.css');
+//$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
+//$doc->addStyleSheet('templates/' . $this->template . '/css/flaticon.css');
+//$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.css');
 //$doc->addStyleSheet('templates/' . $this->template . '/css/addtohomescreen.css');
 
 // Load optional RTL Bootstrap CSS
@@ -116,6 +118,18 @@ if(isset($_GET['referrer'])){
 ?>
 
 <body <?php if($isoffline){print 'class="homepage"';} ?> >
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89376801-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
 
 <?php if(!$isoffline){?>
 <div class="header-full">
@@ -209,9 +223,9 @@ if(isset($_GET['referrer'])){
                 <a href="https://twitter.com/rucoolwithit" target="_blank">
                     <i class="icon-twitter"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UCdDj1mn8zURzGIjieXnkgZg" target="_blank">
-                    <i class="icon-youtube"></i>
-                </a>
+<!--                <a href="https://www.youtube.com/channel/UCdDj1mn8zURzGIjieXnkgZg" target="_blank">-->
+<!--                    <i class="icon-youtube"></i>-->
+<!--                </a>-->
             </div>
         <?php } ?>
     </div>

@@ -1036,7 +1036,7 @@ class JSFactory{
 
             $html .= '<span class="cool-menu-icons cool-connections">';
             if($count_friends > 0) {
-                $html .= '<span class="cool-count" style="left: 0;">'. $count_friends . '</span>';
+                $html .= '<span class="cool-count" style="left: 10px;">'. $count_friends . '</span>';
             }
             $html .= '</span>';
 
