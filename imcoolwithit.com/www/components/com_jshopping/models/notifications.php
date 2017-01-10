@@ -376,7 +376,16 @@ class jshopNotifications{
         switch($type){
             case $Config->notifications[7] :
                 $link = $this->site_url . "/" . JText::_('LINK_VISITORS');
-                $message = 'Hi ' . $username . ', you have ' . $count .  ' new browsers. <a href="' . $link . '">View</a>'; break;
+                $message = 'Hi ' . $username . ',<br>You have ' . $count;
+                $message .=  ' New ';
+                if($count > 1){
+                    $message .= 'Visitors';
+                } else {
+                    $message .= 'Visitor';
+                }
+                $message .= '.  Click here to <a href="' . $link . '">View</a>.<br>';
+                $message .= 'Have a good one!';
+                break;
             default:
                 $link = $this->site_url . "/" . JText::_('LINK_SPONSORS');
                 $message = 'You have ' . $count . ' new <a href="' . $link . '">Link Up Notification</a>. Cool.'; break;

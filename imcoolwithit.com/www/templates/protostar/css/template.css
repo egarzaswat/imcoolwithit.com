@@ -2362,9 +2362,9 @@ a:focus, input:focus{
     background: rgb(64, 170, 221);
     color: rgb(0, 0, 0);
     display: inline-block;
-    font-size: 13px;
+    font-size: 12px;
     float: left;
-    height: 100px;
+    height: 90px;
     padding: 10px 10px 10px 15px;
     text-align: left;
     width: 30%;
@@ -2378,7 +2378,7 @@ a:focus, input:focus{
     display: inline-block;
     font-size: 13px;
     float: left;
-    min-height: 100px;
+    min-height: 90px;
     padding: 10px 15px 10px 10px;
     text-align: left;
     width: 70%;

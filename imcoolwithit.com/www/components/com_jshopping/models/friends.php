@@ -8,20 +8,27 @@ class jshopFriends{
 
     function getCountFriends(){
         $db = JFactory::getDBO();
-
+        $count = 0;
         $user_id = JSFactory::getUser()->user_id;
-        $query = "SELECT COUNT(`sender`) FROM `#__friends` WHERE (`sender` = " . $user_id . " or `reciper` = " . $user_id. ") and `confirmation`=1";
+
+        $query = "SELECT COUNT(`F`.`sender`) FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON `F`.`reciper` = `U`.`user_id` WHERE `F`.`sender` = " . $user_id . " and `F`.`confirmation`=1 and `U`.`block`=0";
         $db->setQuery($query);
-        return $db->loadResult();
+        $count += $db->loadResult();
+
+        $query = "SELECT COUNT(`F`.`reciper`) FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON `F`.`sender` = `U`.`user_id` WHERE `F`.`reciper` = " . $user_id . " and `F`.`confirmation`=1 and `U`.`block`=0";
+        $db->setQuery($query);
+        $count += $db->loadResult();
+
+        return $count;
     }
 
     function getFriends($start = 0, $limit = 0){
         $db = JFactory::getDBO();
 
         $user_id = JSFactory::getUser()->user_id;
-        $query = "SELECT F.date_confirm, U.user_id, U.u_name, U.birthday, U.photosite, U.longitude, U.latitude, U.sex, U.last_visit, U.block, I.height, I.body, I.status FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON F.reciper = U.user_id LEFT JOIN `#__user_info` AS I ON U.`user_id` = I.`user_id` WHERE F.sender = " . $user_id . " and F.confirmation = 1
+        $query = "SELECT F.date_confirm, U.user_id, U.u_name, U.birthday, U.photosite, U.longitude, U.latitude, U.sex, U.last_visit, U.block, I.height, I.body, I.status FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON F.reciper = U.user_id LEFT JOIN `#__user_info` AS I ON U.`user_id` = I.`user_id` WHERE F.sender = " . $user_id . " and F.confirmation = 1 and U.block = 0
                     UNION
-                  SELECT F.date_confirm, U.user_id, U.u_name, U.birthday, U.photosite, U.longitude, U.latitude, U.sex, U.last_visit, U.block, I.height, I.body, I.status FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON F.sender = U.user_id LEFT JOIN `#__user_info` AS I ON U.`user_id` = I.`user_id` WHERE F.reciper = " . $user_id . " and F.confirmation = 1 ORDER BY date_confirm DESC";
+                  SELECT F.date_confirm, U.user_id, U.u_name, U.birthday, U.photosite, U.longitude, U.latitude, U.sex, U.last_visit, U.block, I.height, I.body, I.status FROM `#__friends` AS F LEFT JOIN `#__jshopping_users` AS U ON F.sender = U.user_id LEFT JOIN `#__user_info` AS I ON U.`user_id` = I.`user_id` WHERE F.reciper = " . $user_id . " and F.confirmation = 1 and U.block = 0 ORDER BY date_confirm DESC";
         $db->setQuery($query, $start, $limit);
         return $db->loadObjectList();
     }
