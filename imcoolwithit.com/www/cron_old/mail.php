@@ -11,7 +11,7 @@ JModelLegacy::addIncludePath(JPATH_BASE . '/components/com_jshopping/models');
 JFactory::getApplication('site')->initialise();
 
 $m_not = JSFactory::getModel('notifications', 'jshop');
-$notifications = $m_not->getNotesNew();
+$notifications = $m_not->getNotes();
 
 $id_arr = array();
 $db = JFactory::getDbo();

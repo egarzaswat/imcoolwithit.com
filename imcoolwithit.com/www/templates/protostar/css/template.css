@@ -151,12 +151,12 @@
     .header-links ul li:last-child a{
         /*color: rgb(255, 255, 255);*/
         /*background: #f3b13e;*/
-        padding: 5px 10px 7px!important;
+        padding: 6px 10px 6px!important;
         border-radius: 7px;
         font-size: 15px;
         /*font-family: arial, helvetica, sans-serif;*/
         /*line-height: 1;*/
-        margin: 15px 0 0 10px;
+        margin: 15px 0 5px 10px;
     }
 }
 
@@ -193,7 +193,7 @@
 
 @media (max-width: 767px){
     .home-header{
-        height: 125px;
+        height: 130px;
     }
     .home-logo{
         /*float: none!important;*/
@@ -202,8 +202,13 @@
         position: absolute;
         display: block;
         /*margin: 45px 0 0 calc(50% - 120px);*/
-        margin: 45px 0 0 calc(90% - 220px);
+        margin: 50px 0 0 calc(90% - 220px);
         width: auto;
+    }
+}
+@media (max-width: 340px){
+    .home-logo{
+        margin-left: -10px;
     }
 }
 .header-links{
@@ -283,6 +288,7 @@
     color: rgb(255, 255, 255);
     line-height: 70px;
     text-align: left;
+    /*margin-top: -5px;*/
 }
 .home-header .home-logo a{
     display: inline-block;
@@ -645,6 +651,12 @@ a:focus, input:focus{
     margin: 0;
     padding: 0;
 
+}
+@media (max-width: 500px){
+    .profile .page-content{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
 .page-content .title{
     background: rgb(243, 177, 62);
@@ -1377,10 +1389,11 @@ a:focus, input:focus{
     height: 75px;
     margin: 0 auto;
     text-align: left;
+    max-width: 240px;
 }
 .header-logo a{
     display: inline-block;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .header-logo div{
     height: 75px;
@@ -1393,6 +1406,19 @@ a:focus, input:focus{
     max-width: 100%;
 }
 @media (max-width: 767px){
+    .header-logo div{
+        height: 60px;
+        margin-left: 10px;
+    }
+    .header-logo{
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .header-full{
+        min-height: 50px;
+    }
     .header-logo img{
         /*max-height: 40px;*/
     }
@@ -1490,7 +1516,7 @@ a:focus, input:focus{
 .menu-top-left .hey-user .home-link{
     font-size: 14px;
     font-weight: normal;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
 }
 
 @media (min-width: 991px){
@@ -1726,6 +1752,18 @@ a:focus, input:focus{
     font-size: 20px;
     text-align: center;
 }
+.hey-user-big{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center!important;
+}
+@media (min-width: 1000px){
+    .hey-user-big{
+        margin-left: 25px;
+    }
+}
 .menu-top-xs .hey-user a{
     color: rgb(242, 178, 63);
     font-weight: bold;
@@ -1902,6 +1940,7 @@ a:focus, input:focus{
 .profile-content-left .inf input[type = "text"],
 .profile-content-left .inf input[type = "number"]{
     padding: 0 5px;
+    width: 45px!important;
 }
 
 .profile-content-left .save{
@@ -1964,7 +2003,7 @@ a:focus, input:focus{
     position: absolute;
     padding: 10px 15px;
     text-align: center;
-    right: -17px;
+    right: -4px;
 }
 .user-options a,
 .user-options span{
@@ -2606,7 +2645,7 @@ a:focus, input:focus{
     bottom: 10px;
     padding-right: 10px;
     position: absolute;
-    right: 0;
+    right: 15px;
 }
 .full-user-page .external-links-bottom .add-visited,
 .full-user-page .external-links-bottom .delete-friend,

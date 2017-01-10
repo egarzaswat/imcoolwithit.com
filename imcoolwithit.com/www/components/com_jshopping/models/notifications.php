@@ -207,7 +207,6 @@ class jshopNotifications{
         }
         return $message;
     }
-//Hi, new_user. ruths chris has sent you a new R U Interested survey offer. <a href="http:///earncredits/offer_questions?offer=23">Click to view offer</a>.
 
     private function prepareForEmail($message, $pruning = false, $pruning_length = 60){
 
@@ -333,4 +332,57 @@ class jshopNotifications{
         $db->execute();
         return true;
     }
+
+
+//  ------------- New Cron -------------
+    function getNotesNew(){
+        $db = JFactory::getDBO();
+        $query = "SELECT * "
+            . "FROM {$db->quoteName('#__emails_notifications')} WHERE `type` <> 'New Survey Offer' AND `type` <> 'New Linc Up Offer' AND `type` <> 'New Visitor'";
+        $db->setQuery($query);
+        $result = $db->loadAssocList();
+        return $result;
+    }
+
+    function getLincUpNotes(){
+        $db = JFactory::getDBO();
+        $query = "SELECT * "
+            . "FROM {$db->quoteName('#__emails_notifications')} WHERE `type` = 'New Survey Offer' OR `type` = 'New Linc Up Offer'";
+        $db->setQuery($query);
+        $result = $db->loadAssocList();
+        return $result;
+    }
+
+    function getVisitorsNotes(){
+        $db = JFactory::getDBO();
+        $query = "SELECT * "
+            . "FROM {$db->quoteName('#__emails_notifications')} WHERE `type` = 'New Visitor'";
+        $db->setQuery($query);
+        $result = $db->loadAssocList();
+        return $result;
+    }
+
+    function getMessage($type, $user_id, $count = 0){
+        $db = JFactory::getDbo();
+        $query	= $db->getQuery(true)
+            ->select($db->quoteName(array('u_name', 'email')))
+            ->from($db->quoteName('#__jshopping_users'))
+            ->where("`user_id` = {$user_id}");
+        $db->setQuery($query);
+        $user = $db->loadAssocList();
+        $username = $user[0]['u_name'];
+
+        $Config = JSFactory::getConfig();
+        switch($type){
+            case $Config->notifications[7] :
+                $link = $this->site_url . "/" . JText::_('LINK_VISITORS');
+                $message = 'Hi ' . $username . ', you have ' . $count .  ' new browsers. <a href="' . $link . '">View</a>'; break;
+            default:
+                $link = $this->site_url . "/" . JText::_('LINK_SPONSORS');
+                $message = 'You have ' . $count . ' new <a href="' . $link . '">Link Up Notification</a>. Cool.'; break;
+        }
+
+        return $message;
+    }
+
 }

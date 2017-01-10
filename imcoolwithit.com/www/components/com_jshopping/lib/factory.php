@@ -1085,10 +1085,16 @@ class JSFactory{
 
             $html .= '<div class="menu-top-left">';
             $html .= '<a href="' . JText::_('LINK_EDIT_ACCOUNT') . '" class="menu-settings" title="Settings">Settings</a>';
-            $html .= '<span class="hey-user">' . JText::_('COOL_TOP_HEY');
-            $html .= ' <a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile">' . JSFactory::getUser()->u_name . '</a>!';
-            $html .= '<br>';
-            $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
+            $html .= '<span class="hey-user hey-user-big">';
+
+            $html .= '<span>';
+                $html .= JText::_('COOL_TOP_HEY');
+                $html .= ' <a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile">' . JSFactory::getUser()->u_name . '</a>!';
+            $html .= '</span>';
+            $html .= '<span>';
+                $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
+            $html .= '</span>';
+
             $html .= '</span>';
             $html .= '</div>';
 

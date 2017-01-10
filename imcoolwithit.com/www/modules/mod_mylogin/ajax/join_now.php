@@ -33,13 +33,12 @@ if ($creating_message == 'success') {
     $senderSubject = 'Welcome to Cool With It';
     $message = '
     Welcome to Cool With It&trade;...!<br>
-    Thanks for setting up your account and for letting us be a part of helping you find that special someone!<br>
+    Thanks for setting up your account.<br>
+    Here’s your info:<br>
     Your account email is:&nbsp;<a href="http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT') . '">' . $email . '</a>.<br>
     You can reset your password at any time here:&nbsp;<a href="http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT') .'" >Reset Password</a>.<br>
-    Our goal is to create a community whose members are 100% cool with who they are and what they are looking for, and in turn can learn and share about new places and happenings, all while getting the chance to meet other like-minded people!<br><br>
+    Have fun and enjoy your dating experience..<br><br>
     The Cool With It&trade; team.';
-
-    $message = "Sender: " . $senderName . "\r\nE-mail: " . $senderEmail . "\r\nMessage: ". $message;
 
     $mail = new sendMail();
     $mail->setFrom($conf->smtpuser, 'Support');
@@ -110,3 +109,6 @@ function createUser($email, $password){
         return 'success';
     }
 }
+
+
+

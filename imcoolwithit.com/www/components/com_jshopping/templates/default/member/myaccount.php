@@ -126,7 +126,7 @@ defined('_JEXEC') or die('Restricted access');
             jQuery('.profile').css('margin-top', '0');
             jQuery('.profile .profile-content-left .photo img').css({'width': '100%', 'margin-left':'auto', 'margin-top':'0'});
             jQuery('.container-full .container').css('padding', 'inherit');
-            jQuery('.user-options').css('right','-17px');
+            jQuery('.user-options').css('right','-5px');
         }
     });
 </script>
@@ -210,7 +210,7 @@ defined('_JEXEC') or die('Restricted access');
             '<option' + ( (status_value.html() === 'Divorced')? ' selected ' : '' ) + ' value="Divorced" >Divorced</option>' +
             '<option' + ( (status_value.html() === 'Widowed')? ' selected ' : '' ) + ' value="Widowed" >Widowed</option>' +
             '<option' + ( (status_value.html() === 'Separated')? ' selected ' : '' ) + ' value="Separated" >Separated</option>' +
-            '<option' + ( (status_value.html() === 'Complicated')? ' selected ' : '' ) + ' value="Complicated" >Complicated</option>' +
+//            '<option' + ( (status_value.html() === 'Complicated')? ' selected ' : '' ) + ' value="Complicated" >Complicated</option>' +
         '</select>';
         status_value.html(status_field);
 
