@@ -15,7 +15,7 @@
 		<filename>index.php</filename>
 		<filename>browserconfig.xml</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>manifest.json</filename>
+		<!--<filename>manifest.json</filename>-->
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<folder>css</folder>

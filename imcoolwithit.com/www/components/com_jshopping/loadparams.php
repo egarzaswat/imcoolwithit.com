@@ -30,7 +30,7 @@ if (JRequest::getInt('id_currency')){
 $user = JFactory::getUser();
 
 if( !isset($user->username) && ($user->username == null) ){
-    header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_LOGIN'));
+    header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_LOGIN'));
 }
 
 $js_update_all_price = $session->get('js_update_all_price');

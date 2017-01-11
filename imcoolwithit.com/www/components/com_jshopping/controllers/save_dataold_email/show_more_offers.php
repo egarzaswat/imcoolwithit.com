@@ -48,9 +48,9 @@ if(isset($_POST['category_id']) && (int)$_POST['category_id'] != 0) {
             <?php } ?>
         </div>
         <?php if ($user_id != 0) {
-            $return_link = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_SPONSORS') . '?user=' . $user_id;
+            $return_link = 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_SPONSORS') . '?user=' . $user_id;
         } else {
-            $return_link = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_SPONSORS');} ?>
+            $return_link = 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_SPONSORS');} ?>
 
         <a <?php print 'href="' . $return_link . '"';?> class="all-offers">All Sponsors</a>
     </div>

@@ -870,7 +870,7 @@ class JSFactory{
     }
 
     public static function getPagination($count_pages, $link, $page_active){
-        $link = 'http://' . $_SERVER['SERVER_NAME'] . '/' . $link;
+        $link = 'https://' . $_SERVER['SERVER_NAME'] . '/' . $link;
         if (strpos($link, '?')){
             $page = "&page=";
         } else {
@@ -1160,12 +1160,12 @@ class JSFactory{
             }
 
             if(JSFactory::getUser()->register_activate == 0 && ($_REQUEST['controller'] != 'member' || $_REQUEST['task'] != 'settings') && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'logout') ){
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+                header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
                 exit;
             }
 
             if(JSFactory::getUser()->block == 1 && ($_REQUEST['controller'] != 'member' || $_REQUEST['task'] != null)  && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'logout') && !($_REQUEST['controller'] == 'member' && $_REQUEST['task'] == 'settings') ){
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+                header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
                 exit;
             }
         }

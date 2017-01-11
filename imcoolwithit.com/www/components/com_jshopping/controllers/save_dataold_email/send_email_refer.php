@@ -36,7 +36,7 @@ if ($senderName) {
         Your friend wants to invite you to be cool with him.
 
         Please click on the link below to move to the site:
-        http://' . $_SERVER['SERVER_NAME'] . '/index.php?referrer=' . $user_id;
+        https://' . $_SERVER['SERVER_NAME'] . '/index.php?referrer=' . $user_id;
 
     $mail = new sendMail();
     $mail->setSubject($senderSubject);

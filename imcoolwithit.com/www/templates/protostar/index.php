@@ -90,7 +90,7 @@ if(isset($_GET['referrer'])){
     <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
-    <link rel="manifest" href="manifest.json">
+<!--    <link rel="manifest" href="manifest.json">-->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">

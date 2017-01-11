@@ -32,9 +32,9 @@ class ContentController extends JControllerLegacy
             $user_shop->load($user->id);
 
             if(!isset($user_shop->register_activate) || is_null($user_shop->register_activate) || $user_shop->register_activate == 0){
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+                header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
             } else {
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+                header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
             }
             exit;
         }

@@ -692,7 +692,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         $view = $this->getView($view_name, getDocumentType(), '', $view_config);
         $view->setLayout("edit_photos");
         $view->assign('user', $adv_user);
-        $view->assign('link_Q_n_A', 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_COMPLETE_PROFILE'));
+        $view->assign('link_Q_n_A', 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_COMPLETE_PROFILE'));
         $view->assign('image_avatar', $image_avatar);
         $view->assign('images_album', $images_album);
         $view->assign('permission_upload_photo', $conf->permission_upload_photo);
@@ -734,7 +734,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         $user_shop->register_activate = 1;
 
         if (!$user_shop->check("editaccount")) {
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
 //            JError::raiseWarning('',$user_shop->getError());
 //            $this->setRedirect(SEFLink("index.php?option=com_jshopping&controller=user&task=editaccount",0,1,$jshopConfig->use_ssl));
 //            return 0;
@@ -743,7 +743,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         unset($user_shop->password2);
 
         if (!$user_shop->store()){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
 //            JError::raiseWarning(500,_JSHOP_REGWARN_ERROR_DATABASE);
 //            $this->setRedirect(SEFLink("index.php?option=com_jshopping&controller=user&task=editaccount",0,1,$jshopConfig->use_ssl));
 //            return 0;
@@ -773,7 +773,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         $app->setUserState('com_users.edit.profile.data', $data);
 
         $message = JFactory::getApplication()->enqueueMessage(_JSHOP_ACCOUNT_UPDATE, 'success');
-        header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+        header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
 //        $this->setRedirect(SEFLink("index.php?option=com_jshopping&controller=user&task=editaccount",0,1,$jshopConfig->use_ssl), $message);
     }
 
@@ -990,7 +990,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         $adv_user = $modelUser->getDataUser(JSFactory::getUser()->user_id, array('user_id', 'u_name', 'birthday', 'city', 'state', 'photosite', 'block', 'user_reviews', 'looking_for', 'age_look_from', 'age_look_to', 'distance', 'zip', 'longitude', 'latitude', 'sex', 'user_reviews', 'last_visit', 'register_activate'), true);
 
         if($adv_user->register_activate == 0){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_ACCOUNT'));
         }
 
         if($adv_user->block == 0){
@@ -1078,9 +1078,9 @@ class JshoppingControllerUser extends JControllerLegacy{
             $view->assign('title', $meta_data['header']);
             $view->assign('href_user_group_info', SEFLink('index.php?option=com_jshopping&controller=user&task=groupsinfo'));
             $view->assign('href_show_orders', 'index.php?option=com_jshopping&controller=user&task=orders');
-            $view->assign('link_Q_n_A', 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_COMPLETE_PROFILE'));
-            $view->assign('link_private_photos', 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PRIVATE_PICTURES') . '?user=' . JSFactory::getUser()->user_id);
-            $view->assign('link_honesty_reviews', 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_HONESTY_REVIEWS') . '?user=' . JSFactory::getUser()->user_id);
+            $view->assign('link_Q_n_A', 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_COMPLETE_PROFILE'));
+            $view->assign('link_private_photos', 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PRIVATE_PICTURES') . '?user=' . JSFactory::getUser()->user_id);
+            $view->assign('link_honesty_reviews', 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_HONESTY_REVIEWS') . '?user=' . JSFactory::getUser()->user_id);
             $view->assign('verified', $modelUser->isVerification(JSFactory::getUser()->user_id));
             $view->display();
         } else {
@@ -1155,13 +1155,13 @@ class JshoppingControllerUser extends JControllerLegacy{
 
         $userId = JRequest::getInt('user');
         if($userId == JSFactory::getUser()->user_id){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
             exit;
         }
 
         $modelUser = JSFactory::getModel('user', 'jshop');
         if($modelUser->existUser($userId) == false){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
 
@@ -1215,7 +1215,7 @@ class JshoppingControllerUser extends JControllerLegacy{
 
             if($modelFriends->getIsFrieds($userData->user_id)){
                 $user_is_friends = true;
-                header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_FULL_USER_PAGE') . '?user=' . $userData->user_id);
+                header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_FULL_USER_PAGE') . '?user=' . $userData->user_id);
                 exit;
             } else {
                 $user_is_friends = false;
@@ -1261,12 +1261,12 @@ class JshoppingControllerUser extends JControllerLegacy{
             }
 
             if(isset($users_list_id[$active_user+1])){
-                $next_users = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $users_list_id[$active_user+1]->user_id;
+                $next_users = 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $users_list_id[$active_user+1]->user_id;
             } else {
                 if(isset($users_list_id[$active_user-1])){
-                    $next_users = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $users_list_id[$active_user-1]->user_id;
+                    $next_users = 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $users_list_id[$active_user-1]->user_id;
                 } else {
-                    $next_users = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST');
+                    $next_users = 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST');
                 }
             }
 
@@ -1325,13 +1325,13 @@ class JshoppingControllerUser extends JControllerLegacy{
         $modelUser = JSFactory::getModel('user', 'jshop');
 
         if (!$modelUser->existUser($user_id)) {
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
 
         $data_user = $modelUser->getDataUser($user_id, array('user_id', 'u_name', 'birthday', 'city', 'state', 'photosite', 'block', 'user_reviews', 'longitude', 'latitude', 'sex', 'last_visit'), true);
         if ($data_user->block != 0) {
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }
 
@@ -1385,7 +1385,7 @@ class JshoppingControllerUser extends JControllerLegacy{
             $isset_tokens_add_to_friends = true;
         }
         /*if (!$isFriends) {
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }*/
 
@@ -1496,19 +1496,19 @@ class JshoppingControllerUser extends JControllerLegacy{
 
         $user_id = JRequest::getInt('user');
         if($user_id == $adv_user){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
             exit;
         }
 
         $modelUser = JSFactory::getModel('user', 'jshop');
         if(!$modelUser->existUser($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
 
         $modelFriends = JSFactory::getModel('friends', 'jshop');
         if( !$modelFriends->getIsFrieds($user_id) && !$modelFriends->getIsAccept($user_id) ){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }
 
@@ -1538,7 +1538,7 @@ class JshoppingControllerUser extends JControllerLegacy{
         $view->assign('permission', $permission);
         $view->assign('link_earn_tokens', JText::_('LINK_EARN_TOKENS'));
         $view->assign('adv_user', $adv_user);
-        $view->assign('link', 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PRIVATE_PICTURES') . '?user=' . $user_id);
+        $view->assign('link', 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PRIVATE_PICTURES') . '?user=' . $user_id);
         $view->display();
     }
 
@@ -1552,19 +1552,19 @@ class JshoppingControllerUser extends JControllerLegacy{
         $modelUser = JSFactory::getModel('user', 'jshop');
 
         if(!$modelUser->existUser($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
 
         $modelFriends = JSFactory::getModel('friends', 'jshop');
         if( !$modelFriends->getIsFrieds($user_id) && !$modelFriends->getIsAccept($user_id) && ($user_id != JSFactory::getUser()->user_id) ){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }
 
         $pos = strpos($_SERVER['HTTP_REFERER'], JText::_('LINK_USER_SHOW_PRIVATE_PICTURES'));
         if( ($pos == false) && ($user_id != JSFactory::getUser()->user_id) ){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_SHOW_PRIVATE_PICTURES') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_SHOW_PRIVATE_PICTURES') . '?user=' . $user_id);
             exit;
         }
 
@@ -1604,7 +1604,7 @@ class JshoppingControllerUser extends JControllerLegacy{
 
         $modelUser = JSFactory::getModel('user', 'jshop');
         if(!$modelUser->existUser($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
         $member_info = $modelUser->getDataUser($user_id, array('u_name', 'user_reviews'));
@@ -1633,19 +1633,19 @@ class JshoppingControllerUser extends JControllerLegacy{
         $user_id = JRequest::getInt('user');
 
         if( !isset($user_id) || is_null($user_id) || $user_id == 0 ){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'));
         }
 
         $modelFriends = JSFactory::getModel('friends', 'jshop');
         if(!$modelFriends->getIsFrieds($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }
 
         $modelUser = JSFactory::getModel('user', 'jshop');
 
         if($modelUser->isBlockUser($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
             exit;
         }
 
@@ -1752,13 +1752,13 @@ class JshoppingControllerUser extends JControllerLegacy{
         $user_id = JRequest::getInt('user');
         $modelUser = JSFactory::getModel('user', 'jshop');
         if(!$modelUser->existUser($user_id)){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }
 
 /*        $modelFriends = JSFactory::getModel('friends', 'jshop');
         if( !$modelFriends->getIsFrieds($user_id) && !$modelFriends->getIsAccept($user_id) ){
-            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
+            header('Location: ' . 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $user_id);
             exit;
         }*/
 

@@ -286,9 +286,9 @@
 
 .home-header .home-logo{
     color: rgb(255, 255, 255);
-    line-height: 70px;
+    line-height: 1;
     text-align: left;
-    /*margin-top: -5px;*/
+    margin-top: -2px;
 }
 .home-header .home-logo a{
     display: inline-block;

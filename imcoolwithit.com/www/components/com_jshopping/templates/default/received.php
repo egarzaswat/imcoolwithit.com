@@ -82,9 +82,9 @@
 <script type="text/javascript">
     jQuery('#tokens-filter').change(function() {
         if(jQuery(this).is(':checked')){
-            jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MESSAGING_RECEIVED') . '?tokens=true'; ?>');
+            jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MESSAGING_RECEIVED') . '?tokens=true'; ?>');
         } else {
-            jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MESSAGING_RECEIVED'); ?>');
+            jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MESSAGING_RECEIVED'); ?>');
         }
     });
 
@@ -100,7 +100,7 @@
             data: data_post,
             success: function(data){
                 if(data == "success"){
-                    jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>');
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>');
                 } else {
 
                 }
@@ -116,7 +116,7 @@
 
         //jQuery('.full-user-page .external-links-top .accept-token .token').removeClass('token').addClass('sending-token');
         //jQuery('.full-user-page .external-links-top .accept-token .token').addClass('token-animation');
-        var link='<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
+        var link='<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
         var referer_email='<?php print $email_ref; ?>';
 
         var data_post = {

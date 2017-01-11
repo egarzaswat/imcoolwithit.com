@@ -65,7 +65,7 @@ if(!$active) {
     if ($senderName) {
         $message = '
         Hi!  Please verify your email to earn extra Credits. Click the link below to complete:<br>
-        http://' . $_SERVER['SERVER_NAME'] . '/earntokens/verify_status?user=' . $user_id . '&email=' . $email . '&hash=' . $hash;
+        https://' . $_SERVER['SERVER_NAME'] . '/earntokens/verify_status?user=' . $user_id . '&email=' . $email . '&hash=' . $hash;
 
         $mail = new sendMail();
         $mail->setSubject($senderSubject);

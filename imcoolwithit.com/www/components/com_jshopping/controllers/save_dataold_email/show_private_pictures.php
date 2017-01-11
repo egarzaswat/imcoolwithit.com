@@ -134,7 +134,7 @@ if ($senderName) {
     $subject = $senderSubject;
     $message = '
 Hi ' . $adv_name . ',
-<a href="http://' .  $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $my_id . '">' . $my_name . '</a> just viewed your private pictures.
+<a href="https://' .  $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_PAGE') . '?user=' . $my_id . '">' . $my_name . '</a> just viewed your private pictures.
 Have a good one!
 - The I`m Cool with it team';
     $success = smtpmail($recipientEmail, $subject, $message, $headers);

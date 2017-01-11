@@ -108,7 +108,7 @@
 <?php if($userData->block == 0) { ?>
     <script type="text/javascript">
         function sendEmailReferrer(email){
-            var link='<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT') . '?user=' . $userData->user_id; ?>';
+            var link='<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT') . '?user=' . $userData->user_id; ?>';
             var data_post = {
                 'email' : email
             };
@@ -186,7 +186,7 @@
                     setTimeout(function () {
                         jQuery('.send-invite .accept-animation-finish').show();
                         jQuery('.send-invite .accept-animation').hide();
-                        jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS').'?usr='.$userData->u_name; ?>');
+                        jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS').'?usr='.$userData->u_name; ?>');
                     }, 1700);
                 },
                 error: function(data){
@@ -226,7 +226,7 @@
             jQuery(this).attr('disabled',true).removeClass('accept').addClass('accept-animation-finish').hide();
             jQuery('.accept-invite .accept-animation').show();
 //            jQuery(this).attr('disabled',true).addClass('token-fall');
-            var link='<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
+            var link='<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
             var referer_email='<?php print $email_ref; ?>';
 
             var data_post = {
@@ -266,9 +266,9 @@
                 url: '/components/com_jshopping/controllers/save_data/accept_rejected.php',
                 data: data_post,
                 success: function(data){
-                    jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
                     /*setTimeout(function () {
-                        jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_TOKENS_RECEIVED'); ?>');
+                        jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_TOKENS_RECEIVED'); ?>');
                     }, 3000);*/
                 },
                 error: function(data){

@@ -166,7 +166,7 @@ class jshopNotifications{
             case $Config->notifications[0] :
                 $link = $this->site_url . "/" . JText::_('LINK_MESSAGING_VIEW') . "?friend=" . $event_id;
                 $message_text = $this->prepareForEmail($message_text, true);
-                $message = 'Hi, ' . $user . '. ' . $name . ' has sent you a new message. `' . strip_tags($message_text) . '` <a href="' . $link . '">View message</a>.'; break;
+                $message = 'Hi, ' . $user . '. ' . $name . ' has sent you a new message. "' . $message_text . '" <a href="' . $link . '">View message</a>.'; break;
             case $Config->notifications[1] :
                 $link = $this->site_url . "/" . JText::_('LINK_MEETING_VIEW_INVITE') . "?meet=" . $event_id;
                 $message = 'Hi, ' . $user . '. ' . $name . ' has sent you a new Linc Up invite. <a href="' . $link . '">Click to view invite</a>.'; break;

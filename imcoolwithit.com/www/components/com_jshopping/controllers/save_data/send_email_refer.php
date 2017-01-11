@@ -42,7 +42,7 @@ if ($senderName) {
     Hi there!<br><br>
     A friend of yours has invited you to become a member of Cool With It. The free dating site that takes you out.<br><br>
     Please click on the link below to access the site and sign up for free.  No Credit Cards are ever requested or taken.  Thanks!<br>
-    http://' . $_SERVER['SERVER_NAME'] . '/index.php?referrer=' . $user_id;
+    https://' . $_SERVER['SERVER_NAME'] . '/index.php?referrer=' . $user_id;
 
     $mail = new sendMail();
     $mail->setSubject($senderSubject);

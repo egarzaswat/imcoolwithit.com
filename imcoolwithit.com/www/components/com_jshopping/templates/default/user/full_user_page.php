@@ -257,7 +257,7 @@
             data: data_post,
             success: function(data){
                 if(data == "success"){
-                    jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
                 } else {
 
                 }
@@ -281,7 +281,7 @@
             data: data_post,
             success: function(data){
                 if(data == "success"){
-                    jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USERS_LIST'); ?>');
                 } else {
 
                 }
@@ -350,7 +350,7 @@
             data: data_post,
             success: function(data){
                 //setTimeout(function () {
-                    jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
                 //}, 3000);
             },
             error: function(data){
@@ -364,7 +364,7 @@
 
         //jQuery('.full-user-page .external-links-top .accept-token .token').removeClass('token').addClass('sending-token');
         //jQuery('.full-user-page .external-links-top .accept-token .token').addClass('token-animation');
-        var link='<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
+        var link='<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
         var referer_email='<?php print $email_ref; ?>';
 
         var data_post = {
