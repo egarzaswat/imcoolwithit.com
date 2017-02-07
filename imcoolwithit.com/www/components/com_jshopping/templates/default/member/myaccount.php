@@ -9,7 +9,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 
-<div class="profile col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="profile">
 
     <div id="hide-content">
         <div id="show-img">
@@ -29,8 +29,8 @@ defined('_JEXEC') or die('Restricted access');
                 <?php if(strpos($this->user->photosite, 'no-image') !== false) { ?>
                     <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">
                 <?php } ?>
-                <img src="<?php echo $this->user->photosite; ?>" alt="<?php echo $this->user->photosite; ?>">
-                <?php if(strpos($this->user->photosite, 'no-image') === false) { ?>
+                    <img src="<?php echo $this->user->photosite; ?>" alt="<?php echo $this->user->photosite; ?>">
+                <?php if(strpos($this->user->photosite, 'no-image') !== false) { ?>
                     </a>
                 <?php } ?>
 
@@ -43,24 +43,19 @@ defined('_JEXEC') or die('Restricted access');
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
-            <a class="link-button" href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">Edit Photos</a>
             <span class="localisation">
+                <?php print JText::_('AGE') . $this->user->age; ?>
+                <span class="yellow">|</span>
                 <?php print $this->user->city . ", " . $this->user->state; ?>
                 <span class="yellow">|</span>
                 <?php print $this->user->sex; ?>
             </span>
-<!--            <span class="last-online">--><?php //print JText::_('LAST_ONLINE'); ?><!----><?php //print $this->user->last_visit; ?><!--</span>-->
-            <div class="my-stats"><?php print JText::_('MY_STATS'); ?><span id="edit-stats" class="edit"></span></div>
-            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $this->user->age; ?></span></span>
+
+            <span id="edit-stats" class="edit"></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $this->user->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $this->user->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $this->user->looking_for; ?></span></span>
             <span class="inf"><?php print JText::_('RELATIONSHIP_TYPE'); ?> <span class="type"><?php print $this->user->relationship_type; ?></span></span>
-           <!-- <span class="inf"><?php /*print JText::_('ETHNICITY'); */?> <span class="ethnicity"><?php /*print $this->user->ethnicity; */?></span></span>
-            <span class="inf"><?php /*print JText::_('BODY'); */?> <span class="body"><?php /*print $this->user->body; */?></span></span>
-            <span class="inf"><?php /*print JText::_('PROFESSION'); */?> <span class="profession"><?php /*print $this->user->profession; */?></span></span>
-            <span class="inf"><?php /*print JText::_('RELIGION'); */?> <span class="religion"><?php /*print $this->user->religion; */?></span></span>
-            <span class="inf"><?php /*print JText::_('KIDS'); */?> <span class="kids"><?php /*print $this->user->kids; */?></span></span>-->
         </div>
 
         <div class="profile-content-right col-sm-7 col-xs-12">
@@ -80,18 +75,45 @@ defined('_JEXEC') or die('Restricted access');
                 <span class="block-question"><?php print JText::_('YOUR_FEW_PLACES'); ?><span id="edit-save" class="edit"></span></span>
                 <span id="few_places" class="block-answer"><?php print $this->user->few_places; ?></span>
             </div>
+
+            <div class="user-options text-none-select">
+                <a href="<?php print $this->link_Q_n_A; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_qa.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_QUESTIONS'); ?></span>
+                </a>
+                <a href="<?php print $this->link_honesty_reviews; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_honesty_reviews.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_HONESTY_REVIEWS'); ?></span>
+                </a>
+                <a href="<?php print $this->link_private_photos; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_private.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_PRIVATE_PHOTOS'); ?></span>
+                </a>
+                <?php if($this->verified){ ?>
+                    <a>
+                        <span class="option">
+                            <img src="/templates/protostar/images/system/profile_authenticated.png" />
+                        </span>
+                        <span class="text"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
+                    </a>
+                <?php } else { ?>
+                    <a class="disabled">
+                        <span class="option">
+                            <img src="/templates/protostar/images/system/profile_authenticated.png" />
+                        </span>
+                        <span class="text"><?php print JText::_('USER_NOT_AUTHENTICATED'); ?></span>
+                    </a>
+                <?php } ?>
+            </div>
         </div>
 
-        <div class="user-options text-none-select">
-            <a href="<?php print $this->link_Q_n_A; ?>" class="questions-answers" title="Questions & Answers"><?php print JText::_('USER_QUESTIONS'); ?></a>
-            <a href="<?php print $this->link_honesty_reviews; ?>" class="honesty-reviews" title="(<?php print $this->user->user_reviews; ?>) Honesty Reviews"><span class="honesty-count"><?php print $this->user->user_reviews; ?></span><?php print JText::_('USER_HONESTY_REVIEWS'); ?></a>
-            <a href="<?php print $this->link_private_photos; ?>" class="private-photos" title="View Private Photos"><?php print JText::_('USER_PRIVATE_PHOTOS'); ?></a>
-            <?php if($this->verified){ ?>
-                <span class="authenticated" title="Email Authenticated"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
-            <?php } else { ?>
-                <span class="authenticated" title="Email Not Authenticated"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
-            <?php } ?>
-        </div>
+
 
     </div>
 
@@ -181,7 +203,7 @@ defined('_JEXEC') or die('Restricted access');
         document.getElementById('gallery-img').src='';
     });
 
-    jQuery('.my-stats #edit-stats').click(function(){
+    jQuery('#edit-stats').click(function(){
         jQuery(this.removeClass('edit'));
         jQuery('.profile-content-left').append('<span class="save">Save</span>');
 
@@ -210,7 +232,6 @@ defined('_JEXEC') or die('Restricted access');
             '<option' + ( (status_value.html() === 'Divorced')? ' selected ' : '' ) + ' value="Divorced" >Divorced</option>' +
             '<option' + ( (status_value.html() === 'Widowed')? ' selected ' : '' ) + ' value="Widowed" >Widowed</option>' +
             '<option' + ( (status_value.html() === 'Separated')? ' selected ' : '' ) + ' value="Separated" >Separated</option>' +
-//            '<option' + ( (status_value.html() === 'Complicated')? ' selected ' : '' ) + ' value="Complicated" >Complicated</option>' +
         '</select>';
         status_value.html(status_field);
 
@@ -231,72 +252,11 @@ defined('_JEXEC') or die('Restricted access');
             '<option' + ( (relationship_type_value.html() === 'Long Term')? ' selected ' : '' ) + ' value="Long Term" >Long Term</option>' +
         '</select>';
         relationship_type_value.html(relationship_type_field);
-
-/*        var ethnicity_value = jQuery('.profile-content-left .ethnicity');
-        var ethnicity_field = '<select name="ethnicity">' +
-            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Who cares')? ' selected ' : '' ) + ' value="Who cares" >Who cares</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Caucasian')? ' selected ' : '' ) + ' value="Caucasian" >Caucasian</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Black')? ' selected ' : '' ) + ' value="Black" >Black</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Latin')? ' selected ' : '' ) + ' value="Latin" >Latin</option>' +
-            '<option' + ( (ethnicity_value.html() === 'African-American')? ' selected ' : '' ) + ' value="African-American" >African-American</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Asian')? ' selected ' : '' ) + ' value="Asian" >Asian</option>' +
-            '<option' + ( (ethnicity_value.html() === 'European')? ' selected ' : '' ) + ' value="European" >European</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Middle Eastern')? ' selected ' : '' ) + ' value="Middle Eastern" >Middle Eastern</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Mix of stuff')? ' selected ' : '' ) + ' value="Mix of stuff" >Mix of stuff</option>' +
-            '<option' + ( (ethnicity_value.html() === 'Alien')? ' selected ' : '' ) + ' value="Alien" >Alien</option>' +
-            '</select>';
-        ethnicity_value.html(ethnicity_field);*/
-
-/*        var body_value = jQuery('.profile-content-left .body');
-        var body_field = '<select name="ethnicity">' +
-            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
-            '<option' + ( (body_value.html() === 'Thin')? ' selected ' : '' ) + ' value="Thin" >Thin</option>' +
-            '<option' + ( (body_value.html() === 'Regular')? ' selected ' : '' ) + ' value="Regular" >Regular</option>' +
-            '<option' + ( (body_value.html() === 'Fit')? ' selected ' : '' ) + ' value="Fit" >Fit</option>' +
-            '<option' + ( (body_value.html() === 'A lil extra')? ' selected ' : '' ) + ' value="A lil extra" >A lil extra</option>' +
-            '<option' + ( (body_value.html() === 'BBW')? ' selected ' : '' ) + ' value="BBW" >BBW</option>' +
-            '</select>';
-        body_value.html(body_field);
-
-        var profession_value = jQuery('.profile-content-left .profession');
-        profession_value.html('<input type="text" name="height" maxlength="20" required="required" value="' + ( (profession_value.html() === '<?php print JText::_('UNKNOWN'); ?>')? '' : profession_value.html() ) + '" />');
-
-        var religion_value = jQuery('.profile-content-left .religion');
-        var religion_field = '<select name="ethnicity">' +
-            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
-            '<option' + ( (religion_value.html() === 'Spiritual')? ' selected ' : '' ) + ' value="Spiritual" >Spiritual</option>' +
-            '<option' + ( (religion_value.html() === 'Not-Spiritual')? ' selected ' : '' ) + ' value="Not-Spiritual" >Not-Spiritual</option>' +
-            '<option' + ( (religion_value.html() === 'Christian')? ' selected ' : '' ) + ' value="Christian" >Christian</option>' +
-            '<option' + ( (religion_value.html() === 'Jewish')? ' selected ' : '' ) + ' value="Jewish" >Jewish</option>' +
-            '<option' + ( (religion_value.html() === 'Muslim')? ' selected ' : '' ) + ' value="Muslim" >Muslim</option>' +
-            '<option' + ( (religion_value.html() === 'Atheist')? ' selected ' : '' ) + ' value="Atheist" >Atheist</option>' +
-            '<option' + ( (religion_value.html() === 'Agnostic')? ' selected ' : '' ) + ' value="Agnostic" >Agnostic</option>' +
-            '<option' + ( (religion_value.html() === 'Catholic')? ' selected ' : '' ) + ' value="Catholic" >Catholic</option>' +
-            '<option' + ( (religion_value.html() === 'Hindu')? ' selected ' : '' ) + ' value="Hindu" >Hindu</option>' +
-            '<option' + ( (religion_value.html() === 'Other')? ' selected ' : '' ) + ' value="Other" >Other</option>' +
-            '</select>';
-        religion_value.html(religion_field);
-
-        var kids_value = jQuery('.profile-content-left .kids');
-        var kids_field = '<select name="ethnicity">' +
-            '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
-            '<option' + ( (kids_value.html() === 'No, but would like them')? ' selected ' : '' ) + ' value="No, but would like them" >No, but would like them</option>' +
-            '<option' + ( (kids_value.html() === 'Yes, and would like more')? ' selected ' : '' ) + ' value="Yes, and would like more" >Yes, and would like more</option>' +
-            '<option' + ( (kids_value.html() === 'No, and I do not want any')? ' selected ' : '' ) + ' value="No, and I do not want any" >No, and I do not want any</option>' +
-            '<option' + ( (kids_value.html() === 'Yes, but I do not want any more')? ' selected ' : '' ) + ' value="Yes, but I do not want any more" >Yes, but I do not want any more</option>' +
-            '<option' + ( (kids_value.html() === 'Not sure')? ' selected ' : '' ) + ' value="Not sure" >Not sure</option>' +
-            '</select>';
-        kids_value.html(kids_field);*/
     });
 
     jQuery('.profile-content-left .save').live('click', function(){
-        jQuery('.my-stats #edit-stats').addClass('edit');
+        jQuery('#edit-stats').addClass('edit');
         jQuery(this).remove();
-//        var height_regex = /\d{1,2}'\d{1,2}/;
-//        var height_value = jQuery('.profile-content-left .height input').val();
-//        var height = height_regex.test(height_value) ? height_value : '';
-
 
         var height = jQuery('.height_m').val() + "'" + jQuery('.height_c').val();
         console.debug(jQuery('.profile-content-left .status select').val());
@@ -338,16 +298,6 @@ defined('_JEXEC') or die('Restricted access');
                         _look = '<?php print JText::_('EITHER'); ?>';
                     }
                     jQuery('.profile-content-left .look').text(_look);
-
-//                    jQuery('.profile-content-left .look').text( (jQuery('.profile-content-left .look select').val() === null) ? '<?php //print JText::_('UNKNOWN'); ?>//' : jQuery('.profile-content-left .status select').val() );
-
-
-
-                    /*jQuery('.profile-content-left .ethnicity').text( (jQuery('.profile-content-left .ethnicity select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .ethnicity select').val() );
-                    jQuery('.profile-content-left .body').text( (jQuery('.profile-content-left .body select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .body select').val() );
-                    jQuery('.profile-content-left .profession').text( (jQuery('.profile-content-left .profession input').val() === '')? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .profession input').val() );
-                    jQuery('.profile-content-left .religion').text( (jQuery('.profile-content-left .religion select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .religion select').val() );
-                    jQuery('.profile-content-left .kids').text( (jQuery('.profile-content-left .kids select').val() === null) ? '<?php print JText::_('UNKNOWN'); ?>' : jQuery('.profile-content-left .kids select').val() );*/
                 } else {
                     console.log(data);
                 }

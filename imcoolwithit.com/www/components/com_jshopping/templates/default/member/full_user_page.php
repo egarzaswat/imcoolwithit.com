@@ -17,21 +17,24 @@
 
     <div class="page-content row">
         <div class="profile-content-top padding-null col-xs-12">
-            <h1 class="title"><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
+            <h1><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
             <div class="external-links-top">
                 <?php if($this->isFriends) { ?>
                     <a href="<?php print $this->links['send_message']; ?>"><?php print JText::_('FULL_PROFILE_SEND_MESSAGE'); ?></a>
                     <a href="<?php print $this->links['lincup']; ?>"><?php print JText::_('FULL_PROFILE_LINCUP'); ?></a>
                 <?php } else if(!$this->user_is_accept && !$this->is_i_filed_claim && $this->isset_tokens_add_to_friends){ ?>
-                    <span class="send-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_ADD_FRIEND'); ?><span class="token"></span></span>
+                    <a class="send-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_ADD_FRIEND'); ?><span class="token"></span></a>
                 <?php } else if($this->user_is_accept && $this->isset_tokens_add_to_friends){ ?>
-                    <span class="accept-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::sprintf('FULL_PROFILE_ACCEPT_FRIEND', $userData->u_name); ?><span class="token"></span></span>
-                <?php }
-				else { ?>
-				<font  class="token_sent">Friend request sent!</font>
-				<?php } ?>
+                    <a class="accept-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::sprintf('FULL_PROFILE_ACCEPT_FRIEND', $userData->u_name); ?><span class="token"></span></a>
+                <?php } else { ?>
+                    <a class="token_sent">Friend request sent!</a>
+                <?php } ?>
             </div>
         </div>
+
+
+
+
         <div class="profile-content-left col-sm-5 col-xs-12">
             <div class="photo">
                 <img src="<?php echo $userData->photosite; ?>" alt="<?php echo $userData->photosite; ?>">
@@ -45,22 +48,18 @@
                 <?php } ?>
             </div>
                 <span class="localisation">
+                    <?php print JText::_('AGE') . $userData->age; ?>
+                    <span class="yellow">|</span>
                     <?php print $userData->city . ", " . $userData->state . ", " . JText::sprintf('MILES_AWAY', $userData->distance); ?>
                     <span class="yellow">|</span>
                     <?php print $userData->sex; ?>
                 </span>
             <span class="last-online"><?php print JText::_('LAST_ONLINE'); ?><?php print $userData->last_visit; ?></span>
             <div class="my-stats"><?php print JText::_('MY_STATS'); ?></div>
-            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $userData->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $userData->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $userData->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $userData->looking_for; ?></span></span>
             <span class="inf"><?php print JText::_('RELATIONSHIP_TYPE'); ?> <span class="type"><?php print $userData->relationship_type; ?></span></span>
-            <!--<span class="inf"><?php /*print JText::_('ETHNICITY'); */?> <span class="ethnicity"><?php /*print $userData->ethnicity; */?></span></span>
-            <span class="inf"><?php /*print JText::_('BODY'); */?> <span class="body"><?php /*print $userData->body; */?></span></span>
-            <span class="inf"><?php /*print JText::_('PROFESSION'); */?> <span class="profession"><?php /*print $userData->profession; */?></span></span>
-            <span class="inf"><?php /*print JText::_('RELIGION'); */?> <span class="religion"><?php /*print $userData->religion; */?></span></span>
-            <span class="inf"><?php /*print JText::_('KIDS'); */?> <span class="kids"><?php /*print $userData->kids; */?></span></span>-->
         </div>
 
         <div class="profile-content-right col-sm-7 col-xs-12">
@@ -83,25 +82,44 @@
                 <span class="block-question"><?php print JText::_('YOUR_FEW_PLACES'); ?></span>
                 <span class="block-answer"><?php print $userData->few_places; ?></span>
             </div>
-        </div>
 
-        <div class="user-options">
-            <a href="<?php print $this->links['questions']?>" class="questions-answers" title="Questions & Answers"><?php print JText::_('USER_QUESTIONS'); ?></a>
-            <a href="<?php print $this->links['honesty_reviews']?>" class="honesty-reviews" title="(<?php print $userData->user_reviews; ?>) Honesty Reviews"><span class="honesty-count"><?php print $userData->user_reviews; ?></span><?php print JText::_('USER_HONESTY_REVIEWS'); ?></a>
-            <?php if($this->exist_private){?>
-                <?php if($this->isFriends){ ?>
-                    <a href="<?php print $this->links['private']?>" class="private-photos" title="View Private Photos"><?php print JText::_('USER_PRIVATE_PHOTOS'); ?></a>
+            <div class="user-options text-none-select">
+                <a href="<?php print $this->link_Q_n_A; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_qa.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_QUESTIONS'); ?></span>
+                </a>
+                <a href="<?php print $this->link_honesty_reviews; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_honesty_reviews.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_HONESTY_REVIEWS'); ?></span>
+                </a>
+                <a href="<?php print $this->link_private_photos; ?>">
+                    <span class="option">
+                        <img src="/templates/protostar/images/system/profile_private.png" />
+                    </span>
+                    <span class="text"><?php print JText::_('USER_PRIVATE_PHOTOS'); ?></span>
+                </a>
+                <?php if($this->verified){ ?>
+                    <a>
+                        <span class="option">
+                            <img src="/templates/protostar/images/system/profile_authenticated.png" />
+                        </span>
+                        <span class="text"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
+                    </a>
                 <?php } else { ?>
-                    <a id="privatephotos" class="private-photos" title="View Private Photos"><?php print JText::_('USER_PRIVATE_PHOTOS'); ?></a>
-                <?php }?>
-
-            <?php }?>
-            <?php if($this->email_verification){ ?>
-                <span class="authenticated" title="Email Authenticated"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
-            <?php } else { ?>
-                <span class="authenticated" title="Email Not Authenticated"><?php print JText::_('USER_AUTHENTICATED'); ?></span>
-            <?php } ?>
+                    <a class="disabled">
+                        <span class="option">
+                            <img src="/templates/protostar/images/system/profile_authenticated.png" />
+                        </span>
+                        <span class="text"><?php print JText::_('USER_NOT_AUTHENTICATED'); ?></span>
+                    </a>
+                <?php } ?>
+            </div>
         </div>
+
         <div class="external-links-bottom">
             <?php if (!$this->visible) { ?>
                 <span class="add-visited" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_VISITED'); ?></span>
@@ -338,10 +356,6 @@
     });
 
     jQuery('.full-user-page .external-links-top .send-token').click(function(){
-
-        //jQuery('.full-user-page .external-links-top .send-token .token').removeClass('token').addClass('sending-token');
-        //jQuery('.full-user-page .external-links-top .send-token .token').addClass('token-animation');
-
         var data_post = {
             'user_id' : this.getAttribute('data-user')
         };
@@ -351,9 +365,7 @@
             url: '/components/com_jshopping/controllers/save_data/add_to_friends.php',
             data: data_post,
             success: function(data){
-                //setTimeout(function () {
-                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
-                //}, 3000);
+                jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
             },
             error: function(data){
                 console.log(data);
@@ -363,9 +375,6 @@
     });
 
     jQuery('.full-user-page .external-links-top .accept-token').click(function(){
-
-        //jQuery('.full-user-page .external-links-top .accept-token .token').removeClass('token').addClass('sending-token');
-        //jQuery('.full-user-page .external-links-top .accept-token .token').addClass('token-animation');
         var link='<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ACCEPT'); ?>?user=' + this.getAttribute('data-user');
         var referer_email='<?php print $email_ref; ?>';
 
@@ -381,9 +390,7 @@
                 if(referer_email != ''){
                     sendEmailReferrer(referer_email);
                 }
-                //setTimeout(function () {
-                    jQuery(location).attr('href', link);
-                //}, 3000);
+                jQuery(location).attr('href', link);
             },
             error: function(data){
                 console.log(data);

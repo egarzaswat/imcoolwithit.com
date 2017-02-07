@@ -16,8 +16,9 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
 <div class="settings col-sm-10 col-xs-12 col-sm-offset-1">
 
     <div class="page-content">
-
-        <h1 class="title"><?php print $this->title; ?></h1>
+        <div class="profile-content-top padding-null col-xs-12">
+            <h1><?php print $this->title; ?></h1>
+        </div>
 
         <form class="form-content row" method="post" enctype="multipart/form-data">
             <div class="col-sm-6 col-xs-12">
@@ -33,11 +34,6 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                 </div>
             </div>
             <div class="col-sm-6 col-xs-12">
-<!--                <div class="field-block">
-                    <input type="password" class="left-border-input" name="password" value="<?php /*print $this->user->password; */?>" placeholder="Password"
-                           required="required">
-                    <span class="password-error"></span>
-                </div>-->
                 <div class="field-block">
                     <span><?php print JText::_('SETTINGS_PAGE_BIRTHDAY'); ?></span>
                     <input type="number" class="left-border-input" name="birthday"
@@ -52,7 +48,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                     <span class="zip-error error"></span>
                 </div>
                 <div  class="field-block">
-                    <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="link-button" style="margin-left: 55px;">Upload Photos</a>
+                    <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="link-button yellow" style="margin-left: 55px;">Upload Photos</a>
                 </div>
             </div>
             <div class="col-xs-12 settings-separator"></div>
@@ -95,13 +91,13 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
             <div class="col-xs-12" style="text-align: center; margin-bottom: 15px">
                 <input type="submit" class="link-button" value="<?php print JText::_('SETTINGS_PAGE_BUTTON'); ?>">
                 <span class="submit-message"></span>
-
-                <button class="activate-account" type="button" value="<?php print $this->user->block; ?>">
-                    <?php print ($this->user->block == 0) ? 'Deactivate account' : 'Reactivate account'; ?>
-                </button>
             </div>
         </form>
-
+        <div class="external-links-bottom">
+            <button class="activate-account" type="button" value="<?php print $this->user->block; ?>">
+                <?php print ($this->user->block == 0) ? 'Deactivate account' : 'Reactivate account'; ?>
+            </button>
+        </div>
     </div>
 
 </div>
@@ -153,11 +149,6 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                         jQuery('.form-content select').css( "border-color", "rgb(57, 167, 223)");
                         jQuery('.form-content input').css( "border-color", "rgb(57, 167, 223)");
                     }, 3000);
-
-/*                    jQuery('.form-content .submit-message').removeClass('success').addClass('error').html('<?php print JText::_('SETTINGS_SAVED_ERROR'); ?>').fadeIn().delay(3000).fadeOut();
-                    setTimeout(function () {
-                        jQuery('.form-content').find('input[type="submit"]').attr('disabled', false);
-                    }, 3000);*/
                 }
             },
             error:  function(data){
@@ -165,11 +156,6 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                 setTimeout(function () {
                     jQuery('.form-content').find('input[type="submit"]').attr('disabled', false).removeClass('error');
                 }, 3000);
-
-/*                jQuery('.form-content .submit-message').removeClass('success').addClass('error').html('<?php print JText::_('SETTINGS_SAVED_ERROR'); ?>').fadeIn().delay(3000).fadeOut();
-                setTimeout(function () {
-                    jQuery('.form-content').find('input[type="submit"]').attr('disabled', false);
-                }, 3000);*/
             }
         });
     });
