@@ -21,7 +21,7 @@ if (is_numeric($_POST['age']) && $_POST['age'] >= 18) { $birthday = (int)$_POST[
 
 if (is_numeric($_POST['zip']) && (strlen($_POST['zip']) == 5)) {
     $postal_code = $_POST['zip'];
-    $zip_json = file_get_contents('http://api.zippopotam.us/us/' . $postal_code);
+    $zip_json = file_get_contents('https://api.zippopotam.us/us/' . $postal_code);
     $zip_array = json_decode($zip_json, true);
     if (count($zip_array) != 0){
         $city = $zip_array['places'][0]['place name'];

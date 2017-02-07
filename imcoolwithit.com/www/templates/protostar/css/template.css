@@ -2134,10 +2134,14 @@ a:focus, input:focus{
 @media (max-width: 767px){
     .settings .activate-account{
         display: block;
-        clear: both;
         position: relative;
-        margin: 10px auto 0;
-        right: auto;
+        float: right;
+        margin-top: 20px;
+        right: 0;
+        font-size: 12px;
+        clear: both;
+        width: 100%;
+        text-align: right;
     }
 }
 .settings .activate-account:hover{
