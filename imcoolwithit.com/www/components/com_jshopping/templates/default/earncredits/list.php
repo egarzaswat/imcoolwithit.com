@@ -1,11 +1,15 @@
 <?php
     defined('_JEXEC') or die('Restricted access');
 ?>
-<div class="earn-tokens col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="earn-tokens col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title row"><?php print JText::_('EARN_TOKENS'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('EARN_TOKENS'); ?></h1>
+            <div class="block-right">
+                <img src="/templates/protostar/images/system/token.png">
+            </div>
+        </div>
 
         <div class="earn-more-tokens row"><span><?php print JText::_('EARN_MORE_TOKENS'); ?></span></div>
 

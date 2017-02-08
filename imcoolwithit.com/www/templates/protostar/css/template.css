@@ -602,7 +602,7 @@ a:focus, input:focus{
 
 .page-content{
     background: #ffffff;
-    border-radius: 25px;
+    border-radius: 20px;
     font-family: arial, helvetica, sans-serif;
     border: 1px solid #bdbcbb;
     margin: 0;
@@ -818,15 +818,17 @@ a:focus, input:focus{
 }
 
 .users-list-link{
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #40aadd;
     color: rgb(73, 72, 74);
     display: block;
-    padding: 10px 30px;
+    padding: 25px 30px;
     text-align: left;
     text-decoration: none;
 }
+.users-list-link:last-child{
+    border: 0;
+}
 .users-list-link:hover{
-    background-color: rgb(224, 226, 210);
     color: rgb(73, 72, 74);
     text-decoration: none;
 }
@@ -834,12 +836,16 @@ a:focus, input:focus{
     display: inline-block;
     padding-left: 10px;
     vertical-align: middle;
+    font-size: 16px;
+    color: #777777;
+    font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
 }
 .users-list-link .users-list-info span{
     display: block;
 }
 .users-list-link .users-list-info .username{
     font-weight: bold;
+    color: #40aadd;
 }
 .users-list-link .users-list-info .info{
     display: block;
@@ -960,6 +966,35 @@ a:focus, input:focus{
     background-color: #efefe9;
     padding: 25px 0;
     box-shadow: inset 0 10px 10px -10px rgba(34,31,31,0.3);
+}
+
+.page-content-top{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #40aadd;
+}
+.page-content-top h1{
+    padding: 0 15px;
+    margin: 0;
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #cd6c28;
+}
+.page-content-top .block-right{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% + 15px);
+    margin: -15px 25px 0 0;
+}
+.page-content-top .block-right img{
+    max-height: 70%;
 }
 
 @media (max-width: 400px){
@@ -1728,21 +1763,7 @@ a:focus, input:focus{
 /*
 * ---------------------------- My Profile -----------------------------
 */
-.profile-content-top{
-    width: 100%;
-    height: 40px;
-    display: block;
-    border-bottom: 1px solid #40aadd;
-    margin-bottom: 15px;
-}
-.profile-content-top h1{
-    padding: 0 15px;
-    margin: 0;
-    text-align: left;
-    font-size: 26px;
-    line-height: 1.4;
-    color: #cd6c28;
-}
+
 .profile-content-left .link-button{
     margin-bottom: 5px;
 }
@@ -2424,7 +2445,13 @@ a:focus, input:focus{
     margin: 0 5px;
 }
 
-.full-user-page .external-links-top {
+
+.settings .page-content-top,
+.full-user-page .page-content-top{
+    height: 45px;
+    margin-bottom: 15px;
+}
+.full-user-page .page-content-top .external-links-top {
     bottom: 5px;
     position: absolute;
     right: 0;
@@ -2656,26 +2683,6 @@ a:focus, input:focus{
         font-size: 10px;
     }
 }
-/*@media (max-width: 767px){*/
-    /*.full-user-page .page-content .title{*/
-        /*text-align: center;*/
-        /*padding-right: 25px;*/
-    /*}*/
-    /*.full-user-page .external-links-top {*/
-        /*background: rgb(243, 177, 62);*/
-        /*position: inherit;*/
-        /*padding: 0 0 10px 0;*/
-        /*font-size: 17px;*/
-        /*margin-top: -5px;*/
-    /*}*/
-    /*.full-user-page .external-links-top a,*/
-    /*.full-user-page .external-links-top span{*/
-        /*text-decoration: underline;*/
-    /*}*/
-    /*.token_sent{*/
-        /*padding-right: 0!important;*/
-    /*}*/
-/*}*/
 @media (max-width: 991px){
     .user-page .user-long-info .info-block .left-info-block{
         width: 45%;
@@ -3051,6 +3058,61 @@ a:focus, input:focus{
 
 
 /*
+* -------------------- Referer Friends --------------------
+*/
+.refer-friend .earn-tokens-info{
+    color: #bebdbc;
+    font-size: 16px;
+}
+.refer-friend .refer-friend-form .input-block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+.refer-friend .refer-friend-form .input-block input{
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #abaaa9;
+}
+.refer-friend .refer-friend-form .submit-block{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.refer-friend .refer-friend-form .submit-block .earn-tokens{
+    width: 120px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.refer-friend .refer-friend-form .submit-block .submit-button{
+    height: 35px;
+}
+.refer-friend .refer-friend-form .submit-block .earn-tokens .tokens-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.refer-friend .refer-friend-form .submit-block .earn-tokens span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #b3b3b3;
+}
+
+
+/*
 * -------------------- Friends --------------------
 */
 
@@ -3065,11 +3127,6 @@ a:focus, input:focus{
     right: 20px;
     top: 20px;
 }
-/*.token-match-info{
-    border: 1px solid rgb(243, 177, 62);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}*/
 .token-match-info .token-accept{
     color: rgb(64, 170, 221);
     display: block;
@@ -3166,10 +3223,6 @@ a:focus, input:focus{
 .lincup-offers .lincup-offers-list .first-column{
     border-left-width: 0!important;
 }
-/*.lincup-offers .lincup-offers-list .dark-column,*/
-/*.lincup-offers .lincup-offers-list .lincup-offers-items .dark-column{*/
-    /*background: rgb(224, 226, 210);*/
-/*}*/
 .lincup-offers .lincup-offers-list .lincup-offers-category{
     /*background: rgb(57, 167,223);*/
     /*border-left: 1px solid rgb(255, 255, 255);*/
@@ -3428,17 +3481,6 @@ a:focus, input:focus{
     font-size: 20px;
     margin: 20px auto;
 }
-/*.lincup-match-info .users-photo a{
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    height: 100px;
-    margin: 10px 25px;
-    width: 100px;
-}
-.lincup-match-info .users-photo a img:hover{
-    opacity: 0.8;
-}*/
 .lincup-match-info .lincup-match-link{
     margin: 25px auto;
 }
@@ -3595,6 +3637,13 @@ a:focus, input:focus{
     margin: 10px 25px;
     text-align: left;
 }
+.earn-tokens .earn-more-tokens span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 17px;
+    color: #7fc0e5;
+}
 .earn-tokens .earn-tokens-block{
     margin: 0 0 15px;
 }
@@ -3607,23 +3656,22 @@ a:focus, input:focus{
     display: block;
     font-size: 16px;
 }
-.earn-tokens .earn-tokens-block .earn-tokens-item a:hover{
-    background-color: rgb(224, 226, 210);
+.earn-tokens .earn-tokens-block .earn-tokens-item a+span{
+    color: #5b5758;
 }
 .earn-tokens .earn-tokens-block .earn-tokens-item a img{
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 70%;
     margin: 1px auto;
-}
-.earn-tokens .earn-tokens-block .earn-tokens-item span{
-    color: rgb(65, 170, 220);
 }
 
 .earn-tokens-info{
-    color: rgb(65, 65, 65);
-    font-size: 14px;
-    margin: 10px 20px;
-    text-align: left;
+    color: #3ea8dc;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
 }
 .earn-tokens-info a{
     display: block;
@@ -3634,47 +3682,80 @@ a:focus, input:focus{
     margin: 0 auto;
     max-width: 100%;
 }
-.earn-tokens-info span{
-    display: block;
-    margin-top: 10px;
+.earn-tokens-list{
+    width: 100%;
+    padding: 0 15px;
 }
 .earn-tokens-list .earn-tokens-item{
-    background-color: rgb(224, 226, 210);
-    border-top: 2px solid rgb(255, 255, 255);
-    margin: 0;
+    display: flex;
+    border: 1px solid #40aadd;
+    border-radius: 20px;
+    margin: 15px 0;
+    padding: 10px 5px 35px;
+    color: #5b5758;
     position: relative;
-    min-height: 100px;
 }
-.earn-tokens-list .earn-tokens-item:hover{
-    background: rgb(237, 240, 224);
+.earn-tokens-list .earn-tokens-item .left-block,
+.earn-tokens-list .earn-tokens-item .right-block{
+    display: inline-flex;
+    width: 50%;
+    min-width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
-.earn-tokens-list .earn-tokens-item a{
-    color: rgb(65, 65, 65);
-    display: inline-block;
-}
-.earn-tokens-list .earn-tokens-item a:hover{
-    text-decoration: none;
-}
-.earn-tokens-list .earn-tokens-item img{
-    display: block;
-    margin: 10px auto;
-    max-width: 200px;
+.earn-tokens-list .earn-tokens-item .left-block .inf{
     width: 100%;
 }
-.earn-tokens-list .earn-tokens-item .earn-tokens-username{
-    /*color: rgb(64, 170, 221);*/
-    /*display: inline-block;*/
-    /*font-weight: bold;*/
-    /*margin: auto 0;*/
-    /*position: absolute;*/
-    /*left: 20px;*/
-    /*top: 50%;*/
-    /*-webkit-transform: translateY(-50%);*/
-    /*-ms-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
+.earn-tokens-list .earn-tokens-item .left-block .inf:hover{
+    text-decoration: none;
+}
+.earn-tokens-list .earn-tokens-item .left-block .inf .us{
+    width: 85px;
+    height: 85px;
+    border: 2px solid #f3b13e!important;
+    border-radius: 50%;
+}
+.earn-tokens-list .earn-tokens-item .left-block .inf .sp{
+    max-width: 100%;
+    max-height: 85px;
+}
+.earn-tokens-list .earn-tokens-item .bot-inf{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 5px 0;
+
+}
+.earn-tokens-list .earn-tokens-item .bot-inf .earn-tokens-username{
     color: rgb(64, 170, 221);
-    display: block;
     font-weight: bold;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    border-right: 2px solid #f6c882;
+    padding: 0;
+}
+.earn-tokens-list .earn-tokens-item .bot-inf span{
+    padding-left: 25px;
+}
+
+.earn-tokens-list .earn-tokens-item .right-block .tokens-image{
+    width: 100%;
+}
+.earn-tokens-list .earn-tokens-item .right-block .tokens-count{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.earn-tokens-list .earn-tokens-item .right-block .tokens-text{
+    font-size: 12px;
+    margin-top: 5px;
 }
 .earn-tokens-list .earn-tokens-item .earn-tokens-tokens{
     background: url("../images/system/surveys_tokens.png") no-repeat center center;
@@ -3689,32 +3770,20 @@ a:focus, input:focus{
     transform: translateY(-50%);
     width: 50px;
 }
-
 @media (min-width: 992px){
     .earn-tokens-list .earn-tokens-item .earn-tokens-tokens{
         right: 70px;
     }
 }
-
 @media (min-width: 350px) and (max-width: 767px){
     .earn-tokens-list .earn-tokens-item .earn-tokens-tokens{
         right: 60px;
     }
 }
 
-/*.earn-tokens-list .earn-tokens-item .earn-tokens-tokens span{
-    background: rgb(242, 178, 63);
-    border-radius: 35%;
-    bottom: -7px;
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    min-width: 25px;
-    position: absolute;
-    right: -7px;
-    text-align: center;
-}*/
+
+
+
 .earn-tokens-item .earn-tokens-question {
     color: rgb(48, 155, 209);
     display: block;
@@ -3925,63 +3994,7 @@ a:focus, input:focus{
     width: 100px;
     margin: 0 auto;
 }
-.surveys .earn-tokens-info span{
-    font-size: larger;
-    text-align: center;
-}
 
-.refer-friend .page-content .title,
-.verify-email .page-content .title{
-    padding-left: 0;
-    text-align: center;
-}
-.refer-friend .refer-friend-info img,
-.verify-email .verify-email-info img{
-    display: block;
-    margin: 10px auto;
-}
-.refer-friend .refer-friend-form .input-block,
-.verify-email .verify-email-form .input-block{
-    background-color: rgb(224, 226, 210);
-    display: block;
-    margin-top: 10px;
-    padding: 50px;
-}
-.refer-friend .refer-friend-form .input-block input,
-.verify-email .verify-email-form .input-block input{
-    border: 1px solid rgb(57, 167,223);
-    border-left-width: 5px;
-    padding: 10px 5px;
-    width: 100%;
-}
-.refer-friend .refer-friend-form .submit-block,
-.verify-email .verify-email-form .submit-block{
-    display: block;
-    margin: 30px 0;
-    position: relative;
-    text-align: center;
-}
-.refer-friend .refer-more-friends{
-    margin: 15px auto;
-}
-.refer-friend .refer-more-friends a{
-    color: rgb(73, 72, 74);
-    text-decoration: underline;
-}
-.refer-friend .refer-more-friends a:hover{
-    text-decoration: none;
-}
-.verify-email .earn-tokens-tokens{
-    width: 115px;
-    top: 0;
-}
-.verify-email .earn-tokens-tokens .tokens-count{
-    right: 17px;
-}
-.refer-friend .earn-tokens-tokens{
-    width: 115px;
-    top: 0;
-}
 
 @media (min-width: 992px){
     .refer-friend .earn-tokens-tokens{
@@ -4046,7 +4059,6 @@ a:focus, input:focus{
     .lincup-review .earn-tokens-list .earn-tokens-item a{
         max-width: 120px;
     }
-    .refer-friend .refer-friend-form .submit-block,
     .verify-email .verify-email-form .submit-block{
         margin-left: 20px;
         text-align: left;

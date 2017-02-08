@@ -16,7 +16,7 @@
     </div>
 
     <div class="page-content row">
-        <div class="profile-content-top padding-null col-xs-12">
+        <div class="page-content-top padding-null col-xs-12">
             <h1><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
             <div class="external-links-top">
                 <?php if($this->isFriends) { ?>

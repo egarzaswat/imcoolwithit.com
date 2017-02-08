@@ -6,11 +6,14 @@ $list = $this->list;
 <div class="lincup-review col-sm-6 col-sm-offset-3 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('LINCUP_REVIEW_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('LINCUP_REVIEW_TITLE'); ?></h1>
+            <div class="block-right">
+                <img src="<?php print $this->lincup_review_logo; ?>">
+            </div>
+        </div>
 
         <div class="earn-tokens-info">
-            <img src="<?php print $this->lincup_review_logo; ?>">
             <span><?php print JText::_('LINCUP_REVIEW_INFO'); ?></span>
         </div>
 
@@ -21,25 +24,27 @@ $list = $this->list;
                 </div>
             <?php } else {
                 foreach ($list as $temp) { ?>
-                    <div class="earn-tokens-item row">
-                        <a href="<?php print $temp->link; ?>">
-                            <img src="<?php print $temp->image; ?>"/>
+                    <div class="earn-tokens-item">
+                        <div class="left-block">
+                            <a class="inf" href="<?php print $temp->link; ?>">
+                                <img class="sp" src="<?php print $temp->image; ?>">
+                            </a>
+                        </div>
+                        <div class="right-block">
+                            <div class="tokens-image">
+                                <img src="/templates/protostar/images/system/token.png">
+                            </div>
+                            <span class="tokens-text"><?php print JText::sprintf('QUESTIONS_EARN_TOKENS', $this->tokens_count); ?></span>
+                        </div>
+                        <div class="bot-inf">
                             <span><?php print JSFactory::getDateFormatMonthYearNumber($temp->occurred_date); ?></span>
-                        </a>
-                        <span class="earn-tokens-tokens text-none-select">
-                            <span class="tokens-count"><?php print $this->tokens_count; ?></span>
-                            <span><?php print JText::sprintf('QUESTIONS_EARN_TOKENS', $this->tokens_count); ?></span>
-                        </span>
+                        </div>
                     </div>
                 <?php } ?>
 
                 <?php print $this->pagination; ?>
-
             <?php } ?>
         </div>
-
-        <div class="earn-tokens-footer"><span><?php print JText::_('POWERED_BY'); ?></span></div>
-
     </div>
 
 </div>

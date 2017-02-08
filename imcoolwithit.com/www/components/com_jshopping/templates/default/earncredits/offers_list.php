@@ -6,11 +6,14 @@ $data = $this->data;
 <div class="surveys col-sm-6 col-sm-offset-3 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('SURVEYS_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('SURVEYS_TITLE'); ?></h1>
+            <div class="block-right">
+                <img src="<?php print $this->surveys_logo; ?>">
+            </div>
+        </div>
 
         <div class="earn-tokens-info">
-            <img src="<?php print $this->surveys_logo; ?>">
             <span><?php print JText::_('SURVEYS_INFO'); ?></span>
         </div>
 
@@ -22,23 +25,26 @@ $data = $this->data;
             <?php } else {
                 foreach ($data as $key => $temp) { ?>
                     <div class="earn-tokens-item">
-                        <a href="<?php print $temp->link; ?>">
-                            <img src="<?php print $temp->image; ?>">
-                        </a>
-                        <span class="earn-tokens-tokens text-none-select">
-                            <span class="tokens-count"><?php print $temp->tokens; ?></span>
-                            <span><?php print JText::sprintf('QUESTIONS_EARN_TOKENS', $temp->tokens); ?></span>
-                        </span>
+                        <div class="left-block">
+                            <a class="inf" href="<?php print $temp->link; ?>">
+                                <img class="sp" src="<?php print $temp->image; ?>">
+                            </a>
+                        </div>
+                        <div class="right-block">
+                            <div class="tokens-image">
+                                <img src="/templates/protostar/images/system/token.png">
+                            </div>
+                            <span class="tokens-text"><?php print JText::sprintf('QUESTIONS_EARN_TOKENS', $temp->tokens); ?></span>
+                        </div>
+                        <div class="bot-inf">
+                            <span class="earn-tokens-username"><?php print $temp->u_name; ?></span>
+                            <span><?php print $temp->occurred_date; ?></span>
+                        </div>
                     </div>
                 <?php } ?>
-
                     <?php print $this->pagination; ?>
-
             <?php } ?>
         </div>
-
-        <div class="earn-tokens-footer"><span><?php print JText::_('POWERED_BY'); ?></span></div>
-
     </div>
 
 </div>

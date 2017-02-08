@@ -16,7 +16,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
 <div class="settings col-sm-10 col-xs-12 col-sm-offset-1">
 
     <div class="page-content">
-        <div class="profile-content-top padding-null col-xs-12">
+        <div class="page-content-top padding-null col-xs-12">
             <h1><?php print $this->title; ?></h1>
         </div>
 

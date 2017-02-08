@@ -5,8 +5,9 @@
 <div class="visitors col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('VISITORS_TITLE'); ?></h1>
+        <div class="profile-content-top padding-null">
+            <h1><?php print $this->title; ?></h1>
+        </div>
 
         <?php if (count($this->visitors_list) < 1) { ?>
             <div class="no-records-found">
@@ -26,7 +27,6 @@
         } ?>
 
         <?php print $this->pagination; ?>
-
     </div>
 
 </div>
