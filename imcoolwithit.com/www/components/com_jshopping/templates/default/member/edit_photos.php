@@ -38,12 +38,6 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
             createHandles: ['se'],
             createDragbars: ['s','e']
         });
-/*        jQuery('#cropbox').Jcrop({
-            aspectRatio: width_img/height_img,
-            minSize: [width_img, height_img],
-            onSelect: updateCoords,
-            setSelect: [ 0, 0, width_img, height_img ]
-        });*/
     }
 
     function updateCoords(c) {
@@ -76,7 +70,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
     <input type="hidden" id="h_coord" name="h" />
 </div>
 
-<div class="edit-photos col-sm-8 col-sm-offset-2 col-xs-12">
+<div class="edit-photos col-sm-10 col-sm-offset-1 col-xs-12">
     <div id="hide-content">
         <div id="show-img">
             <div class="img-slider">
@@ -93,20 +87,31 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
     </div>
 
     <div class="page-content row">
-        <h1 class="title col-xs-12"><?php print JText::_('EDIT_PHOTOS_TITLE')?></h1>
-        <div class="edit-photos-left col-sm-5 col-xs-12">
-            <div class="type-settings">
-                <span class="set-private-photo"><span class="flaticon-tool686"></span><?php print JText::_('EDIT_PHOTOS_SET_PRIVATE'); ?></span>
-                <span class="delete-photo"><span class="flaticon-garbage21"></span><?php print JText::_('EDIT_PHOTOS_DELETE'); ?></span>
+        <div class="page-content-top padding-null col-xs-12">
+            <h1><?php print JText::_('EDIT_PHOTOS_TITLE')?></h1>
+            <div class="actions-info">
+                <span class="delete-photo">
+                    <i class="flaticon-garbage21"></i>
+                    <?php print JText::_('EDIT_PHOTOS_DELETE'); ?>
+                </span>
+                <span class="set-private-photo">
+                    <i class="flaticon-tool686"></i>
+                    <?php print JText::_('EDIT_PHOTOS_SET_PRIVATE'); ?>
+                </span>
             </div>
+        </div>
+
+        <div class="edit-photos-left col-sm-4 col-xs-12">
             <div class="type-upload">
                 <img src="<?php print $this->image_avatar['src']; ?>"/>
+                <span class="avatar-info"><?php print JText::_('EDIT_PHOTOS_AVATAR_INFO'); ?></span>
                 <?php if($this->limit_upload_images){ ?>
                     <?php if ($this->permission_upload_photo == 1) { ?>
                         <div class="type-upload-buttons">
                             <input id="upload-photo" class="upload-photo" type="FILE" name="imgupload_to_album">
                             <label class="upload-photo" for="upload-photo"><?php print JText::_('EDIT_PHOTOS_UPLOAD_PHOTO'); ?></label>
                             <?php if($_SESSION['fb_1618118001736353_user_id'] && $_SESSION['fb_1618118001736353_access_token']) {?>
+                            <span>or</span>
                                 <span id="upload-from-facebook" class="upload-photo"><?php print JText::_('EDIT_PHOTOS_UPLOAD_FACEBOOK'); ?></span>
                             <?php } ?>
                         </div>
@@ -116,7 +121,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                 <?php } ?>
             </div>
         </div>
-        <div class="edit-photos-right col-sm-7 col-xs-12">
+        <div class="edit-photos-right col-sm-8 col-xs-12">
 
             <div class="album public-photos">
                 <?php if (count($this->images_album['images']) != 0) { ?>
@@ -172,7 +177,6 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                 <?php } ?>
             </div>
         </div>
-        <div class="page-footer col-xs-12"></div>
     </div>
 </div>
 

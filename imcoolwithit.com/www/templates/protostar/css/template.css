@@ -582,7 +582,7 @@
     .home-bottom-content{
         background: #ffffff;
     }
-    .full-user-page .external-links-top .send-token{
+    .external-links-top .send-token{
         font-size: 20px;
     }
 }
@@ -608,6 +608,34 @@ a:focus, input:focus{
     margin: 0;
     padding: 15px;
     position: relative;
+}
+.page-content .submit-block{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-content .submit-block .earn-tokens{
+    width: 120px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page-content .submit-block .earn-tokens .tokens-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page-content .submit-block .earn-tokens span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #b3b3b3;
 }
 
 @media (max-width: 500px){
@@ -716,7 +744,7 @@ a:focus, input:focus{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     font-size: 16px;
-    height: 50px;
+    height: 35px;
     outline: none;
     width: 130px;
 }
@@ -2035,6 +2063,20 @@ a:focus, input:focus{
     text-decoration: underline;
 }
 
+
+
+.edit-photos .actions-info{
+    bottom: 5px;
+    position: absolute;
+    right: 15px;
+}
+.edit-photos .actions-info span {
+    font-size: 13px;
+    color: #49484a;
+}
+.edit-photos .actions-info span i{
+    color: #40aadd;
+}
 .edit-photos .page-content .title{
     /*padding: 0;*/
     text-align: center;
@@ -2074,30 +2116,47 @@ a:focus, input:focus{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
 }
 .edit-photos-left .type-upload .type-upload-buttons .upload-photo{
-    cursor: pointer;
+    margin: 5px 0;
+    padding: 3px 15px;
     display: block;
-    font-size: 12px;
+    border: 1px solid #40aadd;
+    border-radius: 8px;
+    float: right;
+    color: #888;
+    cursor: pointer;
     font-weight: normal;
-    text-decoration: underline;
 }
 .edit-photos-left .type-upload .type-upload-buttons .upload-photo:hover{
+    color: #40aadd;
     text-decoration: none;
 }
+.edit-photos-left .avatar-info{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #52afde;
+    font-size: 15px;
+    line-height: normal;
+    padding-top: 5px;
+}
 .edit-photos-right .album{
-    padding-top: 50px;
+    border: 1px solid #f2b13e;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
 }
 .edit-photos-right .album .album-title{
-    border-bottom: 4px solid rgb(243, 177, 62);
-    color: rgb(64, 170, 221);
-    font-size: 16px;
-    margin: 10px auto;
+    color: #40aadd;
+    font-size: 18px;
     text-align: left;
 }
 .edit-photos-right .album ul{
     padding: 0;
-    text-align: center;
+    /*text-align: left;*/
 }
 .edit-photos-right .album ul li{
     max-width: 150px;
@@ -2446,17 +2505,18 @@ a:focus, input:focus{
 }
 
 
+.edit-photos .page-content-top,
 .settings .page-content-top,
 .full-user-page .page-content-top{
     height: 45px;
     margin-bottom: 15px;
 }
-.full-user-page .page-content-top .external-links-top {
+.external-links-top {
     bottom: 5px;
     position: absolute;
     right: 0;
 }
-.full-user-page .external-links-top a{
+.external-links-top a{
     margin: 0 0 5px 15px;
     padding: 3px 15px;
     display: block;
@@ -2466,24 +2526,24 @@ a:focus, input:focus{
     color: #888888;
     cursor: pointer;
 }
-.full-user-page .external-links-top a:hover{
+.external-links-top a:hover{
     color: #40aadd;
     text-decoration: none;
 }
-.full-user-page .external-links-top .token_sent{
+.external-links-top .token_sent{
     color: #888888;
     text-decoration: none;
     cursor: default;
 }
 
-.full-user-page .external-links-top .send-token{
+.external-links-top .send-token{
      /*background: url("../images/system/tokens_icon.png") no-repeat right;*/
      display: block;
      line-height: 32px;
      margin: 0 10px;
      padding: 0 5px;
  }
-.full-user-page .external-links-top .send-token .token{
+.external-links-top .send-token .token{
     background: url("../images/system/tokens_icon.png") no-repeat center center;
     display: inline-block;
     height: 31px;
@@ -2511,20 +2571,20 @@ a:focus, input:focus{
     50% { transform : rotateY(180deg); }
     100%{ transform: rotateY(360deg); }
 }
-.full-user-page .external-links-top .send-token .token-animation{
+.external-links-top .send-token .token-animation{
     -webkit-animation: rotate-token 1s 0 infinite linear;
     -moz-animation: rotate-token 1s 0 infinite linear;
     -o-animation: rotate-token 1s 0 infinite linear;
     animation: rotate-token 1s 0 infinite linear;
 }
-.full-user-page .external-links-top .accept-token{
+.external-links-top .accept-token{
     /*background: url("../images/system/tokens_icon.png") no-repeat right;*/
     display: block;
     line-height: 32px;
     margin: 0 10px;
     padding: 0 5px;
 }
-.full-user-page .external-links-top .accept-token .token{
+.external-links-top .accept-token .token{
     background: url("../images/system/tokens_icon.png") no-repeat center center;
     display: inline-block;
     height: 31px;
@@ -2532,13 +2592,13 @@ a:focus, input:focus{
     width: 31px;
     vertical-align: bottom;
 }
-.full-user-page .external-links-top .accept-token .token-animation{
+.external-links-top .accept-token .token-animation{
     -webkit-animation: rotate-token 1s 0 infinite linear;
     -moz-animation: rotate-token 1s 0 infinite linear;
     -o-animation: rotate-token 1s 0 infinite linear;
     animation: rotate-token 1s 0 infinite linear;
 }
-.full-user-page .external-links-top .sending-token{
+.external-links-top .sending-token{
     background: url("../images/system/tokens_icon_rotation.gif") no-repeat right;
     display: inline-block;
     height: 31px;
@@ -3060,11 +3120,12 @@ a:focus, input:focus{
 /*
 * -------------------- Referer Friends --------------------
 */
-.refer-friend .earn-tokens-info{
-    color: #bebdbc;
+.refer-friend .earn-tokens-info,
+.verify-email .earn-tokens-info{
     font-size: 16px;
 }
-.refer-friend .refer-friend-form .input-block{
+.refer-friend .refer-friend-form .input-block,
+.verify-email .input-block{
     width: 100%;
     height: 100px;
     display: flex;
@@ -3072,7 +3133,8 @@ a:focus, input:focus{
     justify-content: center;
     padding: 0 25px;
 }
-.refer-friend .refer-friend-form .input-block input{
+.refer-friend .refer-friend-form .input-block input,
+.verify-email .input-block input{
     width: 100%;
     height: 35px;
     padding: 0 10px;
@@ -3080,37 +3142,6 @@ a:focus, input:focus{
     outline: none;
     border: 1px solid #abaaa9;
 }
-.refer-friend .refer-friend-form .submit-block{
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.refer-friend .refer-friend-form .submit-block .earn-tokens{
-    width: 120px;
-    height: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.refer-friend .refer-friend-form .submit-block .submit-button{
-    height: 35px;
-}
-.refer-friend .refer-friend-form .submit-block .earn-tokens .tokens-icon{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.refer-friend .refer-friend-form .submit-block .earn-tokens span{
-    width: 100%;
-    display: block;
-    text-align: center;
-    font-size: 11px;
-    color: #b3b3b3;
-}
-
 
 /*
 * -------------------- Friends --------------------
@@ -3189,7 +3220,9 @@ a:focus, input:focus{
 /*
 * ---------------------------- Sponsors & Meetings -----------------------------
 */
-
+.lincup-offers .page-content-top{
+    height: auto;
+}
 .lincup-offers .lincup-offers-info{
     color: rgb(65, 65, 65);
     font-size: 15px;
@@ -3217,42 +3250,24 @@ a:focus, input:focus{
 }
 .lincup-offers .lincup-offers-list{
     margin: 0;
-    background: #F3F3F3;
     padding: 10px;
 }
 .lincup-offers .lincup-offers-list .first-column{
     border-left-width: 0!important;
 }
 .lincup-offers .lincup-offers-list .lincup-offers-category{
-    /*background: rgb(57, 167,223);*/
-    /*border-left: 1px solid rgb(255, 255, 255);*/
-    /*border-top: 2px solid rgb(255, 255, 255);*/
-    /*color: rgb(255, 255, 255);*/
-    /*font-size: 15px;*/
-    /*height: 45px;*/
-    /*padding: 10px 0 0 0;*/
-
-    background: rgb(243, 243, 243);
-    color: #48C0FD;
-    font-size: 14px;
+    color: #3ea8dc;
+    font-size: 17px;
     height: 45px;
-    padding: 13px 0 0 0;
-    font-weight: bold;
+    padding: 13px 0 0;
 }
 .lincup-offers .lincup-offers-list .lincup-offers-items{
     margin: 0;
 }
 .lincup-offers .lincup-offers-list .lincup-offers-items a{
-    /*border-bottom: 2px solid rgb(255, 255, 255);*/
-    /*display: block;*/
-    /*height: 120px;*/
-    /*width: 100%;*/
-
-    /*border-bottom: 2px solid rgb(255, 255, 255);*/
-
     display: flex;
     height: 120px;
-    width: 96%;
+    width: 95%;
     margin-left: 2%;
     background: #ffffff;
     border: 1px solid #bfc0c1;
@@ -3744,7 +3759,6 @@ a:focus, input:focus{
 .earn-tokens-list .earn-tokens-item .bot-inf span{
     padding-left: 25px;
 }
-
 .earn-tokens-list .earn-tokens-item .right-block .tokens-image{
     width: 100%;
 }
@@ -3785,10 +3799,10 @@ a:focus, input:focus{
 
 
 .earn-tokens-item .earn-tokens-question {
-    color: rgb(48, 155, 209);
-    display: block;
-    font-weight: bold;
-    margin: 20px 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .earn-tokens-item .earn-tokens-answers{
     display: flex;
@@ -3799,24 +3813,24 @@ a:focus, input:focus{
 .earn-tokens-item .earn-tokens-answers input[type="radio"]{
     display: none;
 }
-.earn-tokens-item .earn-tokens-answers input[type="radio"]:checked + label{
-    background: rgb(243, 177, 62);
-    color: rgb(255, 255, 255);
-}
 .earn-tokens-item .earn-tokens-answers label{
     border: 1px solid rgb(48, 155, 209);
-    border-radius: 10px;
     cursor: pointer;
-    display: block;
-    height: 40px;
     line-height: 40px;
     margin: 20px 10px;
     min-width: 110px;
-    padding: 0 10px;
+    border-radius: 8px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #aba9ab;
+    font-weight: normal;
+    padding: 0 15px;
 }
+.earn-tokens-item .earn-tokens-answers input[type="radio"]:checked + label,
 .earn-tokens-item .earn-tokens-answers label:hover{
-    background: rgb(243, 177, 62);
-    color: rgb(255, 255, 255);
+    color: #262426;
 }
 .user-questions .earn-tokens-item .earn-tokens-answers label:hover{
     background: transparent;
@@ -3951,14 +3965,21 @@ a:focus, input:focus{
     position: relative;
     text-align: center;
 }
-.complete-profile .earn-tokens-item .earn-tokens-question {
-    font-size: 20px;
+
+.complete-profile .earn-tokens-item,
+.lincup-questions .earn-tokens-item{
+    padding: 35px 5px;
+    flex-direction: column;
 }
-.complete-profile .earn-tokens-item .earn-tokens-answers{
+.earn-tokens-item .earn-tokens-question{
+    font-size: 18px;
+    font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
+}
+.earn-tokens-item .earn-tokens-answers{
     justify-content: center;
 }
-.complete-profile .earn-tokens-item .earn-tokens-answers label{
-    margin: 20px;
+.earn-tokens-item .earn-tokens-answers label{
+    margin: 10px 20px;
 }
 
 .lincup-questions{
@@ -3975,6 +3996,14 @@ a:focus, input:focus{
     font-size: 30px;
     /*padding-left: 5px;*/
     padding-top: 6px;
+}
+.lincup-questions .page-content-top h1{
+    width: calc(100% - 120px);
+}
+.lincup-questions .page-content-top .block-right{
+    margin: -15px 0 0 0;
+    max-width: 135px;
+    width: 135px;
 }
 
 .surveys .page-content .title,

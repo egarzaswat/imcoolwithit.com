@@ -5,14 +5,14 @@
 <div class="lincup-offers col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title row"><?php print JText::_('LINCUP_OFFERS_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('LINCUP_OFFERS_TITLE'); ?></h1>
+            <div class="external-links-top">
+                <a href="<?php print JText::_('LINK_EDIT_ACCOUNT'); ?>"><?php print JText::_('SPONSORS_ZIP_CODE'); ?><?php print $this->zip; ?></a>
+            </div>
+        </div>
 
         <div class="lincup-offers-info row">
-            <span class="zip-code">
-                <?php print JText::_('SPONSORS_ZIP_CODE'); ?>
-                <a href="<?php print JText::_('LINK_EDIT_ACCOUNT'); ?>"><?php print $this->zip; ?></a>
-            </span>
             <?php print $this->content; ?>
         </div>
 
