@@ -5,18 +5,20 @@
 <div class="messages col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row ">
-
-        <div class="title col-xs-12"><?php print $this->title; ?></div>
-
-        <div class="messages-sent-received col-xs-12">
-            <span class="received active"><?php echo JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></span>
-            <a class="sent" href="<?php print $this->link_sent; ?>"><?php echo JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></a>
-            <div class="tokens-filter">
-                <?php print JText::_('TOKENS_WORD'); ?>
-                <input type="checkbox" name="tokens-filter" id="tokens-filter" <?php if ($this->ft) { print 'checked="checked"';} ?> >
-                <label for="tokens-filter"></label>
+        <div class="page-content-top content-top-col padding-null col-xs-12">
+            <h1><?php print $this->title; ?></h1>
+            <div class="top-info">
+                <span class="received active"><?php echo JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></span>
+                <a class="sent" href="<?php print $this->link_sent; ?>"><?php echo JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></a>
+                <div class="tokens-filter">
+                    <?php print JText::_('TOKENS_WORD'); ?>
+                    <input type="checkbox" name="tokens-filter" id="tokens-filter" <?php if ($this->ft) { print 'checked="checked"';} ?> >
+                    <label for="tokens-filter"></label>
+                </div>
             </div>
         </div>
+
+
 
         <div class="messages-list padding-null col-xs-12">
             <?php if (count($this->inbox_list) > 0) {

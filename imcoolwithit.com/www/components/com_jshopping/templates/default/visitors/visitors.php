@@ -5,7 +5,7 @@
 <div class="visitors col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-        <div class="profile-content-top padding-null">
+        <div class="page-content-top padding-null">
             <h1><?php print $this->title; ?></h1>
         </div>
 

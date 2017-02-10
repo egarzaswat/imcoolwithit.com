@@ -848,10 +848,15 @@ a:focus, input:focus{
 .users-list-link{
     border-bottom: 1px solid #40aadd;
     color: rgb(73, 72, 74);
-    display: block;
+    display: flex;
     padding: 25px 30px;
     text-align: left;
+    align-items: center;
     text-decoration: none;
+    font-size: 17px;
+}
+.users-list-link:last-of-type{
+    border-bottom: 0;
 }
 .users-list-link:last-child{
     border: 0;
@@ -861,11 +866,13 @@ a:focus, input:focus{
     text-decoration: none;
 }
 .users-list-link .users-list-info{
-    display: inline-block;
+    display: inline-flex;
     padding-left: 10px;
-    vertical-align: middle;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
     font-size: 16px;
-    color: #777777;
+    color: #49484a;
     font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
 }
 .users-list-link .users-list-info span{
@@ -881,7 +888,6 @@ a:focus, input:focus{
 .users-list-link .users-list-info .info .localisation{
     background: url("../images/system/localisation.png") no-repeat left center;
     display: inline-block;
-    font-size: 11px;
     height: 16px;
     line-height: 16px;
     padding-left: 18px;
@@ -891,7 +897,6 @@ a:focus, input:focus{
 .users-list-link .users-list-info .info .last-visit{
     background: url("../images/system/last_online.png") no-repeat left center;
     display: inline-block;
-    font-size: 11px;
     height: 16px;
     line-height: 16px;
     padding-left: 18px;
@@ -1003,6 +1008,58 @@ a:focus, input:focus{
     align-items: center;
     position: relative;
     border-bottom: 1px solid #40aadd;
+}
+.page-content-top.content-top-col{
+    flex-direction: column;
+    height: auto;
+}
+.page-content-top.content-top-col h1{
+    width: 100%;
+    padding: 0 25px;
+}
+.page-content-top.content-top-col .top-info{
+    display: inline-flex;
+    min-width: 100%;
+    height: 65px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.page-content-top.content-top-col .top-info span,
+.page-content-top.content-top-col .top-info a{
+    color: #5b5758;
+    font-size: 22px;
+    margin: 15px 0 10px 25px;
+    line-height: 1.2;
+}
+.page-content-top.content-top-col .top-info span{
+    border-bottom: 5px solid #efae3d;
+}
+.page-content-top.content-top-col .tokens-filter{
+    color: #5b5758;
+    font-size: 22px;
+    line-height: 1.2;
+    position: absolute;
+    right: 0;
+}
+.page-content-top.content-top-col .tokens-filter input[type=checkbox]{
+    display: none;
+}
+.page-content-top.content-top-col .tokens-filter input[type=checkbox]+label{
+    background: url(../images/system/tokens_filter.jpg) no-repeat;
+    cursor: pointer;
+    float: right;
+    height: 27px;
+    margin: 0 0 0 10px;
+    width: 27px;
+}
+.page-content-top.content-top-col .tokens-filter input[type=checkbox]:checked+label{
+    background-position: -27px 0;
+}
+
+
+.page-content-top .top-info{
+    min-width: 100%;
 }
 .page-content-top h1{
     padding: 0 15px;
@@ -2507,10 +2564,16 @@ a:focus, input:focus{
 
 .edit-photos .page-content-top,
 .settings .page-content-top,
+.lincup-coupon .page-content-top,
+.lincup-redeem .page-content-top,
+.messaging .page-content-top,
+.friends .page-content-top,
+.bookmarks .page-content-top,
 .full-user-page .page-content-top{
     height: 45px;
     margin-bottom: 15px;
 }
+
 .external-links-top {
     bottom: 5px;
     position: absolute;
@@ -2797,13 +2860,20 @@ a:focus, input:focus{
     padding: 15px 0;
 }
 .messages-list .messages-list-item{
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #efae3d;
     margin: 0;
     min-height: 100px;
     padding-bottom: 5px;
     padding-top: 5px;
     position: relative;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
+}
+.messages-list .messages-list-item:last-child{
+    border: 0;
 }
 
 .messages-list .is_new{
@@ -2826,11 +2896,12 @@ a:focus, input:focus{
 }
 .messages-list .messages-list-item .messages-list-info{
     display: inline-block;
-    font-size: 13px;
+    font-size: 17px;
     padding-left: 0;
     text-align: left;
     word-wrap: break-word;
     vertical-align: middle;
+    color: #49484a;
 }
 .messages-list .messages-list-item .messages-list-info span{
     display: block;
@@ -2842,8 +2913,7 @@ a:focus, input:focus{
     cursor: pointer;
 }
 .messages-list .messages-list-item .messages-list-info .username{
-    color: rgb(73, 72, 74);
-    font-size: 14px;
+    color: #40aadd;
     font-weight: bold;
 }
 .messages-list .messages-list-item .messages-list-info .message{
@@ -2903,14 +2973,28 @@ a:focus, input:focus{
     opacity: .8;
 }
 .messaging .messaging-list{
-    background: rgb(224, 226, 210);
-    border-top: 1px solid rgb(255, 255, 255);
+
 }
 .messaging .messaging-list #load-messages{
     max-height: 350px;
     overflow: auto;
     width: 100%;
 }
+.messaging .messaging-list #load-messages::-webkit-scrollbar{
+    background: #fff;
+    width: 3px;
+    opacity: 0;
+}
+
+
+.messaging .messaging-list #load-messages::-webkit-scrollbar-thumb {
+     background: #fff;
+ }
+.messaging .messaging-list:hover #load-messages::-webkit-scrollbar-thumb{
+    background: #d0d0d0;
+}
+
+
 .messaging .messaging-list .load-old-messages{
     cursor: pointer;
     display: none;
@@ -2992,13 +3076,13 @@ a:focus, input:focus{
 .messaging .messaging-form .form-elements .input-text{
     background: rgb(255, 255, 255);
     border: 1px solid rgb(164, 164, 164);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px 0 10px 15px;
 }
 .messaging .messaging-form .form-elements .input-text .message-send{
     background: rgb(255, 255, 255);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     display: block;
     line-height: 34px;
     padding: 0 35px 0 5px;
@@ -3331,10 +3415,9 @@ a:focus, input:focus{
     vertical-align: top;
 }
 .lincup-coupon-users .lincup-coupon-user span{
-    color: rgb(48, 155, 209);
+    color: #858383;
     display: block;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
     word-wrap: break-word;
 }
 .lincup-coupon-users .lincup-coupon-user .user-photo{
@@ -3357,10 +3440,87 @@ a:focus, input:focus{
 .lincup-coupon-users .lincup-coupon-user .not-your-date:hover{
     text-decoration: none;
 }
+
+.lincup-coupon .lincup-bottom{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    padding: 0 15px;
+}
+.lincup-coupon .lincup-bottom .left,
+.lincup-coupon .lincup-bottom .right{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.lincup-coupon .lincup-bottom .left{
+    width: 40%;
+    min-width: 40%;
+    justify-content: flex-start;
+}
+.lincup-coupon .lincup-bottom .left .tokens-block{
+    width: 85px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lincup-coupon .lincup-bottom .left .tokens-block.wa{
+    width: 185px;
+}
+.lincup-coupon .lincup-bottom .left .tokens-block span{
+    width: 100%;
+    min-width: 100%;
+    font-size: 11px;
+    color: #49484a;
+}
+.lincup-coupon .lincup-bottom .right{
+    width: 60%;
+    min-width: 60%;
+    justify-content: flex-end;
+}
+.lincup-coupon .lincup-bottom .right a{
+    width: 140px;
+    max-width: 140px;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #49484a;
+    font-size: 13px;
+}
+.lincup-coupon .lincup-bottom .right a:hover{
+    text-decoration: none;
+}
+.lincup-coupon .lincup-bottom .right a img{
+    border-radius: 50%;
+    border: 1px solid #40aadd;
+    margin-bottom: 5px;
+}
+.lincup-coupon .lincup-bottom .right a span{
+    width: 100%;
+    min-width: 100%;
+}
+
+@media (max-width: 767px){
+    .lincup-coupon .lincup-bottom .left,
+    .lincup-coupon .lincup-bottom .right{
+        width: 100%;
+        min-width: 100%;
+        justify-content: center;
+    }
+    .lincup-coupon .lincup-bottom{
+        flex-direction: column;
+        height: 190px;
+    }
+}
+
+
 .lincup-coupon-info{
-    border: 1px dashed rgb(243, 177, 62);
-    margin: 20px 15px!important;
+    border: 1px solid #f3b13e;
+    margin: 5px 15px 20px!important;
     padding: 15px;
+    border-radius: 10px;
 }
 .lincup-coupon-logo img{
     margin: 10px 0;
@@ -3371,8 +3531,9 @@ a:focus, input:focus{
     text-align: left;
 }
 .lincup-coupon-text .lincup-coupon-over{
-    color: rgb(73, 72, 74);
-    font-size: 26px;
+    color: #3ea8dc;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 .lincup-coupon-text .lincup-coupon-title{
     border-top: 1px solid rgb(48, 155, 209);
@@ -3382,7 +3543,7 @@ a:focus, input:focus{
     margin: 5px 0;
 }
 .lincup-coupon-text .lincup-coupon-description{
-    color: rgb(73, 72, 74);
+    color: #5b5758;
     font-size: 16px;
 }
 .lincup-coupon-tokens{
@@ -3574,18 +3735,17 @@ a:focus, input:focus{
 }
 
 .lincup-redeem .redeem-ready{
-    /*color: rgb(255, 162, 0);*/
-    /*font-size: 26px;*/
-    /*margin-top: 20px;*/
-    /*padding: 0 15px;*/
-    /*text-decoration: underline;*/
-    color: rgb(48, 155, 209);
-    font-size: 20px;
-    margin-top: 20px;
+    color: #309bd1;
+    font-size: 17px;
+    margin-top: 22px;
     padding: 0 15px;
+    font-weight: normal;
 }
 .lincup-redeem .lincup-coupon-redeem{
-    margin: 0 0 30px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .lincup-redeem .lincup-coupon-redeem .redeem-code{
     border: 1px solid rgb(48, 155, 209);
@@ -3593,7 +3753,7 @@ a:focus, input:focus{
     display: block;
     font-size: 18px;
     line-height: 40px;
-    margin: 15px auto;
+    margin: 0 20px;
     outline: none;
     padding: 0 10px;
     width: 250px;

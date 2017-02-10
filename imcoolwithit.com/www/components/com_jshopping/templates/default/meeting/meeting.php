@@ -5,8 +5,9 @@
 <div class="lincup-coupon col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('LINCUP_TITLE', $this->sponsor_data['name']); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('LINCUP_TITLE', $this->sponsor_data['name']); ?></h1>
+        </div>
 
         <?php if ($this->submit_data['friend'] != 0) { ?>
             <div class="lincup-coupon-users">
@@ -33,35 +34,39 @@
             </div>
             <div class="lincup-coupon-text col-sm-7 col-xs-12">
                 <span class="lincup-coupon-over"><?php print JText::_('LINCUP_OVER'); ?></span>
-                <span class="lincup-coupon-title"><?php print $this->sponsor_data['title']; ?></span>
+<!--                <span class="lincup-coupon-title">--><?php //print $this->sponsor_data['title']; ?><!--</span>-->
                 <span class="lincup-coupon-description"><?php print $this->sponsor_data['description']; ?></span>
             </div>
         </div>
 
-        <div class="lincup-coupon-tokens text-none-select col-sm-8 col-xs-12">
-            <?php if ($this->isset_tokens_send) { ?>
-                <div>
-                    <span class="lincup"><?php print JText::_('LINCUP_FOR'); ?></span>
-                    <span class="tokens-count"><?php print $this->submit_data['count_tokens']; ?></span>
-                    <span><?php print JText::_('LINCUP_TOKENS'); ?></span>
+        <div class="lincup-bottom">
+            <div class="left">
+                <div class="tokens-block <?php if (!$this->isset_tokens_send) { print 'wa'; }?>">
+                    <img src="/templates/protostar/images/system/linkup_icon.png">
+                    <?php if ($this->isset_tokens_send) { ?>
+                        <span class="wa"><?php print $this->submit_data['count_tokens'] . ' ' . JText::_('LINCUP_TOKENS'); ?></span>
+                    <?php } else { ?>
+                        <span class="lincup-no-tokens"><?php print JText::_('NOT_ENOUGH_TOKENS'); ?></span>
+                        <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
+                    <?php } ?>
                 </div>
-            <?php } else { ?>
-                <span class="lincup-no-tokens"><?php print JText::_('NOT_ENOUGH_TOKENS'); ?></span>
-                <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
-            <?php } ?>
-        </div>
-
-        <div class="lincup-coupon-options text-none-select col-sm-4 col-xs-12">
-            <?php if ($this->submit_data['friend'] == 0) { ?>
-            <div class="options">
-                <a href="<?php print $this->link_not_your_date; ?>" class="choose-date"><?php print JText::_('CHOOSE_DATE'); ?></a>
-                <a href="<?php print $this->link_another_sponsor; ?>" class="another-offer"><?php print JText::_('ANOTHER_OFFER'); ?></a>
             </div>
-            <?php } else { ?>
-                <div class="send-invite">
-                    <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
-                </div>
-            <?php } ?>
+            <div class="right">
+                <?php if ($this->submit_data['friend'] == 0) { ?>
+                    <a href="<?php print $this->link_not_your_date; ?>">
+                        <img src="/templates/protostar/images/system/choose_date.png">
+                        <span><?php print JText::_('CHOOSE_DATE'); ?></span>
+                    </a>
+                    <a href="<?php print $this->link_another_sponsor; ?>">
+                        <img src="/templates/protostar/images/system/mee_select_another.png">
+                        <span><?php print JText::_('ANOTHER_OFFER'); ?></span>
+                    </a>
+                <?php } else { ?>
+                    <div class="send-invite-to-user">
+                        <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
 
     </div>
@@ -69,7 +74,7 @@
 </div>
 
 <script type="text/javascript">
-    jQuery('.lincup-coupon-options .send-invite').click(function(){
+    jQuery('.send-invite-to-user').click(function(){
         jQuery(this).parent().hide();
         var link='<?php print $this->submit_data['link']; ?>';
         var data_post = {

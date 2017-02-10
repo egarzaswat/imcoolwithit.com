@@ -5,8 +5,9 @@ defined('_JEXEC') or die('Restricted access');
 <div class="bookmarks col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('BOOKMARKS_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('BOOKMARKS_TITLE'); ?></h1>
+        </div>
 
         <?php if (count($this->data) < 1) { ?>
             <div class="no-records-found">

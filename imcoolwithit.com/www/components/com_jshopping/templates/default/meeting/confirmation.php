@@ -5,8 +5,9 @@
 <div class="lincup-redeem col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('LINCUP_REDEEM_TITLE', $this->sponsor_data['name_' . JSFactory::getLang()->lang]); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('LINCUP_REDEEM_TITLE', $this->sponsor_data['name_' . JSFactory::getLang()->lang]); ?></h1>
+        </div>
 
         <div class="lincup-coupon-users">
             <span class="lincup-coupon-user">
@@ -32,7 +33,7 @@
             </div>
             <div class="lincup-coupon-text col-sm-8 col-xs-12">
                 <span class="lincup-coupon-over"><?php print JText::_('LINCUP_OVER'); ?></span>
-                <span class="lincup-coupon-title"><?php print $this->sponsor_data['title_' . JSFactory::getLang()->lang]; ?></span>
+<!--                <span class="lincup-coupon-title">--><?php //print $this->sponsor_data['title_' . JSFactory::getLang()->lang]; ?><!--</span>-->
                 <span class="lincup-coupon-description"><?php print $this->sponsor_data['short_description_' . JSFactory::getLang()->lang]; ?></span>
             </div>
         </div>

@@ -6,15 +6,16 @@
 
     <div class="page-content row">
 
-        <div class="title col-xs-12"><?php print $this->title; ?></div>
-
-        <div class="messages-sent-received col-xs-12">
-            <span class="sent active"><?php print JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></span>
-            <a class="received" href="<?php print $this->link_received; ?>"><?php print JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></a>
-            <div class="tokens-filter">
-                <?php print JText::_('TOKENS_WORD'); ?>
-                <input type="checkbox" name="tokens-filter" id="tokens-filter" <?php if ($this->ft) { print 'checked="checked"';} ?> >
-                <label for="tokens-filter"></label>
+        <div class="page-content-top content-top-col padding-null col-xs-12">
+            <h1><?php print $this->title; ?></h1>
+            <div class="top-info">
+                <span class="sent active"><?php print JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></span>
+                <a class="received" href="<?php print $this->link_received; ?>"><?php print JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></a>
+                <div class="tokens-filter">
+                    <?php print JText::_('TOKENS_WORD'); ?>
+                    <input type="checkbox" name="tokens-filter" id="tokens-filter" <?php if ($this->ft) { print 'checked="checked"';} ?> >
+                    <label for="tokens-filter"></label>
+                </div>
             </div>
         </div>
 

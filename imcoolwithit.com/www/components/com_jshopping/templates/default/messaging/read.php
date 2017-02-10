@@ -5,8 +5,9 @@ defined('_JEXEC') or die('Restricted access');
 <div class="messaging col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title col-xs-12"><?php print JText::sprintf('MESSAGING_TITLE', $this->friend_data->u_name); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('MESSAGING_TITLE', $this->friend_data->u_name); ?></h1>
+        </div>
 
         <div class="interlocutor col-xs-12">
             <a class="interlocutor-link" href="<?php print $this->friend_data->link; ?>">
@@ -118,9 +119,6 @@ defined('_JEXEC') or die('Restricted access');
                <?php } ?>
             </form>
         <?php } ?>
-
-        <div class="page-footer col-xs-12"></div>
-
     </div>
 
 </div>
