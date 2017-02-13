@@ -1109,7 +1109,6 @@ class JshoppingControllerMember extends JControllerLegacy{
         } else {
             $adv_user->photosite = $conf->path_user_image_big . "block.jpg";
 
-
             $view_name = "member";
             $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);
             $view = $this->getView($view_name, getDocumentType(), '', $view_config);

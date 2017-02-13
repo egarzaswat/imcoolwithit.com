@@ -7,6 +7,9 @@
     <div class="page-content row ">
         <div class="page-content-top content-top-col padding-null col-xs-12">
             <h1><?php print $this->title; ?></h1>
+            <div class="block-right">
+                <img src="/templates/protostar/images/system/cool_messages.png">
+            </div>
             <div class="top-info">
                 <span class="received active"><?php echo JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></span>
                 <a class="sent" href="<?php print $this->link_sent; ?>"><?php echo JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></a>

@@ -33,8 +33,6 @@
         </div>
 
 
-
-
         <div class="profile-content-left col-sm-5 col-xs-12">
             <div class="photo">
                 <img src="<?php echo $userData->photosite; ?>" alt="<?php echo $userData->photosite; ?>">
@@ -84,19 +82,19 @@
             </div>
 
             <div class="user-options text-none-select">
-                <a href="<?php print $this->link_Q_n_A; ?>">
+                <a href="<?php print $this->links['questions']; ?>">
                     <span class="option">
                         <img src="/templates/protostar/images/system/profile_qa.png" />
                     </span>
                     <span class="text"><?php print JText::_('USER_QUESTIONS'); ?></span>
                 </a>
-                <a href="<?php print $this->link_honesty_reviews; ?>">
+                <a href="<?php print $this->links['honesty_reviews']; ?>">
                     <span class="option">
                         <img src="/templates/protostar/images/system/profile_honesty_reviews.png" />
                     </span>
                     <span class="text"><?php print JText::_('USER_HONESTY_REVIEWS'); ?></span>
                 </a>
-                <a href="<?php print $this->link_private_photos; ?>">
+                <a href="<?php print $this->links['private']; ?>">
                     <span class="option">
                         <img src="/templates/protostar/images/system/profile_private.png" />
                     </span>

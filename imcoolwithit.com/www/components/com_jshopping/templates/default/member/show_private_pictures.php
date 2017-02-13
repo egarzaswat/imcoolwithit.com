@@ -5,15 +5,27 @@
 <div class="show-private col-sm-6 col-sm-offset-3 col-xs-12">
 
     <div class="page-content row">
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('VIEW_PRIVATE_PHOTOS'); ?></h1>
+            <div class="block-right">
+                <div class="ph-border">
+                    <img src="/templates/protostar/images/system/private_pictures.png">
+                </div>
+            </div>
+        </div>
 
-        <h1 class="title"><?php print JText::_('VIEW_PRIVATE_PHOTOS'); ?></h1>
+        <div class="page-top-info">
+            <span><?php print JText::sprintf('VIEW_PRIVATE_PHOTOS_INFO', $this->count_tokens, ''); ?></span>
+        </div>
 
-        <span class="show-private-info"><?php print JText::sprintf('VIEW_PRIVATE_PHOTOS_INFO', $this->count_tokens, ''); ?></span>
 
         <div class="show-private-action">
-            <span class="show-private-tokens text-none-select">
-                <span class="tokens-count"><?php print $this->count_tokens; ?></span>
-            </span>
+            <div class="show-private-tokens text-none-select">
+                <div class="tokens-image">
+                    <img src="/templates/protostar/images/system/token.png">
+                </div>
+                <span class="tokens-text"><?php print JText::sprintf('VIEW_PRIVATE_PHOTOS_TOKENS', $this->count_tokens); ?></span>
+            </div>
 
             <?php if ($this->permission == true) { ?>
                 <input type="button" class="submit-button" value="<?php print JText::_('BUTTON_VIEW'); ?>"/>
@@ -23,12 +35,7 @@
                     <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('USER_PAGE_NO_TOKENS_LINK_TEXT'); ?></a>
                 </span>
             <?php } ?>
-
-            <span class="show-private-tokens text-none-select" style="background: none;"></span>
         </div>
-
-        <span class="page-footer"></span>
-
     </div>
 
 </div>

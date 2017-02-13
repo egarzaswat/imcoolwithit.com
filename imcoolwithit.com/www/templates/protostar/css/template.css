@@ -872,7 +872,7 @@ a:focus, input:focus{
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
-    color: #49484a;
+    color: #7d7d7d;
     font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
 }
 .users-list-link .users-list-info span{
@@ -886,20 +886,20 @@ a:focus, input:focus{
     display: block;
 }
 .users-list-link .users-list-info .info .localisation{
-    background: url("../images/system/localisation.png") no-repeat left center;
+    /*background: url("../images/system/localisation.png") no-repeat left center;*/
     display: inline-block;
     height: 16px;
     line-height: 16px;
-    padding-left: 18px;
+    /*padding-left: 18px;*/
     padding-right: 14px;
     text-align: left;
 }
 .users-list-link .users-list-info .info .last-visit{
-    background: url("../images/system/last_online.png") no-repeat left center;
+    /*background: url("../images/system/last_online.png") no-repeat left center;*/
     display: inline-block;
     height: 16px;
     line-height: 16px;
-    padding-left: 18px;
+    /*padding-left: 18px;*/
     padding-right: 18px;
     text-align: left;
 
@@ -1078,8 +1078,22 @@ a:focus, input:focus{
     height: calc(100% + 15px);
     margin: -15px 25px 0 0;
 }
-.page-content-top .block-right img{
+.page-content-top .block-right img,
+{
     max-height: 70%;
+}
+.page-content-top .block-right .ph-border{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #44acde;
+    border-radius: 50%;
+}
+.page-content-top .block-right .ph-border img{
+    max-width: 80%;
+    max-height: 80%;
 }
 
 @media (max-width: 400px){
@@ -1477,140 +1491,104 @@ a:focus, input:focus{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    height: 78px;
+    min-height: 78px;
+    padding: 18px 0;
+    font-size: 12px;
 }
-.menu-top-left, .menu-top-center, .menu-top-right{
-    height: 70px;
+.flex-menu .menu-top-right,
+.flex-menu .menu-top-left,
+.flex-menu .menu-top-center{
+    display: inline-flex;
 }
-.menu-top-left{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+.flex-menu .menu-top-center{
+    flex-direction: column;
+    height: 100%;
 }
-.menu-top-left .menu-settings{
-    background: url("../images/system/cool_settings.png") no-repeat scroll center center;
-    display: inline-block;
-    height: 50px;
-    margin: 10px;
-    min-width: 50px;
-    padding: 41px 0 0;
-    color: #49484A;
-    font-size: 13px;
-    font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif!important;
-}
-.menu-top-left .hey-user{
-    color: rgb(242, 178, 63);
-    display: inline-block;
-    font-size: 20px;
-    /*text-align: right;*/
-    text-align: left;
-    /*margin-bottom: 10px;*/
-    width: 125px;
-    line-height: 1.2;
-}
-
-.menu-top-left .hey-user .home-link{
-    font-size: 14px;
-    font-weight: normal;
-    /*margin-left: 25px;*/
-}
-
-@media (min-width: 991px){
-    .menu-top-left .hey-user{
-        width: 150px;
-    }
-}
-
-.menu-top-left .hey-user a{
-    color: rgb(242, 178, 63);
-    font-weight: bold;
-}
-.menu-top-left .hey-user a:hover{
-    color: rgb(255, 199, 98);
-    text-decoration: underline;
-}
-.menu-top-center{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-.menu-top-center a{
-    color: rgb(73, 72, 74);
-    display: inline-block;
-    font-weight: bold;
-    padding: 0 5px;
-}
-.menu-top-center a:hover{
-    color: rgb(153, 153, 153);
-    text-decoration: none;
-}
-.menu-top-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 360px;
-}
-.menu-top-right a{
-    color: rgb(73, 72, 74);
-    display: inline-block;
-    height: 70px;
+.flex-menu a{
+    height: 45px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     margin: 0 10px;
+}
+.flex-menu a.link-count{
+    margin: 0 10px 0 25px;
+}
+.flex-menu a .link-top{
+    max-width: 55px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 70px;
 }
-.menu-top-right a:hover{
-    color: rgb(73, 72, 74);
-    text-decoration: none;
-}
-.menu-top-right a .cool-count{
-    background: rgb(242, 178, 63);
-    border-radius: 35%;
-    color: rgb(255, 255, 255);
-    display: block;
+.flex-menu a .link-top .cool-count{
+    position: absolute;
+    top: 0;
+    right: calc(100% + 4px);
+    background: #f2b23f;
+    border-radius: 7px;
+    color: #fff;
     font-size: 12px;
     height: 20px;
-    left: -10px;
-    line-height: 1.8;
     min-width: 20px;
     padding: 0 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-menu a .link-top img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.flex-menu a .cool-menu-text{
+    width: 100%;
+    text-align: center;
+    height: 15px;
+    color: #888888;
+}
+.flex-menu a:hover{
+    text-decoration: none;
+}
+.flex-menu .menu-top-left a .link-top{
+    align-items: flex-end;
+}
+.flex-menu .menu-top-left a .link-top img{
+    max-width: none;
+    max-height: none;
+}
+.flex-menu .menu-top-center .big{
+    font-size: 19px;
+    color: #f3b13e;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+}
+.flex-menu .menu-top-center .big a{
+    height: auto;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    color: #f3b13e;
+}
+.flex-menu .menu-top-center .home-link{
+    height: auto;
+    font-size: 14px;
+    color: #888888;
+}
+.flex-menu .dropdown-toggle{
     position: absolute;
-    text-align: center;
-    top: 15px;
+    left: 5px;
+    top: 5px;
+}
 
-}
-.menu-top-right a .cool-menu-text{
-    box-sizing: border-box;
-    display: block;
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 50px 0 0;
-    position: relative;
-    text-align: center;
-}
-.menu-top-right .cool-tokens{
-    background: url("../images/system/cool_tokens.png") no-repeat center center;
-}
-.menu-top-right .cool-tokens .cool-count{
-    left: -2px;
-}
-.menu-top-right .cool-connections{
-    background: url("../images/system/cool_connections.png") no-repeat center center;
-}
-.menu-top-right .cool-connections .cool-count{
-    left: 0;
-}
-.menu-top-right .cool-visitors{
-    background: url("../images/system/cool_visitors.png") no-repeat center center;
-}
-.menu-top-right .cool-visitors .cool-count{
-    left: -12px;
-}
-.menu-top-right .cool-messages{
-    background: url("../images/system/cool_messages.png") no-repeat center center;
-}
-.menu-top-right .cool-messages .cool-count{
-    left: -5px;
+
+@media (max-width: 767px) {
+    .visible-xs {
+        display: flex !important;
+    }
 }
 
 .btn-group{
@@ -1723,92 +1701,11 @@ a:focus, input:focus{
     font-size: 13px;
     font-weight: bold;
 }
-.menu-top-xs{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-.menu-top-xs .menu-settings{
-    background: url("../images/system/cool_settings.png") no-repeat scroll center center;
-    display: inline-block;
-    height: 50px;
-    margin: 10px;
-    min-width: 50px;
-    padding: 41px 0 0;
-    color: #49484A;
-    font-size: 13px;
-    font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif!important;
-}
-.menu-top-xs .hey-user{
-    color: rgb(242, 178, 63);
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-}
-.hey-user-big{
-    display: flex!important;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center!important;
-}
+
 @media (min-width: 1000px){
     .hey-user-big{
         margin-left: 25px;
     }
-}
-.menu-top-xs .hey-user a{
-    color: rgb(242, 178, 63);
-    font-weight: bold;
-}
-.menu-top-xs .hey-user a.home-link{
-    font-size: 14px;
-    font-weight: normal;
-}
-.menu-top-xs .hey-user a:hover{
-    color: rgb(255, 199, 98);
-    text-decoration: underline;
-}
-.menu-top-xs .cool-messages{
-    background: url("../images/system/cool_messages.png") no-repeat 16px 10px;
-    color: rgb(73, 72, 74);
-    display: inline-block;
-    height: 70px;
-    margin: 0 10px;
-    position: relative;
-    width: 70px;
-}
-
-.menu-top-xs .cool-messages:hover{
-    color: rgb(73, 72, 74);
-    text-decoration: none;
-}
-.menu-top-xs .cool-messages .cool-count{
-    background: rgb(242, 178, 63);
-    border-radius: 35%;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 12px;
-    height: 20px;
-    left: -10px;
-    line-height: 1.8;
-    min-width: 20px;
-    padding: 0 4px;
-    position: absolute;
-    text-align: center;
-    top: 15px;
-    left: -2px;
-}
-.menu-top-xs .cool-messages .cool-menu-text{
-    box-sizing: border-box;
-    display: block;
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 50px 0 0;
-    position: relative;
-    text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -2567,8 +2464,6 @@ a:focus, input:focus{
 .lincup-coupon .page-content-top,
 .lincup-redeem .page-content-top,
 .messaging .page-content-top,
-.friends .page-content-top,
-.bookmarks .page-content-top,
 .full-user-page .page-content-top{
     height: 45px;
     margin-bottom: 15px;
@@ -2716,29 +2611,29 @@ a:focus, input:focus{
 }
 .show-private .show-private-action{
     align-items: center;
-    background-color: rgb(224, 226, 210);
-    border-top: 2px solid rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 20px 0;
+    flex-direction: column;
 }
 .show-private .show-private-action .show-private-tokens{
-    background: url("../images/system/surveys_tokens.png") no-repeat center center;
-    display: inline-block;
-    font-size: 12px;
-    height: 50px;
-    margin: auto 0;
+    display: inline-flex;
+    width: 50%;
+    min-width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
-    width: 50px;
+    margin-bottom: 30px;
 }
-.show-private .show-private-action .show-private-tokens .tokens-count{
-    bottom: -5px;
-    color: rgb(255, 255, 255);
-    line-height: 25px;
-    position: absolute;
-    right: -5px;
+.show-private .show-private-action .show-private-tokens .tokens-text{
+    font-size: 12px;
+    margin-top: 5px;
 }
+
+
+
 
 .private-photos .page-content .title{
     padding-left: 0;
@@ -2818,7 +2713,9 @@ a:focus, input:focus{
 /*
 * -------------------- Messaging --------------------
 */
-
+.messages .page-content-top .block-right{
+    height: 80px;
+}
 .messages-sent-received{
     background: rgb(255, 255, 255);
     box-shadow: 0 3px 10px rgba(34, 31, 31, 0.3);
@@ -2907,6 +2804,7 @@ a:focus, input:focus{
     display: block;
     text-align: left;
     width: 100%;
+    line-height: 1.2;
 }
 .messages-list .messages-list-item .messages-list-info .accept,
 .messages-list .messages-list-item .messages-list-info .decline{
@@ -2917,7 +2815,7 @@ a:focus, input:focus{
     font-weight: bold;
 }
 .messages-list .messages-list-item .messages-list-info .message{
-    margin: 5px 0;
+    margin: 0;
     max-width: 100%;
     word-wrap: break-word;
 }
@@ -3807,11 +3705,13 @@ a:focus, input:focus{
 * ---------------------------- Earn tokens -----------------------------
 */
 
+.page-top-info,
 .earn-tokens .earn-more-tokens{
     font-size: 18px;
     margin: 10px 25px;
     text-align: left;
 }
+.page-top-info span,
 .earn-tokens .earn-more-tokens span{
     width: 100%;
     text-align: center;
@@ -3819,6 +3719,8 @@ a:focus, input:focus{
     font-size: 17px;
     color: #7fc0e5;
 }
+
+
 .earn-tokens .earn-tokens-block{
     margin: 0 0 15px;
 }

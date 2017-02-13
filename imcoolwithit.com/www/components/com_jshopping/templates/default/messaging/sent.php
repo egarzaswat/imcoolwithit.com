@@ -8,6 +8,9 @@
 
         <div class="page-content-top content-top-col padding-null col-xs-12">
             <h1><?php print $this->title; ?></h1>
+            <div class="block-right">
+                <img src="/templates/protostar/images/system/cool_messages.png">
+            </div>
             <div class="top-info">
                 <span class="sent active"><?php print JText::_('MESSAGE_INBOX_SEND_BUTTON'); ?></span>
                 <a class="received" href="<?php print $this->link_received; ?>"><?php print JText::_('MESSAGE_INBOX_RECEIVED_BUTTON'); ?></a>

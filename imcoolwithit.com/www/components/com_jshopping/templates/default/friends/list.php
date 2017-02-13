@@ -7,6 +7,9 @@ defined('_JEXEC') or die('Restricted access');
     <div class="page-content row">
         <div class="page-content-top padding-null">
             <h1><?php print JText::_('CONNECTIONS_TITLE'); ?></h1>
+            <div class="block-right">
+                <img src="/templates/protostar/images/system/connections_icon.png">
+            </div>
         </div>
 
         <?php if (count($this->data) < 1) { ?>
