@@ -10,10 +10,19 @@
 
         <div class="lincup-confirmed-info">
             <span class="text"><?php print JText::_('LINCUP_CONFIRMED_TEXT'); ?></span>
-            <span class="lincup-tokens text-none-select">
-                <span class="tokens-count"><?php print $this->tokens; ?></span>
-                <span class="tokens-info"><?php print JText::sprintf('LINCUP_CONFIRMED_TOKENS', $this->tokens); ?></span>
-            </span>
+            <div class="bottom-bl">
+                <span class="tokens-icon">
+                    <img src="/templates/protostar/images/system/token.png">
+                </span>
+                <span><?php print JText::sprintf('LINCUP_CONFIRMED_TOKENS', $this->tokens); ?></span>
+            </div>
+
+
+
+<!--            <span class="lincup-tokens text-none-select">-->
+<!--                <span class="tokens-count">--><?php //print $this->tokens; ?><!--</span>-->
+<!--                <span class="tokens-info">--><?php //print JText::sprintf('LINCUP_CONFIRMED_TOKENS', $this->tokens); ?><!--</span>-->
+<!--            </span>-->
         </div>
 
     </div>

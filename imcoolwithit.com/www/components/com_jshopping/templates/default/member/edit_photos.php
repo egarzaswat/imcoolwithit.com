@@ -123,8 +123,9 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
         </div>
         <div class="edit-photos-right col-sm-8 col-xs-12">
 
-            <div class="album public-photos">
-                <?php if (count($this->images_album['images']) != 0) { ?>
+
+            <?php if (count($this->images_album['images']) != 0) { ?>
+                <div class="album public-photos">
                     <div class="album-title"><?php print JText::_('EDIT_PHOTOS_PUBLIC_PHOTOS'); ?></div>
                     <ul>
                         <?php foreach ($this->images_album['images'] as $key => $value) { ?>
@@ -149,11 +150,12 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                             </li>
                         <?php } ?>
                     </ul>
-                <?php } ?>
-            </div>
+                </div>
+            <?php } ?>
 
-            <div class="album private-photos">
-                <?php if (count($this->images_album['private_images']) != 0) { ?>
+
+            <?php if (count($this->images_album['private_images']) != 0) { ?>
+                <div class="album private-photos">
                     <div class="album-title"><?php print JText::_('EDIT_PHOTOS_YOUR_PRIVATE_PHOTOS'); ?></div>
                     <ul>
                         <?php foreach ($this->images_album['private_images'] as $key => $value) { ?>
@@ -174,8 +176,8 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                             </li>
                         <?php } ?>
                     </ul>
-                <?php } ?>
-            </div>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </div>

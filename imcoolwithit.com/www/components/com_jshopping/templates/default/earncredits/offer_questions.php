@@ -6,8 +6,9 @@
 
 <div class="surveys-questions col-sm-6 col-sm-offset-3 col-xs-12">
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('SURVEYS_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('SURVEYS_TITLE'); ?></h1>
+        </div>
 
         <div class="earn-tokens-info">
             <img src="<?php print $data['offer_image']; ?>">
@@ -32,19 +33,19 @@
                         </span>
                     </div>
                 <?php } ?>
-                <div class="earn-tokens-submit">
-                    <input type="button" class="submit-button" value="<?php print JText::_('EARN_TOKENS_SUBMIT'); ?>">
+
+                <div class="earn-tokens-submit submit-block">
+                    <input type="button" class="submit-button" value="<?php print JText::_('EARN_TOKENS_SUBMIT'); ?>" />
                     <span class="error">Whoops, you missed something.</span>
-                    <span class="earn-tokens-tokens text-none-select hidden-xs">
-                        <span class="tokens-count"><?php print $this->tokens_count; ?></span>
+                    <span class="earn-tokens text-none-select hidden-xs">
+                        <span class="tokens-icon">
+                            <img src="/templates/protostar/images/system/token.png">
+                        </span>
                         <span><?php print JText::sprintf('SURVEY_SUBMIT', $this->tokens_count); ?></span>
                     </span>
                 </div>
             </form>
         <?php } ?>
-
-        <div class="earn-tokens-footer"><span><?php print JText::_('POWERED_BY'); ?></span></div>
-
     </div>
 
 </div>

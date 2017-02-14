@@ -50,7 +50,7 @@
 
 <script type="text/javascript">
 
-    jQuery('.earn-tokens-submit .submit-button').click(function () {
+    jQuery('.submit-block .submit-button').click(function () {
 
         jQuery(this).attr('disabled', true);
 

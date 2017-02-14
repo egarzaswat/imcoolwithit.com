@@ -23,9 +23,9 @@
                     <a href="<?php print $this->links['send_message']; ?>"><?php print JText::_('FULL_PROFILE_SEND_MESSAGE'); ?></a>
                     <a href="<?php print $this->links['lincup']; ?>"><?php print JText::_('FULL_PROFILE_LINCUP'); ?></a>
                 <?php } else if(!$this->user_is_accept && !$this->is_i_filed_claim && $this->isset_tokens_add_to_friends){ ?>
-                    <a class="send-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_ADD_FRIEND'); ?><span class="token"></span></a>
+                    <a class="send-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_ADD_FRIEND'); ?></a>
                 <?php } else if($this->user_is_accept && $this->isset_tokens_add_to_friends){ ?>
-                    <a class="accept-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::sprintf('FULL_PROFILE_ACCEPT_FRIEND', $userData->u_name); ?><span class="token"></span></a>
+                    <a class="accept-token" data-user="<?php print $userData->user_id; ?>"><?php print JText::sprintf('FULL_PROFILE_ACCEPT_FRIEND', $userData->u_name); ?></a>
                 <?php } else { ?>
                     <a class="token_sent">Friend request sent!</a>
                 <?php } ?>
@@ -353,7 +353,13 @@
         return false;
     });
 
+
+
     jQuery('.full-user-page .external-links-top .send-token').click(function(){
+
+        console.debug('!!!!!!!!');
+        console.debug(this.getAttribute('data-user'));
+
         var data_post = {
             'user_id' : this.getAttribute('data-user')
         };

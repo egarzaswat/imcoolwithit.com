@@ -2469,6 +2469,10 @@ a:focus, input:focus{
 .settings .page-content-top,
 .lincup-coupon .page-content-top,
 .lincup-redeem .page-content-top,
+.honesty-questions .page-content-top,
+.private-photos .page-content-top,
+.lincup-invite .page-content-top,
+.surveys-questions .page-content-top,
 .messaging .page-content-top,
 .full-user-page .page-content-top{
     height: 45px;
@@ -2685,7 +2689,9 @@ a:focus, input:focus{
     padding-top: 100px;
     padding-bottom: 20px;
 }
-
+.user-questions .photo{
+    margin-top: 15px;
+}
 /*.user-questions .page-content .title{*/
     /*text-align: center;*/
 /*}*/
@@ -3611,9 +3617,7 @@ a:focus, input:focus{
     font-weight: bold;
 }
 .lincup-invite .lincup-invite-confirmation .lincup-invite-date .localisation{
-    background: url("../images/system/localisation.png") no-repeat scroll left top;
     display: inline-block;
-    padding-left: 20px;
 }
 .lincup-invite .lincup-invite-confirmation .lincup-invite-buttons .lincup-invite-info{
     color: rgb(73, 72, 74);
@@ -3671,16 +3675,6 @@ a:focus, input:focus{
     right: 20px;
     top: 20px;
 }
-.lincup-confirmed .lincup-confirmed-info{
-    /*border: 1px solid rgb(243, 177, 62);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: rgb(64, 170, 221);
-    display: block;
-    font-size: 20px;
-    padding: 50px;*/
-    height: 150px;
-}
 .lincup-confirmed .lincup-confirmed-info .lincup-tokens{
     background: url("../images/system/surveys_tokens.png") no-repeat center center;
     display: block;
@@ -3706,7 +3700,15 @@ a:focus, input:focus{
     font-size: 14px;
     line-height: 3!important;
 }
-
+.lincup-confirmed .bottom-bl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11px;
+    color: #b3b3b3;
+}
 /*
 * ---------------------------- Earn tokens -----------------------------
 */
@@ -3777,6 +3779,11 @@ a:focus, input:focus{
     padding: 10px 5px 35px;
     color: #5b5758;
     position: relative;
+}
+.earn-tokens-list .earn-tokens-item.no-records-found{
+    justify-content: center;
+    align-items: center;
+    padding: 35px 5px;
 }
 .earn-tokens-list .earn-tokens-item .left-block,
 .earn-tokens-list .earn-tokens-item .right-block{
@@ -3917,9 +3924,6 @@ a:focus, input:focus{
     width: 165px;
     color: #309BD1!important;
 }
-.earn-tokens-submit .submit-button{
-    margin: 15px auto;
-}
 .earn-tokens-tokens{
     background: url("../images/system/surveys_tokens.png") no-repeat 36px center;
     display: inline-block;
@@ -4036,6 +4040,8 @@ a:focus, input:focus{
 
 .user-questions .earn-tokens-item,
 .complete-profile .earn-tokens-item,
+.honesty-questions .earn-tokens-item,
+.surveys-questions .earn-tokens-item,
 .lincup-questions .earn-tokens-item{
     padding: 35px 5px;
     flex-direction: column;
@@ -5401,41 +5407,42 @@ img.jcrop-preview {
     .jcrop-handle{height:30px;width:30px;}
 }
 
-.page-popup{
-    border: 2px solid #f2b13e;
-    border-radius: 50px;
-    background: #ffffff;
 
-    -webkit-box-shadow: 0 0 12px 0 rgba(176,176,176,1);
-    -moz-box-shadow: 0 0 12px 0 rgba(176,176,176,1);
-    box-shadow: 0 0 12px 0 rgba(176,176,176,1);
+
+
+
+
+.page-popup{
+    background: #fff;
+    border-radius: 20px;
+    font-family: arial,helvetica,sans-serif;
+    border: 1px solid #bdbcbb;
+    margin: 0;
+    padding: 15px;
+    position: relative;
 }
 .page-popup h1{
-    border-bottom: 2px solid #F5C269;
-    padding-bottom: 20px;
-    /*font: 28px/25px sans-serif;*/
-    font: 22px/25px sans-serif;
-    font-weight: bold;
-    color: #f2b13e;
-    margin-bottom: 0;
+    min-height: 45px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #40aadd;
+    padding: 0 15px;
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #cd6c28;
 }
-.page-popup .text{
-    font-size: 19px;
-    color: #414042;
+.page-popup .page-info,
+.page-popup .text {
     width: 100%;
     display: block;
-    margin: 15px 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: Arial, Helvetica, Sans Serif;
-}
-.page-popup .page-info{
-    width: 100%;
-    display: block;
-    font-size: 19px;
-    color: #414042;
-    font-family: Arial, Helvetica, Sans Serif;
-    padding: 10px 35px;
+    font-size: 18px;
+    color: #777777;
+    padding: 35px 35px 25px;
+    font-family: Arial,Helvetica,Sans Serif;
 }
 .page-popup .close-page{
     position: absolute;
@@ -5443,7 +5450,7 @@ img.jcrop-preview {
     height: 40px;
     top: -20px;
     background: #f2b13e;
-    right: 35px;
+    right: 20px;
     color: #ffffff;
     font-size: 20px;
     padding-top: 6px;
@@ -5475,6 +5482,9 @@ img.jcrop-preview {
 .page-popup .users-photo .item a img:hover{
     opacity: 0.8;
 }
+
+
+
 
 
 
@@ -5557,3 +5567,6 @@ img.jcrop-preview {
     border-radius: 0;
 }
 
+.send-invite-to-user{
+    cursor: pointer;
+}

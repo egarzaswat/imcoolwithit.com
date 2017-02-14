@@ -16,8 +16,9 @@
     </div>
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('PRIVATE_PHOTOS_TITLE', $this->adv_name);?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('PRIVATE_PHOTOS_TITLE', $this->adv_name);?></h1>
+        </div>
 
         <div class="gallery">
             <?php if(count($this->photos) > 0){ ?>
@@ -36,9 +37,6 @@
 
             <?php } ?>
         </div>
-
-        <div class="page-footer"></div>
-
     </div>
 
 </div>

@@ -5,8 +5,9 @@
 <div class="lincup-invite col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::_('LINCUP_INVITE_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('LINCUP_INVITE_TITLE'); ?></h1>
+        </div>
 
         <div class="lincup-invite-confirmation row">
             <div class="lincup-invite-date padding-null col-sm-5 col-xs-12">

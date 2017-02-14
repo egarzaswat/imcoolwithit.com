@@ -6,8 +6,9 @@ $this->block_name = 'Honesty Review';
 <div class="honesty-questions col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('HONEST_QUESTIONS_TITLE', $this->user_data->u_name); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('HONEST_QUESTIONS_TITLE', $this->user_data->u_name); ?></h1>
+        </div>
 
         <div class="earn-tokens-info">
             <div>
@@ -36,24 +37,24 @@ $this->block_name = 'Honesty Review';
                         </span>
                 </div>
             <?php } ?>
-            <div class="earn-tokens-submit">
+
+            <div class="submit-block">
                 <input type="button" class="submit-button" value="<?php print JText::_('EARN_TOKENS_SUBMIT'); ?>" />
-                <span class="earn-tokens-tokens text-none-select hidden-xs">
-                    <span class="tokens-count"><?php print $this->tokens_count; ?></span>
+                <span class="earn-tokens text-none-select hidden-xs">
+                    <span class="tokens-icon">
+                        <img src="/templates/protostar/images/system/token.png">
+                    </span>
                     <span><?php print JText::sprintf('SURVEY_SUBMIT', $this->tokens_count); ?></span>
                 </span>
             </div>
         </form>
-
-        <div class="earn-tokens-footer"></div>
-
     </div>
 
 </div>
 
 <script type="text/javascript">
 
-    jQuery('.earn-tokens-submit .submit-button').click(function () {
+    jQuery('.submit-block .submit-button').click(function () {
 
         jQuery(this).attr('disabled', true);
 
