@@ -1007,7 +1007,7 @@ class JSFactory{
 
             $html .= '<div class="clr"></div>';
 
-            
+
             $html .= '<div class="menu-top">';
                 $html .= '<div class="flex-menu container visible-xs">';
                     $html .= '<div class="btn-group">';

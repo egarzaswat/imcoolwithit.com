@@ -2,12 +2,15 @@
     defined('_JEXEC') or die('Restricted access');
 ?>
 
-<div class="user-questions col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="user-questions col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('USER_QUESTIONS_TITLE', $this->user_name); ?></h1>
-
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('USER_QUESTIONS_TITLE', $this->user_name); ?></h1>
+            <div class="block-right">
+                <img src="/images/earn_tokens/complete_profile.png">
+            </div>
+        </div>
         <div class="photo">
             <a href="<?php print JText::_('LINK_FULL_USER_PAGE') . '?user=' . $this->user_id; ?>"><img class="user-image" src="<?php print $this->user_photo; ?>"></a>
         </div>

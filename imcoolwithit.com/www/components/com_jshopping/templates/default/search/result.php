@@ -10,10 +10,6 @@ $usersList = $this->usersList;
     <?php } else { ?>
         <span class="user-invisible set-invisible"></span>
     <?php } ?>
-
-<!--    <div class="user-invisible --><?php //if($this->user_visible != 1) {print 'isInvisible';} ?><!--" --><?php //print ($this->user_visible == 1) ? ('') : ('style="line-height: 50px;"'); ?><!-->
-<!--        --><?php //print ($this->user_visible == 1) ? JText::_('SET_INVISIBLE') : JText::_('YOU_INVISIBLE'); ?>
-<!--    </div>-->
 </div>
 
 <div class="user-list col-sm-10 col-sm-offset-1 col-xs-12">

@@ -912,6 +912,7 @@ a:focus, input:focus{
     height: 48px;
     display: block;
     background: url(/images/browsing_xxs.png) no-repeat center 0;
+    margin-bottom: 25px;
 }
 .isInvisible{
     background-position: center -49px!important;
@@ -1078,9 +1079,9 @@ a:focus, input:focus{
     height: calc(100% + 15px);
     margin: -15px 25px 0 0;
 }
-.page-content-top .block-right img,
-{
-    max-height: 70%;
+.page-content-top .block-right img{
+    max-height: 80%;
+    max-width: 80%;
 }
 .page-content-top .block-right .ph-border{
     width: 70px;
@@ -2680,21 +2681,21 @@ a:focus, input:focus{
     padding-bottom: 20px;
 }
 
-.user-questions .page-content .title{
-    text-align: center;
-}
-.user-questions .photo{
-    margin: 20px auto;
-}
-.user-questions .earn-tokens-item .earn-tokens-question{
-    font-size: 20px;
-}
-.user-questions .earn-tokens-list .earn-tokens-answers{
-    justify-content: center;
-}
-.user-questions .earn-tokens-list .earn-tokens-answers label{
-    margin: 20px;
-}
+/*.user-questions .page-content .title{*/
+    /*text-align: center;*/
+/*}*/
+/*.user-questions .photo{*/
+    /*margin: 20px auto;*/
+/*}*/
+/*.user-questions .earn-tokens-item .earn-tokens-question{*/
+    /*font-size: 20px;*/
+/*}*/
+/*.user-questions .earn-tokens-list .earn-tokens-answers{*/
+    /*justify-content: center;*/
+/*}*/
+/*.user-questions .earn-tokens-list .earn-tokens-answers label{*/
+    /*margin: 20px;*/
+/*}*/
 
 @media (max-width: 400px){
     .full-user-page .external-links-bottom{
@@ -4028,6 +4029,7 @@ a:focus, input:focus{
     text-align: center;
 }
 
+.user-questions .earn-tokens-item,
 .complete-profile .earn-tokens-item,
 .lincup-questions .earn-tokens-item{
     padding: 35px 5px;
