@@ -767,6 +767,10 @@ a:focus, input:focus{
     height: 50px;
     width: 100%;
 }
+.user-item .user-item-photo{
+    border-right: 1px solid #f3b13e;
+    border-left: 1px solid #f3b13e;
+}
 .user-item .user-item-top .title{
     font-size: 16px;
     height: 25px;
@@ -790,11 +794,13 @@ a:focus, input:focus{
     width: auto;
 }
 .user-item .user-item-bottom{
-    background: rgb(237, 240, 224);
+    background:#ffffff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: rgb(0, 0, 0);
     padding-bottom: 10px;
+    border: 1px solid #f3b13e;
+    border-top: 0;
 }
 .user-item .user-item-bottom .last-visit{
     background: url("../images/system/item_clock.png") no-repeat 5px center;
@@ -826,7 +832,6 @@ a:focus, input:focus{
     color: rgb(255, 255, 255);
 }
 .user-link img{
-    border: 1px solid rgb(166, 173, 153);
     height: 215px;
     width: 100%;
 }

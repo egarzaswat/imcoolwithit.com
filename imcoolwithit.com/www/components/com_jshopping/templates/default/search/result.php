@@ -23,7 +23,7 @@ $usersList = $this->usersList;
             <div class="user-item-top">
                 <span class="title"><?php echo $user['name']; ?></span>
                 <span class="localisation">
-                    <i class="icon-location"></i>
+<!--                    <i class="icon-location"></i>-->
                     <span><?php print JText::_('DISTANCE') . $user['distance'] . ' | ' . $user['sex']; ?></span>
                 </span>
             </div>
@@ -34,7 +34,6 @@ $usersList = $this->usersList;
                 <span class="last-visit"><?php echo JText::_('LAST_ONLINE'). $user['last_visit']; ?></span>
                 <span class="info"><?php print JText::_('AGE'); ?> <span><?php print $user['age']; ?></span></span>
                 <span class="info"><?php print JText::_('HEIGHT'); ?> <span><?php print $user['height']; ?></span></span>
-<!--                <span class="info">--><?php //print JText::_('BODY'); ?><!-- <span>--><?php //print $user['body']; ?><!--</span></span>-->
                 <span class="info"><?php print JText::_('STATUS'); ?> <span><?php print $user['status']; ?></span></span>
             </div>
         </a>
