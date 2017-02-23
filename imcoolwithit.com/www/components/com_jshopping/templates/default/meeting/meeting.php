@@ -37,35 +37,36 @@
 <!--                <span class="lincup-coupon-title">--><?php //print $this->sponsor_data['title']; ?><!--</span>-->
                 <span class="lincup-coupon-description"><?php print $this->sponsor_data['description']; ?></span>
             </div>
-        </div>
 
-        <div class="lincup-bottom">
-            <div class="left">
-                <div class="tokens-block <?php if (!$this->isset_tokens_send) { print 'wa'; }?>">
-                    <img src="/templates/protostar/images/system/linkup_icon.png">
-                    <?php if ($this->isset_tokens_send) { ?>
-                        <span class="wa"><?php print $this->submit_data['count_tokens'] . ' ' . JText::_('LINCUP_TOKENS'); ?></span>
+
+            <div class="lincup-bottom">
+                <div class="left">
+                    <div class="tokens-block <?php if (!$this->isset_tokens_send) { print 'wa'; }?>">
+                        <img src="/templates/protostar/images/system/linkup_icon.png">
+                        <?php if ($this->isset_tokens_send) { ?>
+                            <span class="wa"><?php print $this->submit_data['count_tokens'] . ' ' . JText::_('LINCUP_TOKENS'); ?></span>
+                        <?php } else { ?>
+                            <span class="lincup-no-tokens"><?php print JText::_('NOT_ENOUGH_TOKENS'); ?></span>
+                            <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
+                        <?php } ?>
+                    </div>
+                </div>
+                <div class="right">
+                    <?php if ($this->submit_data['friend'] == 0) { ?>
+                        <a href="<?php print $this->link_not_your_date; ?>">
+                            <img src="/templates/protostar/images/system/choose_date.png">
+                            <span><?php print JText::_('CHOOSE_DATE'); ?></span>
+                        </a>
+                        <a href="<?php print $this->link_another_sponsor; ?>">
+                            <img src="/templates/protostar/images/system/mee_select_another.png">
+                            <span><?php print JText::_('ANOTHER_OFFER'); ?></span>
+                        </a>
                     <?php } else { ?>
-                        <span class="lincup-no-tokens"><?php print JText::_('NOT_ENOUGH_TOKENS'); ?></span>
-                        <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
+                        <div class="send-invite-to-user">
+                            <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
+                        </div>
                     <?php } ?>
                 </div>
-            </div>
-            <div class="right">
-                <?php if ($this->submit_data['friend'] == 0) { ?>
-                    <a href="<?php print $this->link_not_your_date; ?>">
-                        <img src="/templates/protostar/images/system/choose_date.png">
-                        <span><?php print JText::_('CHOOSE_DATE'); ?></span>
-                    </a>
-                    <a href="<?php print $this->link_another_sponsor; ?>">
-                        <img src="/templates/protostar/images/system/mee_select_another.png">
-                        <span><?php print JText::_('ANOTHER_OFFER'); ?></span>
-                    </a>
-                <?php } else { ?>
-                    <div class="send-invite-to-user">
-                        <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
-                    </div>
-                <?php } ?>
             </div>
         </div>
 

@@ -3780,11 +3780,6 @@ a:focus, input:focus{
     color: #5b5758;
     position: relative;
 }
-.earn-tokens-list .earn-tokens-item.no-records-found{
-    justify-content: center;
-    align-items: center;
-    padding: 35px 5px;
-}
 .earn-tokens-list .earn-tokens-item .left-block,
 .earn-tokens-list .earn-tokens-item .right-block{
     display: inline-flex;

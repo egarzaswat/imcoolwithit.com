@@ -2,7 +2,7 @@
     defined('_JEXEC') or die('Restricted access');
 ?>
 
-<div class="honesty-review col-sm-6 col-sm-offset-3 col-xs-12">
+<div class="honesty-review col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 col-xs-12">
 
     <div class="page-content row">
         <div class="page-content-top padding-null">
