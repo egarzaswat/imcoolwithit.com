@@ -137,12 +137,12 @@
 .home-header .home-sign-in ul li a,
 .header-links-cool ul li a,
 .header-links ul li:last-child a{
-    color: rgb(255, 255, 255);
-    background: #f3b13e;
+    color: #41a8dc;
+    background: #ffffff;
     padding: 10px 20px 8px!important;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+    font-family: arial,helvetica,sans-serif;
     line-height: 1;
     margin: 0 0 0 10px;
 }
@@ -848,6 +848,7 @@ a:focus, input:focus{
     border-radius: 50%;
     height: 100px!important;
     width: 100px!important;
+    flex-shrink: 0;
 }
 
 .users-list-link{
@@ -1084,6 +1085,7 @@ a:focus, input:focus{
     height: calc(100% + 15px);
     margin: -15px 25px 0 0;
 }
+
 .page-content-top .block-right img{
     max-height: 80%;
     max-width: 80%;
@@ -1101,7 +1103,6 @@ a:focus, input:focus{
     max-width: 80%;
     max-height: 80%;
 }
-
 @media (max-width: 400px){
     .user-item{
         width: 85%;
@@ -1109,17 +1110,29 @@ a:focus, input:focus{
     .user-link img {
         height: 100%;
     }
+    .users-list-link .user-image{
+        margin: auto 5px!important;
+    }
 }
 @media (max-width: 767px){
+    .page-content-top{
+        height: auto!important;
+        flex-flow: row wrap;
+    }
+    .page-content-top .top-info{
+        height: auto;
+        flex-flow: row wrap;
+    }
     .users-list-link {
         text-align: center;
+        padding: 25px 0;
     }
     .users-list-link .users-list-info{
         padding: 0;
     }
     .users-list-link .user-image{
         display: block;
-        margin: auto;
+        margin: auto 35px;
     }
 	/*.user-invisible{*/
 		/*background: url("../images/system/invisible.png") no-repeat bottom;*/
@@ -1134,15 +1147,29 @@ a:focus, input:focus{
          padding-right: 0!important;
          padding-left: 0!important;
      }
+    .page-content-top .block-right{
+        display: none;
+    }
 
 }
 @media (max-width: 991px){
     .users-list-link .users-list-info .info .localisation,
     .users-list-link .users-list-info .info .last-visit{
         display: block;
+        height: auto;
     }
 }
 
+@media (max-width: 450px){
+    .page-content-top.content-top-col .tokens-filter{
+        margin-left: 25px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .page-content-top.content-top-col .top-info{
+        height: auto!important;
+    }
+}
 /*
 * ------------------------ Slider ---------------------
 */
@@ -1509,7 +1536,7 @@ a:focus, input:focus{
 }
 .flex-menu .menu-top-center{
     flex-direction: column;
-    height: 100%;
+    height: 55px;
 }
 .flex-menu a{
     height: 45px;
@@ -1550,6 +1577,7 @@ a:focus, input:focus{
     max-width: 100%;
     max-height: 100%;
 }
+
 .flex-menu a .cool-menu-text{
     width: 100%;
     text-align: center;
@@ -1567,11 +1595,12 @@ a:focus, input:focus{
     max-height: none;
 }
 .flex-menu .menu-top-center .big{
-    font-size: 19px;
+    font-size: 24px;
     color: #f3b13e;
     width: 100%;
     display: flex;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 .flex-menu .menu-top-center .big a{
     height: auto;
@@ -1595,6 +1624,14 @@ a:focus, input:focus{
     .visible-xs {
         display: flex !important;
     }
+    .flex-menu a .link-top img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .flex-menu .menu-top-left a .link-top img{
+        max-width: 120%;
+        max-height: 120%;
+    }
 }
 
 .btn-group{
@@ -1614,20 +1651,25 @@ a:focus, input:focus{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
     position: absolute!important;
     z-index: 1000!important;
     margin: 2px 0 0!important;
     list-style: none!important;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
     background-color: #fff!important;
     border: 1px solid #f2b342!important;
-    border-radius: 20px!important;
-    -webkit-box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.75)!important;
-    -moz-box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.75)!important;
-    box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.75)!important;
+    -webkit-box-shadow: 0 0 35px -6px rgba(0,0,0,.75)!important;
+    -moz-box-shadow: 0 0 35px -6px rgba(0,0,0,.75)!important;
+    box-shadow: 0 0 35px -6px rgba(0,0,0,.75)!important;
     min-height: 100px!important;
-    width: 92vw!important;
+    width: 70vw!important;
     margin-left: calc(4vw - 10px)!important;
+    top: 50px;
+    left: -25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .dropdown-menu .dropdown-toggle{
     box-shadow: none!important;
@@ -1646,47 +1688,72 @@ a:focus, input:focus{
 .dropdown-menu li{
     color: rgb(73, 72, 74);
     display: inline-block;
-    height: 85px;
-    margin: 10px;
+    height: 80px;
     position: relative;
-    width: 85px;
+    width: 100%;
+    border-bottom: 1px solid #f2b342;
+    padding: 0;
 }
 .dropdown-menu li:last-child{
     border-bottom: none;
 }
 .dropdown-menu a{
-    height: 85px;
+    height: 100%;
     position: relative;
-    width: 85px;
-    padding: 3px!important;
+    width: 100%;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
 }
-.dropdown-menu a .cool-count{
+.dropdown-menu a .link-left{
+    height: 25px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dropdown-menu a .link-left.hide_{
+    opacity: 0;
+}
+.dropdown-menu a .link-left .cool-count{
     background: rgb(242, 178, 63);
     border-radius: 35%;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 12px;
-    height: 20px;
-    left: 8px;
-    line-height: 1.8;
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    height: 25px;
     min-width: 20px;
-    padding: 0 4px;
-    position: absolute;
-    text-align: center;
-    top: 4px;
-
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    border: none;
+    padding-top: 2px;
+    margin-top: -15px;
 }
+
 .dropdown-menu a .cool-menu-text{
-    display: block;
-    float: left;
-    width: 100%;
-    text-align: center;
+    display: inline-flex;
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 10%;
+    font-size: 20px;
+    color: #49484a;
+    line-height: 1;
 }
 .dropdown-menu .cool-menu-icons{
-    display: inline-block;
-    height: 50px;
-    position: relative;
-    width: 85px;
+    width: 75px;
+    height: 75px;
+    margin-left: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu .cool-menu-icons img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .dropdown-menu .cool-connections{
     background: url("../images/system/cool_connections.png") no-repeat 18px 5px;
@@ -2223,99 +2290,96 @@ a:focus, input:focus{
     min-height: 35px;
 }
 
-/*
-* ---------------------------- User Profiles -----------------------------
-*/
+
+.visitors,
+.friends,
+.honesty-review{
+    padding: 0;
+}
+
+
+    /*
+    * ---------------------------- User Profiles -----------------------------
+    */
 .user-page{
     margin-bottom: 20px;
 }
-.user-page .page-content .title{
-    padding-left: 0;
-    text-align: center;
+.user-page .page-content{
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
+.user-page .page-content h1{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #cd6c28;
 }
 .user-page .user-photo{
-    margin: 10px auto;
+    padding: 0;
 }
 .user-page .user-photo img{
     max-width: 100%;
 }
-.user-page .user-short-info .localisation{
-    background: url("../images/system/localisation.png") no-repeat scroll left top;
-    display: inline-block;
-    font-weight: bold;
-    margin: 0 10px;
-    padding-left: 20px;
+.user-page .user-short-info{
+    padding: 15px;
+    border-bottom: 1px solid #bdbcba;
 }
-.user-page .user-short-info .last-online{
-    background: url("../images/system/last_online.png") no-repeat scroll left center;
-    display: inline-block;
-    font-weight: bold;
-    margin: 0 10px;
-    padding-left: 20px;
+.user-page .user-about-info{
+    padding: 15px;
+    border-bottom: 1px solid #bdbcba;
 }
-.user-page .user-long-info .info-block{
-    background: rgb(64, 170, 221);
-    margin: 20px -30px 0;
-    padding: 0;
-}
-.user-page .user-long-info .info-block .left-info-block::before{
-    border-bottom: 3px solid rgb(79, 112, 130);
-    border-left: 6px solid transparent;
-    border-right: 9px solid rgb(79, 112, 130);
-    border-top: 6px solid transparent;
-    content: '';
-    left: -15px;
-    position: absolute;
-    top: 11px;
-}
-.user-page .user-long-info .info-block .left-info-block{
-    background: rgb(64, 170, 221);
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    font-size: 12px;
-    float: left;
-    height: 90px;
-    padding: 10px 10px 10px 15px;
-    text-align: left;
-    width: 30%;
-}
-.user-page .user-long-info .info-block .left-info-block .info-title{
-    font-weight: bold;
-}
-.user-page .user-long-info .info-block .right-info-block{
-    background: rgb(73, 72, 74);
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    font-size: 13px;
-    float: left;
-    min-height: 90px;
-    padding: 10px 15px 10px 10px;
-    text-align: left;
-    width: 70%;
-}
-.user-page .user-long-info .info-block .right-info-block .info-title{
+.user-page .user-about-info .info-title{
+    width: 100%;
+    font-size: 16px;
+    color: #3ea8dc;
     display: block;
-    font-size: 18px;
-    font-weight: bold;
 }
-.user-page .user-long-info .info-block .right-info-block::after{
-    border-bottom: 3px solid rgb(64, 170, 221);
-    border-left: 9px solid rgb(64, 170, 221);
-    border-right: 6px solid transparent;
-    border-top: 6px solid transparent;
-    content: '';
-    right: -15px;
-    position: absolute;
-    top: 11px;
+.user-page .user-about-info .info-value{
+    min-height: 25px;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    color: #878788;
 }
-.user-page .user-actions{
-    padding: 10px;
+.user-page .user-bottom-links{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.user-page .user-actions .accept-invite, .user-page .user-actions .send-invite{
+.user-page .user-bottom-links a,
+.user-page .user-bottom-links input{
+    padding: 0;
+    margin: 0 0 0 15px;
+    border: 0;
+    background: none;
+    color: #40aadd;
+    font-size: 14px;
+    width: auto;
+    min-width: 0;
+}
+.user-page .user-accept-actions{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    border-bottom: 1px solid #bdbcba;
+    align-items: center;
+    justify-content: center;
+}
+.user-page .user-accept-actions .accept-invite,
+.user-page .user-accept-actions .send-invite{
+    height: 120px;
+    display: inline-flex;
+    align-items: center;
+}
+.user-page .user-accept-actions .accept-invite, .user-page .user-actions .send-invite{
     overflow: hidden;
 }
-.user-page .user-actions .accept,
-.user-page .user-actions .refuse{
+.user-page .user-accept-actions .accept,
+.user-page .user-accept-actions .refuse{
     border: 0;
     border-radius: 0;
     display: inline-block;
@@ -2327,10 +2391,11 @@ a:focus, input:focus{
     vertical-align: top;
     width: 80px;
 }
-.user-page .user-actions .accept{
+.user-page .user-accept-actions .accept{
     background: url("../images/system/accept.png") no-repeat scroll center center;
+    background-size: cover!important;
 }
-.user-page .user-actions .refuse {
+.user-page .user-accept-actions .refuse {
     background: url("../images/system/refuse.png") no-repeat scroll center center;
 }
 @-webkit-keyframes fall-token {
@@ -2373,7 +2438,7 @@ a:focus, input:focus{
     90% { transform: rotateY(360deg) scale(0.6, 0.6) translate(0, 115px); box-shadow: 0 -30px 10px -10px rgba(0, 0, 0, 0.4); }
     100% { transform: rotateY(0) scale(0, 0);}
 }
-.user-page .user-actions .token-fall{
+.user-page .user-accept-actions .token-fall{
     -webkit-animation: fall-token 3s 0 1 linear forwards;
     -moz-animation: fall-token 3s 0 1 linear forwards;
     -o-animation: fall-token 3s 0 1 linear forwards;
@@ -2415,13 +2480,13 @@ a:focus, input:focus{
     95% { transform: rotate(720deg) scale(0.6, 0.6) translate(0 ,0);}
     100% { transform: rotate(720deg) scale(0, 0) translate(-100px, 0);}
 }
-.user-page .user-actions .token-reject{
+.user-page .user-accept-actions .token-reject{
     -webkit-animation: reject-token 3s 0 1 linear forwards;
     -moz-animation: reject-token 3s 0 1 linear forwards;
     -o-animation: reject-token 3s 0 1 linear forwards;
     animation: reject-token 3s 0 1 linear forwards;
 }
-.user-page .user-actions .accept-animation{
+.user-page .user-accept-actions .accept-animation{
     background: url("../images/system/accept_fall.gif") no-repeat scroll center center;
     border: 0;
     border-radius: 0;
@@ -2434,7 +2499,7 @@ a:focus, input:focus{
     vertical-align: top;
     width: 80px;
 }
-.user-page .user-actions .accept-animation-finish{
+.user-page .user-accept-actions .accept-animation-finish{
     background: url("../images/system/accept_finish.png") no-repeat scroll center center;
     border: 0;
     border-radius: 0;
@@ -2447,22 +2512,41 @@ a:focus, input:focus{
     vertical-align: top;
     width: 80px;
 }
-.user-page .user-actions .separator{
-    border: 1px solid rgb(243, 177,62);
-    display: inline-block;
-    height: 80px;
+.user-page .user-accept-actions .separator{
+    border: 1px solid #bdbcba;
+    display: inline-flex;
+    height: 120px;
     margin: 0 30px;
 }
-.user-page .user-actions .full-profile-link{
+.user-page .user-accept-actions .full-profile-link{
     display: flex;
     margin: 10px auto;
     justify-content: center;
 }
-.user-page .user-actions .full-profile-link a,
-.user-page .user-actions .full-profile-link input,
-.user-page .user-actions .full-profile-link button{
+.user-page .user-accept-actions .full-profile-link a,
+.user-page .user-accept-actions .full-profile-link input,
+.user-page .user-accept-actions .full-profile-link button{
     margin: 0 5px;
 }
+
+@media (max-width: 450px){
+    .user-page{
+        padding: 0;
+        width: 100vw;
+        margin-left: -15px;
+    }
+    .user-page .page-content{
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+    .user-page .user-photo img{
+        width: 100%;
+    }
+}
+
+
+
 
 
 .edit-photos .page-content-top,
@@ -2868,6 +2952,11 @@ a:focus, input:focus{
     }
     .messages-list .messages-list-item .messages-list-info{
         max-width: 150px;
+    }
+}
+@media (max-width: 450px) {
+    .messages-list .messages-list-item .messages-list-info .tokens-icon{
+        display: none;
     }
 }
 
@@ -3758,6 +3847,12 @@ a:focus, input:focus{
     width: 100%;
     padding: 15px 0;
 }
+@media (max-width: 400px) {
+    .earn-tokens-info,
+    .earn-tokens .earn-more-tokens span, .page-top-info span{
+        font-size: 12px;
+    }
+}
 .earn-tokens-info a{
     display: block;
 }
@@ -3884,7 +3979,7 @@ a:focus, input:focus{
     display: none;
 }
 .earn-tokens-item .earn-tokens-answers label{
-    border: 1px solid rgb(48, 155, 209);
+    border: 0;
     cursor: pointer;
     line-height: 40px;
     margin: 20px 10px;
@@ -3894,18 +3989,14 @@ a:focus, input:focus{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #aba9ab;
     font-weight: normal;
     padding: 0 15px;
+    background-color: #41a8dc;
+    color: #ffffff;
 }
 .earn-tokens-item .earn-tokens-answers input[type="radio"]:checked + label,
 .earn-tokens-item .earn-tokens-answers label:hover{
-    color: #262426;
-}
-.user-questions .earn-tokens-item .earn-tokens-answers label:hover{
-    background: transparent;
-    color: inherit;
-    cursor: default;
+    background: #8fd9ff;
 }
 
 .earn-tokens-submit{
@@ -4179,7 +4270,11 @@ a:focus, input:focus{
 /*
 * ----------------------------- General content --------------------------------
 */
-
+.homepage .container-full{
+    background-color: #ffffff;
+    padding: 0;
+    box-shadow: none;
+}
 .homepage .container_content p{
     text-indent: 7px;
     text-align: justify;

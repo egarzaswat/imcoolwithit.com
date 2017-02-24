@@ -162,7 +162,7 @@ if(isset($_GET['referrer'])){
                         </div>
                     </div>
                     <span class="home-header-text">
-                        <h1><b>Cool With It™</b> is the 100% free<br>dating site that takes you out.</h1>
+                        <h1><b>Cool With It™</b> is the 100% free<br>dating site that takes you out.</h1>
                     </span>
                 </div>
                 <div class="home-sign-up">

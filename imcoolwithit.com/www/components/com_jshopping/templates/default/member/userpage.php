@@ -3,59 +3,38 @@
     $userData = $this->userData;
 ?>
 
-<div class="user-page  col-sm-6 col-sm-offset-3 col-xs-12">
+<div class="user-page col-sm-6 col-sm-offset-3 col-xs-12">
 
     <div class="page-content row">
+        <h1><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
 
-        <h1 class="title"><?php print JText::sprintf('SAY_HELLO', $userData->u_name); ?></h1>
-
-        <div class="user-photo col-xs-12">
+        <div class="user-photo">
             <a href="<?php print $this->link_full_profile; ?>">
                 <img src="<?php print $userData->photosite; ?>" alt="<?php print $userData->u_name; ?>"/>
             </a>
         </div>
 
-        <div class="user-short-info col-xs-12">
-            <span class="localisation">
-                <?php print $userData->city . ", " . $userData->state . ", " . JText::sprintf('MILES_AWAY', $userData->distance); ?>
+        <div class="user-short-info">
+            <div>
+                <?php print JText::_('AGE') . $userData->age; ?>
+                <span class="yellow">|</span>
+                <?php print $userData->city . ", " . $userData->state; ?>
                 <span class="yellow">|</span>
                 <?php print $userData->sex; ?>
-            </span>
-            <span class="last-online"><?php print JText::_('LAST_ONLINE'); ?><?php print $userData->last_visit; ?></span>
-        </div>
-
-        <div class="user-long-info col-xs-12">
-            <div class="info-block row">
-                <div class="left-info-block">
-                    <div>
-                        <span class="info-title"><?php print JText::_('AGE'); ?></span>
-                        <span class="info-value"><?php print $userData->age; ?></span>
-                    </div>
-                    <div>
-                        <span class="info-title"><?php print JText::_('HEIGHT'); ?></span>
-                        <span class="info-value"><?php print $userData->height; ?></span>
-                    </div>
-<!--                    <div>-->
-<!--                        <span class="info-title">--><?php //print JText::_('BODY'); ?><!--</span>-->
-<!--                        <span class="info-value">--><?php //print $userData->body; ?><!--</span>-->
-<!--                    </div>-->
-                    <div>
-                        <span class="info-title"><?php print JText::_('STATUS'); ?></span>
-                        <span class="info-value"><?php print $userData->status; ?></span>
-                    </div>
-                    <div>
-                        <span class="info-title"><?php print JText::_('LOOKING_FOR'); ?></span>
-                        <span class="info-value"><?php print $userData->look; ?></span>
-                    </div>
-                </div>
-                <div class="right-info-block">
-                    <span class="info-title"><?php print JText::sprintf('USER_ABOUT', $userData->u_name); ?></span>
-                    <span class="info-value"><?php print $userData->user_about; ?></span>
-                </div>
+            </div>
+            <div>
+                <?php print JText::_('LOOKING_FOR') . $userData->look; ?>
+                <span class="yellow">|</span>
+                <?php print JText::_('LAST_ONLINE') . $userData->last_visit; ?>
             </div>
         </div>
+        <div class="user-about-info">
+            <span class="info-title"><?php print JText::_('USER_ABOUT'); ?></span>
+            <span class="info-value"><?php print $userData->user_about; ?></span>
+        </div>
 
-        <div class="user-actions col-xs-12">
+
+        <div class="user-accept-actions">
             <?php if ($this->user_is_accept) { ?>
                 <div class="accept-invite">
                     <input type="submit" data-user="<?php print $userData->user_id; ?>" class="refuse"
@@ -87,18 +66,18 @@
                     <?php } ?>
                 </div>
             <?php } ?>
-            <span class="full-profile-link">
-                <a class="link-button" href="<?php print $this->link_full_profile; ?>"><?php print JText::_('FULL_PROFILE_LINK'); ?></a>
-                <?php if (!$userData->add_to_bookmarks) { ?>
-                    <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button delete-bookmark"
-                           value="<?php print JText::_('DELETE_BOOKMARK'); ?>">
-                <?php } else { ?>
-                    <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button add-bookmark"
-                           value="<?php print JText::_('SAVE_BOOKMARK'); ?>">
-                <?php } ?>
-            </span>
         </div>
 
+        <div class="user-bottom-links">
+            <a class="link-button" href="<?php print $this->link_full_profile; ?>"><?php print JText::_('FULL_PROFILE_LINK'); ?></a>
+            <?php if (!$userData->add_to_bookmarks) { ?>
+                <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button delete-bookmark"
+                       value="<?php print JText::_('DELETE_BOOKMARK'); ?>">
+            <?php } else { ?>
+                <input type="submit" data-user="<?php print $userData->user_id; ?>" class="link-button add-bookmark"
+                       value="<?php print JText::_('SAVE_BOOKMARK'); ?>">
+            <?php } ?>
+        </div>
     </div>
 
 </div>

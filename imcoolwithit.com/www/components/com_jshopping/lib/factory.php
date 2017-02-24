@@ -146,13 +146,13 @@ class JSFactory{
         }
     return $userguest;
     }
-    
+
     public static function getUser(){
         $user = JFactory::getUser();
         if ($user->id){
             $adv_user = JSFactory::getUserShop();
         }else{
-            $adv_user = JSFactory::getUserShopGuest();    
+            $adv_user = JSFactory::getUserShopGuest();
         }
     return $adv_user;
     }
@@ -225,7 +225,7 @@ class JSFactory{
             $load = 1;
         }
     }
-    
+
     public static function reloadConfigFieldTLF(){
         $jshopConfig = JSFactory::getConfig();
         $reload = array('user_field_client_type','user_field_title','sorting_products_name_select','sorting_products_name_s_select','count_product_select');
@@ -243,12 +243,12 @@ class JSFactory{
         if ($langtag==""){
             $langtag = $lang->getTag();
         }
-        $langpatch = JPATH_ROOT.'/components/com_jshopping/lang/';        
+        $langpatch = JPATH_ROOT.'/components/com_jshopping/lang/';
         if (file_exists($langpatch.'override/'.$langtag.'.php'))
             require_once($langpatch.'override/'.$langtag.'.php');
         if (file_exists($langpatch.$langtag.'.php'))
             require_once($langpatch.$langtag.'.php');
-        else 
+        else
             require_once($langpatch.'en-GB.php');
         JSFactory::reloadConfigFieldTLF();
     }
@@ -260,7 +260,7 @@ class JSFactory{
         }
         if(file_exists(JPATH_ROOT . '/components/com_jshopping/lang/'.$extname.'/'.$langtag.'.php'))
             require_once (JPATH_ROOT . '/components/com_jshopping/lang/'.$extname.'/'.$langtag.'.php');
-        else 
+        else
             require_once (JPATH_ROOT . '/components/com_jshopping/lang/'.$extname.'/en-GB.php');
     }
 
@@ -269,12 +269,12 @@ class JSFactory{
         if ($langtag==""){
             $langtag = $lang->getTag();
         }
-        $langpatch = JPATH_ROOT.'/administrator/components/com_jshopping/lang/';        
+        $langpatch = JPATH_ROOT.'/administrator/components/com_jshopping/lang/';
         if (file_exists($langpatch.'override/'.$langtag.'.php'))
             require_once($langpatch.'override/'.$langtag.'.php');
         if (file_exists($langpatch.$langtag.'.php'))
             require_once($langpatch.$langtag.'.php');
-        else 
+        else
             require_once($langpatch.'en-GB.php');
         JSFactory::reloadConfigFieldTLF();
     }
@@ -286,7 +286,7 @@ class JSFactory{
         }
         if(file_exists(JPATH_ROOT . '/administrator/components/com_jshopping/lang/'.$extname.'/'.$langtag.'.php'))
             require_once (JPATH_ROOT . '/administrator/components/com_jshopping/lang/'.$extname.'/'.$langtag.'.php');
-        else 
+        else
             require_once (JPATH_ROOT . '/administrator/components/com_jshopping/lang/'.$extname.'/en-GB.php');
     }
 
@@ -322,7 +322,7 @@ class JSFactory{
         if (!is_array($alias)){
             $db = JFactory::getDBO();
             $lang = JSFactory::getLang();
-            $dbquery = "select category_id as id, `".$lang->get('alias')."` as alias from #__jshopping_categories where `".$lang->get('alias')."`!=''"; 
+            $dbquery = "select category_id as id, `".$lang->get('alias')."` as alias from #__jshopping_categories where `".$lang->get('alias')."`!=''";
             $db->setQuery($dbquery);
             $rows = $db->loadObjectList();
             $alias = array();
@@ -356,7 +356,7 @@ class JSFactory{
         if (!is_array($alias)){
             $db = JFactory::getDBO();
             $lang = JSFactory::getLang();
-            $dbquery = "select product_id as id, `".$lang->get('alias')."` as alias from #__jshopping_products where `".$lang->get('alias')."`!=''"; 
+            $dbquery = "select product_id as id, `".$lang->get('alias')."` as alias from #__jshopping_products where `".$lang->get('alias')."`!=''";
             $db->setQuery($dbquery);
             $rows = $db->loadObjectList();
             $alias = array();
@@ -405,7 +405,7 @@ class JSFactory{
         }
     return $rows;
     }
-    
+
     public static function getAllTaxesOriginal(){
     static $rows;
         if (!is_array($rows)){
@@ -418,7 +418,7 @@ class JSFactory{
         }
     return $rows;
     }
-    
+
     public static function getAllTaxes(){
     static $rows;
         if (!is_array($rows)){
@@ -454,7 +454,7 @@ class JSFactory{
                                     $rows[$v->tax_id] = $v->firma_tax;
                                 }else{
                                     $rows[$v->tax_id] = $v->tax;
-                                }    
+                                }
                             }else{
                                 if ($client_type==2){
                                     $rows[$v->tax_id] = $v->firma_tax;
@@ -616,7 +616,7 @@ class JSFactory{
                     if (in_array($cat_id, $val->cats)) $fields[] = $val->id;
                 }
             }
-            
+
             $jshopConfig = JSFactory::getConfig();
             $config_list = $jshopConfig->getFilterDisplayExtraFields();
             foreach($fields as $k=>$val){
@@ -679,14 +679,14 @@ class JSFactory{
         }
     return $returnlist;
     }
-    
+
     public static function getTable($type, $prefix = 'jshop', $config = array()){
         JDispatcher::getInstance()->trigger('onJSFactoryGetTable', array(&$type, &$prefix, &$config));
         $table = JTable::getInstance($type, $prefix, $config);
         JDispatcher::getInstance()->trigger('onAfterJSFactoryGetTable', array(&$table, &$type, &$prefix, &$config));
         return $table;
     }
-    
+
     public static function getModel($type, $prefix = 'JshoppingModel', $config = array()){
         JDispatcher::getInstance()->trigger('onJSFactoryGetModel', array(&$type, &$prefix, &$config));
         $model = JModelLegacy::getInstance($type, $prefix, $config);
@@ -1011,54 +1011,59 @@ class JSFactory{
             $html .= '<div class="menu-top">';
                 $html .= '<div class="flex-menu container visible-xs">';
                     $html .= '<div class="btn-group">';
-                    $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle"><i class="icon-menu"></i></button>';
-                    $html .= '<ul class="dropdown-menu">';
-                    $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">x</button>';
-                    $html .= '<li><a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
-                    $html .= '<span class="cool-menu-icons cool-tokens"><span class="cool-count" style="left: 5px;">'. $count_tokens . '</span></span>';
-                    $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
-                    $html .= '</a>';
-                    $html .= '</li>';
-                    $html .= '<li><a href="' . JText::_('LINK_VISITORS') . '">';
-                    $html .= '<span class="cool-menu-icons cool-visitors">';
-                    if($count_new_visitors > 0) {
-                        $html .= '<span class="cool-count" style="left: 0;">'. $count_new_visitors . '</span>';
-                    }
-                    $html .= '</span>';
+                        $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle"><i class="icon-menu"></i></button>';
+                        $html .= '<ul class="dropdown-menu">';
+//                          $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">x</button>';
 
-                    $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span>';
-                    $html .= '</a>';
-                    $html .= '</li>';
-                    $html .= '<li>';
-                    $html .= '<a href="' . JText::_('LINK_FRIENDS') . '">';
+                            $html .= '<li><a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
+                                if($count_tokens > 0){
+                                    $html .= '<span class="link-left"><span class="cool-count">'. $count_tokens . '</span></span>';
+                                } else {
+                                    $html .= '<span class="link-left hide_"><span class="cool-count">'. $count_tokens . '</span></span>';
+                                }
+                                $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/token.png"></span>';
+                                $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
+                                $html .= '';
+                            $html .= '</a></li>';
+                            $html .= '<li><a href="' . JText::_('LINK_VISITORS') . '">';
+                                if($count_new_visitors > 0){
+                                    $html .= '<span class="link-left"><span class="cool-count">'. $count_new_visitors . '</span></span>';
+                                } else {
+                                    $html .= '<span class="link-left hide_"><span class="cool-count">'. $count_new_visitors . '</span></span>';
+                                }
+                                $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/cool_visitors_menu.png"></span>';
+                                $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span>';
+                                $html .= '';
+                            $html .= '</a></li>';
+                            $html .= '<li><a href="' . JText::_('LINK_FRIENDS') . '">';
+                                if($count_friends > 0){
+                                    $html .= '<span class="link-left"><span class="cool-count">'. $count_friends . '</span></span>';
+                                } else {
+                                    $html .= '<span class="link-left hide_"><span class="cool-count">'. $count_friends . '</span></span>';
+                                }
 
-                    $html .= '<span class="cool-menu-icons cool-connections">';
-                    if($count_friends > 0) {
-                        $html .= '<span class="cool-count" style="left: 10px;">'. $count_friends . '</span>';
-                    }
-                    $html .= '</span>';
-
-                    $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';
-                    $html .= '</a>';
-                    $html .= '</li>';
-
-                    $html .= '<li style="width: 105px;">';
-                    $html .= '<a href="' . JText::_('LINK_MY_BOOKMARKS') . '" style="width: 105px;">';
-                    $html .= '<span class="cool-menu-icons cool-saved" style="width: 105px;"></span>';
-                    $html .= '<span class="cool-menu-text" style="width: 105px;">' . JText::_('COOL_TOP_SAVED_PROFILES') . '</span>';
-                    $html .= '</a>';
-                    $html .= '</li>';
-
-                    $html .= '<li>';
-                    $html .= '<a href="/member/logout">';
-                    $html .= '<span class="cool-menu-icons cool-logout"></span>';
-                    $html .= '<span class="cool-menu-text">Sign out</span>';
-                    $html .= '</a>';
-                    $html .= '</li>';
-
-                    $html .= '</ul>';
+                                $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/connections_icon.png"></span>';
+                                $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';
+                                $html .= '';
+                            $html .= '</a></li>';
+                            $html .= '<li><a href="' . JText::_('LINK_MY_BOOKMARKS') . '">';
+                                $html .= '<span class="link-left hide_"><span class="cool-count"></span></span>';
+                                $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/bookmarks_icon.png"></span>';
+                                $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_SAVED_PROFILES') . '</span></span>';
+                                $html .= '';
+                            $html .= '</a></li>';
+                            $html .= '<li><a href="/member/logout">';
+                                $html .= '<span class="link-left hide_"><span class="cool-count"></span></span>';
+                                $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/sign_out.png"></span>';
+                                $html .= '<span class="cool-menu-text">Sign out</span></span>';
+                                $html .= '';
+                            $html .= '</a></li>';
+                        $html .= '</ul>';
                     $html .= '</div>';
 
+
+
+//                    --------------------------------------------------------------------------------------------------------
 
                     $html .= '<div class="menu-top-left">';
                         $html .= '<a href="' . JText::_('LINK_EDIT_ACCOUNT') . '" title="Settings">';
@@ -1071,16 +1076,21 @@ class JSFactory{
 
                     $html .= '<div class="menu-top-center">';
                         $html .= '<span class="big">';
-                            $html .= JText::_('COOL_TOP_HEY');
                             $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>!';
                         $html .= '</span>';
                         $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
                     $html .= '</div>';
 
                     $html .= '<div class="menu-top-right">';
-                        $html .= '<a class="link-count" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                        if($count_tokens>0){
+                            $html .= '<a class="link-count" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                        } else {
+                            $html .= '<a href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                        }
                             $html .= '<div class="link-top">';
-                                $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+                                if($count_new_messages > 0){
+                                    $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+                                }
                                 $html .= '<img src="/templates/protostar/images/system/cool_messages.png">';
                             $html .= '</div>';
                             $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span>';
@@ -1107,7 +1117,6 @@ class JSFactory{
 
                 $html .= '<div class="menu-top-center">';
                     $html .= '<span class="big">';
-                        $html .= JText::_('COOL_TOP_HEY');
                         $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>!';
                     $html .= '</span>';
                     $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
@@ -1143,25 +1152,43 @@ class JSFactory{
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';
                     $html .= '</a>';
 
-                    $html .= '<a class="link-count" href="' . JText::_('LINK_VISITORS') . '" title="View your visitors">';
+                    if($count_new_visitors > 0){
+                        $html .= '<a class="link-count" href="' . JText::_('LINK_VISITORS') . '" title="View your visitors">';
+                    } else {
+                        $html .= '<a href="' . JText::_('LINK_VISITORS') . '" title="View your visitors">';
+                    }
                         $html .= '<div class="link-top">';
-                            $html .= '<span class="cool-count">'. $count_new_visitors . '</span>';
+                            if($count_new_visitors > 0){
+                                $html .= '<span class="cool-count">'. $count_new_visitors . '</span>';
+                            }
                             $html .= '<img src="/templates/protostar/images/system/cool_visitors_menu.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_VISITORS') . '</span>';
                     $html .= '</a>';
 
-                    $html .= '<a class="link-count" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                    if($count_new_messages > 0){
+                        $html .= '<a class="link-count" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                    } else {
+                        $html .= '<a href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                    }
                         $html .= '<div class="link-top">';
-                            $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+                            if($count_new_messages >0){
+                                $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
+                            }
                             $html .= '<img src="/templates/protostar/images/system/cool_messages.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_MESSAGES') . '</span>';
                     $html .= '</a>';
 
-                    $html .= '<a class="link-count" href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
+                    if($count_tokens>0){
+                        $html .= '<a class="link-count" href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
+                    } else {
+                        $html .= '<a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
+                    }
                         $html .= '<div class="link-top">';
-                            $html .= '<span class="cool-count">'. $count_tokens . '</span>';
+                            if($count_tokens>0){
+                                $html .= '<span class="cool-count">'. $count_tokens . '</span>';
+                            }
                             $html .= '<img src="/templates/protostar/images/system/token.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
