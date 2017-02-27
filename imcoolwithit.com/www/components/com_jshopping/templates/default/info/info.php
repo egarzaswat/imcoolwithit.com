@@ -4,7 +4,9 @@ defined('_JEXEC') or die('Restricted access');
 
 <div class="info-content padding-null col-xs-12">
     <?php if($this->header != ""){ ?>
-        <h1 class="info-content-title"><?php print $this->header; ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print $this->header; ?></h1>
+        </div>
     <?php }
 
     if($this->content != ""){ ?>

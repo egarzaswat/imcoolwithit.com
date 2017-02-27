@@ -1076,7 +1076,7 @@ class JSFactory{
 
                     $html .= '<div class="menu-top-center">';
                         $html .= '<span class="big">';
-                            $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>!';
+                            $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>';
                         $html .= '</span>';
                         $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
                     $html .= '</div>';
@@ -1117,7 +1117,7 @@ class JSFactory{
 
                 $html .= '<div class="menu-top-center">';
                     $html .= '<span class="big">';
-                        $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>!';
+                        $html .= '<a href="' . JText::_('LINK_MY_ACCOUNT') . '" title="My Profile"> ' . JSFactory::getUser()->u_name . '</a>';
                     $html .= '</span>';
                     $html .= '<a class="home-link" href="' . JText::_('LINK_MY_ACCOUNT') . '">My Profile</a>';
                 $html .= '</div>';
@@ -1189,7 +1189,7 @@ class JSFactory{
                             if($count_tokens>0){
                                 $html .= '<span class="cool-count">'. $count_tokens . '</span>';
                             }
-                            $html .= '<img src="/templates/protostar/images/system/token.png">';
+                            $html .= '<img style="max-height: 40px; margin-top: -10px;" src="/templates/protostar/images/system/token.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
                     $html .= '</a>';

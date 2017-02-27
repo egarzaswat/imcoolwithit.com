@@ -7,6 +7,9 @@
     <div class="page-content row">
         <div class="page-content-top padding-null">
             <h1><?php print $this->title; ?></h1>
+            <div class="block-right">
+                <img src="/templates/protostar/images/system/cool_visitors_menu.png">
+            </div>
         </div>
 
         <?php if (count($this->visitors_list) < 1) { ?>

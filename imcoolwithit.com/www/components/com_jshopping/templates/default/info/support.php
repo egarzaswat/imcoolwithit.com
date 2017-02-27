@@ -5,8 +5,9 @@ defined('_JEXEC') or die('Restricted access');
 <div class="contact-us col-sm-8 col-sm-offset-2 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print $this->header?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print $this->header; ?></h1>
+        </div>
 
         <div class="contact-us-content">
             <span><b><?php print JText::_('CONTACT_US_INFO_1'); ?></b></span>

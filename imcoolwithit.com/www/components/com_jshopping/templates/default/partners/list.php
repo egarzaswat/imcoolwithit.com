@@ -5,8 +5,9 @@
 <div class="lincup-offers partners-page col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title row"><?php print JText::_('LINCUP_OFFERS_TITLE'); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::_('DATING_DEALS'); ?></h1>
+        </div>
 
         <div class="lincup-offers-info row">
             <?php print $this->content; ?>

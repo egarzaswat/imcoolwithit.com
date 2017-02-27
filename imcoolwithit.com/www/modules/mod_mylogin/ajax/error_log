@@ -1,0 +1,1 @@
+[14-Feb-2017 12:10:35 Etc/GMT-4] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`server41.vsepro.cv.ua' did not match expected CN=`smtp.gmail.com' in /home/lomsriblocom777/public_html/cool/mail_send/class.smtp.php on line 344

@@ -1592,7 +1592,7 @@ a:focus, input:focus{
 }
 .flex-menu .menu-top-left a .link-top img{
     max-width: none;
-    max-height: none;
+    max-height: 38px;
 }
 .flex-menu .menu-top-center .big{
     font-size: 24px;
@@ -2028,6 +2028,7 @@ a:focus, input:focus{
     /*border-left-width: 5px;*/
     max-width: 100%;
     width: 250px;
+    color: #49484a;
 }
 .settings .link-button{
     padding: 10px 10px;
@@ -2053,6 +2054,7 @@ a:focus, input:focus{
     max-width: 100%;
     padding: 10px 5px;
     width: 250px;
+    color: #49484a;
 }
 .settings .settings-saved-success{
     font-size: 24px;
@@ -2293,6 +2295,8 @@ a:focus, input:focus{
 
 .visitors,
 .friends,
+.messages,
+.lincup-coupon,
 .honesty-review{
     padding: 0;
 }
@@ -2324,6 +2328,8 @@ a:focus, input:focus{
 .user-page .user-short-info{
     padding: 15px;
     border-bottom: 1px solid #bdbcba;
+    font-size: 13px;
+    text-shadow: 0.01em 0.01em #bdbcba;
 }
 .user-page .user-about-info{
     padding: 15px;
@@ -2334,6 +2340,7 @@ a:focus, input:focus{
     font-size: 16px;
     color: #3ea8dc;
     display: block;
+    text-align: left;
 }
 .user-page .user-about-info .info-value{
     min-height: 25px;
@@ -2341,6 +2348,7 @@ a:focus, input:focus{
     font-size: 14px;
     display: block;
     color: #878788;
+    text-align: left;
 }
 .user-page .user-bottom-links{
     width: 100%;
@@ -2558,6 +2566,7 @@ a:focus, input:focus{
 .lincup-invite .page-content-top,
 .surveys-questions .page-content-top,
 .messaging .page-content-top,
+.contact-us .page-content-top,
 .full-user-page .page-content-top{
     height: 45px;
     margin-bottom: 15px;
@@ -2959,6 +2968,11 @@ a:focus, input:focus{
         display: none;
     }
 }
+@media (max-width: 450px) {
+    .messages .page-content-top h1{
+        font-size: 22px;
+    }
+}
 
 .messaging .page-content .title{
     /*padding: 0;*/
@@ -3308,7 +3322,7 @@ a:focus, input:focus{
 }
 .lincup-offers .lincup-offers-info{
     color: rgb(65, 65, 65);
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
     padding: 15px;
     text-align: justify;
@@ -3871,9 +3885,11 @@ a:focus, input:focus{
     border: 1px solid #40aadd;
     border-radius: 20px;
     margin: 15px 0;
-    padding: 10px 5px 35px;
+    padding: 30px;
     color: #5b5758;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .earn-tokens-list .earn-tokens-item .left-block,
 .earn-tokens-list .earn-tokens-item .right-block{
@@ -3979,24 +3995,24 @@ a:focus, input:focus{
     display: none;
 }
 .earn-tokens-item .earn-tokens-answers label{
-    border: 0;
     cursor: pointer;
     line-height: 40px;
-    margin: 20px 10px;
     min-width: 110px;
     border-radius: 8px;
     height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: normal;
+    font-weight: 400;
     padding: 0 15px;
-    background-color: #41a8dc;
-    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #40aadd;
+    color: #2f2f2f;
 }
 .earn-tokens-item .earn-tokens-answers input[type="radio"]:checked + label,
 .earn-tokens-item .earn-tokens-answers label:hover{
-    background: #8fd9ff;
+    background: #41a8dc;
+    color: #ffffff;
 }
 
 .earn-tokens-submit{
@@ -5654,9 +5670,24 @@ img.jcrop-preview {
 }
 
 .partners-page .lincup-offers-list .lincup-offers-items a{
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .send-invite-to-user{
     cursor: pointer;
+}
+.send-invite-to-user span{
+    margin: 5px 0;
+    padding: 3px 15px;
+    display: block;
+    border: 1px solid #40aadd;
+    border-radius: 8px;
+    float: right;
+    color: #888;
+    cursor: pointer;
+    font-weight: 400;
+}
+.send-invite-to-user span:hover{
+    color: #40aadd;
+    text-decoration: none;
 }
