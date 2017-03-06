@@ -583,7 +583,11 @@ class JshoppingControllerUser extends JControllerLegacy{
             if($key == $adv_user->distance){
                 $distance_options .= '<option selected value="' . $key . '">' . $value . '</option>';
             } else {
-                $distance_options .= '<option value="' . $key . '">' . $value . '</option>';
+                if($adv_user->distance == 0 && $key == 120){
+                    $distance_options .= '<option selected value="' . $key . '">' . $value . '</option>';
+                } else {
+                    $distance_options .= '<option value="' . $key . '">' . $value . '</option>';
+                }
             }
         }
         $distance_options .= '</select>';

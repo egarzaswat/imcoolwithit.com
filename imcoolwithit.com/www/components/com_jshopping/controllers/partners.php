@@ -41,10 +41,19 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $partners = $modelPartners->getPartnersList();
 
 
+        $session = JFactory::getSession();
+        $get_cook = $session->get('declined_partners');
+        if(!$get_cook){
+            $get_cook = array();
+        }
+
+        $display_data = array();
         foreach($partners as $key => $value){
-            $display_data[$key] = $value;
-            $display_data[$key]->image = JSFactory::existImage($jshopConfig->image_product_path_site_small, $display_data[$key]->image);
-            $display_data[$key]->link = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_PARTNERS') . '?partner=' . $value->product_id;
+            if(!in_array($value->product_id, $get_cook)){
+                $display_data[$key] = $value;
+                $display_data[$key]->image = JSFactory::existImage($jshopConfig->image_product_path_site_small, $display_data[$key]->image);
+                $display_data[$key]->link = 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_PARTNERS') . '?partner=' . $value->product_id;
+            }
         }
 
         $view_name = "partners";
@@ -53,7 +62,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
         $view->setLayout('list');
         $view->assign('title', $meta_data['header']);
         $view->assign('content', $meta_data['content']);
-        $view->assign('partners', $partners);
+        $view->assign('partners', $display_data);
         $view->display();
     }
 
@@ -65,7 +74,7 @@ class JshoppingControllerPartners extends JControllerLegacy{
             exit;
         }
 
-        $partner_data = $modelPartner->getPartnerData($id, array('title_en-GB', 'name_en-GB', 'image', 'short_description_en-GB', 'city_en-GB', 'state_en-GB', 'product_ean', 'tokens'));
+        $partner_data = $modelPartner->getPartnerData($id, array('product_id', 'title_en-GB', 'name_en-GB', 'image', 'short_description_en-GB', 'city_en-GB', 'state_en-GB', 'product_ean', 'tokens'));
         $partner_data = $partner_data[0];
         $partner_data['name'] = $partner_data['name_en-GB'];
         $partner_data['title'] = $partner_data['title_en-GB'];

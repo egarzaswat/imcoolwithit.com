@@ -22,9 +22,14 @@ JModelLegacy::addIncludePath(JPATH_COMPONENT.'/models');
 require_once(JPATH_COMPONENT_SITE."/lib/factory.php");
 JSFactory::getComponentHeader();
 
-print '<div class="container-full"><div class="container">';
+
 
 $controller = getJsFrontRequestController();
+print '<div class="container-full';
+if($controller != 'info'){
+    print ' backg-gr';
+}
+print '"><div class="container">';
 require("loadparams.php");
 
 

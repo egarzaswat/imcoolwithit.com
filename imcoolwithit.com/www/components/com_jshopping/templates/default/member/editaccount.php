@@ -73,7 +73,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                     <input type="number" class="ages-input" name="age_from" value="<?php print (($this->user->age_look_from == 0) ? '18' : $this->user->age_look_from); ?>"
                            placeholder="Age From" min="18" max="99" required="required">
                     <span class="ages-separator" > - </span>
-                    <input type="number" class="ages-input" name="age_to" value="<?php print (($this->user->age_look_to == 0) ? '35' : $this->user->age_look_to); ?>"
+                    <input type="number" class="ages-input" name="age_to" value="<?php print (($this->user->age_look_to == 0) ? '99' : $this->user->age_look_to); ?>"
                            placeholder="Age To" min="18" max="99" required="required">
                 </div>
                 <div class="field-block">

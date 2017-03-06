@@ -5,8 +5,9 @@ defined('_JEXEC') or die('Restricted access');
 <div class="lincup-coupon col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
-
-        <h1 class="title"><?php print JText::sprintf('PARTNER_TITLE', $this->partner['name']); ?></h1>
+        <div class="page-content-top padding-null">
+            <h1><?php print JText::sprintf('PARTNER_TITLE', $this->partner['name']); ?></h1>
+        </div>
 
         <?php if ($this->submit_data['friend'] != 0) { ?>
             <div class="lincup-coupon-users">
@@ -32,28 +33,58 @@ defined('_JEXEC') or die('Restricted access');
                 <img src="<?php print $this->partner['image']; ?>">
             </div>
             <div class="lincup-coupon-text col-sm-7 col-xs-12">
-                <span class="lincup-coupon-over"><?php print JText::_('LINCUP_OVER'); ?></span>
                 <span class="lincup-coupon-title"><?php print $this->partner['title']; ?></span>
                 <span class="lincup-coupon-description"><?php print $this->partner['description']; ?></span>
             </div>
-        </div>
 
-        <div class="lincup-coupon-tokens text-none-select col-sm-8 col-xs-12">
+            <div class="lincup-bottom">
+                <div class="left">
 
-        </div>
-
-        <div class="lincup-coupon-options text-none-select col-sm-4 col-xs-12">
-            <?php if ($this->submit_data['friend'] == 0) { ?>
-                <div class="options" style="width: 100px;">
-                    <a href="<?php print $this->link_another_sponsor; ?>" class="another-offer"><?php print JText::_('ANOTHER_OFFER'); ?></a>
                 </div>
-            <?php } else { ?>
-                <div class="send-invite">
-                    <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
+                <div class="right">
+                    <?php if ($this->submit_data['friend'] == 0) { ?>
+                        <a class="not-interested" onclick="addToCookies(<?php print $this->partner['product_id']; ?>)">
+                            <img src="/templates/protostar/images/system/refuse_.png">
+                            <span><?php print JText::_('NOT_INTERESTED_OFFER'); ?></span>
+                        </a>
+                        <a href="<?php print $this->link_another_sponsor; ?>">
+                            <img src="/templates/protostar/images/system/mee_select_another.png">
+                            <span><?php print JText::_('ANOTHER_OFFER'); ?></span>
+                        </a>
+                    <?php } else { ?>
+                        <div class="send-invite">
+                            <span><?php print JText::sprintf('SEND_INVITE', $this->user_data->name); ?></span>
+                        </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
+            </div>
         </div>
 
     </div>
 
 </div>
+
+<script type="text/javascript">
+    function addToCookies(id){
+        var msg = {
+            'id' : id
+        };
+        console.debug(msg);
+        jQuery.ajax({
+            type: 'POST',
+            url: '/components/com_jshopping/controllers/save_data/add_to_cookies.php',
+            data: msg,
+            success: function(data) {
+                if(data=='success'){
+                    location.href= 'http://' + '<?php print $_SERVER['SERVER_NAME']; ?>'  +'/partners';
+//                    jQuery(location).attr('href','/partners');
+                } else {
+                    console.log(data);
+                }
+            },
+            error:  function(data){
+                console.log(data);
+            }
+        });
+    }
+</script>

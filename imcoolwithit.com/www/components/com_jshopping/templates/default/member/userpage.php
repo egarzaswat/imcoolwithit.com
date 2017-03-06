@@ -58,8 +58,8 @@
                     <?php if (!$this->is_i_filed_claim && $this->isset_tokens_add_to_friends && !$this->user_is_friends) { ?>
                         <input type="submit" data-user="<?php print $userData->user_id; ?>" class="accept"
                                title="<?php print JText::_('COOL'); ?>">
-                        <input type="text" data-user="<?php print $userData->user_id; ?>" class="accept-animation"
-                               title="<?php print JText::_('COOL'); ?>" style="display: none;">
+<!--                        <input type="text" data-user="--><?php //print $userData->user_id; ?><!--" class="accept-animation"-->
+<!--                               title="--><?php //print JText::_('COOL'); ?><!--" style="display: none;">-->
                     <?php } else { ?>
                         <input type="text" data-user="<?php print $userData->user_id; ?>" class="accept" style="opacity: 0.5;"
                                title="<?php print JText::_('SEND_COOL'); ?>">
@@ -154,8 +154,11 @@
         });
 
         jQuery('.send-invite .accept[type="submit"]').click(function(){
-            jQuery(this).attr('disabled',true).removeClass('accept').addClass('accept-animation-finish').hide();
-            jQuery('.send-invite .accept-animation').show();
+//            jQuery(this).attr('disabled',true).removeClass('accept').addClass('accept-animation-finish').hide();
+//            jQuery('.send-invite .accept-animation').show();
+            jQuery(this).attr('disabled',true);
+
+
 //            jQuery(this).attr('disabled',true).addClass('token-fall');
             var data_post = {
                 'user_id' : this.getAttribute('data-user')
@@ -167,8 +170,8 @@
                 data: data_post,
                 success: function(data){
                     setTimeout(function () {
-                        jQuery('.send-invite .accept-animation-finish').show();
-                        jQuery('.send-invite .accept-animation').hide();
+//                        jQuery('.send-invite .accept-animation-finish').show();
+//                        jQuery('.send-invite .accept-animation').hide();
                         jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS').'?usr='.$userData->u_name; ?>');
                     }, 1700);
                 },

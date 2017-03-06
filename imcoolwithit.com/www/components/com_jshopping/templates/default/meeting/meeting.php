@@ -47,7 +47,7 @@
                             <span class="wa"><?php print $this->submit_data['count_tokens'] . ' ' . JText::_('LINCUP_TOKENS'); ?></span>
                         <?php } else { ?>
                             <span class="lincup-no-tokens"><?php print JText::_('NOT_ENOUGH_TOKENS'); ?></span>
-                            <a href="<?php print $this->link_earn_tokens; ?>"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
+                            <a href="<?php print $this->link_earn_tokens; ?>" style="text-decoration: underline;"><?php print JText::_('NOT_ENOUGH_TOKENS_LINK'); ?></a>
                         <?php } ?>
                     </div>
                 </div>

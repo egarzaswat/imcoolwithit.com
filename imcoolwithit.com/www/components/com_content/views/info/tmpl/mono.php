@@ -43,12 +43,3 @@ $params  = $this->item->params;
             <?php print $this->data[0]->content ?>
         </div>
     </div>
-
-<!--<div class="general_content container">
-    <div class="full_column col-xs-12">
-        <h1 class="text_header"><?php /*print $this->data[0]->header */?></h1>
-        <div class="text_block">
-            <?php /*print $this->data[0]->content */?>
-        </div>
-    </div>
-</div>-->

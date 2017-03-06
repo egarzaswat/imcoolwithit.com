@@ -1,5 +1,5 @@
 ﻿body{
-    color: rgb(0, 0, 0);
+    color: #777;
     font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif!important;
     font-size: 14px;
     margin: 0;
@@ -136,18 +136,26 @@
 }
 .home-header .home-sign-in ul li a,
 .header-links-cool ul li a,
+.header-links ul li:nth-child(3) a,
 .header-links ul li:last-child a{
     color: #41a8dc;
-    background: #ffffff;
-    padding: 10px 20px 8px!important;
+    background: #fff;
+    padding: 7px 15px 6px!important;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 17px;
     font-family: arial,helvetica,sans-serif;
     line-height: 1;
     margin: 0 0 0 10px;
 }
+.home-header .home-sign-in ul li a{
+    color: #fff;
+}
+.home-header .home-sign-in ul li:last-child a{
+    color: #41a8dc!important;
+}
 @media (max-width: 767px){
     .header-links-cool ul li a,
+    .header-links ul li:nth-child(3) a,
     .header-links ul li:last-child a{
         /*color: rgb(255, 255, 255);*/
         /*background: #f3b13e;*/
@@ -186,7 +194,7 @@
 }
 
 .menu_home{
-    margin: 25px 0 0;
+    margin: 35px 0 0;
 }
 
 
@@ -739,17 +747,32 @@ a:focus, input:focus{
     width: 40px;
 }
 .submit-button{
-    background: rgb(48, 155, 209);
-    border: none;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    height: 35px;
-    outline: none;
-    width: 130px;
+    cursor: pointer;
+    min-width: 110px;
+    border-radius: 8px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    padding: 0 15px;
+    border: 1px solid #40aadd;
+    line-height: 1;
+    background: #41a8dc;
+    color: #fff;
 }
 .submit-button:hover{
-    background: rgb(52, 117, 209);
+    background-color: #fff;
+    color: #777;
+}
+
+.lincup-invite .submit-button{
+    background-color: #fff;
+    color: #777;
+}
+.lincup-invite .submit-button:hover{
+    background-color: #41a8dc;
+    color: #fff;
 }
 
 .user-item{
@@ -926,15 +949,14 @@ a:focus, input:focus{
 
 .info-content{
     text-align: left;
+    color: #777;
 }
 .info-content h3{
-    color: rgb(33, 33, 33);
     font-size: 12px;
     font-weight: bold;
 }
 .info-content p, .info-content ul, .info-content ol{
-    color: rgb(33, 33, 33);
-    font-size: 10px;
+    font-size: 14px;
 }
 .info-content .info-content-title{
     /*background: rgb(243, 177, 62);*/
@@ -956,12 +978,10 @@ a:focus, input:focus{
     font-size: 18px;
 }
 .community .info-content-text h3{
-    color: rgb(355, 255, 255);
     font-size: 22px;
     font-weight: normal;
 }
 .community .info-content-text p{
-    color: rgb(355, 255, 255);
     font-size: 18px;
 }
 .community img{
@@ -1003,11 +1023,13 @@ a:focus, input:focus{
 }
 
 .container-full{
-    background-color: #efefe9;
+    background-color: #ffffff;
     padding: 25px 0;
     box-shadow: inset 0 10px 10px -10px rgba(34,31,31,0.3);
 }
-
+.container-full.backg-gr{
+    background-color: #efefe9;
+}
 .page-content-top{
     width: 100%;
     height: 110px;
@@ -1504,10 +1526,20 @@ a:focus, input:focus{
     .header-logo img{
         /*max-height: 40px;*/
     }
+    .header-links{
+        padding-top: 10px;
+        margin-top: -1px;
+    }
 }
 .header-links ul li .search{
     padding-left: 22px!important;
-    background: url(../images/system/search.png) no-repeat scroll 0 9px;
+    background: url(../images/system/search_white_icon.png) no-repeat scroll 0 7px;
+    background-size: 20px;
+}
+.header-links ul li .quick-search{
+    padding-left: 22px!important;
+    background: url(../images/system/quick_connect.png) no-repeat scroll 0 6px;
+    background-size: 16px;
 }
 
 /*
@@ -1867,6 +1899,7 @@ a:focus, input:focus{
     padding-left: 20px;
     text-align: left;
     width: 100%;
+    color: #777;
 }
 .profile-content-left .my-stats{
     border-bottom: 1px solid rgb(242, 177, 63);
@@ -1885,6 +1918,7 @@ a:focus, input:focus{
 }
 .profile-content-left .inf span{
     font-weight: normal;
+    color: #5a5a5a;
 }
 .profile-content-left .inf input,
 .profile-content-left .inf select{
@@ -1902,8 +1936,15 @@ a:focus, input:focus{
 .profile-content-left .save,
 .profile-content-left .edit{
     position: absolute;
-    right: 5%;
+    right: 10%;
     bottom: 5px;
+    padding-left: 19px;
+    font-size: 14px;
+    color: #777;
+    text-decoration: underline;
+}
+.profile-content-left .submit-button{
+    margin: 0 0 15px;
 }
 .profile-content-right{
     text-align: left;
@@ -1927,6 +1968,10 @@ a:focus, input:focus{
 .profile-content-right .block-info .save{
     display: inline-block;
     margin-left: 5px;
+    padding-left: 19px;
+    font-size: 14px;
+    color: #777;
+    text-decoration: underline;
 }
 .profile-content-right .block-info .block-answer{
     color: rgb(135, 135, 135);
@@ -2028,7 +2073,7 @@ a:focus, input:focus{
     /*border-left-width: 5px;*/
     max-width: 100%;
     width: 250px;
-    color: #49484a;
+    color: #777;
 }
 .settings .link-button{
     padding: 10px 10px;
@@ -2043,6 +2088,7 @@ a:focus, input:focus{
 .settings .field-block .ages-input{
     display: inline-block;
     max-width: 70px;
+    color: #777;
 }
 .settings .field-block .ages-separator{
     display: inline-block;
@@ -2054,7 +2100,7 @@ a:focus, input:focus{
     max-width: 100%;
     padding: 10px 5px;
     width: 250px;
-    color: #49484a;
+    color: #777;
 }
 .settings .settings-saved-success{
     font-size: 24px;
@@ -2392,19 +2438,19 @@ a:focus, input:focus{
     border-radius: 0;
     display: inline-block;
     font-size: 0;
-    height: 80px;
+    height: 95px;
     margin: 0;
     outline: none;
     padding: 0;
     vertical-align: top;
-    width: 80px;
+    width: 95px;
 }
 .user-page .user-accept-actions .accept{
     background: url("../images/system/accept.png") no-repeat scroll center center;
     background-size: cover!important;
 }
 .user-page .user-accept-actions .refuse {
-    background: url("../images/system/refuse.png") no-repeat scroll center center;
+    background: url("../images/system/refuse.png") no-repeat scroll center 0px;
 }
 @-webkit-keyframes fall-token {
     0% { transform: rotateY(0) scale(1, 1); }
@@ -2551,6 +2597,19 @@ a:focus, input:focus{
     .user-page .user-photo img{
         width: 100%;
     }
+    .user-page .user-accept-actions .accept-invite,
+    .user-page .user-accept-actions .send-invite{
+        width: 100%;
+    }
+    .user-page .user-accept-actions .separator{
+        margin: 0 23%;
+    }
+    .user-page .user-accept-actions .accept{
+        transform: translateX(-50%);
+    }
+    .user-page .user-accept-actions .refuse{
+        transform: translateX(50%);
+    }
 }
 
 
@@ -2576,6 +2635,16 @@ a:focus, input:focus{
     bottom: 5px;
     position: absolute;
     right: 0;
+}
+@media (max-width: 767px){
+    .lincup-offers .page-content-top h1{
+        width: 100%;
+        text-align: center;
+    }
+    .external-links-top{
+        position: relative;
+        margin: 15px auto 0;
+    }
 }
 .external-links-top a{
     margin: 0 0 5px 15px;
@@ -2705,6 +2774,19 @@ a:focus, input:focus{
     text-decoration: none;
 }
 
+@media (max-width: 991px){
+    .page-content .external-links-bottom{
+        right: 50%;
+        transform: translateX(50%);
+        width: 210px;
+    }
+    .page-content .external-links-bottom button{
+        justify-content: center;
+    }
+    .settings .page-content{
+        padding-bottom: 35px;
+    }
+}
 
 .show-private .show-private-info{
     background: url("../images/system/private_pictures.png") no-repeat center top;
@@ -3404,7 +3486,7 @@ a:focus, input:focus{
         cursor: pointer;
     }
     .lincup-offers .lincup-offers-list .lincup-offers-items{
-        display: none;
+        /*display: none;*/
     }
     .lincup-offers .lincup-offers-list .lincup-offers-for-category .lincup-offers-items{
         display: block;
@@ -3515,6 +3597,10 @@ a:focus, input:focus{
     min-width: 100%;
 }
 
+.lincup-coupon .lincup-bottom .right .not-interested{
+    cursor: pointer;
+}
+
 @media (max-width: 767px){
     .lincup-coupon .lincup-bottom .left,
     .lincup-coupon .lincup-bottom .right{
@@ -3549,7 +3635,7 @@ a:focus, input:focus{
     margin-bottom: 10px;
 }
 .lincup-coupon-text .lincup-coupon-title{
-    border-top: 1px solid rgb(48, 155, 209);
+    /*border-top: 1px solid rgb(48, 155, 209);*/
     border-bottom: 1px solid rgb(48, 155, 209);
     color: rgb(48, 155, 209);
     font-size: 24px;
@@ -4007,7 +4093,7 @@ a:focus, input:focus{
     padding: 0 15px;
     background-color: #ffffff;
     border: 1px solid #40aadd;
-    color: #2f2f2f;
+    color: #777;
 }
 .earn-tokens-item .earn-tokens-answers input[type="radio"]:checked + label,
 .earn-tokens-item .earn-tokens-answers label:hover{
@@ -5620,6 +5706,9 @@ img.jcrop-preview {
         font-size: 25px;
         /*padding-left: 4px;*/
         top: -25px;
+    }
+    .partners-page{
+        padding: 0!important;
     }
 }
 

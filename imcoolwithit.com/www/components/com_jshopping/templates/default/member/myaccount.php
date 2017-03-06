@@ -43,6 +43,8 @@ defined('_JEXEC') or die('Restricted access');
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
+            <button class="submit-button">Edit photos</button>
+
             <span class="localisation">
                 <?php print JText::_('AGE') . $this->user->age; ?>
                 <span class="yellow">|</span>
@@ -51,7 +53,7 @@ defined('_JEXEC') or die('Restricted access');
                 <?php print $this->user->sex; ?>
             </span>
 
-            <span id="edit-stats" class="edit"></span>
+            <span id="edit-stats" class="edit">Edit</span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $this->user->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $this->user->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $this->user->looking_for; ?></span></span>
@@ -60,19 +62,19 @@ defined('_JEXEC') or die('Restricted access');
 
         <div class="profile-content-right col-sm-7 col-xs-12">
             <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_COOL'); ?><span id="edit-save" class="edit"></span></span>
+                <span class="block-question"><?php print JText::_('YOUR_COOL'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="user_about" class="block-answer"><?php print $this->user->user_about; ?></span>
             </div>
             <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_QUALITIES'); ?><span id="edit-save" class="edit"></span></span>
+                <span class="block-question"><?php print JText::_('YOUR_QUALITIES'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="look_qualites" class="block-answer"><?php print $this->user->look_qualites; ?></span>
             </div>
             <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_RECOMMEND'); ?><span id="edit-save" class="edit"></span></span>
+                <span class="block-question"><?php print JText::_('YOUR_RECOMMEND'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="recommend" class="block-answer"><?php print $this->user->recommend; ?></span>
             </div>
             <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_FEW_PLACES'); ?><span id="edit-save" class="edit"></span></span>
+                <span class="block-question"><?php print JText::_('YOUR_FEW_PLACES'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="few_places" class="block-answer"><?php print $this->user->few_places; ?></span>
             </div>
 
