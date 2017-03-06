@@ -49,10 +49,7 @@
         margin: 0 10px;
     }
     .submit-button{
-        background: rgb(243, 177, 62);
-        height: 40px;
         margin: 5px 20px;
-        width: 120px;
     }
     .submit-button:hover{
         background: rgb(253, 197, 82)
@@ -88,7 +85,7 @@
 
         <div class="actions">
             <button type="submit" class="submit-button">Submit</button>
-            <span class="form-signup-text forgot_show">Forgot Password? Click here to reset</span>
+            <span class="form-signup-text forgot_show">Forgot Password? <span style="text-decoration: underline;">Click here to reset</span></span>
         </div>
     </form>
 

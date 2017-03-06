@@ -47,8 +47,6 @@
 </div>
 
 <script type="text/javascript">
-    jQuery('body').addClass('grayBackground');
-
     jQuery('.lincup-offers-category').click(function () {
         var id = this.id;
         if(jQuery(document).width() <= 767){

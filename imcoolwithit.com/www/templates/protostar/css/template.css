@@ -173,7 +173,10 @@
 .header-links-cool ul li a:focus,
 .header-links ul li:last-child a:hover,
 .header-links ul li:last-child a:active,
-.header-links ul li:last-child a:focus{
+.header-links ul li:last-child a:focus,
+.header-links ul li:nth-child(3) a:hover,
+.header-links ul li:nth-child(3) a:active,
+.header-links ul li:nth-child(3) a:focus{
     text-decoration: none;
     background: none!important;
     background-color: #ffc662!important;
@@ -232,11 +235,11 @@
 .header-links ul li a{
     color: #ffffff;
 }
-.header-links ul li a:hover,
-.header-links ul li a:active,
-.header-links ul li a:focus{
-    background-color: transparent;
-}
+/*.header-links ul li a:hover,*/
+/*.header-links ul li a:active,*/
+/*.header-links ul li a:focus{*/
+    /*background-color: transparent;*/
+/*}*/
 .header-links .menu_home{
     margin: 0;
 }
@@ -566,6 +569,31 @@
     padding-top: 100px;
     text-align: left;
 }
+.content-block .content-text{
+    font-family: "Myriad Pro",Myriad,sans-serif;
+}
+.content-block h1{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #40aadd;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #cd6c28;
+    font-weight: 500;
+    font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif!important;
+    margin-bottom: 15px;
+}
+.content-block h2,
+.content-block h3,
+.content-block h4,
+.content-block h5,
+.content-block h6{
+    font-size: 18px;
+    font-weight: 700;
+}
 
 @media (max-width: 991px){
     .home-sign-up .sign-up-box .sign-up-border{
@@ -758,12 +786,17 @@ a:focus, input:focus{
     padding: 0 15px;
     border: 1px solid #40aadd;
     line-height: 1;
-    background: #41a8dc;
-    color: #fff;
-}
-.submit-button:hover{
     background-color: #fff;
     color: #777;
+}
+.submit-button:hover{
+    background: #41a8dc;
+    color: #fff;
+    text-decoration: none;
+}
+.submit-button:active,
+.submit-button:focus{
+    outline: none;
 }
 
 .lincup-invite .submit-button{
@@ -951,10 +984,17 @@ a:focus, input:focus{
     text-align: left;
     color: #777;
 }
-.info-content h3{
-    font-size: 12px;
+
+
+.info-content h2,
+.info-content h3,
+.info-content h4,
+.info-content h5,
+.info-content h6{
+    font-size: 18px;
     font-weight: bold;
 }
+
 .info-content p, .info-content ul, .info-content ol{
     font-size: 14px;
 }
@@ -967,7 +1007,7 @@ a:focus, input:focus{
 }
 .info-content .info-content-text{
     font-family: "Myriad Pro", Myriad, sans-serif;
-    padding: 20px 10px 10px 50px;
+    padding: 20px 10px 10px 15px;
 }
 
 .community .info-content-title{
@@ -1056,7 +1096,7 @@ a:focus, input:focus{
 }
 .page-content-top.content-top-col .top-info span,
 .page-content-top.content-top-col .top-info a{
-    color: #5b5758;
+    color: #777;
     font-size: 22px;
     margin: 15px 0 10px 25px;
     line-height: 1.2;
@@ -1065,7 +1105,7 @@ a:focus, input:focus{
     border-bottom: 5px solid #efae3d;
 }
 .page-content-top.content-top-col .tokens-filter{
-    color: #5b5758;
+    color: #777;
     font-size: 22px;
     line-height: 1.2;
     position: absolute;
@@ -1181,15 +1221,28 @@ a:focus, input:focus{
         height: auto;
     }
 }
-
 @media (max-width: 450px){
     .page-content-top.content-top-col .tokens-filter{
         margin-left: 25px;
         margin-bottom: 15px;
         position: relative;
+        margin-top: 20px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
     }
     .page-content-top.content-top-col .top-info{
         height: auto!important;
+    }
+    .page-content-top.content-top-col .top-info a,
+    .page-content-top.content-top-col .top-info span{
+        font-size: 16px;
+        margin: 15px 0 10px 20px;
+    }
+    .page-content-top h1{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
     }
 }
 /*
@@ -1705,14 +1758,22 @@ a:focus, input:focus{
 }
 .dropdown-menu .dropdown-toggle{
     box-shadow: none!important;
-    background: rgb(242, 178, 63);
+    background: #f2b23f;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: block;
+    width: 35px;
+    height: 35px;
+    display: flex;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 25px;
+    left: auto;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 0;
 }
 .open > .dropdown-menu {
     display: flex!important;
@@ -1772,7 +1833,7 @@ a:focus, input:focus{
     flex-grow: 1;
     padding-left: 10%;
     font-size: 20px;
-    color: #49484a;
+    color: #777;
     line-height: 1;
 }
 .dropdown-menu .cool-menu-icons{
@@ -1831,6 +1892,14 @@ a:focus, input:focus{
 @media (max-width: 399px){
     .menu-top-right{
         max-width: 320px;
+    }
+    .dropdown-menu>li>a{
+        padding: 3px 10px;
+    }
+}
+@media (max-width: 500px) {
+    .dropdown-menu a .cool-menu-text{
+        font-size: 14px;
     }
 }
 
@@ -1900,6 +1969,22 @@ a:focus, input:focus{
     text-align: left;
     width: 100%;
     color: #777;
+}
+@media (max-width: 767px) {
+    .profile-content-left .localisation,
+    .profile-content-left .last-online,
+    .profile-content-left .my-stats,
+    .profile-content-left .inf{
+        padding-left: 0;
+    }
+    .profile-content-left{
+        margin-bottom: 25px;
+    }
+}
+.profile-content-left .last-online,
+.profile-content-left .localisation{
+    text-align: center;
+    padding-left: 0;
 }
 .profile-content-left .my-stats{
     border-bottom: 1px solid rgb(242, 177, 63);
@@ -2009,7 +2094,7 @@ a:focus, input:focus{
     justify-content: center;
     font-size: 13px;
     vertical-align: middle;
-    color: #49484a;
+    color: #777;
     flex-direction: column;
 }
 .user-options a.disabled{
@@ -2017,7 +2102,7 @@ a:focus, input:focus{
 }
 .user-options a:hover{
     text-decoration: none;
-    color: #000000;
+    color: #555;
 }
 .user-options a .option{
     min-width: 75px;
@@ -2042,6 +2127,24 @@ a:focus, input:focus{
     .profile .profile-content-left .photo{
         width: 100%;
         max-height: 100%;
+    }
+}
+@media (max-width: 450px){
+    .user-options a{
+        max-width: 60px;
+        max-height: 100px;
+    }
+    .user-options a .option{
+        min-width: 60px;
+        min-height: 60px;
+    }
+    .user-options a .option img{
+        max-width: 75%;
+        max-height: 75%;
+    }
+    .user-options a .text{
+        text-align: center;
+        font-size: 11px;
     }
 }
 
@@ -2147,7 +2250,7 @@ a:focus, input:focus{
 }
 .edit-photos .actions-info span {
     font-size: 13px;
-    color: #49484a;
+    color: #777;
 }
 .edit-photos .actions-info span i{
     color: #40aadd;
@@ -2337,7 +2440,9 @@ a:focus, input:focus{
     background: url("../images/system/item_clock.png") no-repeat 5px 2px;
     min-height: 35px;
 }
-
+.bookmarks .page-content-top .block-right img{
+    width: 55px;
+}
 
 .visitors,
 .friends,
@@ -2648,12 +2753,12 @@ a:focus, input:focus{
 }
 .external-links-top a{
     margin: 0 0 5px 15px;
-    padding: 3px 15px;
+    padding: 3px 15px 2px;
     display: block;
     border: 1px solid #40aadd;
     border-radius: 8px;
     float: right;
-    color: #888888;
+    color: #777;
     cursor: pointer;
 }
 .external-links-top a:hover{
@@ -2985,7 +3090,7 @@ a:focus, input:focus{
     text-align: left;
     word-wrap: break-word;
     vertical-align: middle;
-    color: #49484a;
+    color: #777;
 }
 .messages-list .messages-list-item .messages-list-info span{
     display: block;
@@ -3403,16 +3508,16 @@ a:focus, input:focus{
     height: auto;
 }
 .lincup-offers .lincup-offers-info{
-    color: rgb(65, 65, 65);
+    color: #777;
     font-size: 14px;
     margin: 0;
     padding: 15px;
     text-align: justify;
-    text-shadow: 1px 0 0 rgb(208, 208, 208);
+    /*text-shadow: 1px 0 0 rgb(208, 208, 208);*/
     background: #ffffff;
 }
 .lincup-offers .lincup-offers-info a{
-    color: rgb(65, 65, 65);
+    color: #777;
     text-decoration: underline;
 }
 .lincup-offers .lincup-offers-info a:hover{
@@ -3566,7 +3671,7 @@ a:focus, input:focus{
     width: 100%;
     min-width: 100%;
     font-size: 11px;
-    color: #49484a;
+    color: #777;
 }
 .lincup-coupon .lincup-bottom .right{
     width: 60%;
@@ -3581,7 +3686,7 @@ a:focus, input:focus{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: #49484a;
+    color: #777;
     font-size: 13px;
 }
 .lincup-coupon .lincup-bottom .right a:hover{
@@ -3642,7 +3747,7 @@ a:focus, input:focus{
     margin: 5px 0;
 }
 .lincup-coupon-text .lincup-coupon-description{
-    color: #5b5758;
+    color: #777;
     font-size: 16px;
 }
 .lincup-coupon-tokens{
@@ -3931,7 +4036,7 @@ a:focus, input:focus{
     font-size: 16px;
 }
 .earn-tokens .earn-tokens-block .earn-tokens-item a+span{
-    color: #5b5758;
+    color: #777;
 }
 .earn-tokens .earn-tokens-block .earn-tokens-item a img{
     border-radius: 10px;
@@ -3972,7 +4077,7 @@ a:focus, input:focus{
     border-radius: 20px;
     margin: 15px 0;
     padding: 30px;
-    color: #5b5758;
+    color: #777;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -4217,7 +4322,7 @@ a:focus, input:focus{
 }
 
 .complete-profile .complete-profile-info{
-    color: rgb(65, 65, 65);
+    color: #777;
     display: block;
     font-size: 18px;
     min-height: 80px;
@@ -5118,7 +5223,7 @@ embed, iframe {
     text-align: left;
 }
 .contact-us .contact-us-content span{
-    color: rgb(65, 65, 65);
+    color: #777;
     display: block;
     font-size: 14px;
     line-height: 30px;

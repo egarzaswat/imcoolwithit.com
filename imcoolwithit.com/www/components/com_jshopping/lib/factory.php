@@ -1014,7 +1014,7 @@ class JSFactory{
                     $html .= '<div class="btn-group">';
                         $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle"><i class="icon-menu"></i></button>';
                         $html .= '<ul class="dropdown-menu">';
-//                          $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">x</button>';
+                          $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">X</button>';
 
                             $html .= '<li><a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
                                 $html .= '<span class="link-left"><span class="cool-count">'. $count_tokens . '</span></span>';
@@ -1122,13 +1122,13 @@ class JSFactory{
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_SEARCH') . '</span>';
                     $html .= '</a>';
-
+/*
                     $html .= '<a href="' . $quick_search_link . '" title="Quick Connect">';
                         $html .= '<div class="link-top">';
                             $html .= '<img src="/templates/protostar/images/system/saved_profiles_icon.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_QUICK_CONNECT') . '</span>';
-                    $html .= '</a>';
+                    $html .= '</a>';*/
 
                     $html .= '<a href="' . JText::_('LINK_MY_BOOKMARKS') . '" title="View Saved Profiles">';
                         $html .= '<div class="link-top">';

@@ -43,7 +43,7 @@ defined('_JEXEC') or die('Restricted access');
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
-            <button class="submit-button">Edit photos</button>
+            <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="submit-button">Edit photos</a>
 
             <span class="localisation">
                 <?php print JText::_('AGE') . $this->user->age; ?>
