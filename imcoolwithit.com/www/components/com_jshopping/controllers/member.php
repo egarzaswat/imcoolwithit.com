@@ -1870,6 +1870,22 @@ class JshoppingControllerMember extends JControllerLegacy{
         $view->display();
     }
 
+    function photos()
+    {
+        $user_id = JRequest::getInt('user');
+        $modelUser = JSFactory::getModel('user', 'jshop');
+        $result = $modelUser->getUserAlbumProfile($user_id);
+        $conf = new JConfig();
+        $photos = array();
+        foreach ($result as $key => $value) {
+            array_push($photos, array('id' => $value->id, 'photo' => $conf->path_albums_image . "user_" . $user_id . "/" . $value->photo));
+        }
+        print '<pre>';
+        var_dump($photos);
+        print '</pre>';
+        exit;
+    }
+
 /*
     function removeBookmark(){
         $currentUser = JSFactory::getUserShop();

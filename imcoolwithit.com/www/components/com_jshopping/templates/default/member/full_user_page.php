@@ -81,7 +81,7 @@
                 <span class="block-answer"><?php print $userData->few_places; ?></span>
             </div>
 
-            <div class="user-options text-none-select">
+            <div class="user-options text-none-select" style="margin-left: -15px; width: calc(100% + 30px);">
                 <a href="<?php print $this->links['questions']; ?>">
                     <span class="option">
                         <img src="/templates/protostar/images/system/profile_qa.png" />
@@ -119,6 +119,7 @@
         </div>
 
         <div class="external-links-bottom">
+            <span class="hide-profile" data-user="<?php print $userData->user_id; ?>">Hide</span>
             <?php if (!$this->visible) { ?>
                 <span class="add-visited" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_VISITED'); ?></span>
             <?php } ?>
@@ -171,6 +172,39 @@
 <script type="text/javascript">
     var photos = <?php print json_encode($userData->images_album['images']); ?>;
     var index = 0;
+
+
+
+    if(jQuery(window).width() < 500){
+//        jQuery('.full-user-page').css('margin-top', '-25px');
+//        jQuery('.full-user-page .profile-content-left .photo img').css({'width':jQuery(window).width(), 'margin-left':'-15px', 'margin-top':'-15px'});
+//        jQuery('.container-full .container .profile-content-left').css({'margin-left':'-15px', 'margin-top':'-15px'});
+        jQuery('.container-full .container').css('padding', '5px');
+        jQuery('.container-full .container .profile-content-left').css('padding', '0');
+        jQuery('.container-full .container .profile-content-right').css('padding-left', '0', 'padding-right', '0');
+        jQuery('.user-options').css('right','0');
+    }
+
+    jQuery('.hide-profile').click(function(){
+        jQuery(this).attr('disabled',true);
+//            jQuery(this).attr('disabled',true).addClass('token-reject');
+        var data_post = {
+            'user_id' : this.getAttribute('data-user')
+        };
+
+        jQuery.ajax({
+            type: "POST",
+            url: '/components/com_jshopping/controllers/save_data/accept_rejected.php',
+            data: data_post,
+            success: function(data){
+                history.back()
+            },
+            error: function(data){
+                console.debug(data);
+            }
+        });
+        return false;
+    });
 
     function showSliderPhoto(){
         console.log(index);

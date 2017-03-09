@@ -21,7 +21,7 @@ class jshopUsersList{
     function getConditionSearch($searchParams, $quickConnect){
         $condition = " WHERE ";
         if($searchParams['looking_for'] == 3){
-            $condition .= "(`sex` = 1 or `sex` = 2)";
+            $condition .= "(`sex` = 1 or `sex` = 2 or `sex` = 3 or `sex` = 2 or `sex` = 2 or `sex` = 2)";
         } else {
             $condition .= "`sex` = " . $searchParams['looking_for'];
         }
@@ -37,7 +37,7 @@ class jshopUsersList{
         return $condition;
     }
 
-    function getCountItems($searchParams, $quickConnect = false){
+    function getCountItems($searchParams, $quickConnect = true){
         $db = JFactory::getDBO();
         $adv_user = JSFactory::getUser()->user_id;
 
@@ -53,7 +53,7 @@ class jshopUsersList{
         return $count;
     }
 
-    function usersList($searchParams, $start = 0, $limit = 0, $fields_arr = array(), $info_fields_array = array(), $quickConnect = false){
+    function usersList($searchParams, $start = 0, $limit = 0, $fields_arr = array(), $info_fields_array = array(), $quickConnect = true){
         $db = JFactory::getDBO();
         $adv_user = JSFactory::getUser()->user_id;
 

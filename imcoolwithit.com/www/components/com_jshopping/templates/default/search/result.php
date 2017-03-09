@@ -33,8 +33,11 @@ $usersList = $this->usersList;
             <div class="user-item-bottom">
                 <span class="last-visit"><?php echo JText::_('LAST_ONLINE'). $user['last_visit']; ?></span>
                 <span class="info"><?php print JText::_('AGE'); ?> <span><?php print $user['age']; ?></span></span>
+                <span class="info"><?php print JText::_('LOOKING_FOR'); ?> <span><?php print $user['looking_for']; ?></span></span>
                 <span class="info"><?php print JText::_('HEIGHT'); ?> <span><?php print $user['height']; ?></span></span>
                 <span class="info"><?php print JText::_('STATUS'); ?> <span><?php print $user['status']; ?></span></span>
+
+                <span class="hide-profile" data-user="<?php print $user['user_id']; ?>">Hide</span>
             </div>
         </a>
     <?php } ?>
@@ -64,7 +67,25 @@ $usersList = $this->usersList;
         }
     });
 
+    jQuery('.hide-profile').click(function(){
+        jQuery(this).attr('disabled',true);
+        var data_post = {
+            'user_id' : this.getAttribute('data-user')
+        };
 
+        jQuery.ajax({
+            type: "POST",
+            url: '/components/com_jshopping/controllers/save_data/accept_rejected.php',
+            data: data_post,
+            success: function(data){
+                location.reload();
+            },
+            error: function(data){
+                console.debug(data);
+            }
+        });
+        return false;
+    });
 
 
     jQuery.ajax({

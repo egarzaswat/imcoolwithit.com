@@ -1000,7 +1000,7 @@ class JSFactory{
             $html = '<div class="header-links col-lg-8 col-sm-7 col-xs-12 visible-xs" style="background: rgb(65, 168, 220)">';
             $html .= '<ul class="nav menu_home">';
             $html .= '<li><a href="' . JText::_('LINK_USERS_LIST') . '" class="search">Search</a></li>';
-            $html .= '<li><a href="' . $quick_search_link . '" class="quick-search">Quick Connect</a></li>';
+//            $html .= '<li><a href="' . $quick_search_link . '" class="quick-search">Quick Connect</a></li>';
             $html .= '<li><a href="/partners">Cool4You</a></li>';
             $html .= '<li><a href="/sponsors">Linc Up</a></li>';
             $html .= '</ul>';
@@ -1017,7 +1017,13 @@ class JSFactory{
                           $html .= '<button type="button" data-toggle="dropdown" class="menu-button dropdown-toggle">X</button>';
 
                             $html .= '<li><a href="' . JText::_('LINK_EARN_TOKENS') . '" title="Earn more Credits">';
-                                $html .= '<span class="link-left"><span class="cool-count">'. $count_tokens . '</span></span>';
+                                $html .= '<span class="link-left"><span class="cool-count">';
+                                if($count_tokens > 0){
+                                    $html .= $count_tokens;
+                                } else {
+                                    $html .= 0;
+                                }
+                                $html .= '</span></span>';
                                 $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/token.png"></span>';
                                 $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
                                 $html .= '';
@@ -1079,7 +1085,11 @@ class JSFactory{
                     $html .= '</div>';
 
                     $html .= '<div class="menu-top-right">';
-                        $html .= '<a class="link-count" href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
+                        $html .= '<a ';
+                        if($count_new_messages > 0){
+                            $html .= 'class="link-count"';
+                        }
+                        $html .= ' href="' . JText::_('LINK_MESSAGING_RECEIVED') . '" title="View your messages">';
                             $html .= '<div class="link-top">';
                                 if($count_new_messages > 0){
                                     $html .= '<span class="cool-count">'. $count_new_messages . '</span>';
@@ -1184,7 +1194,7 @@ class JSFactory{
                             } else {
                                 $html .= '<span class="cool-count">0</span>';
                             }
-                            $html .= '<img style="max-height: 40px; margin-top: -10px;" src="/templates/protostar/images/system/token.png">';
+                            $html .= '<img style="max-height: 33px; margin-top: -1px;" src="/templates/protostar/images/system/token.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_TOKENS') . '</span>';
                     $html .= '</a>';

@@ -137,7 +137,7 @@ class jshopUser{
 
     function getUserAlbumProfile($user_id){
         $db = JFactory::getDBO();
-        $query = "select `photo`, `private`, `avatar` from `#__users_photos` where `user_id` = " . $user_id . " and `private` = 0 ORDER BY `avatar` DESC";
+        $query = "select `id`, `photo`, `private`, `avatar` from `#__users_photos` where `user_id` = " . $user_id . " and `private` = 0 ORDER BY `avatar` DESC";
         $db->setQuery($query);
         $rows = $db->loadObjectList();
         return $rows;

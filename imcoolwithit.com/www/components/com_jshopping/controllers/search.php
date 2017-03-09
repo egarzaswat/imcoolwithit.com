@@ -19,19 +19,19 @@ class JshoppingControllerSearch extends JControllerLegacy{
     }
     
     function display($cachable = false, $urlparams = false){
-        if(isset($_GET['mobile']) && $_GET['mobile'] == true){
-            $modelUsersList = JSFactory::getModel('usersList', 'jshop');
-            $searchParams = $modelUsersList->searchParamsCurrentUser(JSFactory::getUser());
-            $first_user_from_list = $modelUsersList->usersList($searchParams, 0, 1, array('user_id'), array(), true);
-
-            if(count($first_user_from_list) == 0){
-                $quick_search_link = JText::_('LINK_USERS_LIST');
-            } else {
-                $quick_search_link = JText::_('LINK_USER_PAGE') . '?user=' .$first_user_from_list[0]->user_id;
-            }
-            header("Location: " . 'http://' . $_SERVER['SERVER_NAME'] . '/' . $quick_search_link);
-            die;
-        }
+//        if(isset($_GET['mobile']) && $_GET['mobile'] == true){
+//            $modelUsersList = JSFactory::getModel('usersList', 'jshop');
+//            $searchParams = $modelUsersList->searchParamsCurrentUser(JSFactory::getUser());
+//            $first_user_from_list = $modelUsersList->usersList($searchParams, 0, 1, array('user_id'), array(), true);
+//
+//            if(count($first_user_from_list) == 0){
+//                $quick_search_link = JText::_('LINK_USERS_LIST');
+//            } else {
+//                $quick_search_link = JText::_('LINK_USER_PAGE') . '?user=' .$first_user_from_list[0]->user_id;
+//            }
+//            header("Location: " . 'http://' . $_SERVER['SERVER_NAME'] . '/' . $quick_search_link);
+//            die;
+//        }
 
         checkUserLogin();
         $mainframe = JFactory::getApplication();
@@ -56,9 +56,11 @@ class JshoppingControllerSearch extends JControllerLegacy{
 
         $page = JRequest::getInt('page');
         if($page != 0){
-            $usersList = $modelUsersList->usersList($searchParams, ($page-1)*$page_count_items, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday'), array('height', 'body', 'status'));
+//            $usersList = $modelUsersList->usersList($searchParams, ($page-1)*$page_count_items, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday'), array('height', 'body', 'status'));
+            $usersList = $modelUsersList->usersList($searchParams, ($page-1)*$page_count_items, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday', 'looking_for'), array());
         } else {
-            $usersList = $modelUsersList->usersList($searchParams, 0, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday'), array('height', 'body', 'status'));
+//            $usersList = $modelUsersList->usersList($searchParams, 0, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday'), array('height', 'body', 'status'));
+            $usersList = $modelUsersList->usersList($searchParams, 0, $page_count_items, array('user_id', 'u_name', 'photosite', 'longitude', 'latitude', 'sex', 'last_visit', 'birthday', 'looking_for'), array());
         }
 
         $pagination = JSFactory::getPagination($count_pages, JText::_('LINK_USERS_LIST'), $page);
@@ -67,17 +69,18 @@ class JshoppingControllerSearch extends JControllerLegacy{
         foreach($usersList as $value){
             $value->photosite = JSFactory::existImage($conf->path_user_image_medium, $value->photosite);
             array_push($user_display_data, array(
-                'user_id'   => $value->user_id,
-                'name'      => $value->u_name,
-                'distance'  => $modelUsersList->calculateDistance($value->latitude, $value->longitude, $searchParams['latitude'], $searchParams['longitude']),
-                'sex'       => ($value->sex == 2)?JText::_('MALE'):JText::_('FEMALE'),
-                'photo'     => $value->photosite,
-                'last_visit'=> JSFactory::getDateDiffFormat($value->last_visit),
-                'age'       => JSFactory::getAge($value->birthday),
-                'height'    => (is_null($value->height) || $value->height == '')? JText::_('UNKNOWN') : $value->height,
-                'body'      => (is_null($value->body) || $value->body == '')? JText::_('UNKNOWN') : $value->body,
-                'status'    => (is_null($value->status) || $value->status == '')? JText::_('UNKNOWN') : $value->status,
-                'user_link' => JText::_('LINK_FULL_USER_PAGE') . "?user=" . $value->user_id
+                'user_id'       => $value->user_id,
+                'name'          => $value->u_name,
+                'distance'      => $modelUsersList->calculateDistance($value->latitude, $value->longitude, $searchParams['latitude'], $searchParams['longitude']),
+                'sex'           => ($value->sex == 2)?JText::_('MALE'):JText::_('FEMALE'),
+                'photo'         => $value->photosite,
+                'looking_for'   => $this->getLookingFor($value->looking_for),
+                'last_visit'    => JSFactory::getDateDiffFormat($value->last_visit),
+                'age'           => JSFactory::getAge($value->birthday),
+                'height'        => (is_null($value->height) || $value->height == '')? JText::_('UNKNOWN') : $value->height,
+                'body'          => (is_null($value->body) || $value->body == '')? JText::_('UNKNOWN') : $value->body,
+                'status'        => (is_null($value->status) || $value->status == '')? JText::_('UNKNOWN') : $value->status,
+                'user_link'     => JText::_('LINK_FULL_USER_PAGE') . "?user=" . $value->user_id
             ));
         }
 
@@ -100,5 +103,15 @@ class JshoppingControllerSearch extends JControllerLegacy{
         $view->display();
     }
 
+    function getLookingFor($val){
+        $jshopConfig = JSFactory::getConfig();
+
+        foreach($jshopConfig->user_looking_for as $key => $value){
+            if($key == $val){
+                return $value;
+            }
+        }
+        return "";
+    }
 }
 ?>

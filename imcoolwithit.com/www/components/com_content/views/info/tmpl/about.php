@@ -36,11 +36,9 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
             </div>
         </div>
     </div>
-    <div class="about-us-block container">
-        <h1 class="about-us-header col-sm-10 col-sm-offset-1 col-xs-12"><?php print $this->data[0]->header ?></h1>
-        <div class="about-us-text col-sm-10 col-sm-offset-1 col-xs-12">
-            <?php print $this->data[0]->content ?>
-        </div>
+    <div class="content-block about-us-block container">
+        <h1><?php print $this->data[0]->header ?></h1>
+        <?php print $this->data[0]->content ?>
     </div>
 </div>
 

@@ -136,7 +136,7 @@
 }
 .home-header .home-sign-in ul li a,
 .header-links-cool ul li a,
-.header-links ul li:nth-child(3) a,
+.header-links ul li:nth-child(2) a,
 .header-links ul li:last-child a{
     color: #41a8dc;
     background: #fff;
@@ -146,6 +146,7 @@
     font-family: arial,helvetica,sans-serif;
     line-height: 1;
     margin: 0 0 0 10px;
+    min-width: 105px;
 }
 .home-header .home-sign-in ul li a{
     color: #fff;
@@ -155,7 +156,7 @@
 }
 @media (max-width: 767px){
     .header-links-cool ul li a,
-    .header-links ul li:nth-child(3) a,
+    .header-links ul li:nth-child(2) a,
     .header-links ul li:last-child a{
         /*color: rgb(255, 255, 255);*/
         /*background: #f3b13e;*/
@@ -167,6 +168,14 @@
         margin: 15px 0 5px 10px;
     }
 }
+@media (max-width: 350px){
+    .home-header .home-sign-in ul li a,
+    .header-links-cool ul li a,
+    .header-links ul li:nth-child(2) a,
+    .header-links ul li:last-child a{
+        min-width: auto;
+    }
+}
 
 .header-links-cool ul li a:hover,
 .header-links-cool ul li a:active,
@@ -174,9 +183,9 @@
 .header-links ul li:last-child a:hover,
 .header-links ul li:last-child a:active,
 .header-links ul li:last-child a:focus,
-.header-links ul li:nth-child(3) a:hover,
-.header-links ul li:nth-child(3) a:active,
-.header-links ul li:nth-child(3) a:focus{
+.header-links ul li:nth-child(2) a:hover,
+.header-links ul li:nth-child(2) a:active,
+.header-links ul li:nth-child(2) a:focus{
     text-decoration: none;
     background: none!important;
     background-color: #ffc662!important;
@@ -676,7 +685,7 @@ a:focus, input:focus{
 
 @media (max-width: 500px){
     .profile .page-content{
-        margin-right: -15px;
+        /*margin-right: -15px;*/
         margin-left: -15px;
     }
 }
@@ -857,6 +866,7 @@ a:focus, input:focus{
     padding-bottom: 10px;
     border: 1px solid #f3b13e;
     border-top: 0;
+    position: relative;
 }
 .user-item .user-item-bottom .last-visit{
     background: url("../images/system/item_clock.png") no-repeat 5px center;
@@ -874,6 +884,16 @@ a:focus, input:focus{
     font-weight: bold;
     padding: 5px 0 0 13px;
     text-align: left;
+}
+.user-item .user-item-bottom .hide-profile{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: auto;
+    color: #f2b13e;
+}
+.user-item .user-item-bottom .hide-profile:hover{
+    color: #b3afb0!important;
 }
 .user-item .user-item-bottom .info span{
     display: inline-block;
@@ -1152,6 +1172,16 @@ a:focus, input:focus{
     max-height: 80%;
     max-width: 80%;
 }
+.complete-profile .page-content-top .block-right img,
+.honesty-review .page-content-top .block-right img,
+.verify-email .page-content-top .block-right img,
+.surveys .page-content-top .block-right img,
+.lincup-review .page-content-top .block-right img,
+.refer-friend .page-content-top .block-right img{
+    border-radius: 50%;
+    border: 1px solid #67bbe4;
+}
+
 .page-content-top .block-right .ph-border{
     width: 70px;
     height: 70px;
@@ -1621,7 +1651,11 @@ a:focus, input:focus{
 }
 .flex-menu .menu-top-center{
     flex-direction: column;
-    height: 55px;
+    height: 100%;
+    align-items: flex-start;
+    display: flex;
+    min-height: 60px;
+    margin-top: -8px;
 }
 .flex-menu a{
     height: 45px;
@@ -1690,7 +1724,7 @@ a:focus, input:focus{
 .flex-menu .menu-top-center .big a{
     height: auto;
     display: inline-block;
-    margin: 0 0 0 5px;
+    margin: 0;
     color: #f3b13e;
 }
 .flex-menu .menu-top-center .home-link{
@@ -2077,6 +2111,9 @@ a:focus, input:focus{
     resize: none;
     width: 100%;
 }
+.full-user-page .profile-content-right{
+    padding-bottom: 25px;
+}
 
 .user-options{
     width: 100%;
@@ -2137,6 +2174,24 @@ a:focus, input:focus{
     .user-options a .option{
         min-width: 60px;
         min-height: 60px;
+    }
+    .user-options a .option img{
+        max-width: 75%;
+        max-height: 75%;
+    }
+    .user-options a .text{
+        text-align: center;
+        font-size: 11px;
+    }
+}
+@media (max-width: 350px){
+    .user-options a{
+        max-width: 50px;
+        max-height: 100px;
+    }
+    .user-options a .option{
+        min-width: 50px;
+        min-height: 50px;
     }
     .user-options a .option img{
         max-width: 75%;
@@ -2248,6 +2303,15 @@ a:focus, input:focus{
     position: absolute;
     right: 15px;
 }
+@media (max-width: 767px){
+    .edit-photos .actions-info{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .edit-photos .actions-info span {
     font-size: 13px;
     color: #777;
@@ -2282,7 +2346,7 @@ a:focus, input:focus{
 }
 .edit-photos-left .type-upload img{
     border: 1px solid rgb(166, 173, 153);
-    max-width: 100%;
+    max-width: 140px;
 }
 .edit-photos-left .type-upload input[type="file"]{
     display: none!important;
@@ -2321,6 +2385,11 @@ a:focus, input:focus{
     line-height: normal;
     padding-top: 5px;
 }
+.edit-photos-left .type-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .edit-photos-right .album{
     border: 1px solid #f2b13e;
     border-radius: 10px;
@@ -2337,10 +2406,10 @@ a:focus, input:focus{
     /*text-align: left;*/
 }
 .edit-photos-right .album ul li{
-    max-width: 150px;
-    max-height: 150px;
-    min-width: 100px;
-    min-height: 100px;
+    max-width: 100%;
+    max-height: 350px;
+    min-width: 350px;
+    min-height: 350px;
     display: inline-block;
     margin: 1%;
     position: relative;
@@ -2349,6 +2418,7 @@ a:focus, input:focus{
     border: 1px solid rgb(166, 173, 153);
     cursor: pointer;
     max-width: 100%;
+    width: 350px;
 }
 .edit-photos-right .album ul li .private,
 .edit-photos-right .album ul li .rotate,
@@ -2428,6 +2498,39 @@ a:focus, input:focus{
     }
 }
 
+@media (max-width: 991px){
+    .edit-photos-right .album ul li{
+        max-width: 300px;
+        max-height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    .edit-photos-right .album ul li img{
+        max-width: 100%;
+        min-width: 300px;
+    }
+}
+@media (max-width: 425px){
+    .edit-photos-right .album ul li{
+        max-width: none;
+        max-height: none;
+        min-width: auto;
+        min-height: auto;
+    }
+    .edit-photos-right .album ul li img{
+        max-width: 100%;
+        min-width: auto;
+    }
+    .edit-photos-right .album{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .edit-photos-right .album .album-title{
+        padding-left: 15px;
+    }
+}
+
+
 .friends .page-content,
 .bookmarks .page-content,
 .visitors .page-content{
@@ -2448,6 +2551,8 @@ a:focus, input:focus{
 .friends,
 .messages,
 .lincup-coupon,
+.full-user-page,
+.edit-photos,
 .honesty-review{
     padding: 0;
 }
@@ -2853,19 +2958,20 @@ a:focus, input:focus{
 .page-content .external-links-bottom .reject-user,
 .page-content .external-links-bottom .delete-bookmark,
 .page-content .external-links-bottom button,
+.page-content .external-links-bottom .hide-profile,
 .page-content .external-links-bottom .add-bookmark{
     color: #f2b13e!important;
     cursor: pointer;
     text-decoration: none;
-    margin: 0;
     height: 35px;
     display: inline-flex;
     align-items: center;
     padding: 0 15px;
-    border: 1px solid #b3afb0;
+    /*border: 1px solid #b3afb0;*/
     border-bottom: 0;
     text-align: center;
     outline: none;
+    margin: 0 5px;
 }
 
 .page-content .external-links-bottom .add-visited:hover,
@@ -2874,6 +2980,7 @@ a:focus, input:focus{
 .page-content .external-links-bottom .reject-user:hover,
 .page-content .external-links-bottom .delete-bookmark:hover,
 .page-content .external-links-bottom button:hover,
+.page-content .external-links-bottom .hide-profile:hover,
 .page-content .external-links-bottom .add-bookmark:hover{
     color: #b3afb0!important;
     text-decoration: none;
@@ -2883,7 +2990,9 @@ a:focus, input:focus{
     .page-content .external-links-bottom{
         right: 50%;
         transform: translateX(50%);
-        width: 210px;
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
     }
     .page-content .external-links-bottom button{
         justify-content: center;
@@ -3147,7 +3256,8 @@ a:focus, input:focus{
         font-size: 16px;
     }
     .messages-list .messages-list-item .messages-list-info{
-        max-width: 150px;
+        max-width: calc(100% - 150px);
+        font-size: 16px;
     }
 }
 @media (max-width: 450px) {
@@ -4039,9 +4149,10 @@ a:focus, input:focus{
     color: #777;
 }
 .earn-tokens .earn-tokens-block .earn-tokens-item a img{
-    border-radius: 10px;
     max-width: 70%;
     margin: 1px auto;
+    border-radius: 50%;
+    border: 1px solid #67bbe4;
 }
 
 .earn-tokens-info{
@@ -4063,9 +4174,9 @@ a:focus, input:focus{
 }
 .earn-tokens-info img{
     display: block;
-    max-height: 100px;
     margin: 0 auto;
     max-width: 100%;
+    min-width: 80%;
 }
 .earn-tokens-list{
     width: 100%;
@@ -5279,9 +5390,6 @@ embed, iframe {
 .partners .partners-form .partners-form-submit{
     margin: 20px auto;
 }
-.partners .partners-form .partners-form-submit .submit-button{
-    background: rgb(243, 179, 70);
-}
 
 .support{
     margin: 50px 0 0;
@@ -5832,6 +5940,10 @@ img.jcrop-preview {
     align-items: center;
     justify-content: center;
     display: none;
+}
+.loading-block img{
+    width: 150px;
+    height: 150px;
 }
 
 .partners-page{

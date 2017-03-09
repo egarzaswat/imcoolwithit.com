@@ -97,9 +97,12 @@ $config->looking_for = array(
 );
 
 $config->user_sex = array(
-//    0=>_JSHOP_REG_SELECT,
-    1=>_JSHOP_MS,
-    2=>_JSHOP_MR
+    1=>_JSHOP_STRAIGHT_WOMAN,
+    2=>_JSHOP_STRAIGHT_MAN,
+    3=>_JSHOP_GAY_MAN,
+    4=>_JSHOP_BI_SEXUAL_MAN,
+    5=>_JSHOP_GAY_WOMAN,
+    6=>_JSHOP_BI_SEXUAL_WOMEN,
 );
 
 $config->user_looking_for = array(

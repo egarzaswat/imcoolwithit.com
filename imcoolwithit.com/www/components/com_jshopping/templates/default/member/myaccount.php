@@ -78,7 +78,7 @@ defined('_JEXEC') or die('Restricted access');
                 <span id="few_places" class="block-answer"><?php print $this->user->few_places; ?></span>
             </div>
 
-            <div class="user-options text-none-select">
+            <div class="user-options text-none-select" style="width: calc(100% + 15px);">
                 <a href="<?php print $this->link_Q_n_A; ?>">
                     <span class="option">
                         <img src="/templates/protostar/images/system/profile_qa.png" />

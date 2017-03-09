@@ -51,9 +51,6 @@
     .submit-button{
         margin: 5px 20px;
     }
-    .submit-button:hover{
-        background: rgb(253, 197, 82)
-    }
     @media (max-width: 449px){
         .form-signup-input{
             width: 175px;

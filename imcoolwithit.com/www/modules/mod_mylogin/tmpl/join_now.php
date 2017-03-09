@@ -54,13 +54,13 @@
         margin: 0 10px;
     }
     .submit-button{
-        background: rgb(243, 177, 62);
+        /*background: rgb(243, 177, 62);*/
         height: 40px;
         margin: 5px 20px;
         width: 120px;
     }
     .submit-button:hover{
-        background: rgb(253, 197, 82)
+        /*background: rgb(253, 197, 82)*/
     }
     @media (max-width: 479px){
         .form-inline{
