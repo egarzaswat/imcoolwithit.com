@@ -1874,16 +1874,26 @@ class JshoppingControllerMember extends JControllerLegacy{
     {
         $user_id = JRequest::getInt('user');
         $modelUser = JSFactory::getModel('user', 'jshop');
-        $result = $modelUser->getUserAlbumProfile($user_id);
+        $result = $modelUser->getUserAndLikes($user_id);
+        $jshopConfig = JSFactory::getConfig();
         $conf = new JConfig();
         $photos = array();
         foreach ($result as $key => $value) {
-            array_push($photos, array('id' => $value->id, 'photo' => $conf->path_albums_image . "user_" . $user_id . "/" . $value->photo));
+            array_push(
+                $photos, array(
+                    'id' => $value->id,
+                    'photo' => $conf->path_albums_image . "user_" . $user_id . "/" . $value->photo,
+                    'like' => ($value->like == NULL) ? false : true
+                )
+            );
         }
-        print '<pre>';
-        var_dump($photos);
-        print '</pre>';
-        exit;
+        
+        $view_name = "member";
+        $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);
+        $view = $this->getView($view_name, getDocumentType(), '', $view_config);
+        $view->setLayout("photos");
+        $view->assign('photos',$photos);
+        $view->display();
     }
 
 /*

@@ -143,6 +143,14 @@ class jshopUser{
         return $rows;
     }
 
+    function getUserAndLikes($user_id){
+        $db = JFactory::getDBO();
+        $query = "select PH.`id`, LI.`id` as `like`, PH.`photo`, PH.`private`, PH.`avatar` from `#__users_photos` as `PH` LEFT JOIN  `#__likes` AS `LI` ON PH.`id` = LI.`photo_id` AND LI.`user_id` = " . JSFactory::getUser()->user_id . " where PH.`user_id` = " . $user_id . " and PH.`private` = 0 ORDER BY `avatar` DESC";
+        $db->setQuery($query);
+        $rows = $db->loadObjectList();
+        return $rows;
+    }
+
     function getUserAlbumPrivate($user_id){
         $db = JFactory::getDBO();
         $query = "select `photo` from `#__users_photos` where `user_id` = " . $user_id . " and `private` = 1";
@@ -181,6 +189,14 @@ class jshopUser{
     function setUserActive($user_id, $active){
         $db = JFactory::getDBO();
         $query = "UPDATE `#__jshopping_users` SET `block` = '" . $active . "' WHERE `user_id` = " . $user_id;
+        $db->setQuery($query);
+        $db->query();
+        return true;
+    }
+
+    function setLikePhoto($photo_id){
+        $db = JFactory::getDBO();
+        $query = "INSERT INTO `#__likes` (`user_id`, `photo_id`) VALUES (" . JSFactory::getUser()->user_id . ", " . $photo_id . ")";
         $db->setQuery($query);
         $db->query();
         return true;

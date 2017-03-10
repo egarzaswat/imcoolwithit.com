@@ -65,10 +65,10 @@ defined('_JEXEC') or die('Restricted access');
                 <span class="block-question"><?php print JText::_('YOUR_COOL'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="user_about" class="block-answer"><?php print $this->user->user_about; ?></span>
             </div>
-            <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_QUALITIES'); ?><span id="edit-save" class="edit">Edit</span></span>
-                <span id="look_qualites" class="block-answer"><?php print $this->user->look_qualites; ?></span>
-            </div>
+<!--            <div class="block-info">-->
+<!--                <span class="block-question">--><?php //print JText::_('YOUR_QUALITIES'); ?><!--<span id="edit-save" class="edit">Edit</span></span>-->
+<!--                <span id="look_qualites" class="block-answer">--><?php //print $this->user->look_qualites; ?><!--</span>-->
+<!--            </div>-->
             <div class="block-info">
                 <span class="block-question"><?php print JText::_('YOUR_RECOMMEND'); ?><span id="edit-save" class="edit">Edit</span></span>
                 <span id="recommend" class="block-answer"><?php print $this->user->recommend; ?></span>

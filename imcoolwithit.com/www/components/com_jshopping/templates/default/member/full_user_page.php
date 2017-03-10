@@ -37,7 +37,7 @@
             <div class="photo">
                 <img src="<?php echo $userData->photosite; ?>" alt="<?php echo $userData->photosite; ?>">
                 <?php if(count($userData->images_album['images']) > 0) {?>
-                    <span class="open-photo"></span>
+                    <a href="/member/photos?user=<?php print $userData->user_id; ?>" class="open-photo"></a>
                 <?php } ?>
             </div>
             <div class="points">
@@ -64,11 +64,6 @@
             <div class="block-info">
                 <span class="block-question"><?php print JText::_('YOUR_COOL'); ?></span>
                 <span class="block-answer"><?php print $userData->user_about; ?></span>
-            </div>
-
-            <div class="block-info">
-                <span class="block-question"><?php print JText::_('YOUR_QUALITIES'); ?></span>
-                <span class="block-answer"><?php print $userData->look_qualites; ?></span>
             </div>
 
             <div class="block-info">

@@ -32,9 +32,9 @@ class ContentViewInfo extends JViewLegacy
             case 'already_cool': $this->setLayout('already_cool'); break;
             case 'sponsors': $this->setLayout('sponsors'); break;
             case 'partners': $this->setLayout('partners'); break;
+            case 'contact': $this->setLayout('contacts'); break;
             case 'terms' :
             case 'privacy':
-            case 'contact':
             case 'faqs': $this->setLayout('mono'); break;
 
             default : $app->redirect("index.php?option=com_content&view=featured&Itemid=101"); break;

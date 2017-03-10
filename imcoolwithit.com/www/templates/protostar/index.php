@@ -216,9 +216,9 @@ if(isset($_GET['referrer'])){
     <div class="footer-line">
         <?php if($isoffline){ ?>
             <div class="container">
-                <a href="https://www.facebook.com/imcoolwithit" target="_blank">
-                    <i class="icon-fb"></i>
-                </a>
+<!--                <a href="https://www.facebook.com/imcoolwithit" target="_blank">-->
+<!--                    <i class="icon-fb"></i>-->
+<!--                </a>-->
                 <a href="https://twitter.com/rucoolwithit" target="_blank">
                     <i class="icon-twitter"></i>
                 </a>
