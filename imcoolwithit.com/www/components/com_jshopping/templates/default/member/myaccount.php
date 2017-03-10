@@ -25,7 +25,7 @@ defined('_JEXEC') or die('Restricted access');
     <div class="page-content row">
 
         <div class="profile-content-left col-sm-5 col-xs-12">
-            <div class="photo">
+            <a href="/member/photos" class="photo">
                 <?php if(strpos($this->user->photosite, 'no-image') !== false) { ?>
                     <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>">
                 <?php } ?>
@@ -37,7 +37,7 @@ defined('_JEXEC') or die('Restricted access');
                 <?php if(count($this->user->images_album['images']) > 0) {?>
                     <span class="open-photo"></span>
                 <?php } ?>
-            </div>
+            </a>
             <div class="points">
                 <?php foreach($this->user->images_album['images'] as $key => $value){ ?>
                     <span class="<?php print $key; ?>"></span>
@@ -46,14 +46,14 @@ defined('_JEXEC') or die('Restricted access');
             <a href="<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_EDIT_PHOTOS');?>" class="submit-button">Edit photos</a>
 
             <span class="localisation">
-                <?php print JText::_('AGE') . $this->user->age; ?>
-                <span class="yellow">|</span>
                 <?php print $this->user->city . ", " . $this->user->state; ?>
                 <span class="yellow">|</span>
                 <?php print $this->user->sex; ?>
             </span>
 
-            <span id="edit-stats" class="edit">Edit</span>
+
+            <div class="my-stats"><?php print JText::_('MY_STATS'); ?><span id="edit-stats" class="edit">Edit</span></div>
+            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $this->user->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $this->user->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $this->user->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $this->user->looking_for; ?></span></span>
@@ -155,16 +155,16 @@ defined('_JEXEC') or die('Restricted access');
     });
 </script>
 
-<?php if(strpos($this->user->photosite, 'no-image') === false) { ?>
-    <script type="text/javascript">
-        jQuery('.profile .profile-content-left .photo').click(function(){
-            index = 0;
-            showSliderPhoto();
-            document.getElementById('hide-content').style.display='block';
-            document.getElementById('show-img').style.display='block';
-        });
-    </script>
-<?php } ?>
+<?php //if(strpos($this->user->photosite, 'no-image') === false) { ?>
+<!--    <script type="text/javascript">-->
+<!--        jQuery('.profile .profile-content-left .photo').click(function(){-->
+<!--            index = 0;-->
+<!--            showSliderPhoto();-->
+<!--            document.getElementById('hide-content').style.display='block';-->
+<!--            document.getElementById('show-img').style.display='block';-->
+<!--        });-->
+<!--    </script>-->
+<?php //} ?>
 
 <script type="text/javascript">
     var photos = <?php echo $json_arr_images; ?>;

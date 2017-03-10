@@ -145,7 +145,7 @@ class jshopUser{
 
     function getUserAndLikes($user_id){
         $db = JFactory::getDBO();
-        $query = "select PH.`id`, LI.`id` as `like`, PH.`photo`, PH.`private`, PH.`avatar` from `#__users_photos` as `PH` LEFT JOIN  `#__likes` AS `LI` ON PH.`id` = LI.`photo_id` AND LI.`user_id` = " . JSFactory::getUser()->user_id . " where PH.`user_id` = " . $user_id . " and PH.`private` = 0 ORDER BY `avatar` DESC";
+        $query = "select PH.`id`, LI.`id` as `like`, PH.`photo`, PH.`private`, PH.`avatar` from `#__users_photos` as `PH` LEFT JOIN  `#__likes` AS `LI` ON PH.`id` = LI.`photo_id` AND LI.`user_id` = " . JSFactory::getUser()->user_id . " where PH.`user_id` = " . $user_id . " and PH.`private` = 0 ORDER BY `id` DESC";
         $db->setQuery($query);
         $rows = $db->loadObjectList();
         return $rows;

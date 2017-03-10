@@ -34,26 +34,25 @@
 
 
         <div class="profile-content-left col-sm-5 col-xs-12">
-            <div class="photo">
+            <a href="/member/photos?user=<?php print $userData->user_id; ?>" class="photo">
                 <img src="<?php echo $userData->photosite; ?>" alt="<?php echo $userData->photosite; ?>">
                 <?php if(count($userData->images_album['images']) > 0) {?>
-                    <a href="/member/photos?user=<?php print $userData->user_id; ?>" class="open-photo"></a>
+                    <span class="open-photo"></span>
                 <?php } ?>
-            </div>
+            </a>
             <div class="points">
                 <?php foreach($userData->images_album['images'] as $key => $value){ ?>
                     <span class="<?php print $key; ?>"></span>
                 <?php } ?>
             </div>
                 <span class="localisation">
-                    <?php print JText::_('AGE') . $userData->age; ?>
-                    <span class="yellow">|</span>
                     <?php print $userData->city . ", " . $userData->state . ", " . JText::sprintf('MILES_AWAY', $userData->distance); ?>
                     <span class="yellow">|</span>
                     <?php print $userData->sex; ?>
                 </span>
             <span class="last-online"><?php print JText::_('LAST_ONLINE'); ?><?php print $userData->last_visit; ?></span>
             <div class="my-stats"><?php print JText::_('MY_STATS'); ?></div>
+            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $this->user->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $userData->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $userData->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $userData->looking_for; ?></span></span>
@@ -168,8 +167,6 @@
     var photos = <?php print json_encode($userData->images_album['images']); ?>;
     var index = 0;
 
-
-
     if(jQuery(window).width() < 500){
 //        jQuery('.full-user-page').css('margin-top', '-25px');
 //        jQuery('.full-user-page .profile-content-left .photo img').css({'width':jQuery(window).width(), 'margin-left':'-15px', 'margin-top':'-15px'});
@@ -206,12 +203,12 @@
         document.getElementById('gallery-img').src = "<?php print $userData->images_album['path_to_album']; ?>" + photos[index].photo;
     }
 
-    jQuery('.profile-content-left .photo').click(function(){
-        document.getElementById('hide-content').style.display='block';
-        document.getElementById('show-img').style.display='block';
-        index = 0;
-        showSliderPhoto();
-    });
+//    jQuery('.profile-content-left .photo').click(function(){
+//        document.getElementById('hide-content').style.display='block';
+//        document.getElementById('show-img').style.display='block';
+//        index = 0;
+//        showSliderPhoto();
+//    });
 
     jQuery('.profile-content-left .points span').click(function(){
         index = parseInt(jQuery(this).attr('class'));

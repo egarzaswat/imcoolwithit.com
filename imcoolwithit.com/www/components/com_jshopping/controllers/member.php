@@ -1873,6 +1873,9 @@ class JshoppingControllerMember extends JControllerLegacy{
     function photos()
     {
         $user_id = JRequest::getInt('user');
+        if(!$user_id){
+            $user_id = JSFactory::getUser()->user_id;
+        }
         $modelUser = JSFactory::getModel('user', 'jshop');
         $result = $modelUser->getUserAndLikes($user_id);
         $jshopConfig = JSFactory::getConfig();
