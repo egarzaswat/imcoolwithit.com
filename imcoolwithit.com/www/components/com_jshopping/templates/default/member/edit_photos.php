@@ -101,7 +101,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
             </div>
         </div>
 
-        <div class="edit-photos-left col-sm-4 col-xs-12">
+        <div class="edit-photos-left col-sm-3 col-xs-12">
             <div class="type-upload">
                 <img src="<?php print $this->image_avatar['src']; ?>"/>
                 <span class="avatar-info"><?php print JText::_('EDIT_PHOTOS_AVATAR_INFO'); ?></span>
@@ -121,7 +121,7 @@ $document->addScript($pathToJS.'js_crop_image/jquery.Jcrop.js');
                 <?php } ?>
             </div>
         </div>
-        <div class="edit-photos-right col-sm-8 col-xs-12">
+        <div class="edit-photos-right col-sm-9 col-xs-12">
 
 
             <?php if (count($this->images_album['images']) != 0) { ?>

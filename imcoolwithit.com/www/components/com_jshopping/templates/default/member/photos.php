@@ -1,5 +1,11 @@
 <?php //var_dump($this->photos); ?>
 <div class="user-photos">
+    <div class="user-data">
+        <a href="/member/full_profile?user=<?php print $this->data_user->user_id; ?>">
+            <img src="<?php print $this->data_user->photosite; ?>" />
+        </a>
+        <span class="username"><?php print $this->data_user->u_name; ?></span>
+    </div>
     <?php foreach($this->photos as $key => $value){ ?>
         <div class="photo">
             <div class="block">
@@ -16,6 +22,7 @@
     <?php } ?>
 </div>
 <script type="text/javascript">
+    jQuery('.container-full.backg-gr').removeClass('backg-gr');
     jQuery('.user-photos .actions-block .like').click(function () {
         var data_post = {
             'photo_id' : this.getAttribute('data-photo')

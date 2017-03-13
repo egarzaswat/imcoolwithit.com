@@ -1890,12 +1890,16 @@ class JshoppingControllerMember extends JControllerLegacy{
                 )
             );
         }
+
+        $data_user = $modelUser->getDataUser($user_id, array('user_id', 'u_name', 'photosite'), true);
+        $data_user->photosite = JSFactory::existImage($conf->path_user_image_medium, $data_user->photosite);
         
         $view_name = "member";
         $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);
         $view = $this->getView($view_name, getDocumentType(), '', $view_config);
         $view->setLayout("photos");
         $view->assign('photos',$photos);
+        $view->assign('data_user',$data_user);
         $view->display();
     }
 

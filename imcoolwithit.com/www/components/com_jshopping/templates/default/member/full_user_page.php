@@ -52,7 +52,7 @@
                 </span>
             <span class="last-online"><?php print JText::_('LAST_ONLINE'); ?><?php print $userData->last_visit; ?></span>
             <div class="my-stats"><?php print JText::_('MY_STATS'); ?></div>
-            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $this->user->age; ?></span></span>
+            <span class="inf"><?php print JText::_('AGE'); ?> <span class="age"><?php print $userData->age; ?></span></span>
             <span class="inf"><?php print JText::_('HEIGHT'); ?> <span class="height"><?php print $userData->height; ?></span></span>
             <span class="inf"><?php print JText::_('STATUS'); ?> <span class="status"><?php print $userData->status; ?></span></span>
             <span class="inf"><?php print JText::_('LOOKING_FOR'); ?> <span class="look"><?php print $userData->looking_for; ?></span></span>

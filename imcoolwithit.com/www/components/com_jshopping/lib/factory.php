@@ -1002,7 +1002,7 @@ class JSFactory{
             $html .= '<li><a href="' . JText::_('LINK_USERS_LIST') . '" class="search">Search</a></li>';
 //            $html .= '<li><a href="' . $quick_search_link . '" class="quick-search">Quick Connect</a></li>';
             $html .= '<li><a href="/partners">Cool4You</a></li>';
-            $html .= '<li><a href="/sponsors">Linc Up</a></li>';
+            $html .= '<li><a href="/sponsors">Linc Ups</a></li>';
             $html .= '</ul>';
             $html .= '</div>';
 
