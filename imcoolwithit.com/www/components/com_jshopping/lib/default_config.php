@@ -292,7 +292,8 @@ $config->notifications = array(
     8 => 'New Survey Offer',
     9 => 'New Linc Up Offer',
     10 => 'Linc Up Accepted',
-    12 => 'Linc Up Confirmed'
+    12 => 'Linc Up Confirmed',
+    13 => 'Photo Liked'
 );
 
 $config->sorting_products_field_select = array(

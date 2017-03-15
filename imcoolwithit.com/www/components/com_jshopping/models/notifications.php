@@ -204,6 +204,10 @@ class jshopNotifications{
                             Please email us <a href="mailto:support@coolwithit.com">@support@coolwithit.com</a> if you have  any issues or concerns.<br>
                             Please email <a href="mailto:support@coolwithit.com">support@coolwithit.com</a> if you have any issues or concerns. Warmest regards';
                 break;
+            case $Config->notifications[13] :
+                $link = $this->site_url . "/" . JText::_('LINK_FULL_USER_PAGE') . "?user=" . $event_id;
+                $message = 'Hey ' . $user . ', <a href="' . $link . '">' . $name . '</a> just liked your photo';
+                break;
         }
         return $message;
     }

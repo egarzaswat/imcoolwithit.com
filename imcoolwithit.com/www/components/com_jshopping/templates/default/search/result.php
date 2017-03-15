@@ -12,7 +12,7 @@ $usersList = $this->usersList;
     <?php } ?>
 </div>
 
-<div class="user-list col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="user-list col-sm-12 col-xs-12">
     <?php if (count($usersList) < 1) { ?>
         <div class="page-content no-records-found">
             <?php print JText::_('NO_USERS_FOUND'); ?>

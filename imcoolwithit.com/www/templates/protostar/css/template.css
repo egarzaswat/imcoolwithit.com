@@ -827,7 +827,8 @@ a:focus, input:focus{
     border-radius: 10px;
     display: inline-block;
     margin: 15px;
-    width: 215px;
+    /*width: 215px;*/
+    width: 275px;
 }
 .user-item .user-item-top{
     background: rgb(63, 168, 219);
@@ -897,6 +898,7 @@ a:focus, input:focus{
     right: 10px;
     width: auto;
     color: #f2b13e;
+    font-size: 11px;
 }
 .user-item .user-item-bottom .hide-profile:hover{
     color: #b3afb0!important;
@@ -914,7 +916,8 @@ a:focus, input:focus{
     color: rgb(255, 255, 255);
 }
 .user-link img{
-    height: 215px;
+    /*height: 215px;*/
+    height: 275px;
     width: 100%;
 }
 .user-link:hover img{
@@ -6075,7 +6078,8 @@ img.jcrop-preview {
     display: flex;
     justify-content: center;
     font-size: 18px;
-    color: #777;
+    color: #f0ae4d;
+    text-decoration: underline;
 }
 .user-photos .photo{
     display: block;

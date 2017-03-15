@@ -14,4 +14,10 @@ if (isset($_POST['photo_id'])) {
 
     $modelUser = JSFactory::getModel('user', 'jshop');
     $modelUser->setLikePhoto($photo_id);
+
+    if(isset($_POST['user_id']) && (int)$_POST['user_id']  > 0){
+        $Config = JSFactory::getConfig();
+        $modelNotes = JSFactory::getModel('notifications', 'jshop');
+        $modelNotes->addNote(JSFactory::getUser()->user_id, (int)$_POST['user_id'], JSFactory::getUser()->user_id, JSFactory::getUser()->u_name, $Config->notifications[13]);
+    }
 }

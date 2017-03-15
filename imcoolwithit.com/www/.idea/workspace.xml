@@ -24,8 +24,8 @@
       <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="6077" column="16" lean-forward="false" selection-start-line="6077" selection-start-column="16" selection-end-line="6077" selection-end-column="16" />
+            <state relative-caret-position="258">
+              <caret line="919" column="14" lean-forward="false" selection-start-line="919" selection-start-column="14" selection-end-line="919" selection-end-column="14" />
               <folding>
                 <element signature="e#4#219#0" expanded="false" />
                 <element signature="e#220#370#0" expanded="false" />
@@ -50,428 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photos.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like_photo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/photos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
-              <folding>
-                <marker date="1489414180914" expanded="true" signature="431:509" ph="..." />
-                <marker date="1489414180914" expanded="true" signature="463:509" ph="..." />
-                <marker date="1489414180914" expanded="true" signature="583:616" ph="..." />
-                <marker date="1489414180914" expanded="true" signature="1029:1106" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/factory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="1004" column="54" lean-forward="false" selection-start-line="1004" selection-start-column="54" selection-end-line="1004" selection-end-column="54" />
-              <folding>
-                <element signature="e#6#208#0#PHP" expanded="false" />
-                <element signature="n#getConfig#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#757#4838#0#PHP" expanded="false" />
-                <element signature="e#1605#1919#0#PHP" expanded="false" />
-                <element signature="e#2034#2129#0#PHP" expanded="false" />
-                <element signature="e#2142#2468#0#PHP" expanded="false" />
-                <element signature="e#2482#2695#0#PHP" expanded="false" />
-                <element signature="e#2628#2695#0#PHP" expanded="false" />
-                <element signature="e#2818#2906#0#PHP" expanded="false" />
-                <element signature="e#2920#3137#0#PHP" expanded="false" />
-                <element signature="e#3061#3137#0#PHP" expanded="false" />
-                <element signature="e#3151#3487#0#PHP" expanded="false" />
-                <element signature="e#3672#4036#0#PHP" expanded="false" />
-                <element signature="e#3802#3936#0#PHP" expanded="false" />
-                <element signature="e#3936#4036#0#PHP" expanded="false" />
-                <element signature="e#4049#4226#0#PHP" expanded="false" />
-                <element signature="e#4239#4582#0#PHP" expanded="false" />
-                <element signature="e#4586#4698#0#PHP" expanded="false" />
-                <element signature="n#getUserShop#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#4938#5696#0#PHP" expanded="false" />
-                <element signature="e#5191#5587#0#PHP" expanded="false" />
-                <element signature="e#5222#5389#0#PHP" expanded="false" />
-                <element signature="e#5519#5587#0#PHP" expanded="false" />
-                <element signature="n#getUserShopGuest#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#5804#6158#0#PHP" expanded="false" />
-                <element signature="n#getUser#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#6272#6417#0#PHP" expanded="false" />
-                <element signature="e#6347#6417#0#PHP" expanded="false" />
-                <element signature="n#loadCssFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#6610#7120#0#PHP" expanded="false" />
-                <element signature="e#6849#7087#0#PHP" expanded="false" />
-                <element signature="n#loadJsFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#7196#7790#0#PHP" expanded="false" />
-                <element signature="e#7410#7757#0#PHP" expanded="false" />
-                <element signature="n#loadJsFilesRating#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#7872#8407#0#PHP" expanded="false" />
-                <element signature="e#7948#8374#0#PHP" expanded="false" />
-                <element signature="n#loadJsFilesLightBox#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#8597#9689#0#PHP" expanded="false" />
-                <element signature="e#8891#9655#0#PHP" expanded="false" />
-                <element signature="n#reloadConfigFieldTLF#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#9960#10188#0#PHP" expanded="false" />
-                <element signature="e#10041#10137#0#PHP" expanded="false" />
-                <element signature="n#loadLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#10305#10373#0#PHP" expanded="false" />
-                <element signature="n#loadExtLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#10914#10982#0#PHP" expanded="false" />
-                <element signature="n#loadAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#11419#11487#0#PHP" expanded="false" />
-                <element signature="n#loadExtAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#12047#12115#0#PHP" expanded="false" />
-                <element signature="n#getLang#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#12555#12926#0#PHP" expanded="false" />
-                <element signature="e#12696#12780#0#PHP" expanded="false" />
-                <element signature="n#getReservedFirstAlias#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#13029#13340#0#PHP" expanded="false" />
-                <element signature="e#13233#13330#0#PHP" expanded="false" />
-                <element signature="n#getAliasCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#13441#13940#0#PHP" expanded="false" />
-                <element signature="e#13819#13904#0#PHP" expanded="false" />
-                <element signature="n#getAliasManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#14045#14551#0#PHP" expanded="false" />
-                <element signature="e#14430#14515#0#PHP" expanded="false" />
-                <element signature="n#getAliasProduct#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#14651#15185#0#PHP" expanded="false" />
-                <element signature="e#15026#15149#0#PHP" expanded="false" />
-                <element signature="n#getAllAttributes#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#15305#15463#0#PHP" expanded="false" />
-                <element signature="e#15472#15533#0#PHP" expanded="false" />
-                <element signature="e#15542#15763#0#PHP" expanded="false" />
-                <element signature="e#15617#15713#0#PHP" expanded="false" />
-                <element signature="e#15772#16225#0#PHP" expanded="false" />
-                <element signature="e#15959#16175#0#PHP" expanded="false" />
-                <element signature="n#getAllUnits#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#16301#16434#0#PHP" expanded="false" />
-                <element signature="n#getAllTaxesOriginal#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#16536#16803#0#PHP" expanded="false" />
-                <element signature="e#16700#16793#0#PHP" expanded="false" />
-                <element signature="n#getAllTaxes#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#16897#19417#0#PHP" expanded="false" />
-                <element signature="e#17148#19341#0#PHP" expanded="false" />
-                <element signature="e#17341#17512#0#PHP" expanded="false" />
-                <element signature="e#17643#18118#0#PHP" expanded="false" />
-                <element signature="e#17799#17978#0#PHP" expanded="false" />
-                <element signature="e#18135#19327#0#PHP" expanded="false" />
-                <element signature="e#18351#19148#0#PHP" expanded="false" />
-                <element signature="e#18401#19126#0#PHP" expanded="false" />
-                <element signature="e#18472#19100#0#PHP" expanded="false" />
-                <element signature="e#18544#18772#0#PHP" expanded="false" />
-                <element signature="e#18668#18772#0#PHP" expanded="false" />
-                <element signature="e#18802#19100#0#PHP" expanded="false" />
-                <element signature="e#18840#19070#0#PHP" expanded="false" />
-                <element signature="e#18966#19070#0#PHP" expanded="false" />
-                <element signature="n#getAllManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#19518#20232#0#PHP" expanded="false" />
-                <element signature="e#20117#20195#0#PHP" expanded="false" />
-                <element signature="n#getMainVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#20327#20444#0#PHP" expanded="false" />
-                <element signature="n#getAllVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#20538#21011#0#PHP" expanded="false" />
-                <element signature="e#20896#20974#0#PHP" expanded="false" />
-                <element signature="n#getAllDeliveryTime#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#21112#21557#0#PHP" expanded="false" />
-                <element signature="e#21436#21520#0#PHP" expanded="false" />
-                <element signature="n#getAllDeliveryTimeDays#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#21662#22079#0#PHP" expanded="false" />
-                <element signature="e#21958#22042#0#PHP" expanded="false" />
-                <element signature="n#getAllProductExtraField#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#22185#22337#0#PHP" expanded="false" />
-                <element signature="n#getAllProductExtraFieldValue#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#22448#22619#0#PHP" expanded="false" />
-                <element signature="n#getAllProductExtraFieldValueDetail#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#22736#22907#0#PHP" expanded="false" />
-                <element signature="n#getDisplayListProductExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#23045#23724#0#PHP" expanded="false" />
-                <element signature="e#23181#23414#0#PHP" expanded="false" />
-                <element signature="e#23221#23400#0#PHP" expanded="false" />
-                <element signature="e#23300#23400#0#PHP" expanded="false" />
-                <element signature="e#23556#23670#0#PHP" expanded="false" />
-                <element signature="n#getDisplayFilterExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#23872#24546#0#PHP" expanded="false" />
-                <element signature="e#24008#24241#0#PHP" expanded="false" />
-                <element signature="e#24048#24227#0#PHP" expanded="false" />
-                <element signature="e#24127#24227#0#PHP" expanded="false" />
-                <element signature="e#24378#24492#0#PHP" expanded="false" />
-                <element signature="n#getAllCurrency#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#24658#24936#0#PHP" expanded="false" />
-                <element signature="e#24839#24926#0#PHP" expanded="false" />
-                <element signature="n#getShippingExtList#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#25054#25810#0#PHP" expanded="false" />
-                <element signature="e#25340#25800#0#PHP" expanded="false" />
-                <element signature="e#25490#25786#0#PHP" expanded="false" />
-                <element signature="e#25676#25786#0#PHP" expanded="false" />
-                <element signature="e#25819#25877#0#PHP" expanded="false" />
-                <element signature="e#25917#26307#0#PHP" expanded="false" />
-                <element signature="e#25953#26106#0#PHP" expanded="false" />
-                <element signature="e#26056#26106#0#PHP" expanded="false" />
-                <element signature="e#26119#26202#0#PHP" expanded="false" />
-                <element signature="e#26215#26297#0#PHP" expanded="false" />
-                <element signature="n#getTable#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getModel#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getSendLocationFunc#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#markVisitors#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#27353#27411#0#PHP" expanded="false" />
-                <element signature="e#27353#27441#0#PHP" expanded="false" />
-                <element signature="e#27353#27474#0#PHP" expanded="false" />
-                <element signature="n#isUserOffline#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#27639#27709#0#PHP" expanded="false" />
-                <element signature="e#27639#27766#0#PHP" expanded="false" />
-                <element signature="e#27639#27809#0#PHP" expanded="false" />
-                <element signature="n#getAge#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getYearBirthday#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getDateDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#28453#28535#0#PHP" expanded="false" />
-                <element signature="e#29756#30921#0#PHP" expanded="false" />
-                <element signature="e#29905#30921#0#PHP" expanded="false" />
-                <element signature="e#30047#30921#0#PHP" expanded="false" />
-                <element signature="e#30179#30921#0#PHP" expanded="false" />
-                <element signature="e#30394#30921#0#PHP" expanded="false" />
-                <element signature="e#30621#30921#0#PHP" expanded="false" />
-                <element signature="e#30752#30921#0#PHP" expanded="false" />
-                <element signature="n#getDateTimeDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getDateFormatMonthYearNumber#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#31440#31571#0#PHP" expanded="false" />
-                <element signature="e#31440#31622#0#PHP" expanded="false" />
-                <element signature="e#31440#31668#0#PHP" expanded="false" />
-                <element signature="n#calculateDistance#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getExpiresDays#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getExpires#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#existImage#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#32811#32975#0#PHP" expanded="false" />
-                <element signature="e#32925#32975#0#PHP" expanded="false" />
-                <element signature="n#getPagination#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#33137#33248#0#PHP" expanded="false" />
-                <element signature="e#33202#33248#0#PHP" expanded="false" />
-                <element signature="e#33288#33663#0#PHP" expanded="false" />
-                <element signature="e#33334#33653#0#PHP" expanded="false" />
-                <element signature="e#33409#33653#0#PHP" expanded="false" />
-                <element signature="e#33432#33638#0#PHP" expanded="false" />
-                <element signature="e#33545#33638#0#PHP" expanded="false" />
-                <element signature="e#33705#35928#0#PHP" expanded="false" />
-                <element signature="e#33805#34014#0#PHP" expanded="false" />
-                <element signature="e#34142#34552#0#PHP" expanded="false" />
-                <element signature="e#34363#34552#0#PHP" expanded="false" />
-                <element signature="e#34748#35099#0#PHP" expanded="false" />
-                <element signature="e#34804#35085#0#PHP" expanded="false" />
-                <element signature="e#34972#35085#0#PHP" expanded="false" />
-                <element signature="e#35155#35629#0#PHP" expanded="false" />
-                <element signature="e#35378#35629#0#PHP" expanded="false" />
-                <element signature="e#35643#35875#0#PHP" expanded="false" />
-                <element signature="n#getHeaderMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#37071#37599#0#PHP" expanded="false" />
-                <element signature="e#37193#37599#0#PHP" expanded="false" />
-                <element signature="e#37307#37589#0#PHP" expanded="false" />
-                <element signature="e#37540#37589#0#PHP" expanded="false" />
-                <element signature="e#40998#41383#0#PHP" expanded="false" />
-                <element signature="e#41199#41383#0#PHP" expanded="false" />
-                <element signature="e#41868#42238#0#PHP" expanded="false" />
-                <element signature="e#42059#42238#0#PHP" expanded="false" />
-                <element signature="e#49153#49467#0#PHP" expanded="false" />
-                <element signature="e#49331#49467#0#PHP" expanded="false" />
-                <element signature="e#49555#49716#0#PHP" expanded="false" />
-                <element signature="e#50038#50372#0#PHP" expanded="false" />
-                <element signature="e#50226#50372#0#PHP" expanded="false" />
-                <element signature="e#50460#50620#0#PHP" expanded="false" />
-                <element signature="n#getContentMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="n#getLinkPermission#0;n#JSFactory#0;n#!!top" expanded="false" />
-                <element signature="e#52910#54067#0#PHP" expanded="false" />
-                <element signature="e#53009#54067#0#PHP" expanded="false" />
-                <element signature="e#53123#53267#0#PHP" expanded="false" />
-                <element signature="e#53281#53633#0#PHP" expanded="false" />
-                <element signature="e#53647#54057#0#PHP" expanded="false" />
-                <marker date="1489410055502" expanded="true" signature="20621:20683" ph="select id, s... ##__jshopping_vendors" />
-                <marker date="1489410055502" expanded="true" signature="21787:21835" ph="select id, d... ##__jshopping_delivery_times" />
-                <marker date="1489410055502" expanded="true" signature="38952:38981" ph="..." />
-                <marker date="1489410055502" expanded="true" signature="45597:45609" ph="..." />
-                <marker date="1489410055502" expanded="true" signature="50671:50683" ph="..." />
-                <marker date="1489410055502" expanded="true" signature="51670:51705" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_photos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
-              <folding>
-                <element signature="n#script#0;n#!!top" expanded="false" />
-                <element signature="e#470#1225#0#HTML" expanded="false" />
-                <element signature="e#784#853#0#HTML" expanded="false" />
-                <element signature="e#888#1217#0#HTML" expanded="false" />
-                <element signature="e#1256#1434#0#HTML" expanded="false" />
-                <element signature="e#1462#1617#0#HTML" expanded="false" />
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#span#1;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#3600#4643#0#PHP" expanded="false" />
-                <element signature="e#3661#4435#0#PHP" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#4048#4373#0#PHP" expanded="false" />
-                <element signature="e#4463#4643#0#PHP" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#4760#6836#0#PHP" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#5022#6764#0#PHP" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#5289#5406#0#PHP" expanded="false" />
-                <element signature="n#input#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#2;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#3;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#img#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#6860#8627#0#PHP" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#7137#8555#0#PHP" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#2;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#input#3;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#img#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#!!top" expanded="false" />
-                <element signature="n#script#1;n#!!top" expanded="false" />
-                <element signature="e#8833#9300#0#HTML" expanded="false" />
-                <element signature="e#8853#8965#0#HTML" expanded="false" />
-                <element signature="e#8988#9292#0#HTML" expanded="false" />
-                <element signature="e#9179#9229#0#HTML" expanded="false" />
-                <element signature="e#9266#9282#0#HTML" expanded="false" />
-                <element signature="e#9352#10727#0#HTML" expanded="false" />
-                <element signature="e#9403#9440#0#HTML" expanded="false" />
-                <element signature="e#9446#10721#0#HTML" expanded="false" />
-                <element signature="e#9470#9729#0#HTML" expanded="false" />
-                <element signature="e#9756#10116#0#HTML" expanded="false" />
-                <element signature="e#9961#10041#0#HTML" expanded="false" />
-                <element signature="e#10082#10102#0#HTML" expanded="false" />
-                <element signature="e#10155#10703#0#HTML" expanded="false" />
-                <element signature="e#10190#10269#0#HTML" expanded="false" />
-                <element signature="e#10300#10687#0#HTML" expanded="false" />
-                <element signature="e#10530#10600#0#HTML" expanded="false" />
-                <element signature="e#10645#10669#0#HTML" expanded="false" />
-                <element signature="e#10781#11573#0#HTML" expanded="false" />
-                <element signature="e#10832#10869#0#HTML" expanded="false" />
-                <element signature="e#10875#11567#0#HTML" expanded="false" />
-                <element signature="e#10899#11158#0#HTML" expanded="false" />
-                <element signature="e#11185#11555#0#HTML" expanded="false" />
-                <element signature="e#11422#11480#0#HTML" expanded="false" />
-                <element signature="e#11521#11541#0#HTML" expanded="false" />
-                <element signature="e#11620#11837#0#HTML" expanded="false" />
-                <element signature="e#11908#13190#0#HTML" expanded="false" />
-                <element signature="e#12251#13182#0#HTML" expanded="false" />
-                <element signature="e#12533#13070#0#HTML" expanded="false" />
-                <element signature="e#12584#12680#0#HTML" expanded="false" />
-                <element signature="e#12718#12812#0#HTML" expanded="false" />
-                <element signature="e#12818#13056#0#HTML" expanded="false" />
-                <element signature="e#13107#13172#0#HTML" expanded="false" />
-                <element signature="e#13268#15864#0#HTML" expanded="false" />
-                <element signature="e#13877#15856#0#HTML" expanded="false" />
-                <element signature="e#14169#15742#0#HTML" expanded="false" />
-                <element signature="e#14219#15567#0#HTML" expanded="false" />
-                <element signature="e#14264#14330#0#HTML" expanded="false" />
-                <element signature="e#14336#15549#0#HTML" expanded="false" />
-                <element signature="e#14536#15525#0#HTML" expanded="false" />
-                <element signature="e#14941#15349#0#HTML" expanded="false" />
-                <element signature="e#15402#15499#0#HTML" expanded="false" />
-                <element signature="e#15573#15728#0#HTML" expanded="false" />
-                <element signature="e#15780#15846#0#HTML" expanded="false" />
-                <element signature="e#15909#17196#0#HTML" expanded="false" />
-                <element signature="e#15930#15968#0#HTML" expanded="false" />
-                <element signature="e#16051#17190#0#HTML" expanded="false" />
-                <element signature="e#16077#17178#0#HTML" expanded="false" />
-                <element signature="e#16284#16779#0#HTML" expanded="false" />
-                <element signature="e#16329#16395#0#HTML" expanded="false" />
-                <element signature="e#16401#16761#0#HTML" expanded="false" />
-                <element signature="e#16820#17164#0#HTML" expanded="false" />
-                <element signature="e#17239#18358#0#HTML" expanded="false" />
-                <element signature="e#17260#17298#0#HTML" expanded="false" />
-                <element signature="e#17321#18350#0#HTML" expanded="false" />
-                <element signature="e#17512#17975#0#HTML" expanded="false" />
-                <element signature="e#17553#17611#0#HTML" expanded="false" />
-                <element signature="e#17617#17961#0#HTML" expanded="false" />
-                <element signature="e#18012#18340#0#HTML" expanded="false" />
-                <element signature="e#18396#19520#0#HTML" expanded="false" />
-                <element signature="e#18417#18455#0#HTML" expanded="false" />
-                <element signature="e#18478#19512#0#HTML" expanded="false" />
-                <element signature="e#18674#19137#0#HTML" expanded="false" />
-                <element signature="e#18715#18773#0#HTML" expanded="false" />
-                <element signature="e#18779#19123#0#HTML" expanded="false" />
-                <element signature="e#19174#19502#0#HTML" expanded="false" />
-                <element signature="e#19592#19663#0#HTML" expanded="false" />
-                <element signature="e#19738#19809#0#HTML" expanded="false" />
-                <element signature="e#19881#20187#0#HTML" expanded="false" />
-                <element signature="e#20262#20328#0#HTML" expanded="false" />
-                <element signature="e#20406#21471#0#HTML" expanded="false" />
-                <element signature="e#20708#21463#0#HTML" expanded="false" />
-                <element signature="e#21001#21351#0#HTML" expanded="false" />
-                <element signature="e#21388#21453#0#HTML" expanded="false" />
-                <element signature="e#21548#22076#0#HTML" expanded="false" />
-                <element signature="e#21570#22067#0#HTML" expanded="false" />
-                <element signature="e#21728#22005#0#HTML" expanded="false" />
-                <element signature="e#22042#22057#0#HTML" expanded="false" />
-                <element signature="e#22135#22711#0#HTML" expanded="false" />
-                <element signature="e#22771#23347#0#HTML" expanded="false" />
-                <element signature="e#23391#24699#0#HTML" expanded="false" />
-                <element signature="e#23614#23897#0#HTML" expanded="false" />
-                <element signature="e#23937#24222#0#HTML" expanded="false" />
-                <element signature="e#24288#24520#0#HTML" expanded="false" />
-                <element signature="e#24744#24942#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_invite.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" column="119" lean-forward="false" selection-start-line="32" selection-start-column="99" selection-end-line="32" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en-GB.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="605" column="43" lean-forward="false" selection-start-line="605" selection-start-column="43" selection-end-line="605" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="full_user_page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/full_user_page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="57" />
-              <folding>
-                <marker date="1489411076781" expanded="true" signature="8043:8060" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editaccount.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="64" column="173" lean-forward="false" selection-start-line="64" selection-start-column="173" selection-end-line="64" selection-end-column="173" />
+              <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -480,8 +83,8 @@
       <file leaf-file-name="member.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/member.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="1893" column="69" lean-forward="false" selection-start-line="1893" selection-start-column="62" selection-end-line="1893" selection-end-column="69" />
+            <state relative-caret-position="549">
+              <caret line="1901" column="46" lean-forward="true" selection-start-line="1901" selection-start-column="46" selection-end-line="1901" selection-end-column="46" />
               <folding>
                 <element signature="n#__construct#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
                 <element signature="n#display#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
@@ -676,10 +279,10 @@
                 <element signature="e#58027#58159#0#PHP" expanded="false" />
                 <element signature="e#58944#59050#0#PHP" expanded="false" />
                 <element signature="e#59848#60394#0#PHP" expanded="false" />
+                <element signature="n#full_profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+                <element signature="e#60722#60893#0#PHP" expanded="false" />
                 <element signature="e#60903#61086#0#PHP" expanded="false" />
                 <element signature="e#61314#61501#0#PHP" expanded="false" />
-                <element signature="e#61628#62134#0#PHP" expanded="false" />
-                <element signature="e#61776#62124#0#PHP" expanded="false" />
                 <element signature="e#62356#62506#0#PHP" expanded="false" />
                 <element signature="e#62451#62506#0#PHP" expanded="false" />
                 <element signature="e#62515#62656#0#PHP" expanded="false" />
@@ -733,17 +336,32 @@
                 <element signature="n#bookmarks#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
                 <element signature="e#80462#80743#0#PHP" expanded="false" />
                 <element signature="e#80616#80728#0#PHP" expanded="false" />
+                <element signature="n#questions#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
                 <element signature="e#81531#81726#0#PHP" expanded="false" />
                 <element signature="e#81728#82048#0#PHP" expanded="false" />
                 <element signature="e#82327#82575#0#PHP" expanded="false" />
+                <element signature="e#82446#82575#0#PHP" expanded="false" />
                 <element signature="e#82825#83443#0#PHP" expanded="false" />
                 <element signature="e#83123#83433#0#PHP" expanded="false" />
                 <element signature="e#83316#83433#0#PHP" expanded="false" />
+                <element signature="e#84130#84208#0#PHP" expanded="false" />
+                <element signature="e#84488#84771#0#PHP" expanded="false" />
+                <element signature="e#84525#84757#0#PHP" expanded="false" />
                 <element signature="e#85388#87724#0#PHP" expanded="false" />
-                <marker date="1489413046508" expanded="true" signature="7162:7233" ph="SELECT id FR... ##__users" />
-                <marker date="1489413046508" expanded="true" signature="7464:7530" ph="SELECT id FR... ##__users" />
-                <marker date="1489413046508" expanded="true" signature="20400:20461" ph="SELECT name,... ##__users" />
+                <marker date="1489573948727" expanded="true" signature="7162:7233" ph="SELECT id FR... ##__users" />
+                <marker date="1489573948727" expanded="true" signature="7464:7530" ph="SELECT id FR... ##__users" />
+                <marker date="1489573948727" expanded="true" signature="20400:20461" ph="SELECT name,... ##__users" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cron/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -751,8 +369,8 @@
       <file leaf-file-name="default_config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/default_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            <state relative-caret-position="445">
+              <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -762,10 +380,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getRejectUsers</find>
-      <find>.page-content .external-links-bottom button</find>
-      <find>qu</find>
-      <find>LAST_ONLINE</find>
       <find>.user-item .user-item-bottom .info</find>
       <find>$quickConnect =</find>
       <find>hide-profile</find>
@@ -792,12 +406,15 @@
       <find>.edit-photos-right .album ul li img</find>
       <find>user_sex</find>
       <find>photosite</find>
+      <find>.user-item</find>
+      <find>notifications</find>
+      <find>getNotesNew</find>
+      <find>.user-link img</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/user_questions.php" />
         <option value="$PROJECT_DIR$/../../../tmp/index.php" />
         <option value="$USER_HOME$/Downloads/imcoolwithit.sql" />
         <option value="$PROJECT_DIR$/../../../tmp/configuration.php" />
@@ -827,12 +444,9 @@
         <option value="$PROJECT_DIR$/modules/mod_mylogin/tmpl/login.php" />
         <option value="$PROJECT_DIR$/modules/mod_mylogin/tmpl/join_now.php" />
         <option value="$PROJECT_DIR$/modules/mod_mylogin/tmpl/sign_up.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/lib/default_config.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/lang/en-GB.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/models/userslist.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/search.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php" />
         <option value="$PROJECT_DIR$/templates/protostar/index.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/info/info.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/info.php" />
@@ -845,9 +459,13 @@
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/full_user_page.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php" />
-        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/member.php" />
         <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/lib/default_config.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/models/notifications.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/photos.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php" />
+        <option value="$PROJECT_DIR$/components/com_jshopping/controllers/member.php" />
       </list>
     </option>
   </component>
@@ -908,8 +526,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -932,130 +548,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_jshopping" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_jshopping" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_jshopping" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="member" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_jshopping" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_jshopping" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="cron" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1187,24 +687,24 @@
       <workItem from="1489151833993" duration="11096000" />
       <workItem from="1489165524104" duration="6256000" />
       <workItem from="1489408974913" duration="5253000" />
+      <workItem from="1489567965901" duration="4589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116639000" />
+    <option name="totallyTimeSpent" value="121228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18443497" sideWeight="0.40765172" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5923483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18656716" sideWeight="0.41402116" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.58597887" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1825054" sideWeight="0.5053419" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6413868" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18142548" sideWeight="0.4946581" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18093175" sideWeight="0.4946581" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1216,6 +716,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6413868" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1235,39 +736,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/sponsors/sponsors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/meeting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="61" column="69" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/sign_up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_jshopping__/lang/en-GB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="693" column="8" lean-forward="false" selection-start-line="693" selection-start-column="8" selection-end-line="693" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/join_now.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1336,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,13 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1417,7 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php" />
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/userpage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1480,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1496,7 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1514,15 +975,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2635">
           <caret line="155" column="110" lean-forward="false" selection-start-line="155" selection-start-column="110" selection-end-line="155" selection-end-column="110" />
-          <folding>
-            <marker date="1489389378782" expanded="true" signature="6785:6865" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/meeting/view_invite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="544">
           <caret line="32" column="119" lean-forward="false" selection-start-line="32" selection-start-column="99" selection-end-line="32" selection-end-column="119" />
           <folding />
         </state>
@@ -1530,7 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="10285">
           <caret line="605" column="43" lean-forward="false" selection-start-line="605" selection-start-column="43" selection-end-line="605" selection-end-column="43" />
           <folding />
         </state>
@@ -1538,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/factory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="2635">
           <caret line="1004" column="54" lean-forward="false" selection-start-line="1004" selection-start-column="54" selection-end-line="1004" selection-end-column="54" />
           <folding>
             <element signature="e#6#208#0#PHP" expanded="false" />
@@ -1753,12 +1212,6 @@
             <element signature="e#53123#53267#0#PHP" expanded="false" />
             <element signature="e#53281#53633#0#PHP" expanded="false" />
             <element signature="e#53647#54057#0#PHP" expanded="false" />
-            <marker date="1489410055502" expanded="true" signature="20621:20683" ph="select id, s... ##__jshopping_vendors" />
-            <marker date="1489410055502" expanded="true" signature="21787:21835" ph="select id, d... ##__jshopping_delivery_times" />
-            <marker date="1489410055502" expanded="true" signature="38952:38981" ph="..." />
-            <marker date="1489410055502" expanded="true" signature="45597:45609" ph="..." />
-            <marker date="1489410055502" expanded="true" signature="50671:50683" ph="..." />
-            <marker date="1489410055502" expanded="true" signature="51670:51705" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1771,10 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/default_config.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/noresult.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1791,155 +1244,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="57" />
-          <folding>
-            <marker date="1489411076781" expanded="true" signature="8043:8060" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lib/default_config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
-          <folding>
-            <element signature="n#script#0;n#!!top" expanded="false" />
-            <element signature="e#470#1225#0#HTML" expanded="false" />
-            <element signature="e#784#853#0#HTML" expanded="false" />
-            <element signature="e#888#1217#0#HTML" expanded="false" />
-            <element signature="e#1256#1434#0#HTML" expanded="false" />
-            <element signature="e#1462#1617#0#HTML" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#3600#4643#0#PHP" expanded="false" />
-            <element signature="e#3661#4435#0#PHP" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#4048#4373#0#PHP" expanded="false" />
-            <element signature="e#4463#4643#0#PHP" expanded="false" />
-            <element signature="n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#4760#6836#0#PHP" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#5022#6764#0#PHP" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#5289#5406#0#PHP" expanded="false" />
-            <element signature="n#input#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#2;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#3;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#img#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#6860#8627#0#PHP" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#7137#8555#0#PHP" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#2;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#input#3;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#img#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#!!top" expanded="false" />
-            <element signature="e#8833#9300#0#HTML" expanded="false" />
-            <element signature="e#8853#8965#0#HTML" expanded="false" />
-            <element signature="e#8988#9292#0#HTML" expanded="false" />
-            <element signature="e#9179#9229#0#HTML" expanded="false" />
-            <element signature="e#9266#9282#0#HTML" expanded="false" />
-            <element signature="e#9352#10727#0#HTML" expanded="false" />
-            <element signature="e#9403#9440#0#HTML" expanded="false" />
-            <element signature="e#9446#10721#0#HTML" expanded="false" />
-            <element signature="e#9470#9729#0#HTML" expanded="false" />
-            <element signature="e#9756#10116#0#HTML" expanded="false" />
-            <element signature="e#9961#10041#0#HTML" expanded="false" />
-            <element signature="e#10082#10102#0#HTML" expanded="false" />
-            <element signature="e#10155#10703#0#HTML" expanded="false" />
-            <element signature="e#10190#10269#0#HTML" expanded="false" />
-            <element signature="e#10300#10687#0#HTML" expanded="false" />
-            <element signature="e#10530#10600#0#HTML" expanded="false" />
-            <element signature="e#10645#10669#0#HTML" expanded="false" />
-            <element signature="e#10781#11573#0#HTML" expanded="false" />
-            <element signature="e#10832#10869#0#HTML" expanded="false" />
-            <element signature="e#10875#11567#0#HTML" expanded="false" />
-            <element signature="e#10899#11158#0#HTML" expanded="false" />
-            <element signature="e#11185#11555#0#HTML" expanded="false" />
-            <element signature="e#11422#11480#0#HTML" expanded="false" />
-            <element signature="e#11521#11541#0#HTML" expanded="false" />
-            <element signature="e#11620#11837#0#HTML" expanded="false" />
-            <element signature="e#11908#13190#0#HTML" expanded="false" />
-            <element signature="e#12251#13182#0#HTML" expanded="false" />
-            <element signature="e#12533#13070#0#HTML" expanded="false" />
-            <element signature="e#12584#12680#0#HTML" expanded="false" />
-            <element signature="e#12718#12812#0#HTML" expanded="false" />
-            <element signature="e#12818#13056#0#HTML" expanded="false" />
-            <element signature="e#13107#13172#0#HTML" expanded="false" />
-            <element signature="e#13268#15864#0#HTML" expanded="false" />
-            <element signature="e#13877#15856#0#HTML" expanded="false" />
-            <element signature="e#14169#15742#0#HTML" expanded="false" />
-            <element signature="e#14219#15567#0#HTML" expanded="false" />
-            <element signature="e#14264#14330#0#HTML" expanded="false" />
-            <element signature="e#14336#15549#0#HTML" expanded="false" />
-            <element signature="e#14536#15525#0#HTML" expanded="false" />
-            <element signature="e#14941#15349#0#HTML" expanded="false" />
-            <element signature="e#15402#15499#0#HTML" expanded="false" />
-            <element signature="e#15573#15728#0#HTML" expanded="false" />
-            <element signature="e#15780#15846#0#HTML" expanded="false" />
-            <element signature="e#15909#17196#0#HTML" expanded="false" />
-            <element signature="e#15930#15968#0#HTML" expanded="false" />
-            <element signature="e#16051#17190#0#HTML" expanded="false" />
-            <element signature="e#16077#17178#0#HTML" expanded="false" />
-            <element signature="e#16284#16779#0#HTML" expanded="false" />
-            <element signature="e#16329#16395#0#HTML" expanded="false" />
-            <element signature="e#16401#16761#0#HTML" expanded="false" />
-            <element signature="e#16820#17164#0#HTML" expanded="false" />
-            <element signature="e#17239#18358#0#HTML" expanded="false" />
-            <element signature="e#17260#17298#0#HTML" expanded="false" />
-            <element signature="e#17321#18350#0#HTML" expanded="false" />
-            <element signature="e#17512#17975#0#HTML" expanded="false" />
-            <element signature="e#17553#17611#0#HTML" expanded="false" />
-            <element signature="e#17617#17961#0#HTML" expanded="false" />
-            <element signature="e#18012#18340#0#HTML" expanded="false" />
-            <element signature="e#18396#19520#0#HTML" expanded="false" />
-            <element signature="e#18417#18455#0#HTML" expanded="false" />
-            <element signature="e#18478#19512#0#HTML" expanded="false" />
-            <element signature="e#18674#19137#0#HTML" expanded="false" />
-            <element signature="e#18715#18773#0#HTML" expanded="false" />
-            <element signature="e#18779#19123#0#HTML" expanded="false" />
-            <element signature="e#19174#19502#0#HTML" expanded="false" />
-            <element signature="e#19592#19663#0#HTML" expanded="false" />
-            <element signature="e#19738#19809#0#HTML" expanded="false" />
-            <element signature="e#19881#20187#0#HTML" expanded="false" />
-            <element signature="e#20262#20328#0#HTML" expanded="false" />
-            <element signature="e#20406#21471#0#HTML" expanded="false" />
-            <element signature="e#20708#21463#0#HTML" expanded="false" />
-            <element signature="e#21001#21351#0#HTML" expanded="false" />
-            <element signature="e#21388#21453#0#HTML" expanded="false" />
-            <element signature="e#21548#22076#0#HTML" expanded="false" />
-            <element signature="e#21570#22067#0#HTML" expanded="false" />
-            <element signature="e#21728#22005#0#HTML" expanded="false" />
-            <element signature="e#22042#22057#0#HTML" expanded="false" />
-            <element signature="e#22135#22711#0#HTML" expanded="false" />
-            <element signature="e#22771#23347#0#HTML" expanded="false" />
-            <element signature="e#23391#24699#0#HTML" expanded="false" />
-            <element signature="e#23614#23897#0#HTML" expanded="false" />
-            <element signature="e#23937#24222#0#HTML" expanded="false" />
-            <element signature="e#24288#24520#0#HTML" expanded="false" />
-            <element signature="e#24744#24942#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="445">
+          <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="6077" column="16" lean-forward="false" selection-start-line="6077" selection-start-column="16" selection-end-line="6077" selection-end-column="16" />
+        <state relative-caret-position="258">
+          <caret line="919" column="14" lean-forward="false" selection-start-line="919" selection-start-column="14" selection-end-line="919" selection-end-column="14" />
           <folding>
             <element signature="e#4#219#0" expanded="false" />
             <element signature="e#220#370#0" expanded="false" />
@@ -1963,10 +1283,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding>
+            <element signature="e#3600#4643#0#PHP" expanded="false" />
+            <element signature="e#3661#4435#0#PHP" expanded="false" />
+            <element signature="e#4048#4373#0#PHP" expanded="false" />
+            <element signature="e#4463#4643#0#PHP" expanded="false" />
+            <element signature="e#4760#6836#0#PHP" expanded="false" />
+            <element signature="e#5022#6764#0#PHP" expanded="false" />
+            <element signature="e#5289#5406#0#PHP" expanded="false" />
+            <element signature="e#6860#8627#0#PHP" expanded="false" />
+            <element signature="e#7137#8555#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/photos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1695">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488649917953" expanded="true" signature="1229:1411" ph="SELECT `send... jproject_friends" />
+            <marker date="1488649917953" expanded="true" signature="1463:1511" ph="UPDATE `jpro... " />
+            <marker date="1488649917953" expanded="true" signature="1980:2118" ph="DELETE FROM " />
+            <marker date="1488649917953" expanded="true" signature="2196:2524" ph="SELECT MEET.... jproject_meet_up" />
+            <marker date="1488649917953" expanded="true" signature="2826:2874" ph="UPDATE `jpro... " />
+            <marker date="1488649917953" expanded="true" signature="3601:3956" ph="SELECT MEET.... jproject_meet_up" />
+            <marker date="1488649917953" expanded="true" signature="4124:4172" ph="UPDATE `jpro... " />
+            <marker date="1488649917953" expanded="true" signature="4925:5228" ph="UPDATE `jpro... " />
+            <marker date="1488649917953" expanded="true" signature="5307:5556" ph="UPDATE `jpro... " />
+            <marker date="1488649917953" expanded="true" signature="5632:5698" ph="INSERT INTO `cron`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/member.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="1893" column="69" lean-forward="false" selection-start-line="1893" selection-start-column="62" selection-end-line="1893" selection-end-column="69" />
+        <state relative-caret-position="549">
+          <caret line="1901" column="46" lean-forward="true" selection-start-line="1901" selection-start-column="46" selection-end-line="1901" selection-end-column="46" />
           <folding>
             <element signature="n#__construct#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
             <element signature="n#display#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
@@ -2161,10 +1534,10 @@
             <element signature="e#58027#58159#0#PHP" expanded="false" />
             <element signature="e#58944#59050#0#PHP" expanded="false" />
             <element signature="e#59848#60394#0#PHP" expanded="false" />
+            <element signature="n#full_profile#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
+            <element signature="e#60722#60893#0#PHP" expanded="false" />
             <element signature="e#60903#61086#0#PHP" expanded="false" />
             <element signature="e#61314#61501#0#PHP" expanded="false" />
-            <element signature="e#61628#62134#0#PHP" expanded="false" />
-            <element signature="e#61776#62124#0#PHP" expanded="false" />
             <element signature="e#62356#62506#0#PHP" expanded="false" />
             <element signature="e#62451#62506#0#PHP" expanded="false" />
             <element signature="e#62515#62656#0#PHP" expanded="false" />
@@ -2218,30 +1591,88 @@
             <element signature="n#bookmarks#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
             <element signature="e#80462#80743#0#PHP" expanded="false" />
             <element signature="e#80616#80728#0#PHP" expanded="false" />
+            <element signature="n#questions#0;n#JshoppingControllerMember#0;n#!!top" expanded="false" />
             <element signature="e#81531#81726#0#PHP" expanded="false" />
             <element signature="e#81728#82048#0#PHP" expanded="false" />
             <element signature="e#82327#82575#0#PHP" expanded="false" />
+            <element signature="e#82446#82575#0#PHP" expanded="false" />
             <element signature="e#82825#83443#0#PHP" expanded="false" />
             <element signature="e#83123#83433#0#PHP" expanded="false" />
             <element signature="e#83316#83433#0#PHP" expanded="false" />
+            <element signature="e#84130#84208#0#PHP" expanded="false" />
+            <element signature="e#84488#84771#0#PHP" expanded="false" />
+            <element signature="e#84525#84757#0#PHP" expanded="false" />
             <element signature="e#85388#87724#0#PHP" expanded="false" />
-            <marker date="1489413046508" expanded="true" signature="7162:7233" ph="SELECT id FR... ##__users" />
-            <marker date="1489413046508" expanded="true" signature="7464:7530" ph="SELECT id FR... ##__users" />
-            <marker date="1489413046508" expanded="true" signature="20400:20461" ph="SELECT name,... ##__users" />
+            <marker date="1489573948727" expanded="true" signature="7162:7233" ph="SELECT id FR... ##__users" />
+            <marker date="1489573948727" expanded="true" signature="7464:7530" ph="SELECT id FR... ##__users" />
+            <marker date="1489573948727" expanded="true" signature="20400:20461" ph="SELECT name,... ##__users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/member/photos.php">
+    <entry file="file://$PROJECT_DIR$/cron/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/notifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="341" column="27" lean-forward="true" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
           <folding>
-            <marker date="1489414180914" expanded="true" signature="431:509" ph="..." />
-            <marker date="1489414180914" expanded="true" signature="463:509" ph="..." />
-            <marker date="1489414180914" expanded="true" signature="583:616" ph="..." />
-            <marker date="1489414180914" expanded="true" signature="1029:1106" ph="..." />
+            <element signature="e#1772#3622#0#PHP" expanded="false" />
+            <element signature="e#2308#3153#0#PHP" expanded="false" />
+            <element signature="e#2679#3139#0#PHP" expanded="false" />
+            <element signature="n#addTestNote#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="e#3829#3898#0#PHP" expanded="false" />
+            <element signature="e#3829#3965#0#PHP" expanded="false" />
+            <element signature="e#3829#4007#0#PHP" expanded="false" />
+            <element signature="e#3829#4051#0#PHP" expanded="false" />
+            <element signature="e#3829#4101#0#PHP" expanded="false" />
+            <element signature="e#3829#4149#0#PHP" expanded="false" />
+            <element signature="e#4229#6891#0#PHP" expanded="false" />
+            <element signature="e#4283#4896#0#PHP" expanded="false" />
+            <element signature="e#4419#4896#0#PHP" expanded="false" />
+            <element signature="e#4493#4583#0#PHP" expanded="false" />
+            <element signature="e#4493#4648#0#PHP" expanded="false" />
+            <element signature="e#4493#4704#0#PHP" expanded="false" />
+            <element signature="e#5011#6881#0#PHP" expanded="false" />
+            <element signature="e#5552#6407#0#PHP" expanded="false" />
+            <element signature="e#5928#6393#0#PHP" expanded="false" />
+            <element signature="e#6408#6881#0#PHP" expanded="false" />
+            <element signature="n#sendNotification#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="e#7283#7608#0#PHP" expanded="false" />
+            <element signature="n#prepareForEmail#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="e#12251#15652#0#PHP" expanded="false" />
+            <element signature="e#15663#16117#0#PHP" expanded="false" />
+            <element signature="e#15919#16000#0#PHP" expanded="false" />
+            <element signature="e#16013#16107#0#PHP" expanded="false" />
+            <element signature="e#16127#16277#0#PHP" expanded="false" />
+            <element signature="n#getNotes#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="n#deleteNotes#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="n#getLincUpNotes#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="n#getVisitorsNotes#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="n#getMessage#0;n#jshopNotifications#0;n#!!top" expanded="false" />
+            <element signature="e#18028#18110#0#PHP" expanded="false" />
+            <element signature="e#18028#18167#0#PHP" expanded="false" />
+            <element signature="e#18028#18213#0#PHP" expanded="false" />
+            <element signature="e#18375#19167#0#PHP" expanded="false" />
+            <element signature="e#18402#18940#0#PHP" expanded="false" />
+            <element signature="e#18638#18783#0#PHP" expanded="false" />
+            <element signature="e#18716#18783#0#PHP" expanded="false" />
+            <element signature="e#18953#19157#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
