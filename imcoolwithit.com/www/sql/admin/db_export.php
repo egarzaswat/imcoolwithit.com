@@ -9,12 +9,15 @@
 /**
  * Gets some core libraries
  */
+
+
 require_once 'libraries/common.inc.php';
 
 $response = PMA_Response::getInstance();
 $header   = $response->getHeader();
 $scripts  = $header->getScripts();
 $scripts->addFile('export.js');
+
 
 // $sub_part is also used in db_info.inc.php to see if we are coming from
 // db_export.php, in which case we don't obey $cfg['MaxTableList']
@@ -90,5 +93,3 @@ $multi_values .= '</select></div>';
 
 $export_type = 'database';
 require_once 'libraries/display_export.inc.php';
-
-?>

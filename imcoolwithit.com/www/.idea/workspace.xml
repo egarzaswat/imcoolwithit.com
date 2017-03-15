@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="919" column="14" lean-forward="false" selection-start-line="919" selection-start-column="14" selection-end-line="919" selection-end-column="14" />
+            <state relative-caret-position="360">
+              <caret line="4291" column="23" lean-forward="false" selection-start-line="4291" selection-start-column="23" selection-end-line="4291" selection-end-column="23" />
               <folding>
                 <element signature="e#4#219#0" expanded="false" />
                 <element signature="e#220#370#0" expanded="false" />
@@ -60,12 +60,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="like_photo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="like_photo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_export.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/admin/db_export.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="94" column="38" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_export.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/admin/libraries/display_export.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_export.lib.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/admin/libraries/display_export.lib.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="713" column="3" lean-forward="true" selection-start-line="713" selection-start-column="3" selection-end-line="713" selection-end-column="3" />
+              <folding>
+                <marker date="1489584368583" expanded="true" signature="769:785" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -415,9 +447,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../../tmp/index.php" />
-        <option value="$USER_HOME$/Downloads/imcoolwithit.sql" />
-        <option value="$PROJECT_DIR$/../../../tmp/configuration.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/save_account.php" />
         <option value="$PROJECT_DIR$/../../../tmp/.htaccess" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/private_pictures.php" />
@@ -459,13 +488,16 @@
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/edit_photos.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/full_user_page.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/editaccount.php" />
-        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/lib/default_config.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/models/notifications.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/templates/default/member/photos.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/save_data/like_photo.php" />
         <option value="$PROJECT_DIR$/components/com_jshopping/controllers/member.php" />
+        <option value="$PROJECT_DIR$/sql/admin/db_export.php" />
+        <option value="$PROJECT_DIR$/sql/admin/libraries/display_export.lib.php" />
+        <option value="$PROJECT_DIR$/sql/admin/libraries/display_export.inc.php" />
+        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
       </list>
     </option>
   </component>
@@ -548,7 +580,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cron" />
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,7 +618,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xvip.local" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -687,15 +745,15 @@
       <workItem from="1489151833993" duration="11096000" />
       <workItem from="1489165524104" duration="6256000" />
       <workItem from="1489408974913" duration="5253000" />
-      <workItem from="1489567965901" duration="4589000" />
+      <workItem from="1489567965901" duration="9369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121228000" />
+    <option name="totallyTimeSpent" value="126008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18656716" sideWeight="0.41402116" order="2" side_tool="true" content_ui="tabs" />
@@ -741,27 +799,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/join_now.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_mylogin/tmpl/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_jshopping/lang/ru-RU.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="340" column="8" lean-forward="false" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1256,33 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="919" column="14" lean-forward="false" selection-start-line="919" selection-start-column="14" selection-end-line="919" selection-end-column="14" />
-          <folding>
-            <element signature="e#4#219#0" expanded="false" />
-            <element signature="e#220#370#0" expanded="false" />
-            <element signature="e#263#303#0" expanded="false" />
-            <element signature="e#328#368#0" expanded="false" />
-            <element signature="e#371#525#0" expanded="false" />
-            <element signature="e#413#456#0" expanded="false" />
-            <element signature="e#481#523#0" expanded="false" />
-            <element signature="e#527#611#0" expanded="false" />
-            <element signature="e#624#699#0" expanded="false" />
-            <element signature="e#709#748#0" expanded="false" />
-            <element signature="e#760#1248#0" expanded="false" />
-            <element signature="e#1299#2196#0" expanded="false" />
-            <element signature="e#2470#3240#0" expanded="false" />
-            <element signature="e#3258#3897#0" expanded="false" />
-            <element signature="e#3264#3415#0" expanded="false" />
-            <element signature="e#3910#4098#0" expanded="false" />
-            <element signature="e#4262#4292#0" expanded="false" />
-            <element signature="e#4317#4338#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/templates/default/search/result.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1673,6 +1683,59 @@
         <state relative-caret-position="374">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/admin/db_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="94" column="38" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/admin/libraries/display_export.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/admin/libraries/display_export.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="713" column="3" lean-forward="true" selection-start-line="713" selection-start-column="3" selection-end-line="713" selection-end-column="3" />
+          <folding>
+            <marker date="1489584368583" expanded="true" signature="769:785" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="4291" column="23" lean-forward="false" selection-start-line="4291" selection-start-column="23" selection-end-line="4291" selection-end-column="23" />
+          <folding>
+            <element signature="e#4#219#0" expanded="false" />
+            <element signature="e#220#370#0" expanded="false" />
+            <element signature="e#263#303#0" expanded="false" />
+            <element signature="e#328#368#0" expanded="false" />
+            <element signature="e#371#525#0" expanded="false" />
+            <element signature="e#413#456#0" expanded="false" />
+            <element signature="e#481#523#0" expanded="false" />
+            <element signature="e#527#611#0" expanded="false" />
+            <element signature="e#624#699#0" expanded="false" />
+            <element signature="e#709#748#0" expanded="false" />
+            <element signature="e#760#1248#0" expanded="false" />
+            <element signature="e#1299#2196#0" expanded="false" />
+            <element signature="e#2470#3240#0" expanded="false" />
+            <element signature="e#3258#3897#0" expanded="false" />
+            <element signature="e#3264#3415#0" expanded="false" />
+            <element signature="e#3910#4098#0" expanded="false" />
+            <element signature="e#4262#4292#0" expanded="false" />
+            <element signature="e#4317#4338#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

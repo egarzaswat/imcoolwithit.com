@@ -4289,7 +4289,7 @@ a:focus, input:focus{
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 0 5px 0;
+    padding: 0 30px 5px;
 
 }
 .earn-tokens-list .earn-tokens-item .bot-inf .earn-tokens-username{
