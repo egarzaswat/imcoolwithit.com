@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29733">
-              <caret line="1858" column="28" lean-forward="false" selection-start-line="1858" selection-start-column="28" selection-end-line="1858" selection-end-column="28" />
+            <state relative-caret-position="292">
+              <caret line="873" column="24" lean-forward="true" selection-start-line="873" selection-start-column="24" selection-end-line="873" selection-end-column="24" />
               <folding>
                 <element signature="e#4#219#0" expanded="false" />
                 <element signature="e#220#370#0" expanded="false" />
@@ -50,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notifications.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/notifications.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
@@ -565,8 +565,8 @@
         <option value="$PROJECT_DIR$/sql/admin/libraries/display_export.inc.php" />
         <option value="D:/dropbox/Dropbox/okcupid/Html/dist/index.html" />
         <option value="$PROJECT_DIR$/language/en-GB/en-GB.ini" />
-        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
         <option value="$PROJECT_DIR$/components/com_jshopping/models/notifications.php" />
+        <option value="$PROJECT_DIR$/templates/protostar/css/template.css" />
       </list>
     </option>
   </component>
@@ -628,6 +628,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -710,7 +711,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -847,36 +847,37 @@
       <workItem from="1489666200730" duration="1067000" />
       <workItem from="1489667773659" duration="3502000" />
       <workItem from="1489673784010" duration="33000" />
+      <workItem from="1489676449730" duration="191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131780000" />
+    <option name="totallyTimeSpent" value="131971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19296375" sideWeight="0.4272487" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.57275134" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19722815" sideWeight="0.43386245" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.56613755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1825054" sideWeight="0.5053419" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18093175" sideWeight="0.4946581" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18093175" sideWeight="0.4946581" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6413868" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1515,33 +1516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29733">
-          <caret line="1858" column="28" lean-forward="false" selection-start-line="1858" selection-start-column="28" selection-end-line="1858" selection-end-column="28" />
-          <folding>
-            <element signature="e#4#219#0" expanded="false" />
-            <element signature="e#220#370#0" expanded="false" />
-            <element signature="e#263#303#0" expanded="false" />
-            <element signature="e#328#368#0" expanded="false" />
-            <element signature="e#371#525#0" expanded="false" />
-            <element signature="e#413#456#0" expanded="false" />
-            <element signature="e#481#523#0" expanded="false" />
-            <element signature="e#527#611#0" expanded="false" />
-            <element signature="e#624#699#0" expanded="false" />
-            <element signature="e#709#748#0" expanded="false" />
-            <element signature="e#760#1248#0" expanded="false" />
-            <element signature="e#1299#2196#0" expanded="false" />
-            <element signature="e#2470#3240#0" expanded="false" />
-            <element signature="e#3258#3897#0" expanded="false" />
-            <element signature="e#3264#3415#0" expanded="false" />
-            <element signature="e#3910#4098#0" expanded="false" />
-            <element signature="e#4262#4292#0" expanded="false" />
-            <element signature="e#4317#4338#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_jshopping/models/notifications.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1615,6 +1589,33 @@
             <element signature="e#18639#18784#0#PHP" expanded="false" />
             <element signature="e#18717#18784#0#PHP" expanded="false" />
             <element signature="e#18954#19158#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/protostar/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="873" column="24" lean-forward="true" selection-start-line="873" selection-start-column="24" selection-end-line="873" selection-end-column="24" />
+          <folding>
+            <element signature="e#4#219#0" expanded="false" />
+            <element signature="e#220#370#0" expanded="false" />
+            <element signature="e#263#303#0" expanded="false" />
+            <element signature="e#328#368#0" expanded="false" />
+            <element signature="e#371#525#0" expanded="false" />
+            <element signature="e#413#456#0" expanded="false" />
+            <element signature="e#481#523#0" expanded="false" />
+            <element signature="e#527#611#0" expanded="false" />
+            <element signature="e#624#699#0" expanded="false" />
+            <element signature="e#709#748#0" expanded="false" />
+            <element signature="e#760#1248#0" expanded="false" />
+            <element signature="e#1299#2196#0" expanded="false" />
+            <element signature="e#2470#3240#0" expanded="false" />
+            <element signature="e#3258#3897#0" expanded="false" />
+            <element signature="e#3264#3415#0" expanded="false" />
+            <element signature="e#3910#4098#0" expanded="false" />
+            <element signature="e#4262#4292#0" expanded="false" />
+            <element signature="e#4317#4338#0" expanded="false" />
           </folding>
         </state>
       </provider>

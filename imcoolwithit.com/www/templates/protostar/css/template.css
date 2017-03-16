@@ -834,8 +834,8 @@ a:focus, input:focus{
 }
 .user-item .user-item-top{
     background: rgb(63, 168, 219);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
     color: rgb(255, 255, 255);
     display: block;
     height: 50px;
@@ -869,8 +869,8 @@ a:focus, input:focus{
 }
 .user-item .user-item-bottom{
     background:#ffffff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /*border-bottom-left-radius: 10px;*/
+    /*border-bottom-right-radius: 10px;*/
     color: rgb(0, 0, 0);
     padding-bottom: 10px;
     border: 1px solid #f3b13e;
@@ -1104,7 +1104,7 @@ a:focus, input:focus{
     box-shadow: inset 0 10px 10px -10px rgba(34,31,31,0.3);
 }
 .container-full.backg-gr{
-    background-color: #efefe9;
+    background-color: #fcf6f6;
 }
 .page-content-top{
     width: 100%;
