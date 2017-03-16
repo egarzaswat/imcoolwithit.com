@@ -206,7 +206,7 @@ class jshopNotifications{
                 break;
             case $Config->notifications[13] :
                 $link = $this->site_url . "/" . JText::_('LINK_FULL_USER_PAGE') . "?user=" . $event_id;
-                $message = 'Hey ' . $user . ', <a href="' . $link . '">' . $name . '</a> just liked your photo';
+                $message = 'Hey ' . $user . ', <a href="' . $link . '">' . $name . '</a> just liked your photo.';
                 break;
         }
         return $message;

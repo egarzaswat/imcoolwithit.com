@@ -634,7 +634,9 @@
         background: #ffffff;
     }
     .external-links-top .send-token{
-        font-size: 20px;
+        font-size: 14px;
+        line-height: 1!important;
+        padding: 7px 10px!important;
     }
 }
 
@@ -1745,6 +1747,7 @@ a:focus, input:focus{
     height: auto;
     /*font-size: 14px;*/
     color: #888888;
+    margin-top: 1px;
 }
 .flex-menu .dropdown-toggle{
     position: absolute;
@@ -1850,10 +1853,10 @@ a:focus, input:focus{
 }
 .dropdown-menu a .link-left{
     height: 25px;
-    width: 50px;
+    width: 60px;
     display: inline-flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .dropdown-menu a .link-left.hide_{
     opacity: 0;
@@ -2603,6 +2606,9 @@ a:focus, input:focus{
 .lincup-coupon,
 .full-user-page,
 .edit-photos,
+.earn-tokens,
+.lincup-redeem,
+.lincup-offers,
 .honesty-review{
     padding: 0;
 }
@@ -2901,6 +2907,9 @@ a:focus, input:focus{
         width: 100%;
         text-align: center;
     }
+    .lincup-offers .external-links-top a{
+        margin: 0 0 5px 0;
+    }
     .external-links-top{
         position: relative;
         margin: 15px auto 0;
@@ -3041,7 +3050,7 @@ a:focus, input:focus{
         right: 50%;
         transform: translateX(50%);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         min-width: 100%;
     }
     .page-content .external-links-bottom button{
@@ -3802,6 +3811,17 @@ a:focus, input:focus{
 }
 .lincup-coupon-users .lincup-coupon-user .not-your-date:hover{
     text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .lincup-coupon-users .lincup-coupon-user .user-photo{
+        height: 80px;
+        width: 80px;
+    }
+    .lincup-coupon-users .lincup-coupon-user .user-photo .user-image{
+        height: 80px!important;
+        width: 80px!important;
+    }
 }
 
 .lincup-coupon .lincup-bottom{
