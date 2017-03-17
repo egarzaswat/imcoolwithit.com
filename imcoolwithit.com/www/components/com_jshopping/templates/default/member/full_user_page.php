@@ -120,7 +120,7 @@
             <?php if ($this->isFriends) { ?>
                 <span class="delete-friend" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_DELETE'); ?></span>
             <?php } else if(!$this->user_is_accept && !$this->is_i_filed_claim && $this->isset_tokens_add_to_friends){ ?>
-                <span class="hide-user" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_HIDE'); ?></span>
+<!--                <span class="hide-user" data-user="--><?php //print $userData->user_id; ?><!--">--><?php //print JText::_('FULL_PROFILE_HIDE'); ?><!--</span>-->
             <?php } else if($this->user_is_accept && $this->isset_tokens_add_to_friends){ ?>
                 <span class="reject-user" data-user="<?php print $userData->user_id; ?>"><?php print JText::_('FULL_PROFILE_REJECT'); ?></span>
             <?php } ?>

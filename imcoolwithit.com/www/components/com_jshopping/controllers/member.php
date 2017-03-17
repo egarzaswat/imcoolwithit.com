@@ -1068,12 +1068,15 @@ class JshoppingControllerMember extends JControllerLegacy{
             $adv_user->user_reviews = ($adv_user->user_reviews > 5) ? 5 : $adv_user->user_reviews;
 
 
-            if($adv_user->sex == 2){
+            /*if($adv_user->sex == 2){
                 $adv_user->sex = JText::_('MALE');
             }
             if($adv_user->sex == 1){
                 $adv_user->sex = JText::_('FEMALE');
-            }
+            }*/
+
+            $sex_conf = $jshopConfig->user_sex;
+            $adv_user->sex = isset($sex_conf[$adv_user->sex]) ? JText::_($sex_conf[$adv_user->sex]) : '';
 
             $modelVisitors = JSFactory::getModel('visitors', 'jshop');
             $count_new_visitors = $modelVisitors->getProfileCountNewVisitors();
@@ -1235,7 +1238,10 @@ class JshoppingControllerMember extends JControllerLegacy{
 //        if(is_null($userData->user_about) || $userData->user_about == ""){
 //            $userData->user_about = JText::_('USER_ABOUT_DEFAULT');
 //        }
-        $userData->sex = ($userData->sex == 2) ? JText::_('MALE') : JText::_('FEMALE');
+//        $userData->sex = ($userData->sex == 2) ? JText::_('MALE') : JText::_('FEMALE');
+
+        $sex_conf = $jshopConfig->user_sex;
+        $userData->sex = isset($sex_conf[$userData->sex]) ? JText::_($sex_conf[$userData->sex]) : '';
         $userData->distance = $distance;
         $userData->last_visit = JSFactory::getDateDiffFormat($userData->last_visit);
         $userData->currentAge = JSFactory::getAge($userData->birthday);
@@ -1450,7 +1456,9 @@ class JshoppingControllerMember extends JControllerLegacy{
         $data_user->user_reviews = ($data_user->user_reviews > 5) ? 5 : $data_user->user_reviews;
         $data_user->last_visit = JSFactory::getDateDiffFormat($data_user->last_visit);
         $data_user->age = JSFactory::getAge($data_user->birthday);
-        $data_user->sex = ($data_user->sex == 2) ? JText::_('MALE') : JText::_('FEMALE');
+
+        $sex_conf = $jshopConfig->user_sex;
+        $data_user->sex = isset($sex_conf[$data_user->sex]) ? JText::_($sex_conf[$data_user->sex]) : '';
         $data_user->photosite = JSFactory::existImage($conf->path_user_image_big, $data_user->photosite);
         $count_reviews = $data_user->user_reviews;
 

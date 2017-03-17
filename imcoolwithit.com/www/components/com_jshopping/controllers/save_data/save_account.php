@@ -316,7 +316,7 @@ if (isset($_POST['username']) && ($_POST['username'] != "" && strlen($_POST['use
     exit;
 }
 
-if (is_numeric($_POST['sex']) && in_array($_POST['sex'], array(1, 2))) { $sex = (int)$_POST['sex']; } else { echo 'error sex'; exit; }
+if (is_numeric($_POST['sex']) && in_array($_POST['sex'], array(1, 2, 3, 4, 5, 6))) { $sex = (int)$_POST['sex']; } else { echo 'error sex'; exit; }
 
 if (is_numeric($_POST['birthday']) && $_POST['birthday'] >= 18) { $birthday = (int)$_POST['birthday']; } else { echo 'error birthday'; exit; }
 
