@@ -1039,11 +1039,11 @@ class JSFactory{
                                 $html .= '';
                             $html .= '</a></li>';
                             $html .= '<li><a href="' . JText::_('LINK_FRIENDS') . '">';
-                                if($count_friends > 0){
-                                    $html .= '<span class="link-left"><span class="cool-count">'. $count_friends . '</span></span>';
-                                } else {
+//                                if($count_friends > 0){
+//                                    $html .= '<span class="link-left"><span class="cool-count">'. $count_friends . '</span></span>';
+//                                } else {
                                     $html .= '<span class="link-left hide_"><span class="cool-count">'. $count_friends . '</span></span>';
-                                }
+//                                }
 
                                 $html .= '<span class="cool-menu-icons"><img src="/templates/protostar/images/system/connections_icon.png"></span>';
                                 $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';
@@ -1149,7 +1149,7 @@ class JSFactory{
 
                     $html .= '<a href="' . JText::_('LINK_FRIENDS') . '" title="View Friends">';
                         $html .= '<div class="link-top">';
-                            $html .= '<span class="cool-count">'. $count_friends . '</span>';
+//                            $html .= '<span class="cool-count">'. $count_friends . '</span>';
                             $html .= '<img src="/templates/protostar/images/system/connections_icon.png">';
                         $html .= '</div>';
                         $html .= '<span class="cool-menu-text">' . JText::_('COOL_TOP_CONNECTIONS') . '</span>';

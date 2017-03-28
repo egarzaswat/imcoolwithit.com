@@ -27,6 +27,11 @@ $startMem  = memory_get_usage();
  */
 define('_JEXEC', 1);
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 if (file_exists(__DIR__ . '/defines.php'))
 {
 	include_once __DIR__ . '/defines.php';

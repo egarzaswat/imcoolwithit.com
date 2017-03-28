@@ -96,7 +96,11 @@
     height: 7px;
 }
 .home-top-content{
-    background-image: url("/images/home/top_image.jpg");
+    /*background: url("/images/home/top_background.jpg") no-repeat top center;
+    background-size: cover;
+    min-height: 770px;
+    position: relative;*/
+    background-image: url(//dfsm9194vna0o.cloudfront.net/712727-0-coupleglasses.jpg), url(//d2r8jqmejizzox.cloudfront.net/263703-712727-ghost-coupleglasses.jpg);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
@@ -105,88 +109,20 @@
     -o-background-size: cover;
     background-size: cover;
     border-width: 0;
-    height: 440px;
+    height: 948px;
     position: relative;
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    width: auto;
 }
-.home-top-content h1{
-    font-family: Helvetica , Arial, sans-serif;
-    font-size: 55px;
-    color: #fff;
-}
-.home-top-content .top-info{
-    font-family: Myriad Pro;
-    color: #fff;
-    font-size: 26px;
-}
-.home-top-content .join-button{
-    width: 145px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #6ba1d6;
-    border: 0;
-    outline: 0;
-    border-radius: 15px;
-    font-size: 22px;
-    font-family: Myriad Pro;
-    margin-top: 55px;
-    margin-bottom: 35px;
-}
-
 .home-header{
-    background-color: #fafbfc;
-    min-height: 87px;
-}
-.home-header .container{
-    min-height: 82px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-.home-header .container .header-container{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
-.home-header .home-gradient{
-    height: 5px;
+    background: rgba(64, 170 ,221, 0.7);
+    box-shadow: 0 1px 10px rgba(33, 29, 30, 0.5);
+    min-height: 74px;
+	padding-top: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 .home-header .home-sign-in{
-    width: auto;
-    display: flex;
-    height: 80px;
-    align-items: center;
-}
-.home-header .home-sign-in .menu_home{
-    width: auto;
-    height: 35px;
-    display: flex;
-    margin: 15px 0 0;
-}
-.home-header .home-sign-in ul li:first-child a {
-    color: #f3b13e;
-}
-.home-header .home-sign-in .menu_home li a{
-    color: #fff;
-    background-color: #f3b13e;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: Myriad Pro;
-    line-height: 1;
-    padding: 12px 15px 6px;
-}
-
-/*.home-header .home-sign-in{
     color: rgba(255, 255, 255, 0.7);
 	float: right;
     line-height: 24px;
@@ -198,7 +134,7 @@
 .header-links-cool ul li{
     float: right;
 }
-!*.home-header .home-sign-in ul li a,
+/*.home-header .home-sign-in ul li a,
 .header-links-cool ul li a,
 .header-links ul li:nth-child(2) a,
 .header-links ul li:last-child a{
@@ -211,7 +147,7 @@
     line-height: 1;
     margin: 0 0 0 10px;
     min-width: 105px;
-}*!
+}*/
 .home-header .home-sign-in ul li a,
 .header-links-cool ul li a,
 .header-links ul li:nth-child(2) a,
@@ -229,8 +165,8 @@
     background: none;
 }
 .home-header .home-sign-in ul li:last-child a{
-    !*color: #41a8dc!important;*!
-}*/
+    /*color: #41a8dc!important;*/
+}
 .home-sign-in h3{
     display: none;
 }
@@ -343,14 +279,6 @@
 }
 
 .home-header .home-logo{
-    height: 80px;
-    width: 235px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-/*.home-header .home-logo{
     color: rgb(255, 255, 255);
     line-height: 1;
     text-align: left;
@@ -361,7 +289,7 @@
 }
 .home-header .home-logo img{
     max-height: 65px;
-    !*max-width: 100%;*!
+    /*max-width: 100%;*/
 }
 .home-header .home-logo p{
     display: inline-block;
@@ -374,7 +302,7 @@
     font-size: 12px;
     left: 5px;
     position: absolute;
-}*/
+}
 .home-sign-up{
     position: absolute;
     bottom: 0;

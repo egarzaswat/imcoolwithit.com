@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br />Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'http://iamcoolwithit.com/';
+	public $sitename = 'https://cool.lom-sriblo.com.ua/';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -13,9 +13,9 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
-	public $user = 'root';
-	public $password = '';
-	public $db = 'test_clear';
+	public $user = 'lomsribl_cool';
+	public $password = 'tZA?=PuT#[=_';
+	public $db = 'lomsribl_cool';
 	public $dbprefix = 'jproject_';
 	public $live_site = '';
 	public $secret = 'SqhKy378aVwM1vty';
@@ -32,7 +32,7 @@ class JConfig {
 	public $mailonline = '1';
 	public $mailer = 'mail';
 	public $mailfrom = 'support@coolwithit.com';
-	public $fromname = 'http://iamcoolwithit.com/';
+	public $fromname = 'https://cool.lom-sriblo.com.ua/';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = 'vanyatsurkan@gmail.com';
@@ -44,7 +44,7 @@ class JConfig {
 	public $cache_handler = 'file';
 	public $cachetime = '15';
 	public $cache_platformprefix = '0';
-	public $MetaDesc = 'http://iamcoolwithit.com/';
+	public $MetaDesc = 'https://cool.lom-sriblo.com.ua/';
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';

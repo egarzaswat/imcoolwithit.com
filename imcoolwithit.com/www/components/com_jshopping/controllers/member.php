@@ -1017,15 +1017,17 @@ class JshoppingControllerMember extends JControllerLegacy{
             if(is_null($adv_user->looking_for) || $adv_user->looking_for == 0){
                 $adv_user->looking_for = JText::_('UNKNOWN');
             } else {
-                if($adv_user->looking_for == 2){
-                    $adv_user->looking_for = JText::_('MALE');
-                }
-                if($adv_user->looking_for == 1){
-                    $adv_user->looking_for = JText::_('FEMALE');
-                }
-                if($adv_user->looking_for == 3){
-                    $adv_user->looking_for = JText::_('EITHER');
-                }
+                $adv_user->looking_for = $jshopConfig->looking_for[$adv_user->looking_for];
+
+//                if($adv_user->looking_for == 2){
+//                    $adv_user->looking_for = JText::_('MALE');
+//                }
+//                if($adv_user->looking_for == 1){
+//                    $adv_user->looking_for = JText::_('FEMALE');
+//                }
+//                if($adv_user->looking_for == 3){
+//                    $adv_user->looking_for = JText::_('EITHER');
+//                }
             }
 
             if(is_null($adv_user->ethnicity) || $adv_user->ethnicity == ""){
@@ -1485,15 +1487,16 @@ class JshoppingControllerMember extends JControllerLegacy{
         if(is_null($data_user->looking_for) || $data_user->looking_for == 0){
             $data_user->looking_for = JText::_('UNKNOWN');
         } else {
-            if($data_user->looking_for == 2){
-                $data_user->looking_for = JText::_('MALE');
-            }
-            if($data_user->looking_for == 1){
-                $data_user->looking_for = JText::_('FEMALE');
-            }
-            if($data_user->looking_for == 3){
-                $data_user->looking_for = JText::_('EITHER');
-            }
+            $data_user->looking_for = $jshopConfig->looking_for[$data_user->looking_for];
+//            if($data_user->looking_for == 2){
+//                $data_user->looking_for = JText::_('MALE');
+//            }
+//            if($data_user->looking_for == 1){
+//                $data_user->looking_for = JText::_('FEMALE');
+//            }
+//            if($data_user->looking_for == 3){
+//                $data_user->looking_for = JText::_('EITHER');
+//            }
         }
         if(is_null($data_user->ethnicity) || $data_user->ethnicity == ""){
             $data_user->ethnicity = JText::_('UNKNOWN');

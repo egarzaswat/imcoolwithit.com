@@ -134,12 +134,14 @@ if(isset($_GET['referrer'])){
 <?php if(!$isoffline){?>
 <div class="header-full">
     <div class="container">
-        <div class="header-logo col-lg-4 col-sm-5 col-xs-12">
-            <jdoc:include type="modules" name="logo" style="none" />
-        </div>
+        <div class="header-container">
+            <div class="header-logo col-lg-4 col-sm-5 col-xs-12">
+                <jdoc:include type="modules" name="logo" style="none" />
+            </div>
 
-        <div class="header-links-cool col-lg-8 col-sm-7 col-xs-12 hidden-xs">
-            <jdoc:include type="modules" name="mainmenu" style="none" />
+            <div class="header-links-cool col-lg-8 col-sm-7 col-xs-12 hidden-xs">
+                <jdoc:include type="modules" name="mainmenu" style="none" />
+            </div>
         </div>
     </div>
 </div>
@@ -148,24 +150,26 @@ if(isset($_GET['referrer'])){
 <?php if ($isoffline) { ?>
     <div class="container-full">
         <?php if ($ishomepage) { ?>
-
-            <div class="home-top-content">
-                <div class="home-header">
-                    <div class="container">
-                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                            <div class="home-sign-in">
-                                <jdoc:include type="modules" name="mainmenu" style="none" />
-                            </div>
-                            <div class="home-logo">
-                                <jdoc:include type="modules" name="home-logo" style="none" />
-                            </div>
+            <div class="home-header">
+                <div class="container">
+                    <div class="header-container">
+                        <div class="home-logo">
+                            <jdoc:include type="modules" name="home-logo" style="none" />
                         </div>
+                        <div class="home-sign-in">
+                            <jdoc:include type="modules" name="mainmenu" style="none" />
+                        </div>
+
                     </div>
-                    <span class="home-header-text">
-                        <h1><b>Cool With It™</b> is the 100% free<br>dating site that takes you out.</h1>
-                    </span>
                 </div>
-                <div class="home-sign-up">
+                <div class="home-gradient"></div>
+            </div>
+            <div class="home-top-content">
+                <h1>Do something new.</h1>
+                <div class="top-info">Meet people. Find cool things to do.</div>
+                <button class="join-button">Join</button>
+
+                <!--<div class="home-sign-up">
                     <div class="container">
                         <div class="col-sm-10 col-sm-offset-1 col-xs-12 padding-null-xs">
                             <div class="sign-up-box">
@@ -187,12 +191,12 @@ if(isset($_GET['referrer'])){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
-            <div class="home-gradient"></div>
-        <?php } ?>
 
-        <?php if ($ishomepage) { ?>
+
+
+            
             <div class="home-center-content">
                 <div class="container">
                     <jdoc:include type="modules" name="center-content" style="none" />
