@@ -20,7 +20,6 @@ if ( $sponsor) {
     $mail = new sendMail();
     $mail->setSubject($subject);
     $mail->setMessage($message);
-//    $mail->setTo('vanyatsurkan@gmail.com');
     $mail->setTo($conf->smtpuser);
     $success = $mail->Send();
 }

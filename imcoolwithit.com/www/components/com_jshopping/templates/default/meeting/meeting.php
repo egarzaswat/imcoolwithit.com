@@ -52,6 +52,10 @@
                     </div>
                 </div>
                 <div class="right">
+                    <a href="/meeting/verification?sponsor=<?php print $this->sponsor_data['product_id']; ?>">
+                        <img src="/templates/protostar/images/system/redeem_now.png">
+                        <span><?php print JText::_('REDEEM_NOW'); ?></span>
+                    </a>
                     <?php if ($this->submit_data['friend'] == 0) { ?>
                         <a href="<?php print $this->link_not_your_date; ?>">
                             <img src="/templates/protostar/images/system/choose_date.png">

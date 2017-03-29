@@ -103,6 +103,16 @@ function addUserToFriends($myId, $userId){
 if (isset($_POST['user_id'])) {
 
      $user_id = (int)$_POST['user_id'];
-    
+
+    $db = JFactory::getDBO();
+    $query = "SELECT `photosite` FROM `jproject_jshopping_users` WHERE `user_id` = " . $current_user;
+    $db->setQuery($query);
+    $result = $db->loadAssocList();
+    $result = $result[0]['photosite'];
+
+    if(!isset($result) || is_null($result) || $result == ''){
+        echo "Cant send friend invite unless they have a pic.";
+        die;
+    }
     echo addUserToFriends($current_user, $user_id);
 }

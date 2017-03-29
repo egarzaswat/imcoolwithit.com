@@ -382,8 +382,6 @@
 
 
     jQuery('.full-user-page .external-links-top .send-token').click(function(){
-
-        console.debug('!!!!!!!!');
         console.debug(this.getAttribute('data-user'));
 
         var data_post = {
@@ -395,10 +393,14 @@
             url: '/components/com_jshopping/controllers/save_data/add_to_friends.php',
             data: data_post,
             success: function(data){
-                jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
+                if(data == 'request confirmed' || data == 'request sent'){
+                    jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
+                } else {
+                    alert(data);
+                }
             },
             error: function(data){
-                console.log(data);
+                alert(data);
             }
         });
         return false;

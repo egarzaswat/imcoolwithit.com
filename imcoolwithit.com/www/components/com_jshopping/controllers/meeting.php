@@ -28,6 +28,8 @@ class JshoppingControllerMeeting extends JControllerLegacy{
             $this->displayCouponInfo();
         } else if($this->task == 'confirmation') {
             $this->displayConfirmation();
+        } else if($this->task == 'verification') {
+            $this->displayVerification();
         } else if($this->task == 'confirmed_info'){
             $this->displayConfirmedInfo();
         } else {
@@ -92,7 +94,7 @@ class JshoppingControllerMeeting extends JControllerLegacy{
 
         $permission_meeting = isset($permission_meeting)?$permission_meeting:true;
 
-        $sponsor_data = $modelSponsors->getSponsorData($sponsor_id, array('title_en-GB', 'name_en-GB', 'image', 'short_description_en-GB', 'city_en-GB', 'state_en-GB', 'product_ean', 'tokens'));
+        $sponsor_data = $modelSponsors->getSponsorData($sponsor_id, array('product_id', 'title_en-GB', 'name_en-GB', 'image', 'short_description_en-GB', 'city_en-GB', 'state_en-GB', 'product_ean', 'tokens'));
         $sponsor_data = $sponsor_data[0];
         $sponsor_data['name'] = $sponsor_data['name_en-GB'];
         $sponsor_data['title'] = $sponsor_data['title_en-GB'];
@@ -411,6 +413,33 @@ class JshoppingControllerMeeting extends JControllerLegacy{
         $view->assign('meet', $meet_id);
         $view->assign('link_info', $link_info);
 //        $view->assign('menu', $menu);
+        $view->display();
+    }
+
+    function displayVerification(){
+        $mainframe = JFactory::getApplication();
+        $params = $mainframe->getParams();
+        $jshopConfig = JSFactory::getConfig();
+
+        $meet_id = JRequest::getInt('sponsor');
+        if( !isset($meet_id) || $meet_id == 0 ){
+            header('Location: ' . 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_ERROR'));
+            exit;
+        }
+
+        $meta_data = JSFactory::getMetaData('meeting_confirmation');
+        setMetaData($meta_data['title'], $meta_data['keywords'], $meta_data['description'], $params);
+
+        $modelSponsors = JSFactory::getModel('sponsors', 'jshop');
+        $sponsor_data = $modelSponsors->getSponsorData($meet_id, array('product_id', 'image', 'short_description_' . JSFactory::getLang()->lang, 'title_' . JSFactory::getLang()->lang, 'tokens', 'name_' . JSFactory::getLang()->lang));
+        $sponsor_data = $sponsor_data[0];
+        $sponsor_data['image'] = JSFactory::existImage($jshopConfig->image_product_path_site_medium, $sponsor_data['image']);
+
+        $view_name = "meeting";
+        $view_config = array("template_path"=>$jshopConfig->template_path.$jshopConfig->template."/".$view_name);
+        $view = $this->getView($view_name, getDocumentType(), '', $view_config);
+        $view->setLayout('verification');
+        $view->assign('sponsor_data', $sponsor_data);
         $view->display();
     }
 

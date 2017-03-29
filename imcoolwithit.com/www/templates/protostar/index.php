@@ -153,8 +153,13 @@ if(isset($_GET['referrer'])){
             <div class="home-header">
                 <div class="container">
                     <div class="header-container">
-                        <div class="home-logo">
-                            <jdoc:include type="modules" name="home-logo" style="none" />
+                        <div class="header-left">
+                            <div class="home-logo">
+                                <jdoc:include type="modules" name="home-logo" style="none" />
+                            </div>
+                            <span class="header-info">
+                                The 100% free dating site that takes you out.
+                            </span>
                         </div>
                         <div class="home-sign-in">
                             <jdoc:include type="modules" name="mainmenu" style="none" />
@@ -168,46 +173,65 @@ if(isset($_GET['referrer'])){
                 <h1>Do something new.</h1>
                 <div class="top-info">Meet people. Find cool things to do.</div>
                 <button class="join-button">Join</button>
-
-                <!--<div class="home-sign-up">
-                    <div class="container">
-                        <div class="col-sm-10 col-sm-offset-1 col-xs-12 padding-null-xs">
-                            <div class="sign-up-box">
-                                <div class="sign-up-text">
-                                    <span>Be yourself, earn credits and use them on great experiences and local deals.</span>
-                                    <span class="sign-up-below"><strong>Sign up below</strong> to meet people, go out and have fun!</span>
-                                </div>
-                                <div class="sign-up-border">
-                                    <div class="sign-up-fb">
-                                        <jdoc:include type="modules" name="social" style="none" />
-                                    </div>
-                                    <div class="sign-up-separator">
-                                        <span class="sign-up-or">OR</span>
-                                    </div>
-                                    <div class="sign-up-site">
-                                        <jdoc:include type="modules" name="mylogin" style="none" />
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+            <div class="how-we-work home-block">
+                <div class="title">How we work</div>
+                <div class="container">
+                    <div class="how-block">
+                        <div class="image">
+                            <img src="/images/home/how-we-work-1.png">
+                        </div>
+                        <div class="how-info">
+                            <span class="how-title">Search</span>
+                            <span class="how-text">Reach out to local singles or attend an event to meet new people.</span>
+                            <a href="#">Sign up</a>
                         </div>
                     </div>
-                </div>-->
+                    <div class="how-block">
+                        <div class="image">
+                            <img src="/images/home/how-we-work-2.png">
+                        </div>
+                        <div class="how-info">
+                            <span class="how-title">Find things to do</span>
+                            <span class="how-text">Search for local places and events. Ask someone to go with you or bring a friend.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-            
-            <div class="home-center-content">
+            <div class="makes-different">
+                <div class="title">What makes us different</div>
                 <div class="container">
-                    <jdoc:include type="modules" name="center-content" style="none" />
+                    <div class="makes-block">
+                        <div class="image">
+                            <img src="/images/home/makes-1.png">
+                        </div>
+                        <div class="makes-info">
+                            <div class="makes-title">We cut down on the cost of dating</div>
+                            <div class="makes-text">We work with local venues to offer members exclusive Linc Up date ideas. We'll notify you when we have offers in your area and you can use your Credits to redeem them.</div>
+                        </div>
+                    </div>
+                    <div class="makes-block">
+                        <div class="image">
+                            <img src="/images/home/makes-2.png">
+                        </div>
+                        <div class="makes-info">
+                            <div class="makes-title">Less wasted time</div>
+                            <div class="makes-text">Using a Credit system helps eliminate fake likes and harassing messages.</div>
+                        </div>
+                    </div>
+                    <div class="makes-block">
+                        <div class="image">
+                            <img src="/images/home/makes-3.png">
+                        </div>
+                        <div class="makes-info">
+                            <div class="makes-title">Honesty feedback</div>
+                            <div class="makes-text">We developed the first honesty feedback rating system for dating, where members earn credits for reviewing a member they felt was honest.<br>Personal information remains private and we think it's a good way to reward people for being themselves, while promoting a safer online dating environment.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="home-gradient"></div>
-            <div class="home-bottom-content">
-                <div class="container">
-                    <jdoc:include type="modules" name="bottom-content" style="none" />
-                </div>
-            </div>
+
         <?php } else { ?>
             <jdoc:include type="component" />
         <?php } ?>
@@ -217,21 +241,6 @@ if(isset($_GET['referrer'])){
 <?php } ?>
 
 <div class="footer-full">
-    <div class="footer-line">
-        <?php if($isoffline){ ?>
-            <div class="container">
-<!--                <a href="https://www.facebook.com/imcoolwithit" target="_blank">-->
-<!--                    <i class="icon-fb"></i>-->
-<!--                </a>-->
-                <a href="https://twitter.com/rucoolwithit" target="_blank">
-                    <i class="icon-twitter"></i>
-                </a>
-<!--                <a href="https://www.youtube.com/channel/UCdDj1mn8zURzGIjieXnkgZg" target="_blank">-->
-<!--                    <i class="icon-youtube"></i>-->
-<!--                </a>-->
-            </div>
-        <?php } ?>
-    </div>
     <div class="container">
         <div class="footer-links col-sm-8 col-xs-12">
             <jdoc:include type="modules" name="footer" style="none" />
