@@ -16,7 +16,20 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 <div class="about-us">
     <div class="home-header">
         <div class="container">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="home-logo">
+                        <?php
+                        jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
+                        $module = JModuleHelper::getModules('home-logo');       // получаем в массив все модули из заданной позиции
+                        $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
+                        echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
+                        ?>
+                    </div>
+                    <span class="header-info">
+                        The 100% free dating site that takes you out.
+                    </span>
+                </div>
                 <div class="home-sign-in">
                     <?php
                     jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
@@ -25,46 +38,14 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
                     echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
                     ?>
                 </div>
-                <div class="home-logo">
-                    <?php
-                    jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
-                    $module = JModuleHelper::getModules('home-logo');       // получаем в массив все модули из заданной позиции
-                    $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
-                    echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
-                    ?>
-                </div>
+
             </div>
         </div>
+        <div class="home-gradient"></div>
     </div>
+
     <div class="content-block about-us-block container">
         <h1><?php print $this->data[0]->header ?></h1>
         <?php print $this->data[0]->content ?>
     </div>
 </div>
-
-<!--<div class="general_content container">
-    <div class="text_column col-sm-7 col-xs-12">
-        <h1 class="text_header"><?php /*print $this->data[0]->header */?></h1>
-        <div class="text_block">
-            <?php /*print $this->data[0]->content */?>
-        </div>
-    </div>
-    <div class="picture_column col-sm-5 col-xs-12">
-        <div class="about_us_picture">
-            <img src="<?php /*print '/images/content/' . $this->data[0]->image */?> ">
-
-            <div class="text_block">
-                <span class="sign_in">Sign In with Facebook:</span>
-                <hr>
-                <div id="social">
-                    <?php
-/*                    jimport('joomla.application.module.helper'); // подключаем нужный класс, один раз на странице, перед первым выводом
-                    $module = JModuleHelper::getModules('social'); // получаем в массив все модули из заданной позиции
-                    $attribs['style'] = 'xhtml'; // задаём, если нужно, оболочку модулей (module chrome)
-                    echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
-                    */?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->

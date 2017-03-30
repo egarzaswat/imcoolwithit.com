@@ -1,6 +1,6 @@
 <?php
 
-$config['callback_url']         =   'http://' . $_SERVER['SERVER_NAME'];
+$config['callback_url']         =   'https://' . $_SERVER['SERVER_NAME'];
 
 //Facebook configuration
 $config['App_ID']      =   '1618118001736353';

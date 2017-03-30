@@ -10,8 +10,8 @@
 {
 	$(document).ready(function()
 	{
-        $('.container-full').css('min-height', $(window).height()-205);
-		$('.homepage .container-full').css('min-height', $(window).height()-120);
+        // $('.container-full').css('min-height', $(window).height()-205);
+        // $('.homepage .container-full').css('min-height', $(window).height()-120);
         $('.back_action').click(function(){
             history.go(-1);
         });
@@ -19,8 +19,8 @@
 
     $(window).resize(function()
     {
-        $('.container-full').css('min-height', $(window).height()-205);
-        $('.homepage .container-full').css('min-height', $(window).height()-120);
+        // $('.container-full').css('min-height', $(window).height()-205);
+        // $('.homepage .container-full').css('min-height', $(window).height()-120);
         $('.back_action').click(function(){
             history.go(-1);
         });

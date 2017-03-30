@@ -213,7 +213,7 @@ if(isset($_GET['referrer'])){
                         <div class="how-info">
                             <span class="how-title">Search</span>
                             <span class="how-text">Reach out to local singles or attend an event to meet new people.</span>
-                            <a href="#">Sign up</a>
+                            <a href="/join">Sign up</a>
                         </div>
                     </div>
                     <div class="how-block">

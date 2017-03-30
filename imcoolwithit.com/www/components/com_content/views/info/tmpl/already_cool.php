@@ -1,47 +1,45 @@
 <?php
-/**
- * @package     Joomla.Site
- * @subpackage  com_content
- *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
-defined('_JEXEC') or die;
-
-JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-
+    defined('_JEXEC') or die;
+    JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 ?>
 
-<div class="home-top-content already-cool">
+<div class="already-cool">
     <div class="home-header">
         <div class="container">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="home-logo">
+                        <?php
+                            jimport( 'joomla.application.module.helper' );
+                            $module = JModuleHelper::getModules('home-logo');
+                            $attribs['style'] = 'xhtml';
+                            echo JModuleHelper::renderModule($module[0], $attribs);
+                        ?>
+                    </div>
+                    <span class="header-info">
+                        The 100% free dating site that takes you out.
+                    </span>
+                </div>
                 <div class="home-sign-in">
                     <?php
-                    jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
-                    $module = JModuleHelper::getModules('mainmenu');        // получаем в массив все модули из заданной позиции
-                    $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
-                    echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
+                        jimport( 'joomla.application.module.helper' );
+                        $module = JModuleHelper::getModules('mainmenu');
+                        $attribs['style'] = 'xhtml';
+                        echo JModuleHelper::renderModule($module[0], $attribs);
                     ?>
                 </div>
-                <div class="home-logo">
-                    <?php
-                    jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
-                    $module = JModuleHelper::getModules('home-logo');       // получаем в массив все модули из заданной позиции
-                    $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
-                    echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
-                    ?>
-                </div>
+
             </div>
         </div>
+        <div class="home-gradient"></div>
     </div>
-    <div class="home-sign-up">
-        <div class="container">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                <div class="sign-up-box">
-                    <div class="sign-up-border">
-<!--                        --><?php //if($_SERVER['REQUEST_URI'] != '/join'){ ?>
+    <div class="sign-up-container">
+        <div class="home-sign-up">
+            <div class="container">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="sign-up-box">
+                        <div class="sign-up-border">
+                            <!--                        --><?php //if($_SERVER['REQUEST_URI'] != '/join'){ ?>
                             <div class="sign-up-fb">
                                 <?php
                                 jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
@@ -54,16 +52,17 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
                             <div class="sign-up-separator">
                                 <span class="sign-up-or">OR</span>
                             </div>
-<!--                        --><?php //} ?>
-                        <div class="sign-up-site">
-                            <?php
-                            jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
-                            $module = JModuleHelper::getModules('mylogin');          // получаем в массив все модули из заданной позиции
-                            $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
-                            echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
-                            ?>
-<!--                            <jdoc:include type="modules" name="mylogin" style="none" />-->
-                            <!--<jdoc:include type="modules" name="login" style="none" />-->
+                            <!--                        --><?php //} ?>
+                            <div class="sign-up-site">
+                                <?php
+                                jimport( 'joomla.application.module.helper' );          // подключаем нужный класс, один раз на странице, перед первым выводом
+                                $module = JModuleHelper::getModules('mylogin');          // получаем в массив все модули из заданной позиции
+                                $attribs['style'] = 'xhtml';                            // задаём, если нужно, оболочку модулей (module chrome)
+                                echo JModuleHelper::renderModule($module[0], $attribs); // выводим первый модуль из заданной позиции
+                                ?>
+                                <!--                            <jdoc:include type="modules" name="mylogin" style="none" />-->
+                                <!--<jdoc:include type="modules" name="login" style="none" />-->
+                            </div>
                         </div>
                     </div>
                 </div>
