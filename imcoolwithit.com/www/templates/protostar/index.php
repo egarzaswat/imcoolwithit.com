@@ -174,6 +174,35 @@ if(isset($_GET['referrer'])){
                 <div class="top-info">Meet people. Find cool things to do.</div>
                 <button class="join-button">Join</button>
             </div>
+            <div class="search-to-go">
+                <div class="title">Search local singles, places, and events to go to.</div>
+                <div class="container">
+                    <div class="search-block">
+                        <div class="search-title">Get ready</div>
+                        <div class="search-image">
+                            <img src="/images/home/search-to-go-1.jpg">
+                        </div>
+                    </div>
+                    <div class="search-block">
+                        <div class="search-title">Grab a bite</div>
+                        <div class="search-image">
+                            <img src="/images/home/search-to-go-2.jpg">
+                        </div>
+                    </div>
+                    <div class="search-block">
+                        <div class="search-title">Tour a brewary</div>
+                        <div class="search-image">
+                            <img src="/images/home/search-to-go-3.jpg">
+                        </div>
+                    </div>
+                    <div class="search-block">
+                        <div class="search-title">Go to an event</div>
+                        <div class="search-image">
+                            <img src="/images/home/search-to-go-4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="how-we-work home-block">
                 <div class="title">How we work</div>
                 <div class="container">

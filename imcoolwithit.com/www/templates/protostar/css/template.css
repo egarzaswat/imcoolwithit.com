@@ -278,8 +278,48 @@
 }
 .header-links-cool .menu_home li a{
     padding: 0 15px;
-    color: #fff; 
+    color: #fff;
 }
+
+.search-to-go{
+    width: 100%;
+    min-height: 310px;
+    display: flex;
+    font-family: Helvetica,Arial,sans-serif;
+    flex-direction: column;
+}
+.search-to-go .title{
+    font-size: 26px;
+    color: #363737;
+    margin: 25px 0 15px;
+}
+.search-to-go .container{
+    min-height: 205px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 15px;
+}
+.search-to-go .container .search-block{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-to-go .container .search-block .search-title{
+    background-color: #f2f2f3;
+    color: #333;
+    padding: 10px 45px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.search-to-go .container .search-block .search-image{
+    width: 100%;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .how-we-work{
     width: 100%;
