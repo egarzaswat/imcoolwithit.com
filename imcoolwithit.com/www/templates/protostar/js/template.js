@@ -15,6 +15,16 @@
         $('.back_action').click(function(){
             history.go(-1);
         });
+
+
+        $('.open-signup').click(function () {
+            $('.home-sign-up-popup .buttons-popup').css("display", "none");
+            $('.home-sign-up-popup .form-popup').css("display", "flex");
+        });
+
+        $('.home-top-content .join-button').click(function () {
+            $('.home-sign-up-popup').css("display", "flex");
+        });
 	});
 
     $(window).resize(function()

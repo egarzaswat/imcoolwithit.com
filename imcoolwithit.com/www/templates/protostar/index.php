@@ -150,6 +150,28 @@ if(isset($_GET['referrer'])){
 <?php if ($isoffline) { ?>
     <div class="container-full">
         <?php if ($ishomepage) { ?>
+            <div class="home-sign-up-popup">
+                <div class="home-popup buttons-popup">
+                    <div class="popup-title">Sign Up</div>
+                    <div class="popup-fb-login">
+                        <jdoc:include type="modules" name="social" style="none" />
+                    </div>
+                    <div class="popup-signup-but">
+                        <div class="or">OR</div>
+                        <span class="error"></span>
+                        <button class="open-signup">Sign up with email</button>
+                    </div>
+                    <div class="popup-bottom">
+                        Already a member?&nbsp;&nbsp;<a href="/login">Sign in here.</a>
+                    </div>
+                </div>
+                <div class="home-popup form-popup">
+                    <jdoc:include type="modules" name="mylogin" style="none" />
+                    <div class="popup-bottom">
+                        Already a member?&nbsp;&nbsp;<a href="/login">Sign in here.</a>
+                    </div>
+                </div>
+            </div>
             <div class="home-header">
                 <div class="container">
                     <div class="header-container">
@@ -279,5 +301,6 @@ if(isset($_GET['referrer'])){
         </div>
     </div>
 </div>
+
 </body>
 </html>

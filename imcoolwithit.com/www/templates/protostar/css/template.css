@@ -113,6 +113,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
 .home-top-content h1{
     font-family: Helvetica , Arial, sans-serif;
     font-size: 55px;
@@ -265,6 +266,163 @@
     padding: 12px 15px 6px;
 }
 
+.home-sign-up-popup{
+    position: fixed;
+    width: 440px;
+    height: 350px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.5);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+}
+.home-sign-up-popup .home-popup{
+    width: 390px;
+    height: 300px;
+    display: flex;
+    border: 1px solid #f2ae4c;
+    background-color: #fff;
+    padding: 20px;
+}
+.home-sign-up-popup .home-popup.buttons-popup{
+    flex-direction: column;
+}
+.home-sign-up-popup .buttons-popup .popup-title{
+    font-family: Helvetica , Arial, sans-serif;
+    font-size: 26px;
+}
+.home-sign-up-popup .buttons-popup #fb_login{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    background-color: #2f488a;
+    text-decoration: none;
+}
+.home-sign-up-popup .buttons-popup #fb_login i{
+    width: 55px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdfdfd;
+    background-color: #253769;
+}
+.home-sign-up-popup .buttons-popup #fb_login i:before{
+    font-size: 24px;
+}
+.home-sign-up-popup .buttons-popup #fb_login span{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: #fff;
+    font-family: Arial;
+    font-size: 20px;
+}
+.home-sign-up-popup .home-popup.form-popup{
+    display: none;
+}
+.home-sign-up-popup .buttons-popup .popup-signup-but{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+    margin-top: 35px;
+}
+.home-sign-up-popup .buttons-popup .popup-signup-but .or{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #3095d6;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.home-sign-up-popup .buttons-popup .popup-signup-but button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #fff;
+    border: 1px solid #3095d6;
+    outline: none;
+    font-family: Helvetica , Arial, sans-serif;
+    font-size: 20px;
+    color: #262626;
+}
+.home-sign-up-popup .home-popup .popup-bottom{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica , Arial, sans-serif;
+    font-size: 19px;
+    color: #262626;
+    margin-top: 20px;
+}
+.home-sign-up-popup .home-popup .popup-bottom a{
+    color: #262626;
+    text-decoration: underline;
+}
+.home-sign-up-popup .home-popup .popup-bottom a:hover{
+    text-decoration: none;
+}
+.home-sign-up-popup .form-popup{
+    display: flex;
+    flex-direction: column;
+}
+.home-sign-up-popup .form-popup form{
+    display: flex;
+    flex-direction: column;
+}
+.home-sign-up-popup .form-popup form button{
+    width: 50px;
+    margin-left: 100%;
+    transform: translateX(-100%);
+}
+.home-sign-up-popup .form-popup form .form-group{
+    display: flex;
+    height: 35px;
+    margin-bottom: 35px;
+    align-items: center;
+    position: relative;
+}
+.home-sign-up-popup .form-popup form .form-group label{
+    width: 75px;
+    min-width: 75px;
+    font-size: 14px;
+}
+.home-sign-up-popup .form-popup form .form-group input{
+    flex-grow: 1;
+    height: 100%;
+    border: 1px solid #3095d6;
+    outline: none;
+    padding: 0 10px;
+}
+.home-sign-up-popup .form-popup form .form-group span{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+}
+.home-sign-up-popup .form-popup form .form-group .form-success{
+    color: #3095d6;
+}
+.home-sign-up-popup .form-popup form .form-group .form-error{
+    color: red;
+}
+
+
 .header-links-cool{
 
 }
@@ -286,7 +444,8 @@
     min-height: 310px;
     display: flex;
     font-family: Helvetica,Arial,sans-serif;
-    flex-direction: column;
+    flex-direction:     /]
+    \column;
 }
 .search-to-go .title{
     font-size: 26px;
@@ -311,6 +470,7 @@
     padding: 10px 45px;
     font-size: 20px;
     margin-bottom: 10px;
+    border-radius: 4px;
 }
 .search-to-go .container .search-block .search-image{
     width: 100%;
