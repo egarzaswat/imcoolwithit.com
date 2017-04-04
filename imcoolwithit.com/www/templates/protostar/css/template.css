@@ -470,6 +470,7 @@
     font-size: 20px;
     margin-bottom: 10px;
     border-radius: 4px;
+    max-width: 95%;
 }
 .search-to-go .container .search-block .search-image{
     width: 100%;
@@ -477,6 +478,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.search-to-go .container .search-block .search-image img{
+    max-width: 90%;
+}
+
+@media (max-width: 1200px){
+    .search-to-go .container .search-block .search-title{
+        font-size: 14px;
+        padding: 5px 25px;
+    }
+}
+@media (max-width: 767px){
+    .search-to-go .container .search-block{
+        width: 50%;
+    }
 }
 
 
@@ -608,12 +624,13 @@
 .makes-different .container .makes-block .makes-info div{
     font-size: 18px;
     width: 100%;
-    text-align: left;
+    text-align: justify;
 }
 .makes-different .container .makes-block .makes-info .makes-title{
     font-size: 28px;
     font-weight: bold;
     color: #3f5b69;
+    text-align: left;
 }
 .makes-different .container .makes-block .makes-info .makes-text{
     color: #333333;
@@ -4439,6 +4456,46 @@ a:focus, input:focus{
     .lincup-coupon .lincup-bottom{
         flex-direction: column;
         height: 190px;
+    }
+    .lincup-questions .page-content-top h1{
+        width: 100%!important;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .messaging .messaging-form .form-elements .send-text .submit-button{
+        min-width: 0;
+    }
+}
+@media (max-width: 450px){
+    .lincup-coupon .lincup-bottom .right a{
+        width: 30%;
+        margin: 0 1%;
+    }
+    .lincup-coupon .lincup-bottom .right a img{
+        max-width: 100%;
+    }
+    .lincup-coupon .lincup-bottom .right a span{
+        height: 45px;
+    }
+    .lincup-coupon .lincup-bottom{
+        padding: 0;
+    }
+    .send-invite-to-user span{
+        margin: 5px!important;
+    }
+    .earn-tokens-item .earn-tokens-answers label{
+        height: auto!important;
+        padding: 5px 15px!important;
+        line-height: 1!important;
+    }
+    .earn-tokens-list .earn-tokens-item{
+        padding-bottom: 50px!important;
+    }
+    .messaging .messaging-form .form-elements .padding-null{
+        width: 100%;
+    }
+    .messaging .messaging-form .form-elements .input-text{
+        margin: 10px 0 10px 0;
     }
 }
 

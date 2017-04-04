@@ -242,7 +242,7 @@ defined('_JEXEC') or die('Restricted access');
             '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
             '<option' + ( (looking_value.html() === '<?php print JText::_('MALE'); ?>')? ' selected ' : '' ) + ' value="2" ><?php print JText::_('MALE'); ?></option>' +
             '<option' + ( (looking_value.html() === '<?php print JText::_('FEMALE'); ?>')? ' selected ' : '' ) + ' value="1" ><?php print JText::_('FEMALE'); ?></option>' +
-            '<option' + ( (looking_value.html() === '<?php print JText::_('EITHER'); ?>')? ' selected ' : '' ) + ' value="3" ><?php print JText::_('EITHER'); ?></option>' +
+            '<option' + ( (looking_value.html() === '<?php print JText::_('EVERYONE'); ?>')? ' selected ' : '' ) + ' value="3" ><?php print JText::_('EVERYONE'); ?></option>' +
         '</select>';
         looking_value.html(looking_field);
 
@@ -297,7 +297,7 @@ defined('_JEXEC') or die('Restricted access');
                         _look = '<?php print JText::_('MALE'); ?>';
                     }
                     if(f_look.val() == 3){
-                        _look = '<?php print JText::_('EITHER'); ?>';
+                        _look = '<?php print JText::_('EVERYONE'); ?>';
                     }
                     jQuery('.profile-content-left .look').text(_look);
                 } else {
