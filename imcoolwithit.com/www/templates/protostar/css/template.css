@@ -444,8 +444,7 @@
     min-height: 310px;
     display: flex;
     font-family: Helvetica,Arial,sans-serif;
-    flex-direction:     /]
-    \column;
+    flex-direction: column;
 }
 .search-to-go .title{
     font-size: 26px;
