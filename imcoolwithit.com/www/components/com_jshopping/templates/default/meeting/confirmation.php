@@ -25,7 +25,7 @@
             </span>
         </div>
 
-        <div class="redeem-ready"><span><?php print JText::_('LINCUP_REDEEM_INFO'); ?></span></div>
+        <div class="redeem-ready"><span><?php print JText::_('LINCUP_REDEEM_INFO_'); ?></span></div>
 
         <div class="lincup-coupon-info row">
             <div class="lincup-coupon-logo col-sm-4 col-xs-12">

@@ -233,6 +233,13 @@
         max-width: 100%;
     }
 }
+@media (max-width: 450px){
+    .home-header .home-sign-in .menu_home{
+        height: 80px!important;
+        margin: 0!important;
+        flex-direction: column;
+    }
+}
 .home-header .header-left .home-logo{
     height: 80px;
     width: 235px;
@@ -1072,6 +1079,9 @@
     .home-center-content .center-bottom-text .center-bottom-column .column-title{
         justify-content: center;
     }
+    .already-cool{
+        height: auto!important;
+    }
 }
 
 @media (max-width: 991px){
@@ -1845,6 +1855,11 @@ a:focus, input:focus{
         font-size: 18px;
         text-align: center;
         width: 100%;
+    }
+}
+@media (max-width: 380px){
+    .form-signup-input{
+        width: 165px!important;
     }
 }
 /*
