@@ -299,6 +299,22 @@
 .home-sign-up-popup .home-popup.buttons-popup{
     flex-direction: column;
 }
+.home-sign-up-popup .home-popup.buttons-popup .close-home-popup{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    border: 1px solid #44546a;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+}
 .home-sign-up-popup .buttons-popup .popup-title{
     font-family: Helvetica , Arial, sans-serif;
     font-size: 26px;

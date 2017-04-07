@@ -152,6 +152,7 @@ if(isset($_GET['referrer'])){
         <?php if ($ishomepage) { ?>
             <div class="home-sign-up-popup">
                 <div class="home-popup buttons-popup">
+                    <span class="close-home-popup">x</span>
                     <div class="popup-title">Sign Up</div>
                     <div class="popup-fb-login">
                         <jdoc:include type="modules" name="social" style="none" />
@@ -212,7 +213,7 @@ if(isset($_GET['referrer'])){
                         </div>
                     </div>
                     <div class="search-block">
-                        <div class="search-title">Tour a brewary</div>
+                        <div class="search-title">Tour a brewery</div>
                         <div class="search-image">
                             <img src="/images/home/search-to-go-3.jpg">
                         </div>

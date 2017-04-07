@@ -59,11 +59,11 @@ $document->addScript($pathToJS.'js_crop_image/jquery.min.js');
                 </div>
                 <div class="field-block">
                     <span><?php print JText::_('SETTINGS_RELATIONSHIP_TYPE'); ?></span>
-                    <select name="relationship_type" required="required">
+                    <select name="relationship_type" required="required" >
                         <option <?php if($this->user->relationship_type == 'Hang Out') { print 'selected';} ?> value="Hang Out" >Hang Out</option>
                         <option <?php if($this->user->relationship_type == 'Dating') { print 'selected';} ?> value="Dating" >Dating</option>
                         <option <?php if($this->user->relationship_type == 'Serious Relationship') { print 'selected';} ?> value="Serious Relationship" >Serious Relationship</option>
-                        <option <?php if($this->user->relationship_type == 'Hang Out / Dating / Serious Relationship') { print 'selected';} ?> value="Hang Out / Dating / Serious Relationship" >Hang Out / Dating / Serious Relationship</option>
+                        <option <?php if($this->user->relationship_type == 'Hang Out - Dating - Serious Relationship') { print 'selected';} ?> value="Hang Out - Dating - Serious Relationship" >Hang Out - Dating - Serious Relationship</option>
                     </select>
                     <?php echo $this->relationship_type_options; ?>
                 </div>

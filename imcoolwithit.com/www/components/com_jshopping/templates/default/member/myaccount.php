@@ -247,11 +247,12 @@ defined('_JEXEC') or die('Restricted access');
         looking_value.html(looking_field);
 
         var relationship_type_value = jQuery('.profile-content-left .type');
-        var relationship_type_field ='<select name="relationship_type">' +
+        var relationship_type_field ='<select name="relationship_type" style="max-width: 200px;">' +
             '<option disabled selected>' + '<?php print JText::_('UNKNOWN'); ?>' + '</option>' +
-            '<option' + ( (relationship_type_value.html() === 'Friends')? ' selected ' : '' ) + ' value="Friends" >Friends</option>' +
-            '<option' + ( (relationship_type_value.html() === 'Short Term')? ' selected ' : '' ) + ' value="Short Term" >Short Term</option>' +
-            '<option' + ( (relationship_type_value.html() === 'Long Term')? ' selected ' : '' ) + ' value="Long Term" >Long Term</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Hang Out')? ' selected ' : '' ) + ' value="Hang Out" >Hang Out</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Dating')? ' selected ' : '' ) + ' value="Dating" >Dating</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Serious Relationship')? ' selected ' : '' ) + ' value="Serious Relationship" >Serious Relationship</option>' +
+            '<option' + ( (relationship_type_value.html() === 'Hang Out - Dating - Serious Relationship')? ' selected ' : '' ) + ' value="Hang Out - Dating - Serious Relationship" >Hang Out - Dating - Serious Relationship</option>' +
         '</select>';
         relationship_type_value.html(relationship_type_field);
     });

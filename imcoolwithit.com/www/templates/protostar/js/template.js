@@ -25,6 +25,9 @@
         $('.home-top-content .join-button').click(function () {
             $('.home-sign-up-popup').css("display", "flex");
         });
+        $('.close-home-popup').click(function () {
+            $('.home-sign-up-popup').css("display", "none");
+        });
 	});
 
     $(window).resize(function()
