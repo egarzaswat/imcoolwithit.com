@@ -111,7 +111,7 @@ if (isset($_POST['user_id'])) {
     $result = $result[0]['photosite'];
 
     if(!isset($result) || is_null($result) || $result == ''){
-        echo "Sorry, you have to add a picture to send a friend request.";
+        echo JSFactory::getPopup("Sorry, you have to add a picture to send a friend request.");
         die;
     }
     echo addUserToFriends($current_user, $user_id);

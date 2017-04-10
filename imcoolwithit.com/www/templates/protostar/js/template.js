@@ -8,7 +8,15 @@
 
 (function($)
 {
-	$(document).ready(function()
+    function showSitePopup() {
+        $('.site-popup').css("display", "flex");
+    }
+
+    function hideSitePopup() {
+        $('.site-popup').css("display", "none");
+    }
+
+    $(document).ready(function()
 	{
         // $('.container-full').css('min-height', $(window).height()-205);
         // $('.homepage .container-full').css('min-height', $(window).height()-120);
@@ -23,10 +31,10 @@
         });
 
         $('.home-top-content .join-button').click(function () {
-            $('.home-sign-up-popup').css("display", "flex");
+            showSitePopup();
         });
-        $('.close-home-popup').click(function () {
-            $('.home-sign-up-popup').css("display", "none");
+        $('.home-sign-up-popup .close-site-popup').click(function () {
+            hideSitePopup();
         });
 	});
 

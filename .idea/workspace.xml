@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ab74108-9d38-44b0-af8c-23958d00dcf2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imcoolwithit.com/www/.idea/workspace.xml" afterPath="$PROJECT_DIR$/imcoolwithit.com/www/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/lib/factory.php" afterPath="$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/lib/factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/css/template.css" afterPath="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/index.php" afterPath="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +18,300 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="full_user_page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/templates/default/member/full_user_page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="398" column="32" lean-forward="true" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
+              <folding>
+                <marker date="1490796598813" expanded="true" signature="8068:8085" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/lib/factory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="1206" column="5" lean-forward="true" selection-start-line="1206" selection-start-column="5" selection-end-line="1206" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#208#0#PHP" expanded="false" />
+                <element signature="n#getConfig#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#757#4838#0#PHP" expanded="false" />
+                <element signature="e#1605#1919#0#PHP" expanded="false" />
+                <element signature="e#2034#2129#0#PHP" expanded="false" />
+                <element signature="e#2142#2468#0#PHP" expanded="false" />
+                <element signature="e#2482#2695#0#PHP" expanded="false" />
+                <element signature="e#2628#2695#0#PHP" expanded="false" />
+                <element signature="e#2818#2906#0#PHP" expanded="false" />
+                <element signature="e#2920#3137#0#PHP" expanded="false" />
+                <element signature="e#3061#3137#0#PHP" expanded="false" />
+                <element signature="e#3151#3487#0#PHP" expanded="false" />
+                <element signature="e#3672#4036#0#PHP" expanded="false" />
+                <element signature="e#3802#3936#0#PHP" expanded="false" />
+                <element signature="e#3936#4036#0#PHP" expanded="false" />
+                <element signature="e#4049#4226#0#PHP" expanded="false" />
+                <element signature="e#4239#4582#0#PHP" expanded="false" />
+                <element signature="e#4586#4698#0#PHP" expanded="false" />
+                <element signature="n#getUserShop#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#4938#5696#0#PHP" expanded="false" />
+                <element signature="e#5191#5587#0#PHP" expanded="false" />
+                <element signature="e#5222#5389#0#PHP" expanded="false" />
+                <element signature="e#5519#5587#0#PHP" expanded="false" />
+                <element signature="n#getUserShopGuest#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#5804#6158#0#PHP" expanded="false" />
+                <element signature="n#getUser#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#6272#6417#0#PHP" expanded="false" />
+                <element signature="e#6347#6417#0#PHP" expanded="false" />
+                <element signature="n#loadCssFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#6610#7120#0#PHP" expanded="false" />
+                <element signature="e#6849#7087#0#PHP" expanded="false" />
+                <element signature="n#loadJsFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#7196#7790#0#PHP" expanded="false" />
+                <element signature="e#7410#7757#0#PHP" expanded="false" />
+                <element signature="n#loadJsFilesRating#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#7872#8407#0#PHP" expanded="false" />
+                <element signature="e#7948#8374#0#PHP" expanded="false" />
+                <element signature="n#loadJsFilesLightBox#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#8597#9689#0#PHP" expanded="false" />
+                <element signature="e#8891#9655#0#PHP" expanded="false" />
+                <element signature="n#reloadConfigFieldTLF#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#9960#10188#0#PHP" expanded="false" />
+                <element signature="e#10041#10137#0#PHP" expanded="false" />
+                <element signature="n#loadLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#10305#10373#0#PHP" expanded="false" />
+                <element signature="n#loadExtLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#10914#10982#0#PHP" expanded="false" />
+                <element signature="n#loadAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#11419#11487#0#PHP" expanded="false" />
+                <element signature="n#loadExtAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#12047#12115#0#PHP" expanded="false" />
+                <element signature="n#getLang#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#12555#12926#0#PHP" expanded="false" />
+                <element signature="e#12696#12780#0#PHP" expanded="false" />
+                <element signature="n#getReservedFirstAlias#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#13029#13340#0#PHP" expanded="false" />
+                <element signature="e#13233#13330#0#PHP" expanded="false" />
+                <element signature="n#getAliasCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#13441#13940#0#PHP" expanded="false" />
+                <element signature="e#13819#13904#0#PHP" expanded="false" />
+                <element signature="n#getAliasManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#14045#14551#0#PHP" expanded="false" />
+                <element signature="e#14430#14515#0#PHP" expanded="false" />
+                <element signature="n#getAliasProduct#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#14651#15185#0#PHP" expanded="false" />
+                <element signature="e#15026#15149#0#PHP" expanded="false" />
+                <element signature="n#getAllAttributes#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#15305#15463#0#PHP" expanded="false" />
+                <element signature="e#15472#15533#0#PHP" expanded="false" />
+                <element signature="e#15542#15763#0#PHP" expanded="false" />
+                <element signature="e#15617#15713#0#PHP" expanded="false" />
+                <element signature="e#15772#16225#0#PHP" expanded="false" />
+                <element signature="e#15959#16175#0#PHP" expanded="false" />
+                <element signature="n#getAllUnits#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#16301#16434#0#PHP" expanded="false" />
+                <element signature="n#getAllTaxesOriginal#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#16536#16803#0#PHP" expanded="false" />
+                <element signature="e#16700#16793#0#PHP" expanded="false" />
+                <element signature="n#getAllTaxes#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#16897#19417#0#PHP" expanded="false" />
+                <element signature="e#17148#19341#0#PHP" expanded="false" />
+                <element signature="e#17341#17512#0#PHP" expanded="false" />
+                <element signature="e#17643#18118#0#PHP" expanded="false" />
+                <element signature="e#17799#17978#0#PHP" expanded="false" />
+                <element signature="e#18135#19327#0#PHP" expanded="false" />
+                <element signature="e#18351#19148#0#PHP" expanded="false" />
+                <element signature="e#18401#19126#0#PHP" expanded="false" />
+                <element signature="e#18472#19100#0#PHP" expanded="false" />
+                <element signature="e#18544#18772#0#PHP" expanded="false" />
+                <element signature="e#18668#18772#0#PHP" expanded="false" />
+                <element signature="e#18802#19100#0#PHP" expanded="false" />
+                <element signature="e#18840#19070#0#PHP" expanded="false" />
+                <element signature="e#18966#19070#0#PHP" expanded="false" />
+                <element signature="n#getAllManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#19518#20232#0#PHP" expanded="false" />
+                <element signature="e#20117#20195#0#PHP" expanded="false" />
+                <element signature="n#getMainVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#20327#20444#0#PHP" expanded="false" />
+                <element signature="n#getAllVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#20538#21011#0#PHP" expanded="false" />
+                <element signature="e#20896#20974#0#PHP" expanded="false" />
+                <element signature="n#getAllDeliveryTime#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#21112#21557#0#PHP" expanded="false" />
+                <element signature="e#21436#21520#0#PHP" expanded="false" />
+                <element signature="n#getAllDeliveryTimeDays#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#21662#22079#0#PHP" expanded="false" />
+                <element signature="e#21958#22042#0#PHP" expanded="false" />
+                <element signature="n#getAllProductExtraField#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#22185#22337#0#PHP" expanded="false" />
+                <element signature="n#getAllProductExtraFieldValue#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#22448#22619#0#PHP" expanded="false" />
+                <element signature="n#getAllProductExtraFieldValueDetail#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#22736#22907#0#PHP" expanded="false" />
+                <element signature="n#getDisplayListProductExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#23045#23724#0#PHP" expanded="false" />
+                <element signature="e#23181#23414#0#PHP" expanded="false" />
+                <element signature="e#23221#23400#0#PHP" expanded="false" />
+                <element signature="e#23300#23400#0#PHP" expanded="false" />
+                <element signature="e#23556#23670#0#PHP" expanded="false" />
+                <element signature="n#getDisplayFilterExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#23872#24546#0#PHP" expanded="false" />
+                <element signature="e#24008#24241#0#PHP" expanded="false" />
+                <element signature="e#24048#24227#0#PHP" expanded="false" />
+                <element signature="e#24127#24227#0#PHP" expanded="false" />
+                <element signature="e#24378#24492#0#PHP" expanded="false" />
+                <element signature="n#getAllCurrency#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#24658#24936#0#PHP" expanded="false" />
+                <element signature="e#24839#24926#0#PHP" expanded="false" />
+                <element signature="n#getShippingExtList#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#25054#25810#0#PHP" expanded="false" />
+                <element signature="e#25340#25800#0#PHP" expanded="false" />
+                <element signature="e#25490#25786#0#PHP" expanded="false" />
+                <element signature="e#25676#25786#0#PHP" expanded="false" />
+                <element signature="e#25819#25877#0#PHP" expanded="false" />
+                <element signature="e#25917#26307#0#PHP" expanded="false" />
+                <element signature="e#25953#26106#0#PHP" expanded="false" />
+                <element signature="e#26056#26106#0#PHP" expanded="false" />
+                <element signature="e#26119#26202#0#PHP" expanded="false" />
+                <element signature="e#26215#26297#0#PHP" expanded="false" />
+                <element signature="n#getTable#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getModel#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getSendLocationFunc#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#markVisitors#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#27353#27411#0#PHP" expanded="false" />
+                <element signature="e#27353#27441#0#PHP" expanded="false" />
+                <element signature="e#27353#27474#0#PHP" expanded="false" />
+                <element signature="n#isUserOffline#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#27639#27709#0#PHP" expanded="false" />
+                <element signature="e#27639#27766#0#PHP" expanded="false" />
+                <element signature="e#27639#27809#0#PHP" expanded="false" />
+                <element signature="n#getAge#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getYearBirthday#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getDateDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#28453#28535#0#PHP" expanded="false" />
+                <element signature="e#29756#30921#0#PHP" expanded="false" />
+                <element signature="e#29905#30921#0#PHP" expanded="false" />
+                <element signature="e#30047#30921#0#PHP" expanded="false" />
+                <element signature="e#30179#30921#0#PHP" expanded="false" />
+                <element signature="e#30394#30921#0#PHP" expanded="false" />
+                <element signature="e#30621#30921#0#PHP" expanded="false" />
+                <element signature="e#30752#30921#0#PHP" expanded="false" />
+                <element signature="n#getDateTimeDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getDateFormatMonthYearNumber#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getMetaData#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#31440#31571#0#PHP" expanded="false" />
+                <element signature="e#31440#31622#0#PHP" expanded="false" />
+                <element signature="e#31440#31668#0#PHP" expanded="false" />
+                <element signature="n#calculateDistance#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getExpiresDays#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getExpires#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#existImage#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#32811#32975#0#PHP" expanded="false" />
+                <element signature="e#32925#32975#0#PHP" expanded="false" />
+                <element signature="n#getPagination#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#33137#33248#0#PHP" expanded="false" />
+                <element signature="e#33202#33248#0#PHP" expanded="false" />
+                <element signature="e#33288#33663#0#PHP" expanded="false" />
+                <element signature="e#33334#33653#0#PHP" expanded="false" />
+                <element signature="e#33409#33653#0#PHP" expanded="false" />
+                <element signature="e#33432#33638#0#PHP" expanded="false" />
+                <element signature="e#33545#33638#0#PHP" expanded="false" />
+                <element signature="e#33705#35928#0#PHP" expanded="false" />
+                <element signature="e#33805#34014#0#PHP" expanded="false" />
+                <element signature="e#34142#34552#0#PHP" expanded="false" />
+                <element signature="e#34363#34552#0#PHP" expanded="false" />
+                <element signature="e#34748#35099#0#PHP" expanded="false" />
+                <element signature="e#34804#35085#0#PHP" expanded="false" />
+                <element signature="e#34972#35085#0#PHP" expanded="false" />
+                <element signature="e#35155#35629#0#PHP" expanded="false" />
+                <element signature="e#35378#35629#0#PHP" expanded="false" />
+                <element signature="e#35643#35875#0#PHP" expanded="false" />
+                <element signature="n#getHeaderMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#37071#37599#0#PHP" expanded="false" />
+                <element signature="e#37193#37599#0#PHP" expanded="false" />
+                <element signature="e#37307#37589#0#PHP" expanded="false" />
+                <element signature="e#37540#37589#0#PHP" expanded="false" />
+                <element signature="n#getComponentHeader#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#37665#52095#0#PHP" expanded="false" />
+                <element signature="e#38607#38857#0#PHP" expanded="false" />
+                <element signature="e#38726#38857#0#PHP" expanded="false" />
+                <element signature="e#40263#40468#0#PHP" expanded="false" />
+                <element signature="e#40380#40468#0#PHP" expanded="false" />
+                <element signature="e#40998#41383#0#PHP" expanded="false" />
+                <element signature="e#41199#41383#0#PHP" expanded="false" />
+                <element signature="e#45056#45169#0#PHP" expanded="false" />
+                <element signature="e#45381#45550#0#PHP" expanded="false" />
+                <element signature="e#47655#48116#0#PHP" expanded="false" />
+                <element signature="e#49163#49477#0#PHP" expanded="false" />
+                <element signature="e#49341#49477#0#PHP" expanded="false" />
+                <element signature="e#49565#49726#0#PHP" expanded="false" />
+                <element signature="e#50048#50382#0#PHP" expanded="false" />
+                <element signature="e#50236#50382#0#PHP" expanded="false" />
+                <element signature="e#50470#50630#0#PHP" expanded="false" />
+                <element signature="e#50968#51279#0#PHP" expanded="false" />
+                <element signature="e#51141#51279#0#PHP" expanded="false" />
+                <element signature="e#51367#51629#0#PHP" expanded="false" />
+                <element signature="e#51515#51629#0#PHP" expanded="false" />
+                <element signature="n#getContentMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="n#getLinkPermission#0;n#JSFactory#0;n#!!top" expanded="false" />
+                <element signature="e#52920#54077#0#PHP" expanded="false" />
+                <element signature="e#53019#54077#0#PHP" expanded="false" />
+                <element signature="e#53133#53277#0#PHP" expanded="false" />
+                <element signature="e#53291#53643#0#PHP" expanded="false" />
+                <element signature="e#53657#54067#0#PHP" expanded="false" />
+                <marker date="1491807440569" expanded="false" signature="20621:20683" ph="select id, s... ##__jshopping_vendors" />
+                <marker date="1491807440569" expanded="false" signature="21787:21835" ph="select id, d... ##__jshopping_delivery_times" />
+                <marker date="1491807440569" expanded="false" signature="38952:38981" ph="..." />
+                <marker date="1491807440569" expanded="false" signature="45605:45617" ph="..." />
+                <marker date="1491807440569" expanded="false" signature="50681:50693" ph="..." />
+                <marker date="1491807440569" expanded="false" signature="51680:51715" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/css/template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="292" column="18" lean-forward="true" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="153" column="63" lean-forward="false" selection-start-line="153" selection-start-column="63" selection-end-line="153" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Sorry, you have to add a picture to send a friend request.</find>
+      <find>home-sign-up-popup</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/lib/factory.php" />
+        <option value="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/index.php" />
+        <option value="$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/css/template.css" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -49,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -113,6 +407,84 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imcoolwithit.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protostar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imcoolwithit.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protostar" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imcoolwithit.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -143,8 +515,73 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imcoolwithit.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_jshopping" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cool.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imcoolwithit.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_jshopping" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,20 +602,22 @@
       <workItem from="1489565049194" duration="1285000" />
       <workItem from="1491307234763" duration="44000" />
       <workItem from="1491308116892" duration="235000" />
+      <workItem from="1491806759610" duration="1452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1564000" />
+    <option name="totallyTimeSpent" value="3016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25804722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -189,7 +628,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -203,5 +641,282 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/controllers/save_data/add_to_friends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="113" column="14" lean-forward="false" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
+          <folding>
+            <marker date="1491570006918" expanded="true" signature="4381:4450" ph="SELECT `phot... jproject_jshopping_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/templates/default/member/full_user_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="398" column="32" lean-forward="true" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
+          <folding>
+            <marker date="1490796598813" expanded="true" signature="8068:8085" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/components/com_jshopping/lib/factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="1206" column="5" lean-forward="true" selection-start-line="1206" selection-start-column="5" selection-end-line="1206" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#208#0#PHP" expanded="false" />
+            <element signature="n#getConfig#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#757#4838#0#PHP" expanded="false" />
+            <element signature="e#1605#1919#0#PHP" expanded="false" />
+            <element signature="e#2034#2129#0#PHP" expanded="false" />
+            <element signature="e#2142#2468#0#PHP" expanded="false" />
+            <element signature="e#2482#2695#0#PHP" expanded="false" />
+            <element signature="e#2628#2695#0#PHP" expanded="false" />
+            <element signature="e#2818#2906#0#PHP" expanded="false" />
+            <element signature="e#2920#3137#0#PHP" expanded="false" />
+            <element signature="e#3061#3137#0#PHP" expanded="false" />
+            <element signature="e#3151#3487#0#PHP" expanded="false" />
+            <element signature="e#3672#4036#0#PHP" expanded="false" />
+            <element signature="e#3802#3936#0#PHP" expanded="false" />
+            <element signature="e#3936#4036#0#PHP" expanded="false" />
+            <element signature="e#4049#4226#0#PHP" expanded="false" />
+            <element signature="e#4239#4582#0#PHP" expanded="false" />
+            <element signature="e#4586#4698#0#PHP" expanded="false" />
+            <element signature="n#getUserShop#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#4938#5696#0#PHP" expanded="false" />
+            <element signature="e#5191#5587#0#PHP" expanded="false" />
+            <element signature="e#5222#5389#0#PHP" expanded="false" />
+            <element signature="e#5519#5587#0#PHP" expanded="false" />
+            <element signature="n#getUserShopGuest#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#5804#6158#0#PHP" expanded="false" />
+            <element signature="n#getUser#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#6272#6417#0#PHP" expanded="false" />
+            <element signature="e#6347#6417#0#PHP" expanded="false" />
+            <element signature="n#loadCssFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#6610#7120#0#PHP" expanded="false" />
+            <element signature="e#6849#7087#0#PHP" expanded="false" />
+            <element signature="n#loadJsFiles#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#7196#7790#0#PHP" expanded="false" />
+            <element signature="e#7410#7757#0#PHP" expanded="false" />
+            <element signature="n#loadJsFilesRating#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#7872#8407#0#PHP" expanded="false" />
+            <element signature="e#7948#8374#0#PHP" expanded="false" />
+            <element signature="n#loadJsFilesLightBox#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#8597#9689#0#PHP" expanded="false" />
+            <element signature="e#8891#9655#0#PHP" expanded="false" />
+            <element signature="n#reloadConfigFieldTLF#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#9960#10188#0#PHP" expanded="false" />
+            <element signature="e#10041#10137#0#PHP" expanded="false" />
+            <element signature="n#loadLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#10305#10373#0#PHP" expanded="false" />
+            <element signature="n#loadExtLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#10914#10982#0#PHP" expanded="false" />
+            <element signature="n#loadAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#11419#11487#0#PHP" expanded="false" />
+            <element signature="n#loadExtAdminLanguageFile#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#12047#12115#0#PHP" expanded="false" />
+            <element signature="n#getLang#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#12555#12926#0#PHP" expanded="false" />
+            <element signature="e#12696#12780#0#PHP" expanded="false" />
+            <element signature="n#getReservedFirstAlias#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#13029#13340#0#PHP" expanded="false" />
+            <element signature="e#13233#13330#0#PHP" expanded="false" />
+            <element signature="n#getAliasCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#13441#13940#0#PHP" expanded="false" />
+            <element signature="e#13819#13904#0#PHP" expanded="false" />
+            <element signature="n#getAliasManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#14045#14551#0#PHP" expanded="false" />
+            <element signature="e#14430#14515#0#PHP" expanded="false" />
+            <element signature="n#getAliasProduct#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#14651#15185#0#PHP" expanded="false" />
+            <element signature="e#15026#15149#0#PHP" expanded="false" />
+            <element signature="n#getAllAttributes#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#15305#15463#0#PHP" expanded="false" />
+            <element signature="e#15472#15533#0#PHP" expanded="false" />
+            <element signature="e#15542#15763#0#PHP" expanded="false" />
+            <element signature="e#15617#15713#0#PHP" expanded="false" />
+            <element signature="e#15772#16225#0#PHP" expanded="false" />
+            <element signature="e#15959#16175#0#PHP" expanded="false" />
+            <element signature="n#getAllUnits#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#16301#16434#0#PHP" expanded="false" />
+            <element signature="n#getAllTaxesOriginal#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#16536#16803#0#PHP" expanded="false" />
+            <element signature="e#16700#16793#0#PHP" expanded="false" />
+            <element signature="n#getAllTaxes#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#16897#19417#0#PHP" expanded="false" />
+            <element signature="e#17148#19341#0#PHP" expanded="false" />
+            <element signature="e#17341#17512#0#PHP" expanded="false" />
+            <element signature="e#17643#18118#0#PHP" expanded="false" />
+            <element signature="e#17799#17978#0#PHP" expanded="false" />
+            <element signature="e#18135#19327#0#PHP" expanded="false" />
+            <element signature="e#18351#19148#0#PHP" expanded="false" />
+            <element signature="e#18401#19126#0#PHP" expanded="false" />
+            <element signature="e#18472#19100#0#PHP" expanded="false" />
+            <element signature="e#18544#18772#0#PHP" expanded="false" />
+            <element signature="e#18668#18772#0#PHP" expanded="false" />
+            <element signature="e#18802#19100#0#PHP" expanded="false" />
+            <element signature="e#18840#19070#0#PHP" expanded="false" />
+            <element signature="e#18966#19070#0#PHP" expanded="false" />
+            <element signature="n#getAllManufacturer#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#19518#20232#0#PHP" expanded="false" />
+            <element signature="e#20117#20195#0#PHP" expanded="false" />
+            <element signature="n#getMainVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#20327#20444#0#PHP" expanded="false" />
+            <element signature="n#getAllVendor#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#20538#21011#0#PHP" expanded="false" />
+            <element signature="e#20896#20974#0#PHP" expanded="false" />
+            <element signature="n#getAllDeliveryTime#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#21112#21557#0#PHP" expanded="false" />
+            <element signature="e#21436#21520#0#PHP" expanded="false" />
+            <element signature="n#getAllDeliveryTimeDays#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#21662#22079#0#PHP" expanded="false" />
+            <element signature="e#21958#22042#0#PHP" expanded="false" />
+            <element signature="n#getAllProductExtraField#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#22185#22337#0#PHP" expanded="false" />
+            <element signature="n#getAllProductExtraFieldValue#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#22448#22619#0#PHP" expanded="false" />
+            <element signature="n#getAllProductExtraFieldValueDetail#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#22736#22907#0#PHP" expanded="false" />
+            <element signature="n#getDisplayListProductExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#23045#23724#0#PHP" expanded="false" />
+            <element signature="e#23181#23414#0#PHP" expanded="false" />
+            <element signature="e#23221#23400#0#PHP" expanded="false" />
+            <element signature="e#23300#23400#0#PHP" expanded="false" />
+            <element signature="e#23556#23670#0#PHP" expanded="false" />
+            <element signature="n#getDisplayFilterExtraFieldForCategory#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#23872#24546#0#PHP" expanded="false" />
+            <element signature="e#24008#24241#0#PHP" expanded="false" />
+            <element signature="e#24048#24227#0#PHP" expanded="false" />
+            <element signature="e#24127#24227#0#PHP" expanded="false" />
+            <element signature="e#24378#24492#0#PHP" expanded="false" />
+            <element signature="n#getAllCurrency#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#24658#24936#0#PHP" expanded="false" />
+            <element signature="e#24839#24926#0#PHP" expanded="false" />
+            <element signature="n#getShippingExtList#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#25054#25810#0#PHP" expanded="false" />
+            <element signature="e#25340#25800#0#PHP" expanded="false" />
+            <element signature="e#25490#25786#0#PHP" expanded="false" />
+            <element signature="e#25676#25786#0#PHP" expanded="false" />
+            <element signature="e#25819#25877#0#PHP" expanded="false" />
+            <element signature="e#25917#26307#0#PHP" expanded="false" />
+            <element signature="e#25953#26106#0#PHP" expanded="false" />
+            <element signature="e#26056#26106#0#PHP" expanded="false" />
+            <element signature="e#26119#26202#0#PHP" expanded="false" />
+            <element signature="e#26215#26297#0#PHP" expanded="false" />
+            <element signature="n#getTable#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getModel#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getSendLocationFunc#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#markVisitors#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#27353#27411#0#PHP" expanded="false" />
+            <element signature="e#27353#27441#0#PHP" expanded="false" />
+            <element signature="e#27353#27474#0#PHP" expanded="false" />
+            <element signature="n#isUserOffline#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#27639#27709#0#PHP" expanded="false" />
+            <element signature="e#27639#27766#0#PHP" expanded="false" />
+            <element signature="e#27639#27809#0#PHP" expanded="false" />
+            <element signature="n#getAge#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getYearBirthday#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getDateDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#28453#28535#0#PHP" expanded="false" />
+            <element signature="e#29756#30921#0#PHP" expanded="false" />
+            <element signature="e#29905#30921#0#PHP" expanded="false" />
+            <element signature="e#30047#30921#0#PHP" expanded="false" />
+            <element signature="e#30179#30921#0#PHP" expanded="false" />
+            <element signature="e#30394#30921#0#PHP" expanded="false" />
+            <element signature="e#30621#30921#0#PHP" expanded="false" />
+            <element signature="e#30752#30921#0#PHP" expanded="false" />
+            <element signature="n#getDateTimeDiffFormat#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getDateFormatMonthYearNumber#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getMetaData#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#31440#31571#0#PHP" expanded="false" />
+            <element signature="e#31440#31622#0#PHP" expanded="false" />
+            <element signature="e#31440#31668#0#PHP" expanded="false" />
+            <element signature="n#calculateDistance#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getExpiresDays#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getExpires#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#existImage#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#32811#32975#0#PHP" expanded="false" />
+            <element signature="e#32925#32975#0#PHP" expanded="false" />
+            <element signature="n#getPagination#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#33137#33248#0#PHP" expanded="false" />
+            <element signature="e#33202#33248#0#PHP" expanded="false" />
+            <element signature="e#33288#33663#0#PHP" expanded="false" />
+            <element signature="e#33334#33653#0#PHP" expanded="false" />
+            <element signature="e#33409#33653#0#PHP" expanded="false" />
+            <element signature="e#33432#33638#0#PHP" expanded="false" />
+            <element signature="e#33545#33638#0#PHP" expanded="false" />
+            <element signature="e#33705#35928#0#PHP" expanded="false" />
+            <element signature="e#33805#34014#0#PHP" expanded="false" />
+            <element signature="e#34142#34552#0#PHP" expanded="false" />
+            <element signature="e#34363#34552#0#PHP" expanded="false" />
+            <element signature="e#34748#35099#0#PHP" expanded="false" />
+            <element signature="e#34804#35085#0#PHP" expanded="false" />
+            <element signature="e#34972#35085#0#PHP" expanded="false" />
+            <element signature="e#35155#35629#0#PHP" expanded="false" />
+            <element signature="e#35378#35629#0#PHP" expanded="false" />
+            <element signature="e#35643#35875#0#PHP" expanded="false" />
+            <element signature="n#getHeaderMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#37071#37599#0#PHP" expanded="false" />
+            <element signature="e#37193#37599#0#PHP" expanded="false" />
+            <element signature="e#37307#37589#0#PHP" expanded="false" />
+            <element signature="e#37540#37589#0#PHP" expanded="false" />
+            <element signature="n#getComponentHeader#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#37665#52095#0#PHP" expanded="false" />
+            <element signature="e#38607#38857#0#PHP" expanded="false" />
+            <element signature="e#38726#38857#0#PHP" expanded="false" />
+            <element signature="e#40263#40468#0#PHP" expanded="false" />
+            <element signature="e#40380#40468#0#PHP" expanded="false" />
+            <element signature="e#40998#41383#0#PHP" expanded="false" />
+            <element signature="e#41199#41383#0#PHP" expanded="false" />
+            <element signature="e#45056#45169#0#PHP" expanded="false" />
+            <element signature="e#45381#45550#0#PHP" expanded="false" />
+            <element signature="e#47655#48116#0#PHP" expanded="false" />
+            <element signature="e#49163#49477#0#PHP" expanded="false" />
+            <element signature="e#49341#49477#0#PHP" expanded="false" />
+            <element signature="e#49565#49726#0#PHP" expanded="false" />
+            <element signature="e#50048#50382#0#PHP" expanded="false" />
+            <element signature="e#50236#50382#0#PHP" expanded="false" />
+            <element signature="e#50470#50630#0#PHP" expanded="false" />
+            <element signature="e#50968#51279#0#PHP" expanded="false" />
+            <element signature="e#51141#51279#0#PHP" expanded="false" />
+            <element signature="e#51367#51629#0#PHP" expanded="false" />
+            <element signature="e#51515#51629#0#PHP" expanded="false" />
+            <element signature="n#getContentMenu#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="n#getLinkPermission#0;n#JSFactory#0;n#!!top" expanded="false" />
+            <element signature="e#52920#54077#0#PHP" expanded="false" />
+            <element signature="e#53019#54077#0#PHP" expanded="false" />
+            <element signature="e#53133#53277#0#PHP" expanded="false" />
+            <element signature="e#53291#53643#0#PHP" expanded="false" />
+            <element signature="e#53657#54067#0#PHP" expanded="false" />
+            <marker date="1491807440569" expanded="false" signature="20621:20683" ph="select id, s... ##__jshopping_vendors" />
+            <marker date="1491807440569" expanded="false" signature="21787:21835" ph="select id, d... ##__jshopping_delivery_times" />
+            <marker date="1491807440569" expanded="false" signature="38952:38981" ph="..." />
+            <marker date="1491807440569" expanded="false" signature="45605:45617" ph="..." />
+            <marker date="1491807440569" expanded="false" signature="50681:50693" ph="..." />
+            <marker date="1491807440569" expanded="false" signature="51680:51715" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="153" column="63" lean-forward="false" selection-start-line="153" selection-start-column="63" selection-end-line="153" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imcoolwithit.com/www/templates/protostar/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="292" column="18" lean-forward="true" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

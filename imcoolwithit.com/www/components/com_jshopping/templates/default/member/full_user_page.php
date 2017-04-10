@@ -164,6 +164,12 @@
 <?php } ?>
 
 <script type="text/javascript">
+    function showSitePopup() {
+        jQuery('.site-popup').css("display", "flex");
+    }
+    function hideSitePopup() {
+        jQuery('.site-popup').css("display", "none");
+    }
     var photos = <?php print json_encode($userData->images_album['images']); ?>;
     var index = 0;
 
@@ -379,8 +385,6 @@
         return false;
     });
 
-
-
     jQuery('.full-user-page .external-links-top .send-token').click(function(){
         console.debug(this.getAttribute('data-user'));
 
@@ -396,7 +400,8 @@
                 if(data == 'request confirmed' || data == 'request sent'){
                     jQuery(location).attr('href','<?php print 'https://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_USER_ADD_TO_FRIENDS') . '?usr=' . $userData->u_name . '&id=' . $userData->user_id; ?>');
                 } else {
-                    alert(data);
+                    jQuery('.full-user-page').append(data);
+                    showSitePopup();
                 }
             },
             error: function(data){

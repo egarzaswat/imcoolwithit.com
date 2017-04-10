@@ -150,9 +150,9 @@ if(isset($_GET['referrer'])){
 <?php if ($isoffline) { ?>
     <div class="container-full">
         <?php if ($ishomepage) { ?>
-            <div class="home-sign-up-popup">
-                <div class="home-popup buttons-popup">
-                    <span class="close-home-popup">x</span>
+            <div class="home-sign-up-popup site-popup">
+                <div class="home-popup buttons-popup popup-info">
+                    <span class="close-site-popup">x</span>
                     <div class="popup-title">Sign Up</div>
                     <div class="popup-fb-login">
                         <jdoc:include type="modules" name="social" style="none" />

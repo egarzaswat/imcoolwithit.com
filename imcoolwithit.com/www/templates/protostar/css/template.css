@@ -210,13 +210,14 @@
         width: 95%;
     }
     .home-header .header-left .header-info{
-        font-size: 14px;
+        /*font-size: 14px;*/
+        display: none;
     }
 }
 @media (max-width: 550px){
     .home-header .home-sign-in .menu_home li a{
-        font-size: 14px!important;
-        padding: 8px 10px 4px;
+        font-size: 13px!important;
+        padding: 8px 10px 5px!important;
     }
     .home-header .header-left .header-info{
         font-size: 12px;
@@ -226,7 +227,7 @@
         flex-grow: inherit;
     }
     .home-header .header-left .home-logo{
-        max-width: 100%;
+        max-width: 125px!important;
         margin: 0;
     }
     .home-header .header-left .home-logo img{
@@ -235,9 +236,9 @@
 }
 @media (max-width: 450px){
     .home-header .home-sign-in .menu_home{
-        height: 80px!important;
-        margin: 0!important;
-        flex-direction: column;
+        /*height: 80px!important;*/
+        /*margin: 0!important;*/
+        /*flex-direction: column;*/
     }
 }
 .home-header .header-left .home-logo{
@@ -273,9 +274,10 @@
     padding: 12px 15px 6px;
 }
 
-.home-sign-up-popup{
+.site-popup{
     position: fixed;
     width: 440px;
+    max-width: 95%;
     height: 350px;
     display: none;
     align-items: center;
@@ -288,18 +290,26 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: 10;
 }
-.home-sign-up-popup .home-popup{
+.site-popup .popup-info{
     width: 390px;
+    max-width: 85%;
     height: 300px;
     display: flex;
     border: 1px solid #f2ae4c;
     background-color: #fff;
     padding: 20px;
 }
-.home-sign-up-popup .home-popup.buttons-popup{
-    flex-direction: column;
+.site-popup.message-popup{
+    height: auto;
+    padding: 25px;
 }
-.home-sign-up-popup .home-popup.buttons-popup .close-home-popup{
+.site-popup.message-popup .popup-info{
+    height: auto;
+    padding: 50px 25px;
+    font-size: 20px;
+}
+
+.site-popup .close-site-popup{
     width: 40px;
     height: 40px;
     display: flex;
@@ -315,12 +325,16 @@
     padding: 0;
     cursor: pointer;
 }
+.home-sign-up-popup .home-popup.buttons-popup{
+    flex-direction: column;
+}
 .home-sign-up-popup .buttons-popup .popup-title{
     font-family: Helvetica , Arial, sans-serif;
     font-size: 26px;
 }
 .home-sign-up-popup .buttons-popup #fb_login{
     width: 350px;
+    max-width: 100%;
     height: 50px;
     display: flex;
     background-color: #2f488a;
@@ -353,6 +367,7 @@
 }
 .home-sign-up-popup .buttons-popup .popup-signup-but{
     width: 350px;
+    max-width: 100%;
     height: 50px;
     display: flex;
     text-decoration: none;
@@ -443,6 +458,12 @@
 }
 .home-sign-up-popup .form-popup form .form-group .form-error{
     color: red;
+}
+@media (max-width: 450px){
+    .home-sign-up-popup .buttons-popup #fb_login span,
+    .home-sign-up-popup .buttons-popup .popup-signup-but button{
+        font-size: 16px;
+    }
 }
 
 
@@ -927,6 +948,7 @@
 .home-sign-up .sign-up-box{
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    margin-top: 25px;
 }
 .home-sign-up .sign-up-box .sign-up-text{
     text-align: left;
@@ -1126,6 +1148,7 @@
 .sign-up-container{
     width: 100vw;
     height: calc(100vh - 130px);
+    position: relative;
     background: url(/images/home/top_image.jpg);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -1808,6 +1831,9 @@ a:focus, input:focus{
     .page-content-top{
         height: auto!important;
         flex-flow: row wrap;
+    }
+    .lincup-offers .page-content-top{
+        flex-flow: inherit;
     }
     .page-content-top .top-info{
         height: auto;
@@ -3200,7 +3226,14 @@ a:focus, input:focus{
 .honesty-review{
     padding: 0;
 }
-
+.lincup-coupon .page-content{
+    padding-left: 0;
+    padding-right: 0;
+}
+.lincup-coupon .page-content .page-content-top{
+    width: 90%;
+    margin: 0 auto;
+}
 
     /*
     * ---------------------------- User Profiles -----------------------------
@@ -3494,9 +3527,11 @@ a:focus, input:focus{
     .lincup-offers .page-content-top h1{
         width: 100%;
         text-align: center;
+        font-size: 16px;
     }
     .lincup-offers .external-links-top a{
         margin: 0 0 5px 0;
+        width: 150px;
     }
     .external-links-top{
         position: relative;
@@ -4478,6 +4513,9 @@ a:focus, input:focus{
 }
 
 @media (max-width: 767px){
+    .lincup-coupon .lincup-bottom .left{
+        margin-bottom: 40px;
+    }
     .lincup-coupon .lincup-bottom .left,
     .lincup-coupon .lincup-bottom .right{
         width: 100%;
@@ -4499,8 +4537,8 @@ a:focus, input:focus{
 }
 @media (max-width: 450px){
     .lincup-coupon .lincup-bottom .right a{
-        width: 30%;
-        margin: 0 1%;
+        width: 25%;
+        margin: 0 5%;
     }
     .lincup-coupon .lincup-bottom .right a img{
         max-width: 100%;
@@ -6231,6 +6269,8 @@ embed, iframe {
 }
 .footer-links ul{
     width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .footer-links ul li{
     display: inline-block;
