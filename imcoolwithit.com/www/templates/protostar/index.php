@@ -166,7 +166,7 @@ if(isset($_GET['referrer'])){
                         Already a member?&nbsp;&nbsp;<a href="/login">Sign in here.</a>
                     </div>
                 </div>
-                <div class="home-popup form-popup">
+                <div class="home-popup form-popup popup-info">
                     <jdoc:include type="modules" name="mylogin" style="none" />
                     <div class="popup-bottom">
                         Already a member?&nbsp;&nbsp;<a href="/login">Sign in here.</a>

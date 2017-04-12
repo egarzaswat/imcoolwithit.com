@@ -39,8 +39,8 @@
             </div>
 
 
-            <div class="lincup-bottom">
-                <div class="left">
+            <div class="lincup-bottom <?php if(isset($_GET['user'])){ print 'linc-up-bl'; }?>" >
+                <div class="left" >
                     <div class="tokens-block <?php if (!$this->isset_tokens_send) { print 'wa'; }?>">
                         <img src="/templates/protostar/images/system/linkup_icon.png">
                         <?php if ($this->isset_tokens_send) { ?>
@@ -51,7 +51,7 @@
                         <?php } ?>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" <?php if(isset($_GET['user'])){ print 'style="justify-content: center;"'; }?> >
                     <?php if(!isset($_GET['user'])){ ?>
                         <a href="/meeting/verification?sponsor=<?php print $this->sponsor_data['product_id']; ?>">
                             <img src="/templates/protostar/images/system/redeem_now.png">

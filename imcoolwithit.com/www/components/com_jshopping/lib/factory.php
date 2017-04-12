@@ -1001,8 +1001,9 @@ class JSFactory{
             $html .= '<ul class="nav menu_home">';
             $html .= '<li><a href="' . JText::_('LINK_USERS_LIST') . '" class="search">Search</a></li>';
 //            $html .= '<li><a href="' . $quick_search_link . '" class="quick-search">Quick Connect</a></li>';
+            $html .= '<li><a href="/sponsors">Linc Ups</a></li>';
             $html .= '<li><a href="/partners">CWI Plus</a></li>';
-            $html .= '<li><a href="#">Local Events</a></li>';
+            $html .= '<li><a href="#">Events</a></li>';
             $html .= '</ul>';
             $html .= '</div>';
 
