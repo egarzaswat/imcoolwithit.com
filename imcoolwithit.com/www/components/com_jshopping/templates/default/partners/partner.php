@@ -2,11 +2,11 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 
-<div class="lincup-coupon col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="lincup-coupon partner-page col-sm-10 col-sm-offset-1 col-xs-12">
 
     <div class="page-content row">
         <div class="page-content-top padding-null">
-            <h1><?php print JText::sprintf('PARTNER_TITLE', $this->partner['name']); ?></h1>
+            <h1><?php print JText::_('PARTNER_TITLE'); ?></h1>
         </div>
 
         <?php if ($this->submit_data['friend'] != 0) { ?>

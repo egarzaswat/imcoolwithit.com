@@ -235,7 +235,7 @@ if(isset($_GET['referrer'])){
                         </div>
                         <div class="how-info">
                             <span class="how-title">Search</span>
-                            <span class="how-text">Reach out to local singles or attend an event to meet new people.</span>
+                            <span class="how-text">Reach out to local singles or attend<br>an event to meet new people.</span>
                             <a href="/join">Sign up</a>
                         </div>
                     </div>
@@ -245,7 +245,7 @@ if(isset($_GET['referrer'])){
                         </div>
                         <div class="how-info">
                             <span class="how-title">Find things to do</span>
-                            <span class="how-text">Search for local places and events. Ask someone to go with you or bring a friend.</span>
+                            <span class="how-text">Search for local places and events.<br>Ask someone to go with you or bring a friend.</span>
                         </div>
                     </div>
                 </div>
@@ -259,7 +259,7 @@ if(isset($_GET['referrer'])){
                         </div>
                         <div class="makes-info">
                             <div class="makes-title">We cut down on the cost of dating</div>
-                            <div class="makes-text">We work with local venues to offer members exclusive Linc Up date ideas. We'll notify you when we have offers in your area and you can use your Credits to redeem them.</div>
+                            <div class="makes-text">By teaming up with local restaurants, breweries, bars, and other businesses, we try to help cut down on the cost and hassle of getting together, while providing you with some new date ideas.</div>
                         </div>
                     </div>
                     <div class="makes-block">
@@ -277,7 +277,7 @@ if(isset($_GET['referrer'])){
                         </div>
                         <div class="makes-info">
                             <div class="makes-title">Honesty feedback</div>
-                            <div class="makes-text">We developed the first honesty feedback rating system for dating, where members earn credits for reviewing a member they felt was honest.<br>Personal information remains private and we think it's a good way to reward people for being themselves, while promoting a safer online dating environment.</div>
+                            <div class="makes-text">We developed an honesty rating system where members earn credits for being honest on their profile. Personal information remains private and we think it’s a good way to reward people for being themselves, while promoting a safer online dating community.</div>
                         </div>
                     </div>
                 </div>

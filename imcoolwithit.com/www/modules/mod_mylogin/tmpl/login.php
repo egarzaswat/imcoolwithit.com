@@ -71,11 +71,11 @@
         <div class="form-input-container">
             <div class="form-group">
                 <label class="form-signup-label" for="username_email">Username or Email</label>
-                <input name="username_email" type="text" class="form-signup-input" id="username_email" style="width: 214px;">
+                <input name="username_email" type="text" class="form-signup-input" id="username_email" style="width: 214px;" autocomplete="off">
             </div>
             <div class="form-group" style="margin-bottom: 0;">
                 <label class="form-signup-label" for="password">Password</label>
-                <input name="password" type="password" class="form-signup-input" id="password"  style="width: 214px;">
+                <input name="password" type="password" class="form-signup-input" id="password"  style="width: 214px;" autocomplete="off">
                 <span class="form-error login-error"></span>
             </div>
         </div>
