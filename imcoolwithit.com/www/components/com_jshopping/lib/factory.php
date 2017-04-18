@@ -1003,7 +1003,7 @@ class JSFactory{
 //            $html .= '<li><a href="' . $quick_search_link . '" class="quick-search">Quick Connect</a></li>';
             $html .= '<li><a href="/sponsors">Linc Ups</a></li>';
             $html .= '<li><a href="/partners">CWI Plus</a></li>';
-            $html .= '<li><a href="#">Events</a></li>';
+            $html .= '<li><a href="/error">Events</a></li>';
             $html .= '</ul>';
             $html .= '</div>';
 

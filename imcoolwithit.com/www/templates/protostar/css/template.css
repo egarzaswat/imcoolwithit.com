@@ -170,6 +170,11 @@
         font-size: 20px!important;
     }
 }
+@media (max-width: 500px){
+    .search-to-go .title{
+        font-size: 15px!important;
+    }
+}
 @media (max-width: 550px){
     .home-top-content{
         height: 320px;
@@ -197,7 +202,7 @@
         margin: 0;
     }
     .search-to-go .title {
-        font-size: 16px!important;
+        font-size: 12px!important;
     }
 }
 
@@ -303,7 +308,7 @@
 }
 .home-header .header-left .home-logo{
     height: 80px;
-    width: 235px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -992,6 +997,12 @@
     text-shadow: -2px 2px 2px rgb(0, 0, 0);
 }
 
+.home-header .header-left .home-logo .beta{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 @media (max-width: 767px){
     .home-header-text h1{
         text-align: center;
@@ -999,6 +1010,12 @@
     .home-sign-up{
         bottom: auto;
         top: 220px;
+    }
+    .home-header .header-left .home-logo .beta{
+        font-size: 15px;
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 10px;
     }
 }
 
@@ -4684,8 +4701,9 @@ a:focus, input:focus{
 }
 @media (max-width: 450px){
     .lincup-coupon .lincup-bottom .right a{
-        width: 25%;
+        width: 40%;
         margin: 0 5%;
+        font-size: 11px;
     }
     .lincup-coupon .lincup-bottom .right a img{
         max-width: 100%;
@@ -4964,6 +4982,7 @@ a:focus, input:focus{
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 .lincup-redeem .lincup-coupon-redeem .redeem-code{
     border: 1px solid rgb(48, 155, 209);

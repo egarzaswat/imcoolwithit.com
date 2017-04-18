@@ -167,6 +167,7 @@ if(isset($_GET['referrer'])){
                     </div>
                 </div>
                 <div class="home-popup form-popup popup-info">
+                    <span class="close-site-popup">x</span>
                     <jdoc:include type="modules" name="mylogin" style="none" />
                     <div class="popup-bottom">
                         Already a member?&nbsp;&nbsp;<a href="/login">Sign in here.</a>
@@ -178,6 +179,7 @@ if(isset($_GET['referrer'])){
                     <div class="header-container">
                         <div class="header-left">
                             <div class="home-logo">
+                                <div class="beta">(Beta)</div>
                                 <jdoc:include type="modules" name="home-logo" style="none" />
                             </div>
                             <span class="header-info">
@@ -193,7 +195,7 @@ if(isset($_GET['referrer'])){
                 <div class="home-gradient"></div>
             </div>
             <div class="home-top-content">
-                <h1>Do something new.</h1>
+                <h1>Do something New.</h1>
                 <div class="top-info">Meet people. Find cool things to do.</div>
                 <button class="join-button">Join</button>
             </div>
