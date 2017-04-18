@@ -118,6 +118,7 @@
     font-family: Helvetica , Arial, sans-serif;
     font-size: 55px;
     color: #fff;
+    margin-bottom: 0;
 }
 .home-top-content .top-info{
     font-family: Myriad Pro;
@@ -137,7 +138,7 @@
     border-radius: 15px;
     font-size: 22px;
     font-family: Myriad Pro;
-    margin-top: 55px;
+    margin-top: 20px;
     margin-bottom: 35px;
 }
 /*@media (min-width: 1200px){*/
