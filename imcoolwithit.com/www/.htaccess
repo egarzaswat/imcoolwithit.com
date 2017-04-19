@@ -8,12 +8,15 @@ Options +FollowSymLinks
 
 ## Mod_rewrite in use.
 
-#php_value upload_max_filesize 20M
-#php_value post_max_size 20M
-#php_value max_execution_time 200
-#php_value max_input_time 200
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+php_value max_execution_time 200
+php_value max_input_time 200
 
 RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below
@@ -55,6 +58,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # internally rewrite the request to the index.php script
 RewriteRule .* index.php [L]
 
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    ExpiresByType image/gif "access plus 2 months"
+    ExpiresByType image/jpeg "access plus 2 months"
+</IfModule>
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html

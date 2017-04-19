@@ -127,7 +127,6 @@ if(isset($_GET['referrer'])){
 
     ga('create', 'UA-89376801-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 
 
