@@ -1150,6 +1150,8 @@ class JshoppingControllerMember extends JControllerLegacy{
         $error = $mainframe->logout();
 
         $session = JFactory::getSession();
+
+
         $session->set('user_shop_guest', null);
         $session->set('cart', null);
 

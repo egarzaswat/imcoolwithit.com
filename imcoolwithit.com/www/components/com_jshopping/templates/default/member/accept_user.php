@@ -33,7 +33,9 @@
 </div>
 
 <script type="text/javascript">
-    jQuery('.close-page').click(function(){
-        jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_FRIENDS'); ?>');
-    });
+    window.onload = function() {
+        jQuery('.close-page').click(function(){
+            jQuery(location).attr('href','<?php print 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_FRIENDS'); ?>');
+        });
+    };
 </script>

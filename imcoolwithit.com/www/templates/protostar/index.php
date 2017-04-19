@@ -15,7 +15,6 @@ $user            = JFactory::getUser();
 $this->language  = $doc->language;
 $this->direction = $doc->direction;
 
-// Getting params from template
 $params = $app->getTemplate(true)->params;
 
 // Detecting Active Variables
@@ -26,43 +25,22 @@ $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
 
-if($task == "edit" || $layout == "form" )
-{
+if($task == "edit" || $layout == "form" ){
 	$fullWidth = 1;
-}
-else
-{
+}else{
 	$fullWidth = 0;
 }
 
-// Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 $doc->addScript('templates/' . $this->template . '/minify/cool.js');
-//$doc->addScript('templates/' . $this->template . '/js/js.cookie.js');
-//$doc->addScript('templates/' . $this->template . '/js/template.js');
-//$doc->addScript('templates/' . $this->template . '/js/addtohomescreen.js');
+//$doc->addStyleSheet('templates/' . $this->template . '/minify/cool.css');
 
-// Add Stylesheets
-$doc->addStyleSheet('templates/' . $this->template . '/minify/cool.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/flaticon.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/addtohomescreen.css');
-
-// Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
-
-// Logo file or site title param
-if ($this->params->get('logoFile'))
-{
+if ($this->params->get('logoFile')) {
 	$logo = '<img src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" />';
-}
-elseif ($this->params->get('sitetitle'))
-{
+} elseif ($this->params->get('sitetitle')){
 	$logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) . '</span>';
-}
-else
-{
+} else {
 	$logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
 }
 
@@ -70,11 +48,26 @@ if(isset($_GET['referrer'])){
     $session = JFactory::getSession();
     $session->set('referrer', $_GET['referrer']);
 }
+
+$isoffline = false;
+$ishomepage = false;
+
+if ($_REQUEST['option'] == 'com_content') {
+    $isoffline = true;
+}
+
+$app = JFactory::getApplication();
+$menu = $app->getMenu();
+if ($menu->getActive() == $menu->getDefault()) {
+    $ishomepage = true;
+}
 ?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="templates/protostar/minify/cool.css" type="text/css" />
     <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
@@ -90,32 +83,16 @@ if(isset($_GET['referrer'])){
     <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
-<!--    <link rel="manifest" href="manifest.json">-->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-	<jdoc:include type="head" />
-<!--	<script>addToHomescreen();</script>-->
-
-	<!--[if lt IE 9]>
-		<script src="<?php echo $this->baseurl; ?>/media/jui/js/html5.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="<?php echo $this->baseurl; ?>/media/jui/js/html5.js"></script>
+    <![endif]-->
+    <?php if (!$isoffline) { ?>
+        <jdoc:include type="head" />
+    <?php } ?>
 </head>
-
-<?php
-    $isoffline = false;
-    $ishomepage = false;
-
-    if ($_REQUEST['option'] == 'com_content') {
-        $isoffline = true;
-    }
-
-    $app = JFactory::getApplication();
-    $menu = $app->getMenu();
-    if ($menu->getActive() == $menu->getDefault()) {
-        $ishomepage = true;
-    }
-?>
 
 <body <?php if($isoffline){print 'class="homepage"';} ?> >
 
@@ -303,6 +280,8 @@ if(isset($_GET['referrer'])){
         </div>
     </div>
 </div>
-
+<?php if ($isoffline) { ?>
+    <jdoc:include type="head" />
+<?php } ?>
 </body>
 </html>

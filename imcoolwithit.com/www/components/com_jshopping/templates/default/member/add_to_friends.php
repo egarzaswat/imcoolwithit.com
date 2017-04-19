@@ -26,7 +26,9 @@
 </div>
 
 <script type="text/javascript">
-    jQuery('.close-page').click(function(){
-        jQuery(location).attr('href','<?php print $link; ?>');
-    });
+    window.onload = function() {
+        jQuery('.close-page').click(function(){
+            jQuery(location).attr('href','<?php print $link; ?>');
+        });
+    };
 </script>

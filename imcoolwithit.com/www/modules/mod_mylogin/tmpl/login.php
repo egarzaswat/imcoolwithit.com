@@ -103,100 +103,103 @@
 
 
     <script type="text/javascript">
-        jQuery('.forgot_show').click(function(){
-            jQuery('.form_login').hide();
-            jQuery('.forgot_show').hide();
-            jQuery('.form_send_forgot').show();
-            jQuery('.login_show').show();
-        });
-        jQuery('.login_show').click(function(){
-            jQuery('.form_login').show();
-            jQuery('.forgot_show').show();
-            jQuery('.form_send_forgot').hide();
-            jQuery('.login_show').hide();
-        });
+        window.onload = function() {
+            jQuery('.forgot_show').click(function(){
+                jQuery('.form_login').hide();
+                jQuery('.forgot_show').hide();
+                jQuery('.form_send_forgot').show();
+                jQuery('.login_show').show();
+            });
+            jQuery('.login_show').click(function(){
+                jQuery('.form_login').show();
+                jQuery('.forgot_show').show();
+                jQuery('.form_send_forgot').hide();
+                jQuery('.login_show').hide();
+            });
 
-        jQuery('.form_login').submit(function(e){
-            e.preventDefault();
-            var data = jQuery('.form_login').serialize();
+            jQuery('.form_login').submit(function(e){
+                e.preventDefault();
+                var data = jQuery('.form_login').serialize();
 
-            jQuery.ajax({
-                type: "POST",
-                url: 'modules/mod_mylogin/ajax/login.php',
-                data: data,
-                success: function(html){
-                    if(html == 'success'){
-                        if (jQuery(window).width() <= '767'){
-                            jQuery(location).attr('href', '/search?mobile=true');
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'modules/mod_mylogin/ajax/login.php',
+                    data: data,
+                    success: function(html){
+                        if(html == 'success'){
+                            if (jQuery(window).width() <= '767'){
+                                jQuery(location).attr('href', '/search?mobile=true');
+                            } else {
+                                jQuery(location).attr('href', '/search');
+                            }
+//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
+//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
+                        } else if (html == 'user does not exist') {
+                            jQuery('.login-error').removeClass('form-success').addClass('form-error').html('Incorrect username or password');
                         } else {
-                            jQuery(location).attr('href', '/search');
+                            console.log(html);
                         }
-//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
-//                        jQuery(location).attr('href', '<?php //echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>//');
-                    } else if (html == 'user does not exist') {
-                        jQuery('.login-error').removeClass('form-success').addClass('form-error').html('Incorrect username or password');
-                    } else {
+                    },
+                    error: function(html){
                         console.log(html);
                     }
-                },
-                error: function(html){
-                    console.log(html);
-                }
+                });
+                return false;
             });
-            return false;
-        });
 
-        jQuery("#username_email").keyup(function(){
-            jQuery('.login-error').removeClass('form-error').addClass('form-success').html('');
-        });
-        jQuery("#password").keyup(function(){
-            jQuery('.login-error').removeClass('form-error').addClass('form-success').html('');
-        });
+            jQuery("#username_email").keyup(function(){
+                jQuery('.login-error').removeClass('form-error').addClass('form-success').html('');
+            });
+            jQuery("#password").keyup(function(){
+                jQuery('.login-error').removeClass('form-error').addClass('form-success').html('');
+            });
 
-        var timer;
+            var timer;
 
-        jQuery("#email").keyup(function() {
-            var email = jQuery(this);
+            jQuery("#email").keyup(function() {
+                var email = jQuery(this);
 
-            clearTimeout(timer);
-            timer = setTimeout(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
 
-                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val())) {
-                    jQuery('.form_send_forgot .submit-button').attr('disabled', false);
-                    jQuery('.email-error').removeClass('form-error').addClass('form-success').html('');
-                } else {
-                    jQuery('.form_send_forgot .submit-button').attr('disabled', true);
-                    jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
-                }
-            }, 1000);
-        });
-
-        jQuery('.form_send_forgot').submit(function(e){
-            e.preventDefault();
-            var data = jQuery('.form_send_forgot').serialize();
-
-            jQuery.ajax({
-                type: "POST",
-                url: 'modules/mod_mylogin/ajax/forgot.php',
-                data: data,
-                success: function(html){
-                    if(html == 'success'){
-                        jQuery('.form_send_forgot .email-error').removeClass('form-error').addClass('form-success').html('Link has been sent! Please, check entered email address');
-                    } else if (html == 'invalid email') {
-                        jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
-                    } else if (html == 'unverified email') {
-                        jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Please, enter your verified email!');
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val())) {
+                        jQuery('.form_send_forgot .submit-button').attr('disabled', false);
+                        jQuery('.email-error').removeClass('form-error').addClass('form-success').html('');
                     } else {
-                        jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Sending error');
+                        jQuery('.form_send_forgot .submit-button').attr('disabled', true);
+                        jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
+                    }
+                }, 1000);
+            });
+
+            jQuery('.form_send_forgot').submit(function(e){
+                e.preventDefault();
+                var data = jQuery('.form_send_forgot').serialize();
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'modules/mod_mylogin/ajax/forgot.php',
+                    data: data,
+                    success: function(html){
+                        if(html == 'success'){
+                            jQuery('.form_send_forgot .email-error').removeClass('form-error').addClass('form-success').html('Link has been sent! Please, check entered email address');
+                        } else if (html == 'invalid email') {
+                            jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
+                        } else if (html == 'unverified email') {
+                            jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Please, enter your verified email!');
+                        } else {
+                            jQuery('.form_send_forgot .email-error').removeClass('form-success').addClass('form-error').html('Sending error');
+                            console.log(html);
+                        }
+                    },
+                    error: function(html){
                         console.log(html);
                     }
-                },
-                error: function(html){
-                    console.log(html);
-                }
+                });
+                return false;
             });
-            return false;
-        });
+        };
+
     </script>
 <?php } else { ?>
     <form class="form-inline update_password" action="" method="post" >
@@ -219,60 +222,61 @@
     </form>
 
     <script type="text/javascript">
+        window.onload = function() {
+            var timer;
 
-        var timer;
-
-        jQuery('#password1').keyup(function(){
-            jQuery('.confirmation-error').html('');
-            clearTimeout(timer);
-            timer = setTimeout(function(){
-                if(jQuery('#password1').val().length < 6){
-                    jQuery('.password-error').removeClass('form-success').addClass('form-error').html('Password too short');
-                } else {
-                    jQuery('.password-error').removeClass('form-error').addClass('form-success').html('');
-                }
-            }, 1000);
-        });
-
-        jQuery('#password2').keyup(function(){
-            clearTimeout(timer);
-            timer = setTimeout(function(){
-                if(jQuery('#password1').val() != jQuery('#password2').val()){
-                    jQuery('.confirmation-error').removeClass('form-success').addClass('form-error').html('Confirmation does not match');
-                } else {
+            jQuery('#password1').keyup(function(){
+                jQuery('.confirmation-error').html('');
+                clearTimeout(timer);
+                timer = setTimeout(function(){
                     if(jQuery('#password1').val().length < 6){
                         jQuery('.password-error').removeClass('form-success').addClass('form-error').html('Password too short');
                     } else {
-                        jQuery('.confirmation-error').removeClass('form-error').addClass('form-success').html('Confirmation match');
+                        jQuery('.password-error').removeClass('form-error').addClass('form-success').html('');
                     }
-                }
-            }, 1000);
-        });
+                }, 1000);
+            });
 
-        jQuery('.update_password').submit(function(e){
-            e.preventDefault();
-            var data = jQuery('.update_password').serialize();
-
-            jQuery.ajax({
-                type: "POST",
-                url: 'modules/mod_mylogin/ajax/forgot.php',
-                data: data,
-                success: function(html){
-                    if(html == 'success'){
-                        jQuery(location).attr('href', '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_LOGIN'); ?>');
-                    } else if (html == 'password error') {
+            jQuery('#password2').keyup(function(){
+                clearTimeout(timer);
+                timer = setTimeout(function(){
+                    if(jQuery('#password1').val() != jQuery('#password2').val()){
                         jQuery('.confirmation-error').removeClass('form-success').addClass('form-error').html('Confirmation does not match');
-                    } else if (html == 'hash error') {
-                        jQuery('.confirmation-error').removeClass('form-success').addClass('form-error').html('Fail');
                     } else {
+                        if(jQuery('#password1').val().length < 6){
+                            jQuery('.password-error').removeClass('form-success').addClass('form-error').html('Password too short');
+                        } else {
+                            jQuery('.confirmation-error').removeClass('form-error').addClass('form-success').html('Confirmation match');
+                        }
+                    }
+                }, 1000);
+            });
+
+            jQuery('.update_password').submit(function(e){
+                e.preventDefault();
+                var data = jQuery('.update_password').serialize();
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'modules/mod_mylogin/ajax/forgot.php',
+                    data: data,
+                    success: function(html){
+                        if(html == 'success'){
+                            jQuery(location).attr('href', '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_LOGIN'); ?>');
+                        } else if (html == 'password error') {
+                            jQuery('.confirmation-error').removeClass('form-success').addClass('form-error').html('Confirmation does not match');
+                        } else if (html == 'hash error') {
+                            jQuery('.confirmation-error').removeClass('form-success').addClass('form-error').html('Fail');
+                        } else {
+                            console.log(html);
+                        }
+                    },
+                    error: function(html){
                         console.log(html);
                     }
-                },
-                error: function(html){
-                    console.log(html);
-                }
+                });
+                return false;
             });
-            return false;
-        });
+        };
     </script>
 <?php } ?>

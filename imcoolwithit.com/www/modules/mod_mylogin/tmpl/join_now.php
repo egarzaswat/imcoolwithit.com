@@ -118,77 +118,80 @@
 </form>
 
 <script type="text/javascript">
-    var timer;
-    jQuery('#password').keyup(function(){
-        clearTimeout(timer);
-        timer = setTimeout(function(){
-            if(jQuery('#password').val().length < 6){
-                jQuery('.form_join .submit-button').attr('disabled',true);
-                jQuery('.password-error').removeClass('form-success').addClass('form-error').html('Password too short');
-            } else {
-                jQuery('.form_join .submit-button').attr('disabled',false);
-                jQuery('.password-error').removeClass('form-error').addClass('form-success').html('Good!!!')
-            }
-        }, 1000);
-    });
-
-    jQuery('.form_join').submit(function(e){
-        e.preventDefault();
-        var data = jQuery('.form_join').serialize();
-
-        jQuery.ajax({
-            type: "POST",
-            url: 'modules/mod_mylogin/ajax/join_now.php',
-            data: data,
-            success: function(data){
-                if (data == 'success') {
-                    jQuery(location).attr('href', '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>');
+    window.onload = function() {
+        var timer;
+        jQuery('#password').keyup(function(){
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                if(jQuery('#password').val().length < 6){
+                    jQuery('.form_join .submit-button').attr('disabled',true);
+                    jQuery('.password-error').removeClass('form-success').addClass('form-error').html('Password too short');
                 } else {
-                    switch (data) {
-                        case 'error email': jQuery('.form-content input[name="email"]').css( "border-color", "red"); break;
-                        case 'error password': jQuery('.form-content input[name="password"]').css( "border-color", "red"); break;
-                        case 'exist': jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Email already in use'); break;
-                        default : console.log(data); break;
-                    }
+                    jQuery('.form_join .submit-button').attr('disabled',false);
+                    jQuery('.password-error').removeClass('form-error').addClass('form-success').html('Good!!!')
                 }
-            },
-            error: function(data){
-                console.log(data);
-            }
+            }, 1000);
         });
-        return false;
-    });
+
+        jQuery('.form_join').submit(function(e){
+            e.preventDefault();
+            var data = jQuery('.form_join').serialize();
+
+            jQuery.ajax({
+                type: "POST",
+                url: 'modules/mod_mylogin/ajax/join_now.php',
+                data: data,
+                success: function(data){
+                    if (data == 'success') {
+                        jQuery(location).attr('href', '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/' . JText::_('LINK_MY_ACCOUNT'); ?>');
+                    } else {
+                        switch (data) {
+                            case 'error email': jQuery('.form-content input[name="email"]').css( "border-color", "red"); break;
+                            case 'error password': jQuery('.form-content input[name="password"]').css( "border-color", "red"); break;
+                            case 'exist': jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Email already in use'); break;
+                            default : console.log(data); break;
+                        }
+                    }
+                },
+                error: function(data){
+                    console.log(data);
+                }
+            });
+            return false;
+        });
 
 //    var timer;
-    jQuery("#email").keyup(function() {
-        var email = jQuery(this);
+        jQuery("#email").keyup(function() {
+            var email = jQuery(this);
 
-        clearTimeout(timer);
-        timer = setTimeout(function() {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
 
-            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val())) {
-                jQuery.ajax({
-                    url: '/components/com_jshopping/controllers/save_data/check_email.php',
-                    data: {email: email.val()},
-                    type: "POST",
-                    success: function (data) {
-                        if (data == 'success') {
-                            jQuery('.form_join .submit-button').attr('disabled', false);
-                            jQuery('.email-error').removeClass('form-error').addClass('form-success').html('Email available');
-                        } else {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val())) {
+                    jQuery.ajax({
+                        url: '/components/com_jshopping/controllers/save_data/check_email.php',
+                        data: {email: email.val()},
+                        type: "POST",
+                        success: function (data) {
+                            if (data == 'success') {
+                                jQuery('.form_join .submit-button').attr('disabled', false);
+                                jQuery('.email-error').removeClass('form-error').addClass('form-success').html('Email available');
+                            } else {
+                                jQuery('.form_join .submit-button').attr('disabled', true);
+                                jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Email already in use');
+                            }
+                        },
+                        error: function () {
                             jQuery('.form_join .submit-button').attr('disabled', true);
-                            jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Email already in use');
+                            jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Unknown error');
                         }
-                    },
-                    error: function () {
-                        jQuery('.form_join .submit-button').attr('disabled', true);
-                        jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Unknown error');
-                    }
-                });
-            } else {
-                jQuery('.form_join .submit-button').attr('disabled', true);
-                jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
-            }
-        }, 1000);
-    });
+                    });
+                } else {
+                    jQuery('.form_join .submit-button').attr('disabled', true);
+                    jQuery('.email-error').removeClass('form-success').addClass('form-error').html('Invalid email');
+                }
+            }, 1000);
+        });
+    };
+
 </script>

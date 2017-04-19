@@ -58,13 +58,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # internally rewrite the request to the index.php script
 RewriteRule .* index.php [L]
 
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault "access plus 1 month"
-
-    ExpiresByType image/gif "access plus 2 months"
-    ExpiresByType image/jpeg "access plus 2 months"
-</IfModule>
+<ifmodule mod_expires.c>
+<Filesmatch "\.(jpg|jpeg|png|gif|js|css|swf|ico|woff|mp3)$">
+    ExpiresActive on
+    ExpiresDefault "access plus 7 days"
+</Filesmatch>
+</ifmodule>
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
