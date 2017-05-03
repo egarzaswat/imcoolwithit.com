@@ -1372,6 +1372,9 @@
         line-height: 1!important;
         padding: 7px 10px!important;
     }
+    .page-content .submit-block{
+        justify-content: center!important;
+    }
 }
 
 /*
@@ -4687,6 +4690,7 @@ a:focus, input:focus{
     }
     .lincup-questions .page-content-top h1{
         width: 100%!important;
+        font-size: 22px;
     }
     .partner-page .lincup-bottom .left{
         display: none;
@@ -4733,7 +4737,11 @@ a:focus, input:focus{
         margin: 10px 0 10px 0;
     }
 }
-
+@media (max-width: 450px){
+    .lincup-questions .page-content-top h1{
+        font-size: 14px!important;
+    }
+}
 
 .lincup-coupon-info{
     border: 1px solid #f3b13e;
@@ -5493,6 +5501,8 @@ a:focus, input:focus{
     .earn-tokens-submit{
         padding: 0;
         text-align: center;
+        justify-content: center!important;
+        padding-left: 35px;
     }
     .complete-profile .earn-tokens-list .earn-tokens-submit{
         padding: 0;
@@ -5520,6 +5530,11 @@ a:focus, input:focus{
 	.complete-profile .complete-profile-info .earn-tokens-tokens .tokens-count{
 		right: 3px;
 	}
+}
+@media (max-width: 400px){
+    .earn-tokens-submit{
+        padding-left: 5px!important;
+    }
 }
 
 /*

@@ -22,7 +22,9 @@ if(stristr($_SERVER['REQUEST_URI'], '/login')){
     $document = JFactory::getDocument();
     $pathToJS = JURI::root().'components/com_jshopping/js/';
     $document->addScript($pathToJS.'signup_email.js');
-    $document->addScript($pathToJS.'signup_zipcode.js');
+    if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false){
+        $document->addScript($pathToJS.'signup_zipcode.js');
+    }
     $layout = 'sign_up';
 }
 

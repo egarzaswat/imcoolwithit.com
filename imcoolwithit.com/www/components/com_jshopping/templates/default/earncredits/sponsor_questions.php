@@ -36,7 +36,7 @@ $this->block_name = 'LincUp Review';
             <div class="earn-tokens-submit submit-block">
                 <input type="button" class="submit-button" value="<?php print JText::_('EARN_TOKENS_SUBMIT'); ?>">
                 <span class="error">Whoops, you missed something.</span>
-                <span class="earn-tokens text-none-select hidden-xs">
+                <span class="earn-tokens text-none-select">
                     <span class="tokens-icon">
                         <img src="/templates/protostar/images/system/token.png">
                     </span>
